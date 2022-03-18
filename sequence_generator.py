@@ -3,8 +3,8 @@ In which we generate random equidistant protein strings
 '''
 import argparse
 import random
-import numpy as np
 import csv
+import numpy as np
 
 
 def read_seq(file):
