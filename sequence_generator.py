@@ -15,21 +15,26 @@ def read_seq(file):
             if line.startswith(">"):
                 continue
             seq += line.rstrip()
-    return(np.array(list(seq)))
+    return(np.array(list(seq), dtype=object))
 
 
-def output_strings(file, proteins):
+def output_strings(file, proteins, distance):
     '''Output a fasta file of the strings we generated'''
-    string_count = 0
+    step = 0
+    approx_distance = 0
     with open(file, "w", encoding="utf-8") as fh_out:
         for protein in proteins:
-            working_string = np.array(protein[0], dtype='U13')
+            working_string = np.array(protein, dtype='U13')
             for y in range(alphabet_size):
                 working_string = np.where(working_string == str(y), alph[y],
                                           working_string)
-            fh_out.write(f'>{string_count}; approx_dist: {protein[1]}\n')
+            if step == 0:
+                approx_distance = 0
+            else:
+                approx_distance = step*distance
+            fh_out.write(f'>{step}; approx_dist: {approx_distance}\n')
             fh_out.write(f'{"".join(working_string)}\n')
-            string_count += 1
+            step += 1
 
 
 def check_positive(value):
@@ -49,6 +54,29 @@ def read_distance_matrix():
         for line in blosumreader:
             blosum_matrix.append(list(map(float, line[1:])))
     return blosum_matrix
+
+
+def generate_mat_dist_string(length, distance):
+    '''Creates a randomised list of possible changes and a list of replacements
+    counts them up until the distance score has been reached and returns that
+    subset'''
+    change_list = random.sample(range(0, length), length)
+    replace_list = random.choices(range(0, alphabet_size), k=length)
+
+    cummulative_dist = 0
+    changes = []
+    replacing = []
+    score = 0
+    for i, entity in enumerate(change_list):
+        source = curr_string[entity]
+        replacement = replace_list[i]
+        if DIST_MATRIX[source][replacement] < 0:
+            score += abs(DIST_MATRIX[source][replacement])
+            changes.append(entity)
+            replacing.append(replace_list[i])
+        if score >= distance:
+            break
+    return changes, replacing
 
 
 parser = argparse.ArgumentParser(description='Generate a sets of (approx)'
@@ -80,21 +108,17 @@ alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
 alphabet_size = len(alph)
 curr_string = read_seq(args.starting_string_file)
 length_of_strings = len(curr_string)
-count = 0
 
-for char in alph:
-    curr_string[curr_string == char] = int(count)
-    count = count + 1
+for i, char in enumerate(curr_string):
+    curr_string[i] = alph.index(char)
 curr_string = curr_string.astype('int32')
-accumulated_dist = 0
 # here we keep track of how many steps/moves we're making at each iteration
 # so we can report that in the fasta header on output
 while True:
     for x in range(args.num_strings):
-        accumulated_dist += args.distance
-
         if args.matrix_distance:
-            exit("DISTANCE MATRIX NOT YET IMPLMENTED")
+            pos_to_change, replacements = generate_mat_dist_string(
+                                          length_of_strings, args.distance)
         else:
             pos_to_change = random.sample(range(0, length_of_strings),
                                           args.distance)
@@ -105,11 +129,11 @@ while True:
                                              args.distance)
 
         curr_string[pos_to_change] = replacements
-        strings.append([list(curr_string), accumulated_dist])
+        strings.append(list(curr_string))
         hashed.append(curr_string.tobytes())
 
     unique = set(hashed)
     if len(unique) == len(strings):
         break
 
-output_strings(args.output_file, strings)
+output_strings(args.output_file, strings, args.distance)
