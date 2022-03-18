@@ -45,8 +45,9 @@ def read_distance_matrix():
     blosum_matrix = []
     with open('./data/blosum62.csv', "r", encoding="utf-8") as fh_bl:
         blosumreader = csv.reader(fh_bl, delimiter=",")
+        next(blosumreader)
         for line in blosumreader:
-            blosum_matrix.append(line[1:])
+            blosum_matrix.append(list(map(float, line[1:])))
     return blosum_matrix
 
 
@@ -76,7 +77,6 @@ if args.matrix_distance:
     DIST_MATRIX = read_distance_matrix()
 alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
         'P', 'S', 'T', 'W', 'Y', 'V']
-
 alphabet_size = len(alph)
 curr_string = read_seq(args.starting_string_file)
 length_of_strings = len(curr_string)
