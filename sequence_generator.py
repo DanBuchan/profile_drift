@@ -44,12 +44,16 @@ parser = argparse.ArgumentParser(description='Generate a sets of (approx)'
                                  prog='sequence_generator.py',
                                  usage='\n%(prog)s --num_strings INT '
                                  '--distance INT '
+                                 '--blosum_distance'
                                  '--output_file STRING '
                                  '--starting_string_file STRING')
 parser.add_argument('--num_strings', help="Number of protein string to "
                     "generate", required=True, type=check_positive)
 parser.add_argument('--distance', help="distance apart for each generated "
                     "string", required=True, type=check_positive)
+parser.add_argument('--blosum_distance', help="Toggle whether distances are"
+                    "interpreted as blosum distances of as the raw number of"
+                    "substitutions", action="store_true")
 parser.add_argument('--output_file', help="Name of output file", required=True)
 parser.add_argument('--starting_string_file', help="Name of input file",
                     required=True)
@@ -77,8 +81,11 @@ while True:
         accumulated_dist += args.distance
         pos_to_change = random.sample(range(0, length_of_strings),
                                       args.distance)
-        replacements = random.sample(range(0, alphabet_size),
-                                     args.distance)
+        if args.blosum_distance:
+            exit("BLOSUM DISTANCES NOT YET IMPLMENTED")
+        else:
+            replacements = random.sample(range(0, alphabet_size),
+                                         args.distance)
         while sum(curr_string[pos_to_change] == replacements) > 0:
             replacements = random.sample(range(0, alphabet_size),
                                          args.distance)
