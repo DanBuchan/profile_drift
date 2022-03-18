@@ -4,6 +4,7 @@ In which we generate random equidistant protein strings
 import argparse
 import random
 import numpy as np
+import csv
 
 
 def read_seq(file):
@@ -39,20 +40,30 @@ def check_positive(value):
     return ivalue
 
 
+def read_distance_matrix():
+    '''Read in the blosum csv from the data dir'''
+    blosum_matrix = []
+    with open('./data/blosum62.csv', "r", encoding="utf-8") as fh_bl:
+        blosumreader = csv.reader(fh_bl, delimiter=",")
+        for line in blosumreader:
+            blosum_matrix.append(line[1:])
+    return blosum_matrix
+
+
 parser = argparse.ArgumentParser(description='Generate a sets of (approx)'
                                  'equi-spaced proteins',
                                  prog='sequence_generator.py',
                                  usage='\n%(prog)s --num_strings INT '
                                  '--distance INT '
-                                 '--blosum_distance'
+                                 '--matrix_distance'
                                  '--output_file STRING '
                                  '--starting_string_file STRING')
 parser.add_argument('--num_strings', help="Number of protein string to "
                     "generate", required=True, type=check_positive)
 parser.add_argument('--distance', help="distance apart for each generated "
                     "string", required=True, type=check_positive)
-parser.add_argument('--blosum_distance', help="Toggle whether distances are"
-                    "interpreted as blosum distances of as the raw number of"
+parser.add_argument('--matrix_distance', help="Toggle whether distances are"
+                    "calculated from a dist matrix of as the raw number of"
                     "substitutions", action="store_true")
 parser.add_argument('--output_file', help="Name of output file", required=True)
 parser.add_argument('--starting_string_file', help="Name of input file",
@@ -61,8 +72,10 @@ args = parser.parse_args()
 
 strings = []
 hashed = []
-alph = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q',
-        'R', 'S', 'T', 'V', 'W', 'Y']
+if args.matrix_distance:
+    DIST_MATRIX = read_distance_matrix()
+alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
+        'P', 'S', 'T', 'W', 'Y', 'V']
 
 alphabet_size = len(alph)
 curr_string = read_seq(args.starting_string_file)
@@ -81,8 +94,8 @@ while True:
         accumulated_dist += args.distance
         pos_to_change = random.sample(range(0, length_of_strings),
                                       args.distance)
-        if args.blosum_distance:
-            exit("BLOSUM DISTANCES NOT YET IMPLMENTED")
+        if args.matrix_distance:
+            exit("DISTANCE MATRIX NOT YET IMPLMENTED")
         else:
             replacements = random.sample(range(0, alphabet_size),
                                          args.distance)
