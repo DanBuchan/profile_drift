@@ -92,16 +92,17 @@ accumulated_dist = 0
 while True:
     for x in range(args.num_strings):
         accumulated_dist += args.distance
-        pos_to_change = random.sample(range(0, length_of_strings),
-                                      args.distance)
+
         if args.matrix_distance:
             exit("DISTANCE MATRIX NOT YET IMPLMENTED")
         else:
+            pos_to_change = random.sample(range(0, length_of_strings),
+                                          args.distance)
             replacements = random.sample(range(0, alphabet_size),
                                          args.distance)
-        while sum(curr_string[pos_to_change] == replacements) > 0:
-            replacements = random.sample(range(0, alphabet_size),
-                                         args.distance)
+            while sum(curr_string[pos_to_change] == replacements) > 0:
+                replacements = random.sample(range(0, alphabet_size),
+                                             args.distance)
 
         curr_string[pos_to_change] = replacements
         strings.append([list(curr_string), accumulated_dist])
