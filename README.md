@@ -32,5 +32,6 @@ python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.
 
 ## TODO
 
-Add flag/behaviour so that distance can be either the substitution distance or
+1. Add flag/behaviour so that distance can be either the substitution distance or
 a blosum62 distance. Which would mean replacing `replacements = random.sample(range(0, alphabet_size), args.distance)` with some function that selects a set of substitutions that are approximately the provided distance from.
+2. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
