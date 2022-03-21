@@ -94,13 +94,17 @@ parser.add_argument('--distance', help="distance apart for each generated "
 parser.add_argument('--matrix_distance', help="Toggle whether distances are"
                     "calculated from a dist matrix of as the raw number of"
                     "substitutions", action="store_true")
+parser.add_argument('--breadth_traversal', help="Toggle whether the sequences"
+                    "are generated as a single random walk or a set of "
+                    "n-walks. Value is the number of sequences to fork off"
+                    "each at each iteration", type=check_positive)
 parser.add_argument('--output_file', help="Name of output file", required=True)
 parser.add_argument('--starting_string_file', help="Name of input file",
                     required=True)
 args = parser.parse_args()
 
 strings = []
-hashed = []
+hashed = set()
 if args.matrix_distance:
     DIST_MATRIX = read_distance_matrix()
 alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
@@ -130,10 +134,9 @@ while True:
 
         curr_string[pos_to_change] = replacements
         strings.append(list(curr_string))
-        hashed.append(curr_string.tobytes())
+        hashed.add(curr_string.tobytes())
 
-    unique = set(hashed)
-    if len(unique) == len(strings):
+    if len(hashed) == len(strings):
         break
 
 output_strings(args.output_file, strings, args.distance)
