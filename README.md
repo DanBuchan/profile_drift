@@ -32,8 +32,14 @@ Worth noting that when matrix distance is FALSE then it is equivalent to using a
 python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.fa --starting_string_file test_file.fa
 ```
 
+### calculate_distances.py
+
+Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS stretcher). Then calculates the Kimura corrected evolutionary distance (EMBOSS distmat). Outputs a pairwise distance list.
+
+### MDS Visualise the pairwise calculate_distances
+
+https://stackoverflow.com/questions/3081066/what-techniques-exists-in-r-to-visualize-a-distance-matrix
+
 ## TODO
 
-1. Double check distance matrix generation is working
-2. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
-3. Add flag to build data set by random walk (current) or depth direct traversal
+1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
