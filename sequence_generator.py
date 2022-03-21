@@ -4,6 +4,7 @@ In which we generate random equidistant protein strings
 import argparse
 import random
 import csv
+import copy
 import numpy as np
 
 
@@ -97,7 +98,7 @@ parser.add_argument('--matrix_distance', help="Toggle whether distances are"
 parser.add_argument('--breadth_traversal', help="Toggle whether the sequences"
                     "are generated as a single random walk or a set of "
                     "n-walks. Value is the number of sequences to fork off"
-                    "each at each iteration", type=check_positive)
+                    "each at each iteration", default=1, type=check_positive)
 parser.add_argument('--output_file', help="Name of output file", required=True)
 parser.add_argument('--starting_string_file', help="Name of input file",
                     required=True)
@@ -115,23 +116,31 @@ length_of_strings = len(curr_string)
 for i, char in enumerate(curr_string):
     curr_string[i] = alph.index(char)
 curr_string = curr_string.astype('int32')
+seed_strings = [curr_string]
 # here we keep track of how many steps/moves we're making at each iteration
 # so we can report that in the fasta header on output
+new_strings = []
 while True:
-    if args.matrix_distance:
-        pos_to_change, replacements = generate_mat_dist_string(
-                                      length_of_strings, args.distance)
-    else:
-        pos_to_change = random.sample(range(0, length_of_strings),
-                                      args.distance)
-        replacements = random.sample(range(0, alphabet_size),
-                                     args.distance)
-        while sum(curr_string[pos_to_change] == replacements) > 0:
-            replacements = random.sample(range(0, alphabet_size),
-                                         args.distance)
-    curr_string[pos_to_change] = replacements
-
-    strings.add(tuple(curr_string))
+    for curr_string in seed_strings:
+        for i in range(0, args.breadth_traversal):
+            if args.matrix_distance:
+                pos_to_change, replacements = generate_mat_dist_string(
+                                              length_of_strings, args.distance)
+            else:
+                pos_to_change = random.sample(range(0, length_of_strings),
+                                              args.distance)
+                replacements = random.sample(range(0, alphabet_size),
+                                             args.distance)
+                while sum(curr_string[pos_to_change] == replacements) > 0:
+                    replacements = random.sample(range(0, alphabet_size),
+                                                 args.distance)
+            curr_string[pos_to_change] = replacements
+            new_strings.append(curr_string)
+            strings.add(tuple(curr_string))
+            if len(strings) >= args.num_strings:
+                break
+    seed_strings = copy.deepcopy(new_strings)
+    new_strings = []
     if len(strings) >= args.num_strings:
         break
 
