@@ -103,8 +103,7 @@ parser.add_argument('--starting_string_file', help="Name of input file",
                     required=True)
 args = parser.parse_args()
 
-strings = []
-hashed = set()
+strings = set()
 if args.matrix_distance:
     DIST_MATRIX = read_distance_matrix()
 alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
@@ -119,24 +118,21 @@ curr_string = curr_string.astype('int32')
 # here we keep track of how many steps/moves we're making at each iteration
 # so we can report that in the fasta header on output
 while True:
-    for x in range(args.num_strings):
-        if args.matrix_distance:
-            pos_to_change, replacements = generate_mat_dist_string(
-                                          length_of_strings, args.distance)
-        else:
-            pos_to_change = random.sample(range(0, length_of_strings),
-                                          args.distance)
+    if args.matrix_distance:
+        pos_to_change, replacements = generate_mat_dist_string(
+                                      length_of_strings, args.distance)
+    else:
+        pos_to_change = random.sample(range(0, length_of_strings),
+                                      args.distance)
+        replacements = random.sample(range(0, alphabet_size),
+                                     args.distance)
+        while sum(curr_string[pos_to_change] == replacements) > 0:
             replacements = random.sample(range(0, alphabet_size),
                                          args.distance)
-            while sum(curr_string[pos_to_change] == replacements) > 0:
-                replacements = random.sample(range(0, alphabet_size),
-                                             args.distance)
+    curr_string[pos_to_change] = replacements
 
-        curr_string[pos_to_change] = replacements
-        strings.append(list(curr_string))
-        hashed.add(curr_string.tobytes())
-
-    if len(hashed) == len(strings):
+    strings.add(tuple(curr_string))
+    if len(strings) >= args.num_strings:
         break
 
 output_strings(args.output_file, strings, args.distance)
