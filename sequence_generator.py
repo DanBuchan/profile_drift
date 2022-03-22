@@ -85,7 +85,7 @@ parser = argparse.ArgumentParser(description='Generate a sets of (approx)'
                                  prog='sequence_generator.py',
                                  usage='\n%(prog)s --num_strings INT '
                                  '--distance INT '
-                                 '--matrix_distance'
+                                 '--matrix_distance '
                                  '--output_file STRING '
                                  '--starting_string_file STRING')
 parser.add_argument('--num_strings', help="Number of protein string to "
@@ -129,11 +129,11 @@ while True:
             else:
                 pos_to_change = random.sample(range(0, length_of_strings),
                                               args.distance)
-                replacements = random.sample(range(0, alphabet_size),
-                                             args.distance)
+                replacements = random.choices(range(0, alphabet_size),
+                                             k=args.distance)
                 while sum(curr_string[pos_to_change] == replacements) > 0:
-                    replacements = random.sample(range(0, alphabet_size),
-                                                 args.distance)
+                    replacements = random.choices(range(0, alphabet_size),
+                                                 k=args.distance)
             curr_string[pos_to_change] = replacements
             new_strings.append(curr_string)
             if list(curr_string) not in strings:

@@ -2,6 +2,8 @@
 We calculate the NW alignment with EMBOSS stretcher and then the pairwise2
 distance with biopython. Stretcher is 10x quicker than biopython align.globaldx
 and biopython DistanceCalculator is about 10x quicker than EMBOSS distmat
+
+python calculate_distance.py FASTAFILE OUTPUTFILE
 '''
 import subprocess
 import sys
@@ -30,7 +32,7 @@ stretcher_args = ['/home/dbuchan/Applications/EMBOSS-6.6.0/emboss/stretcher',
                   '-outfile',
                   'stretch_tmp.fa']
 
-fhOut = open("pairwise_distance.csv", "w", encoding="utf-8")
+fhOut = open(sys.argv[2], "w", encoding="utf-8")
 fhOut.write("prot1,prot2,distance\n")
 for name in fasta_data:
     for name2 in fasta_data:
