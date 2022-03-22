@@ -104,7 +104,7 @@ parser.add_argument('--starting_string_file', help="Name of input file",
                     required=True)
 args = parser.parse_args()
 
-strings = set()
+strings = []
 if args.matrix_distance:
     DIST_MATRIX = read_distance_matrix()
 alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
@@ -136,7 +136,8 @@ while True:
                                                  args.distance)
             curr_string[pos_to_change] = replacements
             new_strings.append(curr_string)
-            strings.add(tuple(curr_string))
+            if list(curr_string) not in strings:
+                strings.append(list(curr_string))
             if len(strings) >= args.num_strings:
                 break
     seed_strings = copy.deepcopy(new_strings)

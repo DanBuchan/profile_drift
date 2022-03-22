@@ -36,6 +36,10 @@ python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.
 
 Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS stretcher). Then calculates the Kimura corrected evolutionary distance (EMBOSS distmat). Outputs a pairwise distance list.
 
+### average_martix_distance.py
+
+handy script that returns the average, off diagonal, distance in a distance matrix
+
 ### MDS Visualise the pairwise calculate_distances
 
 https://stackoverflow.com/questions/3081066/what-techniques-exists-in-r-to-visualize-a-distance-matrix
