@@ -21,7 +21,7 @@ def read_seq(file):
 
 def output_strings(file, proteins, distance):
     '''Output a fasta file of the strings we generated'''
-    step = 0
+    step = 1
     approx_distance = 0
     with open(file, "w", encoding="utf-8") as fh_out:
         for protein in proteins:
@@ -29,10 +29,7 @@ def output_strings(file, proteins, distance):
             for y in range(alphabet_size):
                 working_string = np.where(working_string == str(y), alph[y],
                                           working_string)
-            if step == 0:
-                approx_distance = 0
-            else:
-                approx_distance = step*distance
+            approx_distance = step*distance
             fh_out.write(f'>{step}; approx_dist: {approx_distance}\n')
             fh_out.write(f'{"".join(working_string)}\n')
             step += 1
@@ -131,9 +128,9 @@ while True:
                                               args.distance)
                 replacements = random.choices(range(0, alphabet_size),
                                              k=args.distance)
-                while sum(curr_string[pos_to_change] == replacements) > 0:
-                    replacements = random.choices(range(0, alphabet_size),
-                                                 k=args.distance)
+                # while sum(curr_string[pos_to_change] == replacements) > 0:
+                #     replacements = random.choices(range(0, alphabet_size),
+                #                                  k=args.distance)
             curr_string[pos_to_change] = replacements
             new_strings.append(curr_string)
             if list(curr_string) not in strings:
