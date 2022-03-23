@@ -40,7 +40,9 @@ Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS 
 
 handy script that returns the average, off diagonal, distance in a distance matrix
 
-### MDS Visualise the pairwise calculate_distances
+### visualise_distance.R
+
+Small R script to take a distance csv and visualise it use MDS
 
 https://stackoverflow.com/questions/3081066/what-techniques-exists-in-r-to-visualize-a-distance-matrix
 
