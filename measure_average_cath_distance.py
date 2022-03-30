@@ -85,6 +85,8 @@ def calculate_average_distances(fasta_data, size):
         if comparison_count > 0:
             ave = total_distance/comparison_count
             fhOut.write(f'{h_family},{comparison_count},{total_distance},{ave}\n')
+        else:
+            fhOut.write(f'{h_family},0,0,0\n')
     os.remove(tmpa)
     if os.path.exists(tmpb):
         os.remove(tmpb)
