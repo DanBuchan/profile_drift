@@ -36,6 +36,12 @@ python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.
 
 Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS stretcher). Then calculates the Kimura corrected evolutionary distance (EMBOSS distmat). Outputs a pairwise distance list.
 
+
+### measure_average_cath_distance.py
+
+File that takes the cath h family fasta file. Takes a sample of H families and
+works out the average  Kimura corrected evolutionary distance between each family member
+
 ### average_martix_distance.py
 
 handy script that returns the average, off diagonal, distance in a distance matrix
@@ -45,6 +51,10 @@ handy script that returns the average, off diagonal, distance in a distance matr
 Small R script to take a distance csv and visualise it use MDS
 
 https://stackoverflow.com/questions/3081066/what-techniques-exists-in-r-to-visualize-a-distance-matrix
+
+## Testing distance from seq to cluster "centroid"
+
+If we have the distances in the distance file then we can just take the average of all the distances to the query seq.
 
 ## TODO
 
