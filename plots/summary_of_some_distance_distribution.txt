@@ -1,0 +1,11 @@
+62 aa sequence
+step of 2, 100,000 seqs 2 closest 0.04 , farthest 1.16
+step of 5, 100,000 seqs 2 closest 0.11, farthest 0.98
+step of 10, 100,000 seqs 2 closest 0.19, farthest 0.93
+step of 50, 100,000 seqs 2 closest 0.92, farthest 0.92
+
+150 aa sequence
+step of 2, 100,000 seqs 2 closest 0.015 , farthest 0.98
+step of 5, 100,000 seqs 2 closest 0.04 , farthest 0.98
+step of 10, 100,000 seqs 2 closest 0.08, farthest 1.01
+step of 50, 100,000 seqs 2 closest 0.39, farthest 0.96
