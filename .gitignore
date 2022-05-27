@@ -1,2 +1,4 @@
 *.fa
 *.stdout
+RAxML_test/RAxML*
+RAxML_test/RAxML_distances.10000_distances.txt

@@ -34,13 +34,23 @@ python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.
 
 ### calculate_distances.py
 
-Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS stretcher). Then calculates the Kimura corrected evolutionary distance (EMBOSS distmat). Outputs a pairwise distance list.
+OBSOLETE: Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS stretcher). Then calculates the Kimura corrected evolutionary distance (EMBOSS distmat). Outputs a pairwise distance list.
 
+This simply takes WAY TOO LONG
+
+### RAxML
+
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3 -s ../output_100_substitution.fa -n 100_distances.txt -m PROTGAMMABLOSUM62 -p 123 -f x
+
+100x100 took 2 seconds
+1000x1000 took 1:40 mins
+10000x10000 took
+100000x1000000 took
 
 ### measure_average_cath_distance.py
 
 File that takes the cath h family fasta file. Takes a sample of H families and
-works out the average  Kimura corrected evolutionary distance between each family member
+works out the average Kimura corrected evolutionary distance between each family member
 
 ### average_martix_distance.py
 
