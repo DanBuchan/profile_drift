@@ -43,8 +43,8 @@ This simply takes WAY TOO LONG
 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3 -s ../output_100_substitution.fa -n 100_distances.txt -m PROTGAMMABLOSUM62 -p 123 -f x
 
 100x100 took 2 seconds
-1000x1000 took 1:40 mins
-10000x10000 took
+1000x1000 took 100seconds
+10000x10000 took 4728seconds
 100000x1000000 took
 
 ### measure_average_cath_distance.py
