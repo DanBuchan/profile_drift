@@ -19,18 +19,16 @@ def read_seq(file):
     return(np.array(list(seq), dtype=object))
 
 
-def output_strings(file, proteins, distance):
+def output_strings(file, proteins):
     '''Output a fasta file of the strings we generated'''
     step = 1
-    approx_distance = 0
     with open(file, "w", encoding="utf-8") as fh_out:
         for protein in proteins:
             working_string = np.array(protein, dtype='U13')
             for y in range(alphabet_size):
                 working_string = np.where(working_string == str(y), alph[y],
                                           working_string)
-            approx_distance = step*distance
-            fh_out.write(f'>{step}; approx_dist: {approx_distance}\n')
+            fh_out.write(f'>{step}\n')
             fh_out.write(f'{"".join(working_string)}\n')
             step += 1
 
@@ -94,52 +92,65 @@ parser.add_argument('--matrix_distance', help="Toggle whether distances are"
                     "substitutions", action="store_true")
 parser.add_argument('--breadth_traversal', help="Toggle whether the sequences"
                     "are generated as a single random walk or a set of "
-                    "n-walks. Value is the number of sequences to fork off"
+                    "n fanning out walks. Value is the number of sequences to "
+                    "fork off at each iteration"
                     "each at each iteration", default=1, type=check_positive)
+parser.add_argument('--walk_number', help="Number of times to initiate a walk "
+                    "from the initial seed sequence. Output will be "
+                    "num_strings x walk_number", default=1,
+                    type=check_positive)
 parser.add_argument('--output_file', help="Name of output file", required=True)
 parser.add_argument('--starting_string_file', help="Name of input file",
                     required=True)
 args = parser.parse_args()
 
-strings = []
+
 if args.matrix_distance:
     DIST_MATRIX = read_distance_matrix()
 alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
         'P', 'S', 'T', 'W', 'Y', 'V']
 alphabet_size = len(alph)
-curr_string = read_seq(args.starting_string_file)
-length_of_strings = len(curr_string)
+seed_sequence = read_seq(args.starting_string_file)
+length_of_strings = len(seed_sequence)
 
-for i, char in enumerate(curr_string):
-    curr_string[i] = alph.index(char)
-curr_string = curr_string.astype('int32')
-seed_strings = [curr_string]
+
 # here we keep track of how many steps/moves we're making at each iteration
 # so we can report that in the fasta header on output
-new_strings = []
-while True:
-    for curr_string in seed_strings:
-        for i in range(0, args.breadth_traversal):
-            if args.matrix_distance:
-                pos_to_change, replacements = generate_mat_dist_string(
-                                              length_of_strings, args.distance)
-            else:
-                pos_to_change = random.sample(range(0, length_of_strings),
-                                              args.distance)
-                replacements = random.choices(range(0, alphabet_size),
-                                             k=args.distance)
-                # while sum(curr_string[pos_to_change] == replacements) > 0:
-                #     replacements = random.choices(range(0, alphabet_size),
-                #                                  k=args.distance)
-            curr_string[pos_to_change] = replacements
-            new_strings.append(curr_string)
-            if list(curr_string) not in strings:
-                strings.append(list(curr_string))
-            if len(strings) >= args.num_strings:
-                break
-    seed_strings = copy.deepcopy(new_strings)
+total_strings = []
+for w in range(0, args.walk_number):
+    strings = []
+    curr_string = copy.deepcopy(seed_sequence)
+    for i, char in enumerate(curr_string):
+        curr_string[i] = alph.index(char)
+    curr_string = curr_string.astype('int32')
+    seed_strings = [curr_string]
     new_strings = []
-    if len(strings) >= args.num_strings:
-        break
+    while True:
+        for curr_string in seed_strings:
+            for i in range(0, args.breadth_traversal):
+                if args.matrix_distance:
+                    pos_to_change, replacements = generate_mat_dist_string(
+                                                  length_of_strings, args.distance)
+                else:
+                    pos_to_change = random.sample(range(0, length_of_strings),
+                                                  args.distance)
+                    replacements = random.choices(range(0, alphabet_size),
+                                                 k=args.distance)
+                    # while sum(curr_string[pos_to_change] == replacements) > 0:
+                    #     replacements = random.choices(range(0, alphabet_size),
+                    #                                  k=args.distance)
+                curr_string[pos_to_change] = replacements
+                new_strings.append(curr_string)
+                if list(curr_string) not in strings:
+                    strings.append(list(curr_string))
+                if len(strings) >= args.num_strings:
+                    break
+        seed_strings = copy.deepcopy(new_strings)
+        new_strings = []
 
-output_strings(args.output_file, strings, args.distance)
+        if len(strings) >= args.num_strings:
+            break
+    for string in strings:
+        total_strings.append(string)
+
+output_strings(args.output_file, total_strings)

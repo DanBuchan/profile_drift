@@ -1,0 +1,55 @@
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 150 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.00%
+
+RAxML Computation of pairwise distances
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 150
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: BLOSUM62
+Using fixed base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3 -s ./1000_by_10_step_2_random_walk.fa -n 1000_by_10_step_2_random_walk_distances.csv -m PROTGAMMABLOSUM62 -N 2 -p 123 -f x 
+
+
+
+Log Likelihood Score after parameter optimization: -177294.614154
+
+
+Computing pairwise ML-distances ...
+
+Time for pair-wise ML distance computation of 49995000 distances: 5883.121772 seconds
+
+Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances/step_size_2/RAxML_distances.1000_by_10_step_2_random_walk_distances.csv
