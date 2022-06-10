@@ -2,3 +2,4 @@
 *.stdout
 RAxML_distances.1000_by_10_step_2_random_walk_distances.csv
 RAxML_distances.1000_by_10_random_walk_distances.csv
+RAxML_distances.1000_by_10_random_walk_distances_step_5.csv

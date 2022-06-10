@@ -35,7 +35,7 @@ ggsave("/home/dbuchan/Projects/drift/plots/100_subsitution_points_breadth.png", 
 
 ### RAxML
 
-distances_10000 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/RAxML_distances.1000_by_10_random_walk_distances.csv", header=F, sep = " "  )
+distances_10000 <- read.csv("/home/dbuchan/Projects/drift/RAxML_distances/step_size_2/RAxML_distances.1000_by_10_step_2_random_walk_distances.csv", header=F, sep = " "  )
 distances_10000$V3 <- NULL
 colnames(distances_10000) <- c("prot1","prot2","distance")
 
