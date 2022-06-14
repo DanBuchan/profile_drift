@@ -76,12 +76,27 @@ def process_distances(data):
                           'x']
             execute_process(raxml_args)
             #tidy up
-            os.remove(h_file)
-            os.remove(align_file)
-            os.remove(align_file+".reduced")
-            os.remove(f'RAxML_info.{h_family}.dist')
-            os.remove(f'RAxML_parsimonyTree.{h_family}.dist.RUN.0')
-        # exit()
+            try:
+                os.remove(h_file)
+            except:
+                pass
+            try:
+                os.remove(align_file)
+            except:
+                pass
+            try:
+                os.remove(align_file+".reduced")
+            except:
+                pass
+            try:
+                os.remove(f'RAxML_info.{h_family}.dist')
+            except:
+                pass
+            try:
+                os.remove(f'RAxML_parsimonyTree.{h_family}.dist.RUN.0')
+            except:
+                pass
+            # exit()
 
     rep_file = 'reps.fa'
     align_file = 'reps.afa'
@@ -113,11 +128,26 @@ def process_distances(data):
                   'x']
     execute_process(raxml_args)
     #tidy up
-    os.remove(rep_file)
-    os.remove(align_file)
-    os.remove(align_file+".reduced")
-    os.remove(f'RAxML_info.rep.dist')
-    os.remove(f'RAxML_parsimonyTree.rep.dist.RUN.0')
+    try:
+        os.remove(rep_file)
+    except:
+        pass
+    try:
+        os.remove(align_file)
+    except:
+        pass
+    try:
+        os.remove(align_file+".reduced")
+    except:
+        pass
+    try:
+        os.remove(f'RAxML_info.rep.dist')
+    except:
+        pass
+    try:
+        os.remove(f'RAxML_parsimonyTree.rep.dist.RUN.0')
+    except:
+        pass
 
 
 
