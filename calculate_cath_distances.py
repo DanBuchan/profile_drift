@@ -2,7 +2,7 @@
 We calculate the NW alignment with MUSCLE then the distance
 calculation with RAxML. Stretcher is 10x quicker than biopython align.globaldx
 
-python calculate_distance.py FASTAFILE OUTPUTFILE
+python calculate_distance.py FASTAFILE
 '''
 
 import subprocess
@@ -166,9 +166,3 @@ with open(input_file) as fh:
             sequences[hfamily].append(line)
 
 process_distances(sequences)
-
-with open(sys.argv[2], "w", encoding="utf-8") as fhOut:
-    fhOut.write("prot1,prot2,distance\n")
-    for set in results:
-        for r in set:
-            fhOut.write(f'{r[0]},{r[1]},{r[2]}\n')

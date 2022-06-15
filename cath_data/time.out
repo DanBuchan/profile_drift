@@ -1,9 +1,0 @@
-
-This is RAxML MPI Process Number: 0
-
-RAxML can't, parse the alignment file as phylip file 
-it will now try to parse it as FASTA file
-
-Fasta parsing error, RAxML expects an alignment.
-the sequence before taxon >cath|4_3_0|132lA00/2-129
-: seems to have a different length
