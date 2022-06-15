@@ -66,7 +66,7 @@ def process_distances(data):
                            h_file]
             execute_process(mafft_args, align_file)
             # run raxml
-            raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
+            raxml_args = ['/usr/lib64/openmpi/bin/mpiexec -np 4 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
                           '-s',
                           align_file,
                           '-n',
@@ -116,7 +116,7 @@ def process_distances(data):
                    rep_file]
     execute_process(mafft_args, align_file)
     # run raxml
-    raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
+    raxml_args = ['/usr/lib64/openmpi/bin/mpiexec -np 4 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
                   '-s',
                   align_file,
                   '-n',

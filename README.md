@@ -61,10 +61,10 @@ single core execution:
 100000x1000000 took 6 and a half days
 >>>>>>> 967e1d9002bf99dbbb9371c59b554781bb50004c
 
-### measure_average_cath_distance.py
+### calculate_cath_distances.py
 
-File that takes the cath h family fasta file. Takes a sample of H families and
-works out the average Kimura corrected evolutionary distance between each family member
+Takes an annotated CATH seqs file uses mafft to build alignments of each and then runs RAxML to work out the distances
+
 
 ### average_martix_distance.py
 

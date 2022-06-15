@@ -1,0 +1,64 @@
+
+
+IMPORTANT WARNING: Sequences 269 and 270 are exactly identical
+
+
+IMPORTANT WARNING: Sequences 2119 and 2120 are exactly identical
+
+IMPORTANT WARNING
+Found 2 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates removed is printed to file 2.60.40.10.afa.reduced
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 1471 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 92.51%
+
+RAxML Computation of pairwise distances
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 1471
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: BLOSUM62
+Using fixed base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3 -s 2.60.40.10.afa -n 2.60.40.10.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
+
+
+
+Log Likelihood Score after parameter optimization: -527652.689981
+
+
+Computing pairwise ML-distances ...
