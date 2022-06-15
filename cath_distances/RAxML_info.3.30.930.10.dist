@@ -1,0 +1,65 @@
+IMPORTANT WARNING: Alignment column 578 contains only undetermined values which will be treated as missing data
+
+
+IMPORTANT WARNING: Sequences 56 and 57 are exactly identical
+
+IMPORTANT WARNING
+Found 1 sequence that is exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+
+IMPORTANT WARNING
+Found 1 column that contains only undetermined values which will be treated as missing data.
+Normally these columns should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates and undetermined columns removed is printed to file 3.30.930.10.afa.reduced
+
+Alignment has 1 completely undetermined sites that will be automatically removed from the input data
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 1084 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 75.65%
+
+RAxML Computation of pairwise distances
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 1084
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: BLOSUM62
+Using fixed base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3 -s 3.30.930.10.afa -n 3.30.930.10.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
+
+

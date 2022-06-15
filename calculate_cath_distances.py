@@ -6,6 +6,7 @@ python calculate_distance.py FASTAFILE
 '''
 
 import subprocess
+from subprocess import Popen, PIPE
 import sys
 import os
 import numpy as np
@@ -25,10 +26,12 @@ def select_string(seqlist):
             selected = seq
     return(seq)
 
-def execute_process(executable_args):
+def execute_process(executable_args, stdout_location=None):
     try:
         print(' '.join(executable_args))
-        code = subprocess.call(' '.join(executable_args), shell=True)
+        p = Popen(executable_args, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        output, err = p.communicate()
+        code = p.returncode
     except Exception as e:
         print(str(e))
         sys.exit(1)
@@ -36,6 +39,11 @@ def execute_process(executable_args):
         print("Non Zero Exit status: "+str(code))
         print(' '.join(executable_args))
         raise OSError("Non Zero Exit status: "+str(code))
+    if stdout_location:
+        fhalign = open(stdout_location, "w")
+        fhalign.write(output.decode("utf-8") )
+        fhalign.close()
+
 def process_distances(data):
 
     rep_seqs = []
@@ -54,12 +62,9 @@ def process_distances(data):
         if i > 0:
             pass
             #RUN MUSCLE
-            muscle_args = ['/home/dbuchan/Applications/MUSCLE/muscle5.1.linux_intel64',
-                              '-super5', # or -align
-                              h_file,
-                              '-output',
-                              align_file]
-            execute_process(muscle_args)
+            mafft_args = ['/usr/local/bin/mafft',
+                           h_file]
+            execute_process(mafft_args, align_file)
             # run raxml
             raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
                           '-s',
@@ -75,6 +80,7 @@ def process_distances(data):
                           '-f',
                           'x']
             execute_process(raxml_args)
+            #exit()
             #tidy up
             try:
                 os.remove(h_file)
@@ -106,12 +112,9 @@ def process_distances(data):
         fhOut.write(f'>{i}\n')
         fhOut.write(f'{seq}\n')
     fhOut.close()
-    muscle_args = ['/home/dbuchan/Applications/MUSCLE/muscle5.1.linux_intel64',
-                   '-super5', # or -align
-                   rep_file,
-                   '-output',
-                   align_file]
-    execute_process(muscle_args)
+    mafft_args = ['/usr/local/bin/mafft',
+                   rep_file]
+    execute_process(mafft_args, align_file)
     # run raxml
     raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
                   '-s',
