@@ -37,8 +37,9 @@ def execute_process(executable_args, stdout_location=None):
         sys.exit(1)
     if code != 0:
         print("Non Zero Exit status: "+str(code))
-        print(' '.join(executable_args))
-        raise OSError("Non Zero Exit status: "+str(code))
+        print("Command:"+' '.join(executable_args))
+        if code != 255:
+            raise OSError("Non Zero Exit status: "+str(code)+output.decode('utf-8'))
     if stdout_location:
         fhalign = open(stdout_location, "w")
         fhalign.write(output.decode("utf-8") )
@@ -48,6 +49,8 @@ def process_distances(data):
 
     rep_seqs = []
     for h_family in sequences:
+        # if '1.10.168.10' not in h_family:
+        #     continue
         h_file = f'{h_family}.fa'
         align_file = f'{h_family}.afa'
         dist_file = f'{h_family}.dist'
@@ -66,7 +69,9 @@ def process_distances(data):
                            h_file]
             execute_process(mafft_args, align_file)
             # run raxml
-            raxml_args = ['/usr/lib64/openmpi/bin/mpiexec -np 4 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
+            raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX',
+                          '-T',
+                          '4',
                           '-s',
                           align_file,
                           '-n',
@@ -116,7 +121,9 @@ def process_distances(data):
                    rep_file]
     execute_process(mafft_args, align_file)
     # run raxml
-    raxml_args = ['/usr/lib64/openmpi/bin/mpiexec -np 4 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3',
+    raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX',
+                  '-T',
+                  '4',
                   '-s',
                   align_file,
                   '-n',

@@ -1,0 +1,4 @@
+  File "../calculate_cath_distances.py", line 41
+    if code != 255
+                 ^
+SyntaxError: invalid syntax

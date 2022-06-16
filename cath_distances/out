@@ -1,0 +1,5 @@
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+TOO FEW SPECIES

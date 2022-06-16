@@ -51,15 +51,10 @@ This simply takes WAY TOO LONG
 
 single core execution:
 100x100 took 2 seconds
-<<<<<<< HEAD
-1000x1000 took 100seconds
-10000x10000 took 4728seconds
-100000x1000000 took
-=======
+
 1000x1000 took 1:40 mins
 10000x10000 took 98mins
 100000x1000000 took 6 and a half days
->>>>>>> 967e1d9002bf99dbbb9371c59b554781bb50004c
 
 ### calculate_cath_distances.py
 
