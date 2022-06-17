@@ -56,14 +56,26 @@ single core execution:
 10000x10000 took 98mins
 100000x1000000 took 6 and a half days
 
+## CATH DISTANCES
+
 ### calculate_cath_distances.py
 
-Takes an annotated CATH seqs file uses mafft to build alignments of each and then runs RAxML to work out the distances
+Takes an annotated CATH seqs file uses mafft to build alignments of each and then runs RAxML to work out the distances. Produces .dist files in the cath_distances dir
 
+### average_cath_distances.py
+
+takes the distances from the above and spits out the average in-h-family distances
+and the average distance between reps. Produces average_cath_distances.csv
 
 ### average_martix_distance.py
 
 handy script that returns the average, off diagonal, distance in a distance matrix
+
+### plot_average_cath_distances.R
+
+take the average_cath_distances.csv and average the average distance and plot a nice histogram.
+
+## GENERAL DISTANCES
 
 ### visualise_distance.R
 
