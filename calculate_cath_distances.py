@@ -49,8 +49,13 @@ def process_distances(data):
 
     rep_seqs = []
     for h_family in sequences:
+<<<<<<< HEAD
+        if f'RAxML_distances.{h_family}.dist' :
+            continue
+=======
         # if '1.10.168.10' not in h_family:
         #     continue
+>>>>>>> 659446b1c14a7ced56d15e60f1f9d2ef7068498a
         h_file = f'{h_family}.fa'
         align_file = f'{h_family}.afa'
         dist_file = f'{h_family}.dist'
