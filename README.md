@@ -43,6 +43,12 @@ b) iterate_walk.py
 
 run seq generator multiple times over n walks and for each ouput file take the last seq and so it again
 
+c) cat together all the sub files
+
+d) relabel fa headers
+
+relabel_headers.py full_db.afa
+
 ### calculate_distances.py
 
 OBSOLETE: Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS stretcher). Then calculates the Kimura corrected evolutionary distance (EMBOSS distmat). Outputs a pairwise distance list.
@@ -51,7 +57,7 @@ This simply takes WAY TOO LONG
 
 ### RAxML
 
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-MPI-SSE3 -s ../output_100_substitution.fa -n 100_distances.txt -m PROTGAMMABLOSUM62 -N 2 -p 123 -f x > time.out 2> time.err &
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s full_db.afa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
 
 single core execution:
 100x100 took 2 seconds

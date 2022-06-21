@@ -21,4 +21,4 @@ nrow(rep_distances) # 21981765
 sample_vec <- sample(nrow(rep_distances), 500000)
 rep_sample <- rep_distances[sample_vec,]
 mlv(rep_sample$distance, method = "meanshift") #3.6
-ggplot(rep_distances, aes(x=distance)) + geom_histogram()
+ggplot(rep_sample, aes(x=distance)) + geom_histogram()
