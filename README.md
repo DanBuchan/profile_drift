@@ -32,12 +32,16 @@ Worth noting that when matrix distance is FALSE then it is equivalent to using a
 python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.fa --starting_string_file test_file.fa
 ```
 
-### Building datasets of 10,000
+### Building datasets of num_strings
 
+average in h family distance in CATH is 1.6
+avaerage between family distance in cath is 11
 
-```
-python3 sequence_generator.py --num_string 1000 --walk_number 10 --distance 5 --output_file output.fa --starting_string_file test_file.fa
-```
+a) sequence_generator.py --num_string 200 --walk_number 5 --distance 2 --output_file initial_dist_2_200_strings_5_walks_total_1000.fa --starting_string_file data/test_file_150.fa
+
+b) iterate_walk.py
+
+run seq generator multiple times over n walks and for each ouput file take the last seq and so it again
 
 ### calculate_distances.py
 
