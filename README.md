@@ -47,7 +47,7 @@ c) cat together all the sub files
 
 d) relabel fa headers
 
-relabel_headers.py full_db.afa
+relabel_headers.py full_db.afa > relabelled.afa
 
 ### calculate_distances.py
 
