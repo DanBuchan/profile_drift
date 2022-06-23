@@ -40,6 +40,6 @@ def run_over_targets(fa_list, number, file_stub):
 
 
 target_list = ['data/test_file_150.fa']
-target_list = run_over_targets(target_list, 3, 'initial')
-target_list = run_over_targets(target_list, 3, 'second')
-target_list = run_over_targets(target_list, 3, 'third')
+target_list = run_over_targets(target_list, 4, 'initial')
+target_list = run_over_targets(target_list, 4, 'second')
+target_list = run_over_targets(target_list, 4, 'third')
