@@ -6,19 +6,34 @@ library(MASS)
 project_distances <- function(data, minkowski_power){
   print(paste("Mean: ", mean(data$distance)))
   print(paste("SD: ", sd(data$distance)))
+  
+  # a list of the prot names in sorted order
   my.objects <- sort(unique(c(as.character(data$prot1), as.character(data$prot2))))
+  
+  # number the IDs in the original data frame if there are character names
   data$prot1 <- match(data$prot1, my.objects)
   data$prot2 <- match(data$prot2, my.objects)
   
+  # Make a matrix of the right dimensions
   n <- length(my.objects)
   dist_mat <- matrix(NA, n, n)
+  # make a matrix of the IDs
   i <- as.matrix(data[-3])
+  
+  # cast the distances to the matrix
   dist_mat[i] <- dist_mat[i[,2:1]] <- data$distance
+  #cast the matrix as a distance matrix
   my.dist <- as.dist(dist_mat)
   
+  #calculates x, y projects for the points,
+  # mds%points y axis is sorted in the order of the IDs my.objects
   mds = isoMDS(my.dist, k=2, maxit=1000, p=minkowski_power)
+  # labeling goes here, add a third colum to the mds matrix for the iteration membership
+  # plot_df <- data.frame(x=mds$points[,1], y=mds$points[,2], labels=c(1,2,2))
+  
   plot_df <- data.frame(x=mds$points[,1], y=mds$points[,2])
   plot <- ggplot(plot_df, aes(x=x, y=y)) + geom_point()
+  #plot <- ggplot(plot_df, aes(x=x, y=y, color=labels)) + geom_point()
   return(plot)
 }
 
