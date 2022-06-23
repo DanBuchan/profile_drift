@@ -97,6 +97,23 @@ https://stackoverflow.com/questions/3081066/what-techniques-exists-in-r-to-visua
 
 If we have the distances in the distance file then we can just take the average of all the distances to the query seq.
 
+## Blast
+
+~/Applications/ncbi-blast-2.12.0+/bin/makeblastdb -in full_relabelled.affa -dbtype prot
+
+### Iteration 1
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -query ../../../data/test_file_150.fa -num_iterations 1 -db full_relabelled.affa -out_pssm iteration1.pssm -out iteration1.bls -save_pssm_after_last_round
+### Iteration 2
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration1.pssm -num_iterations 1 -db full_relabelled.affa -out_pssm iteration2.pssm -out iteration2.bls -save_pssm_after_last_round
+### Iteration 3
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration2.pssm -num_iterations 1 -db full_relabelled.affa -out_pssm iteration3.pssm -out iteration3.bls -save_pssm_after_last_round
+### Iteration 3
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration3.pssm -num_iterations 1 -db full_relabelled.affa -out_pssm iteration4.pssm -out iteration4.bls -save_pssm_after_last_round
+
+parse_blast_hits.py
+
+take a set of .bls files and parse the homologues for each iteration.
+
 ## TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
