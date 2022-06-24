@@ -3,7 +3,7 @@ library(MASS)
 
 # Distance matrix assembly after: https://stackoverflow.com/questions/12274967/csv-of-distances-to-dist-object-r
 
-project_distances <- function(data, minkowski_power){
+project_distances <- function(data, labels, minkowski_power){
   print(paste("Mean: ", mean(data$distance)))
   print(paste("SD: ", sd(data$distance)))
   
@@ -29,11 +29,11 @@ project_distances <- function(data, minkowski_power){
   # mds%points y axis is sorted in the order of the IDs my.objects
   mds = isoMDS(my.dist, k=2, maxit=1000, p=minkowski_power)
   # labeling goes here, add a third colum to the mds matrix for the iteration membership
-  # plot_df <- data.frame(x=mds$points[,1], y=mds$points[,2], labels=c(1,2,2))
-  
+  plot_df$labels <- labels$iteration[match(strtoi(rownames(plot_df)), labels$protID)]
+
   plot_df <- data.frame(x=mds$points[,1], y=mds$points[,2])
-  plot <- ggplot(plot_df, aes(x=x, y=y)) + geom_point()
-  #plot <- ggplot(plot_df, aes(x=x, y=y, color=labels)) + geom_point()
+  # plot <- ggplot(plot_df, aes(x=x, y=y)) + geom_point()
+  plot <- ggplot(plot_df, aes(x=x, y=y, color=labels)) + geom_point()
   return(plot)
 }
 
@@ -60,9 +60,11 @@ ggsave("/home/dbuchan/Projects/profile_drift/plots/100_subsitution_points_breadt
 
 ### cath fanned data
 
-cath_distances <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/cath_fanning_distance_3_walks_step_2/RAxML_distances.full_relabelled.dist", header=F, sep = " "  )
+cath_iteration_labels <- read.csv("/home/dbuchan/Projects/drift/RAxML_distances/cath_fanning_distance_3_walks_step_2/cath_blasts/iteration_labels.csv", header=F)
+colnames(cath_iteration_labels) <- c("iteration","protID")
+cath_distances <- read.csv("/home/dbuchan/Projects/drift/RAxML_distances/cath_fanning_distance_3_walks_step_2/RAxML_distances.full_relabelled.dist", header=F, sep = " "  )
 cath_distances$V3 <- NULL
 colnames(cath_distances) <- c("prot1","prot2","distance")
-plot <- project_distances(cath_distances, 1)
+plot <- project_distances(cath_distances, cath_iteration_labels, 1)
 plot
 ggsave("/home/dbuchan/Projects/profile_drift/plots/fanning_cath.png", dpi=100, width=800, height=600, units="px")
