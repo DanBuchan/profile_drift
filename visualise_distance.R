@@ -6,25 +6,25 @@ library(MASS)
 project_distances <- function(data, labels, minkowski_power){
   print(paste("Mean: ", mean(data$distance)))
   print(paste("SD: ", sd(data$distance)))
-  
+
   # a list of the prot names in sorted order
   my.objects <- sort(unique(c(as.character(data$prot1), as.character(data$prot2))))
-  
+
   # number the IDs in the original data frame if there are character names
   data$prot1 <- match(data$prot1, my.objects)
   data$prot2 <- match(data$prot2, my.objects)
-  
+
   # Make a matrix of the right dimensions
   n <- length(my.objects)
   dist_mat <- matrix(NA, n, n)
   # make a matrix of the IDs
   i <- as.matrix(data[-3])
-  
+
   # cast the distances to the matrix
   dist_mat[i] <- dist_mat[i[,2:1]] <- data$distance
   #cast the matrix as a distance matrix
   my.dist <- as.dist(dist_mat)
-  
+
   #calculates x, y projects for the points,
   # mds%points y axis is sorted in the order of the IDs my.objects
   mds = isoMDS(my.dist, k=2, maxit=1000, p=minkowski_power)
@@ -35,10 +35,8 @@ project_distances <- function(data, labels, minkowski_power){
   plot_df[order(plot_df$labels, na.last=TRUE),]
   # plot <- ggplot(plot_df, aes(x=x, y=y)) + geom_point()
   plot <- ggplot(plot_df, aes(x=x, y=y, color=labels)) + geom_point()
-  
-  plot_df <- plot_df[!is.na(plot_df$label),]
-  plot2 <- ggplot(plot_df, aes(x=x, y=y, color=labels)) + geom_point()
-  return(list("plot1"=plot, "plot2"=plot2))
+
+  return(plot)
 }
 
 distances_csv <- read.csv("/home/dbuchan/Projects/profile_drift/pairwise_distance_substitution.csv", header=T)
@@ -69,8 +67,8 @@ colnames(cath_iteration_labels) <- c("iteration","protID")
 cath_distances <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/cath_fanning_distance_3_walks_step_2/RAxML_distances.full_relabelled.dist", header=F, sep = " "  )
 cath_distances$V3 <- NULL
 colnames(cath_distances) <- c("prot1","prot2","distance")
-plots <- project_distances(cath_distances, cath_iteration_labels, 1)
-plots[1]
-plots[2]
-ggsave("/home/dbuchan/Projects/profile_drift/plots/fanning_cath.png", dpi=100, width=800, height=600, units="px")
+cath_distances <- cath_distances[cath_distances$prot1 %in% cath_iteration_labels$protID, ]
+cath_distances <- cath_distances[cath_distances$prot2 %in% cath_iteration_labels$protID, ]
 
+plots <- project_distances(cath_distances, cath_iteration_labels, 1)
+ggsave("/home/dbuchan/Projects/profile_drift/plots/fanning_cath.png", dpi=100, width=800, height=600, units="px")
