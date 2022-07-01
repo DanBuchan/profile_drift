@@ -37,17 +37,7 @@ python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.
 average in h family distance in CATH is 1.6
 avaerage between family distance in cath is 11
 
-a) sequence_generator.py --num_string 200 --walk_number 5 --distance 2 --output_file initial_dist_2_200_strings_5_walks_total_1000.fa --starting_string_file data/test_file_150.fa
-
-b) iterate_walk.py
-
-run seq generator multiple times over n walks and for each ouput file take the last seq and so it again
-
-c) cat together all the sub files
-
-d) relabel fa headers
-
-relabel_headers.py full_db.afa > relabelled.afa
+a) python sequence_generator.py --num_string 10000 --distance 2 --random_pathing 20 --output_file test.fa --starting_string_file data/test_file_150.fa
 
 ### calculate_distances.py
 
@@ -99,16 +89,22 @@ If we have the distances in the distance file then we can just take the average 
 
 ## Blast
 
+### run_blasts.py
+
+Script that builds a blast db and runs a number of iterations then parses the result_list_pattern
+
 ~/Applications/ncbi-blast-2.12.0+/bin/makeblastdb -in full_relabelled.affa -dbtype prot
 
 ### Iteration 1
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -query ../../../data/test_file_150.fa -num_iterations 1 -db full_relabelled.affa -out_pssm iteration1.pssm -out iteration1.bls -save_pssm_after_last_round
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -query ../../../data/test_file_150.fa -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration1.pssm -out iteration1.bls -save_pssm_after_last_round
 ### Iteration 2
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration1.pssm -num_iterations 1 -db full_relabelled.affa -out_pssm iteration2.pssm -out iteration2.bls -save_pssm_after_last_round
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration1.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration2.pssm -out iteration2.bls -save_pssm_after_last_round
 ### Iteration 3
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration2.pssm -num_iterations 1 -db full_relabelled.affa -out_pssm iteration3.pssm -out iteration3.bls -save_pssm_after_last_round
-### Iteration 3
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration3.pssm -num_iterations 1 -db full_relabelled.affa -out_pssm iteration4.pssm -out iteration4.bls -save_pssm_after_last_round
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration2.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration3.pssm -out iteration3.bls -save_pssm_after_last_round
+### Iteration 4
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration3.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration4.pssm -out iteration4.bls -save_pssm_after_last_round
+### Iteration 5
+~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration3.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration5.pssm -out iteration5.bls -save_pssm_after_last_round
 
 parse_blast_hits.py
 

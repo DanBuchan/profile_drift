@@ -8,6 +8,7 @@ seen = []
 result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
 count = 0
 for file in glob.glob(f'{sys.argv[1]}/*.bls'):
+    print(file)
     count+=1
     read = False
     with open(file, "r") as fh:
@@ -29,4 +30,5 @@ for file in glob.glob(f'{sys.argv[1]}/*.bls'):
 
 for iteration in results.keys():
     for hit in results[iteration]:
-        print(f'{iteration},{hit}')
+        pass
+        #print(f'{iteration},{hit}')

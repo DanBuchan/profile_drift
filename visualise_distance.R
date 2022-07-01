@@ -34,7 +34,7 @@ project_distances <- function(data, labels, minkowski_power){
   plot_df$labels <- labels$iteration[match(strtoi(rownames(plot_df)), labels$protID)]
   plot_df[order(plot_df$labels, na.last=TRUE),]
   # plot <- ggplot(plot_df, aes(x=x, y=y)) + geom_point()
-  plot <- ggplot(plot_df, aes(x=x, y=y, color=labels)) + geom_point()
+  plot <- ggplot(plot_df, aes(x=x, y=y, color=labels)) + geom_point(aes(colour = cut(labels, c(-Inf, 0, 1, 2, 3, 4, Inf))), size = 2) + scale_color_brewer(type = 'div', palette='Set1',direction = 1) 
 
   return(plot)
 }
@@ -72,3 +72,16 @@ cath_distances <- cath_distances[cath_distances$prot2 %in% cath_iteration_labels
 
 plots <- project_distances(cath_distances, cath_iteration_labels, 1)
 ggsave("/home/dbuchan/Projects/profile_drift/plots/fanning_cath.png", dpi=100, width=800, height=600, units="px")
+
+
+### 
+rand_iteration_labels <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/random_pathing/blasts/randomd_iteration_labels.csv", header=F)
+colnames(rand_iteration_labels) <- c("iteration","protID")
+rand_distances <- read.csv("/home/dbuchan/Projects/drift/RAxML_distances/random_pathing/RAxML_distances.full_db.dist", header=F, sep = " "  )
+rand_distances$V3 <- NULL
+colnames(rand_distances) <- c("prot1","prot2","distance")
+rand_distances <- rand_distances[rand_distances$prot1 %in% rand_iteration_labels$protID, ]
+rand_distances <- rand_distances[rand_distances$prot2 %in% rand_iteration_labels$protID, ]
+
+plots <- project_distances(rand_distances, rand_iteration_labels, 1)
+ggsave("/home/dbuchan/Projects/drift/plots/random_distances.png", dpi=100, width=800, height=600, units="px")
