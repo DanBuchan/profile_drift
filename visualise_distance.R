@@ -75,13 +75,13 @@ ggsave("/home/dbuchan/Projects/profile_drift/plots/fanning_cath.png", dpi=100, w
 
 
 ### 
-rand_iteration_labels <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/random_pathing/blasts/randomd_iteration_labels.csv", header=F)
+rand_iteration_labels <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/random_pathing/blasts/random_membership.csv", header=F)
 colnames(rand_iteration_labels) <- c("iteration","protID")
-rand_distances <- read.csv("/home/dbuchan/Projects/drift/RAxML_distances/random_pathing/RAxML_distances.full_db.dist", header=F, sep = " "  )
+rand_distances <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/random_pathing/RAxML_distances.full_db.dist", header=F, sep = " "  )
 rand_distances$V3 <- NULL
 colnames(rand_distances) <- c("prot1","prot2","distance")
 rand_distances <- rand_distances[rand_distances$prot1 %in% rand_iteration_labels$protID, ]
 rand_distances <- rand_distances[rand_distances$prot2 %in% rand_iteration_labels$protID, ]
 
 plots <- project_distances(rand_distances, rand_iteration_labels, 1)
-ggsave("/home/dbuchan/Projects/drift/plots/random_distances.png", dpi=100, width=800, height=600, units="px")
+ggsave("/home/dbuchan/Projects/profile_drift/plots/random_distances.png", dpi=100, width=800, height=600, units="px")
