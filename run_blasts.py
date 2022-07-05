@@ -1,10 +1,3 @@
-
-# 4. scrub through dist file to find all the seed to member distances
-# 5. calcualte average distance from seed to members for each iteration,
-#    both for the whole set and for just the new ones
-# 6. Output CSV of iteration members
-# 7. Output the distance stats
-
 import glob
 import sys
 import re
@@ -13,8 +6,7 @@ import os
 from collections import defaultdict
 
 '''
-Usage:
-python ../../../run_blasts.py ../random_pathing_test.fa ../../../data/test_file_150.fa 5 random_membership.csv ../dist_index.csv ../RAxML_distances.full_db.dist
+Usage: python ../../../run_blasts.py ../random_pathing_test.fa ../../../data/test_file_150.fa 5 random_membership.csv ../RAxML_distances.full_db.dist average_distances.csv
 '''
 
 def build_blast_db(fasta_file):
@@ -87,63 +79,45 @@ def parse_blast_hits(output):
                 fhout.write(f'{iteration},{hit}\n')
     return results
 
-#seek
-#tell
-def build_index(index_file, distances):
-    index = 0
-    current_id = 0
-    indices = {}
-    with open(distances, "r") as fhdist:
-        line = 'a'
-        while line:
-            index = fhdist.tell()
-            line = fhdist.readline()
-            if len(line) == 0:
-                break
-            entries = line.split()
-            if int(entries[0]) != current_id:
-                print(line)
-                current_id = int(entries[0])
-                indices[current_id] = index
-    with open(index_file, "w") as fhidx:
-        for id in indices:
-            fhidx.write(f'{id},{indices[id]}\n')
 
-def get_distances(hits, index, distances):
-    if not os.path.exists(index):
-        build_index(index, distances)
-        print("building index")
-    indices = {}
-    with open(index, "r") as fhidx:
-        for line in fhidx:
-            line = line.rstrip()
-            entries = line.split(",")
-            indices[int(entries[0])] = int(entries[1])
-
+def get_distances(hits, distances):
     dist_results = defaultdict(dict)
     fhdist = open(distances, "r")
-    for protID in hits.keys():
-        for matchID in hits[protID]:
-            if protID in indices.keys():
-                fhdist.seek(indices[protID])
-                for line in fhdist:
-                    line = line.rstrip()
-                    entries = line.split()
-                    if int(entries[0]) == protID and matchID == entries[1]:# and int(entries[1]) == matchID:
-                        dist_results[protID][matchID] = entries[2]
-    return(dist_results)
-    #read_index()
+    for iteration in hits.keys():
+        for matchID in hits[iteration]:
+            fhdist.seek(0)
+            for line in fhdist:
+                line = line.rstrip()
+                entries = line.split()
+                if int(entries[0]) != 1:
+                    break
+                if matchID == entries[1]:
+                    dist_results[iteration][matchID] = float(entries[2])
+                    continue
+    return dist_results
 
+
+def calculate_distances(distances, output):
+    results = defaultdict(int)
+    for iteration in distances:
+        for match in distances[iteration]:
+            results[iteration] += distances[iteration][match]
+        results[iteration] = results[iteration]/len(distances[iteration].keys())
+
+    with open(output, "w") as fhout:
+        fhout.write('iteration,ave_distance\n')
+        for iteration in results:
+            fhout.write(f'{iteration},{results[iteration]}\n')
 
 # argv[1]: file to turn in to blast debug
 # argv[2]: seed seq to search with
 # argv[3]: number of iterations of seasrch
 # argv[4]: output file for iteration membership
-# argv[5]: location of distance file index
-# argv[6]: file of all the RAxML distances
+# argv[5]: file of all the RAxML distances
+# argv[6]: output csv
 
 # build_blast_db(sys.argv[1])
 # do_blast_iterations(sys.argv[1], sys.argv[2], sys.argv[3])
 blast_hits = parse_blast_hits(sys.argv[4])
-distances = get_distances(blast_hits, sys.argv[5], sys.argv[6])
-print(distances)
+distances = get_distances(blast_hits, sys.argv[5])
+calculate_distances(distances, sys.argv[6])
