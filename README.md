@@ -39,11 +39,14 @@ avaerage between family distance in cath is 11
 
 a) python sequence_generator.py --num_string 10000 --distance 2 --random_pathing 20 --output_file test.fa --starting_string_file data/test_file_150.fa
 
-### calculate_distances.py
+#### relabel_headers.py
 
-OBSOLETE: Script takes a fasta file, calculates all NW pairwise global alignments (EMBOSS stretcher). Then calculates the Kimura corrected evolutionary distance (EMBOSS distmat). Outputs a pairwise distance list.
+small script will renumber generated fasta headers so no two are the same
 
-This simply takes WAY TOO LONG
+#### Iterate_walk.py
+
+Will run sequence generator in sequence if you want to run it once and then use the final seq as a
+seed in a new run
 
 ### RAxML
 
@@ -56,7 +59,10 @@ single core execution:
 10000x10000 took 98mins
 100000x1000000 took 6 and a half days
 
+
 ## CATH DISTANCES
+
+Some scripts for calculating the average distance between cath h family members and between cath H families (about 1.6 and 11 respectively)
 
 ### calculate_cath_distances.py
 
@@ -91,26 +97,31 @@ If we have the distances in the distance file then we can just take the average 
 
 ### run_blasts.py
 
-Script that builds a blast db and runs a number of iterations then parses the result_list_pattern
+Given a fasta file and a set of RAxML distances this script runs n iterations of blast and compiles
+the results.
 
-~/Applications/ncbi-blast-2.12.0+/bin/makeblastdb -in full_relabelled.affa -dbtype prot
+### plot_average_blast_growth.R
 
-### Iteration 1
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -query ../../../data/test_file_150.fa -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration1.pssm -out iteration1.bls -save_pssm_after_last_round
-### Iteration 2
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration1.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration2.pssm -out iteration2.bls -save_pssm_after_last_round
-### Iteration 3
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration2.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration3.pssm -out iteration3.bls -save_pssm_after_last_round
-### Iteration 4
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration3.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration4.pssm -out iteration4.bls -save_pssm_after_last_round
-### Iteration 5
-~/Applications/ncbi-blast-2.12.0+/bin/psiblast -in_pssm iteration3.pssm -num_iterations 1 -db ../random_pathing_test.fa -out_pssm iteration5.pssm -out iteration5.bls -save_pssm_after_last_round
-
-parse_blast_hits.py
-
-take a set of .bls files and parse the homologues for each iteration.
+Plots the average distance at each iteration of the blasts in run_blasts.py
 
 
+## EXPERIMENT
+
+
+
+### generate datasets
+
+Generate multiple datasets at different distances 2, 5, 10, 20,
+python sequence_generator.py --num_string 10000 --distance 2 --random_pathing 20 --output_file distance2.fa --starting_string_file data/test_file_150.fa
+python sequence_generator.py --num_string 10000 --distance 5 --random_pathing 20 --output_file distance5.fa --starting_string_file data/test_file_150.fa
+python sequence_generator.py --num_string 10000 --distance 10 --random_pathing 20 --output_file distance10.fa --starting_string_file data/test_file_150.fa
+python sequence_generator.py --num_string 10000 --distance 20 --random_pathing 20 --output_file distance20.fa --starting_string_file data/test_file_150.fa
+
+### Generate distance matrices
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance2.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance5.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
 
 ## TODO
 
