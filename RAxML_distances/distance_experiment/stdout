@@ -57,7 +57,7 @@ Using fixed base frequencies
 
 RAxML was called as follows:
 
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance2.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance2.fa -n distance2.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
 
 
 
