@@ -1,0 +1,2221 @@
+PSIBLAST 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: ./distance20.fa
+           10,000 sequences; 1,500,000 total letters
+
+Results from round 1
+
+
+Query= test
+
+Length=150
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+68                                                                    111     7e-33
+67                                                                    109     4e-32
+34                                                                    107     1e-31
+32                                                                    107     2e-31
+89                                                                    106     4e-31
+5                                                                     106     5e-31
+35                                                                    106     6e-31
+31                                                                    105     9e-31
+26                                                                    105     1e-30
+69                                                                    105     1e-30
+90                                                                    104     2e-30
+84                                                                    104     2e-30
+13                                                                    104     2e-30
+28                                                                    104     3e-30
+6                                                                     104     3e-30
+33                                                                    103     7e-30
+14                                                                    103     8e-30
+30                                                                    103     8e-30
+85                                                                    103     1e-29
+29                                                                    103     1e-29
+4                                                                     102     1e-29
+88                                                                    102     1e-29
+70                                                                    102     2e-29
+16                                                                    102     2e-29
+87                                                                    102     2e-29
+71                                                                    101     3e-29
+66                                                                    101     3e-29
+7                                                                     101     5e-29
+55                                                                    100     7e-29
+27                                                                    100     8e-29
+38                                                                    100     9e-29
+77                                                                    100     1e-28
+91                                                                    100     1e-28
+75                                                                    100     1e-28
+76                                                                    100     2e-28
+10                                                                    100     2e-28
+25                                                                    100     2e-28
+3                                                                     99.4    3e-28
+9                                                                     98.6    5e-28
+93                                                                    98.6    6e-28
+56                                                                    98.6    7e-28
+62                                                                    98.2    7e-28
+36                                                                    98.2    7e-28
+86                                                                    98.2    9e-28
+37                                                                    97.8    1e-27
+83                                                                    97.5    2e-27
+65                                                                    97.5    2e-27
+78                                                                    97.5    2e-27
+61                                                                    97.1    2e-27
+54                                                                    97.1    3e-27
+74                                                                    96.7    3e-27
+8                                                                     96.7    4e-27
+51                                                                    96.3    4e-27
+97                                                                    96.3    5e-27
+81                                                                    95.9    6e-27
+95                                                                    95.9    6e-27
+94                                                                    95.9    6e-27
+39                                                                    95.5    1e-26
+24                                                                    95.1    1e-26
+18                                                                    95.1    1e-26
+12                                                                    94.8    2e-26
+57                                                                    94.8    2e-26
+79                                                                    94.8    2e-26
+23                                                                    94.8    2e-26
+98                                                                    94.8    2e-26
+92                                                                    94.4    2e-26
+40                                                                    94.4    3e-26
+64                                                                    94.4    3e-26
+53                                                                    94.4    3e-26
+15                                                                    94.0    3e-26
+17                                                                    94.0    4e-26
+72                                                                    93.6    4e-26
+19                                                                    93.6    5e-26
+22                                                                    93.6    6e-26
+60                                                                    93.2    7e-26
+52                                                                    93.2    7e-26
+58                                                                    93.2    7e-26
+20                                                                    93.2    8e-26
+11                                                                    92.8    9e-26
+45                                                                    92.8    1e-25
+80                                                                    92.4    1e-25
+50                                                                    92.4    1e-25
+59                                                                    92.4    1e-25
+82                                                                    91.7    2e-25
+96                                                                    91.7    3e-25
+41                                                                    91.7    3e-25
+21                                                                    91.3    4e-25
+73                                                                    91.3    4e-25
+99                                                                    90.9    5e-25
+63                                                                    90.9    6e-25
+46                                                                    90.5    9e-25
+49                                                                    89.7    1e-24
+43                                                                    89.4    3e-24
+1                                                                     89.0    4e-24
+42                                                                    88.2    5e-24
+47                                                                    86.7    2e-23
+2                                                                     86.3    3e-23
+44                                                                    85.5    7e-23
+100                                                                   85.1    9e-23
+48                                                                    84.4    2e-22
+101                                                                   80.5    7e-21
+102                                                                   78.2    5e-20
+103                                                                   63.6    2e-14
+104                                                                   56.6    9e-12
+105                                                                   40.8    6e-06
+106                                                                   39.7    2e-05
+107                                                                   33.1    0.004
+108                                                                   26.2    0.81 
+
+
+>68
+Length=150
+
+ Score = 111 bits (277),  Expect = 7e-33, Method: Composition-based stats.
+ Identities = 8/149 (5%), Positives = 20/149 (13%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S  Q      +  +                               I  
+Sbjct  1    IIFIWSANKLYNSSPQWAYCRAFNNIGTMQFQKCNEMFMQTFGYQRRQYNSKAMGCDIAN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                +          T   +L+ + +    D G
+Sbjct  61   QFEDRDSYTERCPCVESRPPSRKNPIPTLCKFIIDIRVPSMETAHRMLEASGVWYKKDTG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+                                  K  +   
+Sbjct  121  PCNYPSPEWTGEQPKNHHFVEQKRCAMYM  149
+
+
+>67
+Length=150
+
+ Score = 109 bits (271),  Expect = 4e-32, Method: Composition-based stats.
+ Identities = 8/149 (5%), Positives = 19/149 (13%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S  Q      +  +                                  
+Sbjct  1    IIFIWSANKLYNSSPQWAYPRAFNNIGKMQFQKCNEMFMQTFGYQRRCYLSTAMGRDEAN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            L             +                           T   +L+ + +    D G
+Sbjct  61   LFEDFDSYTERCPFVESRCPGRKNPIPGLCKLIIDIEVPSMETAHRMLEASGVHYKDDTG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+                                  K  +   
+Sbjct  121  PCNYPSLEWTGEQPKNHHFFEQKNCAMYM  149
+
+
+>34
+Length=150
+
+ Score = 107 bits (268),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 6/143 (4%), Positives = 18/143 (13%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +              +              L  ++ +      +            L 
+Sbjct  3    FFIHVDPRSHLLEWGPQQRGEFPTKDQMYPEYLYIVHSVDHKDHPAYDQDVVREIRVQLP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M                 +                   L +   + +     T+
+Sbjct  63   FQTLDMMGNEGCDTGNYDFYIEMEDSRCESSKMCYYVGNKITGFLENYTDVNNDPRWKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+            +          G           
+Sbjct  123  IHGNAPVPTKQGWEKGSCDCDTM  145
+
+
+>32
+Length=150
+
+ Score = 107 bits (266),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 6/144 (4%), Positives = 21/144 (15%), Gaps = 0/144 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +              +              L  ++ +      +   A   +    + 
+Sbjct  3    FFIHVDPRSHLCEWGPCQRGEFPTDDQWYPEYLYIVHSVFAKDHWAYDQAVVRWIYYQMP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +                     +                   L     + D  +  T+
+Sbjct  63   FQLRDWYGTEGRATGNDDFYIEMEDSRCESSKDCYHVGNKITGFLELYTQVNDDVNWKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYS  146
+            ++         G            
+Sbjct  123  ISGAAPTETKQGWEKGSCDCDSML  146
+
+
+>89
+Length=150
+
+ Score = 106 bits (265),  Expect = 4e-31, Method: Composition-based stats.
+ Identities = 8/147 (5%), Positives = 17/147 (12%), Gaps = 0/147 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +     A +             +   +  A   L             +            
+Sbjct  2    VFNPHMAQQEWMSKFFNVCICCLCTRIDFATTKLPMEAQTYCFHESQNQGENMPEDCNCG  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                             L              A           + +             
+Sbjct  62   GWQPRPYHADQAHEFIRLWCRGHISHYCCHAIANIPPSCSVYDRISMPGHKTNYNVGDQC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYR  148
+                  +   +   G    L     Y 
+Sbjct  122  NTVTPRSGDYISVWGYGNCLAISCMYY  148
+
+
+>5
+Length=150
+
+ Score = 106 bits (264),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 72/149 (48%), Positives = 80/149 (54%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+LLPTA   V QA ITGR EW  LALG ALMGL T  FL       D DA  F+  T  
+Sbjct  2    LDLLPTADNYVCQADITGRGEWPHLALGVALMGLNTGKFLFMTWEYVDWDAGAFFNGTFQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+             PA A T  LSM    GL  V F  EQ+ I  A   DW+FTT L LL +AL +DLA QGT
+Sbjct  62   CPAPAGTCRLSMRCALGLNSVTFKTEQSIINQAAAVDWVFTTDLRLLSMALYLDLALQGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+              A+   D I IG  +     KV    FV
+Sbjct  122  DEAMCMLDAINIGNQIRKQDHKVSCVLFV  150
+
+
+>35
+Length=150
+
+ Score = 106 bits (264),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 5/143 (3%), Positives = 17/143 (12%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +              +              L  ++ +      +            L 
+Sbjct  3    FFIHVDPRSHLLEWGPQQRTEFPTKDQMYSEYLLIVHSIDHMDRDAYLQDVVREIRVQLP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M           +     +                   L     + +     T+
+Sbjct  63   FQTLDMMGNEGCDTGNYDLYIEMEDSRCESSNMCYYVGNKITGFLEWYTCVNNDPRWKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+            +                      
+Sbjct  123  IIGNAPVPTKQNWENGSTDCDTM  145
+
+
+>31
+Length=150
+
+ Score = 105 bits (262),  Expect = 9e-31, Method: Composition-based stats.
+ Identities = 8/145 (6%), Positives = 25/145 (17%), Gaps = 0/145 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +  +P             +              L  ++ +      +   A   +    +
+Sbjct  2    MFFIPVNPRSHLCEWGPCQRGEFPYDAQWCPEYLYIVHSVFAKSCWAYDQAVVRWIYYQM  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+               +                     +            +      L     + D  +  T
+Sbjct  62   PFQLKDWYGNEGRATGNDDFYCEMEDSRCESSFDCYHVVNKISGFLELCTQVNDDVNWKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYS  146
+            +++  G      G            
+Sbjct  122  MISGAGPTETKQGWEKSACDCDSIL  146
+
+
+>26
+Length=150
+
+ Score = 105 bits (262),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 8/146 (5%), Positives = 29/146 (20%), Gaps = 0/146 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +    E             +             +  +      +   A K      
+Sbjct  1    IMFGITPFPEPHYCQWGPRNRGQVPYDAIWCPEYDYIVDSVFTKHACAQRIAVKRDIHYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +   +A     +  +            +      +    +    L L     + D  ++G
+Sbjct  61   MPFTMADWWQQAQHMTGMDPFHCEFMNKMSESEPQCYHIVNKISLFLQLRIQIRDDPNEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYS  146
+             +++ +                    
+Sbjct  121  YMISGLMPLETKQTVEPEAHDCVSIL  146
+
+
+>69
+Length=150
+
+ Score = 105 bits (261),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 6/149 (4%), Positives = 19/149 (13%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S         +  +                               I  
+Sbjct  1    IIFIWSANKLYNSSPHWFYPDAFNNIGKMQNTKCNEMFMQTFGWQRRQYNSKAMGCPIAN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                +          T   +L+ + +    + G
+Sbjct  61   QFEDKDSYTERCPCVESRPFSRKNPIPTLCKFAIDIRVPSVETAHRMLEASGVWRKKETG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+                                  K  +   
+Sbjct  121  PCNYWRPEWTGESPKNHHFVEQKRCAMYM  149
+
+
+>90
+Length=150
+
+ Score = 104 bits (260),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 8/147 (5%), Positives = 19/147 (13%), Gaps = 0/147 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +    TA +             +   +      L             +            
+Sbjct  2    VFTRHTAQQEWMSKFFNVCIVCLCTRIDFWTTYLPFEAQTYCFHESQNQKENMPAVCNCG  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                             L              A           + +             
+Sbjct  62   GWQPRPYHADQAHEFERLWWRHHISHYCCHAIANIPPSCSVYDRISMPGHKTNYNVGLQC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYR  148
+               +  +   ++  G    L     Y 
+Sbjct  122  NTVVPRSGDFILVWGYANCLLISCMYY  148
+
+
+>84
+Length=150
+
+ Score = 104 bits (260),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 10/146 (7%), Positives = 20/146 (14%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                   +            W+   +  A   L     L      S              
+Sbjct  3    FNPNYKQDYWDSGFYNWCMVWLNTRIDFATPKLEMEAQLNYDQENSYKGDAMPEDCQLGF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                          + L                +A        + +         +    
+Sbjct  63   KKPRKYHLYQAHEEWRLWCRGHRIHYVCHLDNNHAPGCGVQLFIGMPGFKTFYNVNDQCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              LV +   +              Y 
+Sbjct  123  CLLVPSGDPIYWKIAGPCEACCCMYY  148
+
+
+>13
+Length=150
+
+ Score = 104 bits (260),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 29/149 (19%), Positives = 42/149 (28%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +   A+  V    I  R   + +ALG A M L T  F           A K +    
+Sbjct  1    IMMMFTIAINPVCYQDIGRRSPTLDVALGFAGMFLITYPFCFATWAPLARLACKCFRGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+               A A T    M     L       EQ  I  A +   +  T L LL     +D    G
+Sbjct  61   QKDAPADTDLYHMSCFLMLDSWFIKTEQGIIEEADFYWNVNKTYLCLLGENYQLDEDLNG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+              +                     +  + 
+Sbjct  121  MDIPPKMLQAGRQIFEKAIQDHDSWLCQM  149
+
+
+>28
+Length=150
+
+ Score = 104 bits (259),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 9/145 (6%), Positives = 26/145 (18%), Gaps = 0/145 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +  +                             L  +  +      +   A K +    +
+Sbjct  2    MFFIDPFPRQHLHQWGPRNRGQFPYDAQWCPEYLYIVDSVFTKHCCAQRQAVKRWIHYQM  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+               +A     +              +       +    +      L     + D  + GT
+Sbjct  62   PFTMADWWQNAQHHTGMDPFYCEMEDSMEESSPQCYHVVNKISTPLQLHIQINDDVNDGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYS  146
+            +++         G            
+Sbjct  122  MISGAMPLETKQGVEPEAHDCCSIL  146
+
+
+>6
+Length=150
+
+ Score = 104 bits (259),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 62/149 (42%), Positives = 72/149 (48%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+L P+A   V QA ITGR E   LALG ALM L T  FL       D DA  F+     
+Sbjct  2    LDLYPSADNYVCQADITGRGERPHLALGPALMILETYKFLFMTWEYVDWDALAFFNGLFQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+             PA A T  LSM    GL  V F  EQ+ I  A   DW+F T L LL +AL +DLA  GT
+Sbjct  62   CPAPAGTCRLSMRCCLGLNSVTFKTEQSEINQAAAVDWVFITDLRLLSMALYLDLALFGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+              A+   D   I   +     K +   FV
+Sbjct  122  DEAMCMLDAGAIIFQIRKQDHKKHCVLFV  150
+
+
+>33
+Length=150
+
+ Score = 103 bits (257),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 6/144 (4%), Positives = 21/144 (15%), Gaps = 0/144 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +              +              L  ++ +      +       +    L 
+Sbjct  3    FFIHVDPRSHLCEWGPQQRGEFPTDDQWYPEYLYIVHSVFHKDHPAYDQDVVRWIYYQLP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +   M                 +                   L +   + +     T+
+Sbjct  63   FQVLDWMGTEGRRTGNYDFYIEMEDSRCESSKLCYYVGNKITGFLENYTQVNNDVRWKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYS  146
+            ++         G            
+Sbjct  123  ISGAAPVPTKQGWEKGSCDCDTML  146
+
+
+>14
+Length=150
+
+ Score = 103 bits (256),  Expect = 8e-30, Method: Composition-based stats.
+ Identities = 26/149 (17%), Positives = 39/149 (26%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ ++   +  V +  I  R   +  AL  A   L T  F           A K +    
+Sbjct  1    IMMMITIFILPVCEQDIGRRSPTLDWALKFAGEFLITYPFCFATWACLARLACKCFRGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+               A A T    M     L       EQ  I  A +   +  T L LL     +D    G
+Sbjct  61   QKDAPADTDLYHMEWFLMLDSWFIKTEQGIIEEADFYWNVNKTVLCLLIENYQLDEDLNG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+              +                        + 
+Sbjct  121  MDIPFKMCQATRQINEKEIQDHDSCLCQM  149
+
+
+>30
+Length=150
+
+ Score = 103 bits (256),  Expect = 8e-30, Method: Composition-based stats.
+ Identities = 9/145 (6%), Positives = 25/145 (17%), Gaps = 0/145 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +  +P                            L  +  +      +   A   +    +
+Sbjct  2    MFFIPPTPRSHLHEWGPCNRGEFPYDAQWCPEYLYIVDSVFAKSCWAQDQAVVRWIYYQM  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+               +A                    + +          +      L     + D  +  T
+Sbjct  62   PFQMADWYQNEQHATGMDPFYCEMEDSHCESSPDCYHVVNKISGFLELCIQINDDVNWKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYS  146
+            +++  G      G            
+Sbjct  122  MISGAGPTETKQGWEPSACDCDSIL  146
+
+
+>85
+Length=150
+
+ Score = 103 bits (256),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 10/146 (7%), Positives = 21/146 (14%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A +            W+   +  A   L     L       +             
+Sbjct  3    FNPNYAQDEWDSGFFNWCMYWLNTRIDFATPKLEMEAQLNYDQENQNKGWAMPEDCILGF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                          + L                +A        + +         +    
+Sbjct  63   KKPRKYHLYQAHEFWRLWCRGHRIHYVCHCINNHAPSCGVQLEIGMPGFKTNYNVNDQCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              LV +   +              Y 
+Sbjct  123  TLLVKSGDPIYWWIGGPCEACCCMYY  148
+
+
+>29
+Length=150
+
+ Score = 103 bits (256),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 8/145 (6%), Positives = 25/145 (17%), Gaps = 0/145 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +  +                             L  +  +      +   A K +    +
+Sbjct  2    MFFIDPTPRQHLHQWGPCNRGEFPYDAQWCPEYLYIVDSVFTKSCCAQAQAVKRWIHYQM  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+               +A                    + +     +    +      L     + D  +  T
+Sbjct  62   PFQMADWYQNEQHATGMDPFYCEMEDSHCESSPQCYHVVNKISTRLQLHIQINDDVNWKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYS  146
+            +++         G            
+Sbjct  122  MISGAKPTETKQGWEPEACDCDSIL  146
+
+
+>4
+Length=150
+
+ Score = 102 bits (255),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 84/149 (56%), Positives = 89/149 (60%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+LLPTA   V QA ITGR EW WLALG ALMGL TL FL KG    D DA  FY  TT 
+Sbjct  2    LDLLPTADNYVCQADITGRGEWPWLALGVALMGLNTLIFLFKGWEYVDWDAGAFYNGTTQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+            VPA A T YLSM   YGL  V F  EQ+ I WAR  D LFTT L LL +AL +DLA QGT
+Sbjct  62   VPAPAGTCYLSMNCAYGLNSVTFKTEQSIINWARAVDHLFTTDLRLLSMALYLDLALQGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+              A+   D I IGT       KV    FV
+Sbjct  122  DEAMCMLDAINIGTQFRQQDHKVSCVLFV  150
+
+
+>88
+Length=150
+
+ Score = 102 bits (255),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 9/147 (6%), Positives = 18/147 (12%), Gaps = 0/147 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +     A +             +W  +  A   L             +            
+Sbjct  2    VFNPNMAQQEWMSKFFNFCEYCLWTRIDFATPKLPMEAQHYCDHENQNKGEAMPEDCNLG  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                             L              A           + +             
+Sbjct  62   GWQPRPYHADQAHEFIRLWCRGHIEHHCCHAIANIPPSCSVFDEISMPGFKTNYNVGDQC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYR  148
+                  +   +   G    L     Y 
+Sbjct  122  NTVTNRSGDYISAWGYGNCLAISCMYY  148
+
+
+>70
+Length=150
+
+ Score = 102 bits (254),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 6/149 (4%), Positives = 18/149 (12%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S         W  +            +                  I  
+Sbjct  1    IIFIWSANKLYNSSPHWFYPDAWNNIGKMVNTKCNEMFWQTFGWQFAQYTSKAMGCPIMN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                +       L  T   +   + +    + G
+Sbjct  61   QFEDKDSYTERCTCVESRPFSRKNAIPTLCKFAIDIDVPLVETAHRMSSASGVWRKKEPG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+                        +                
+Sbjct  121  PCDYWCPEWEGELPKNHHFVEQDRCGMYM  149
+
+
+>16
+Length=150
+
+ Score = 102 bits (254),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 19/149 (13%), Positives = 36/149 (24%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ ++   +  V +     R   +   +      L T+             A K      
+Sbjct  1    IMMMITIFILPVCEQDKGRRSPTLDWDVKFCGEMLITVNREFATWACLARLACKCDRGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +  A A T    M             E   I+ A +   +    L LL     +D    G
+Sbjct  61   MADAPADTDLKHMFWFLMDDFWLIKTEFGIIFEADFYWNVNKFNLCLLIEIYQLDDDLNG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             +++     G                   
+Sbjct  121  GMISFKMMLGTRQIMEPEAQDIDSCLCVM  149
+
+
+>87
+Length=150
+
+ Score = 102 bits (254),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 9/146 (6%), Positives = 20/146 (14%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A +             +W  +  A   L             +             
+Sbjct  3    FNPNMAQQEWFSKFFNWCMYCLWTRIDFATPKLPMEAQHYCDSENQNKGEAMPEDCNLGF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                          + L              A           + +              
+Sbjct  63   KQPRPYHADQAHEFWRLWCRGHREHYCCHAIANKPPSCGVMDEIGMPGFKTNYNVGDQCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+                 +   +   G    L ++  Y 
+Sbjct  123  TVTNRSGDPISWWGGGPCLAELCMYY  148
+
+
+>71
+Length=150
+
+ Score = 101 bits (252),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 5/149 (3%), Positives = 19/149 (13%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S         W  +            +   +              I  
+Sbjct  1    IIFIRFANKLYNSSPHWFYHASWNNIGKMVNTKCNEMFWQTFRWQFAQYTSKAMGCPIMN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                +       +  T       + +    + G
+Sbjct  61   QFEDKDKKTERCTCVESRPFGRKNAIPYLCFFAIDIDVPMVETAHRDSSASGVWRKKETG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+            +           +                
+Sbjct  121  SCDYWCPEWEGELPKNAHFVEQDRCYMYI  149
+
+
+>66
+Length=150
+
+ Score = 101 bits (252),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 8/148 (5%), Positives = 20/148 (14%), Gaps = 0/148 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S  Q      +  +                                  
+Sbjct  1    IIFIWSANKLYNSSPQWEYPKHFNNIGKMIFQKRNRMFMQTFGYQMRCYLSTCMGRKEAN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            L             +                           T   +L+ + +    D G
+Sbjct  61   LFEGFDSYTCRCPFVEPRCPGRWGPIPGLCKNIYDIWVPSMETAHRMLEASGVHYKDDTG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYR  148
+                    +             K  +  
+Sbjct  121  PCNYPSLEETGEQPKNHHYFEQKNCAMY  148
+
+
+>7
+Length=150
+
+ Score = 101 bits (251),  Expect = 5e-29, Method: Composition-based stats.
+ Identities = 58/149 (39%), Positives = 72/149 (48%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+L P+A   V QA ITGR E + LALG ALM L T  FL       D DA  F+     
+Sbjct  2    LDLYPSADNYVCQADITGRGERVHLALGFALMILHTYKFLFMTWETVDWDALAFFNGLFQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+             PA A T  L+M    GL  V F  EQ  I +A   DW+F T L LL +AL +D+A  GT
+Sbjct  62   CPAPADTERLNMSCCLGLNSVTFKTEQGEINYAWAVDWVFITDLNLLSMALQLDMALFGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+              A+   D       +     K +   +V
+Sbjct  122  DEAMCMLDAGTQIFEIRKQDHKKHCALWV  150
+
+
+>55
+Length=150
+
+ Score = 100 bits (250),  Expect = 7e-29, Method: Composition-based stats.
+ Identities = 11/146 (8%), Positives = 22/146 (15%), Gaps = 0/146 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+              +        S  Q+              L      +FL +    +         I   
+Sbjct  2    YFMQEHTFVIRSLPQVQKLNLKNVHGKLHYLPAAWVCHFLFRYSIRTYSTIGSHLQILMA  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                    +          +      Q       Y      T     +           T
+Sbjct  62   KEMFDSETFTCKSQPIRPPLDWESYLQLCNCIFAYIAEQKWTTRFEHNCLKRTYDQTCKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSY  147
+                   +            T+  + 
+Sbjct  122  CRLGQKYEWGSFPWNFSYIDTEACTM  147
+
+
+>27
+Length=150
+
+ Score = 100 bits (250),  Expect = 8e-29, Method: Composition-based stats.
+ Identities = 9/145 (6%), Positives = 28/145 (19%), Gaps = 0/145 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +  +                             L  +  +      +   A K      +
+Sbjct  2    MFGITPFPRPHYHQWGPRNRGQFPYDAFWCPEYLYIVDSVFTKHCCAQRIAVKRKIHYNM  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+               +A     +  +            +      +    +      L  L  + D  ++G 
+Sbjct  62   PFTMADWWQNAQHMTGMDPFYCEMMNKMEESSPQCYHVVNKISTPLQLLIQIRDDPNEGY  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYS  146
+            +++ +       G            
+Sbjct  122  MISGLMPLETKQGVEPEAHDCCSIL  146
+
+
+>38
+Length=150
+
+ Score = 100 bits (249),  Expect = 9e-29, Method: Composition-based stats.
+ Identities = 3/143 (2%), Positives = 15/143 (10%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +                +   +        L  ++        +         +    
+Sbjct  3    FFIHVDPRKHLLRWGPMLRDKHPMKSIFYKEILLIVHPADHMFRDTYLWDMLREQLVQTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M           +     +                         + +     T+
+Sbjct  63   RIDLDMMGNEGEDNGWDKLYIEMYDLRCGSSLMCYASGKKYTGFFEWTTCVSNDLRWKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                                   
+Sbjct  123  RVGNAPYPTKQNWENFNKHCDTM  145
+
+
+>77
+Length=150
+
+ Score = 100 bits (249),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 8/147 (5%), Positives = 18/147 (12%), Gaps = 0/147 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            + +  T               W    +  A                S  +          
+Sbjct  2    IFIRNTFKLYQDSPFWDWHYVWNNTGIMFATQCDEMHAQTFYTQENSYCNKSMKCPPGKE  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                                  F               +     +   ++ +   A+   
+Sbjct  62   FQDKIKYCLAGTCHESRPKGRKFAINYVCFPRNDRIPPMQEGLHIDFPMSSIWYNANNTC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYR  148
+              A                      Y 
+Sbjct  122  AKAWCPPWFPPHWKVAPIWEIDRCYYY  148
+
+
+>91
+Length=150
+
+ Score = 100 bits (249),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 6/145 (4%), Positives = 14/145 (10%), Gaps = 0/145 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A               +   +      L                           
+Sbjct  3    FTRNDAQYEWGSKFFNVCIVCLCTRIDFWTTYLPDEAQTYVFHESQWQKENMPAVCNCGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +             +              A           + +              
+Sbjct  63   WQLRPYHADYAHEMTRVWWRHHISHYCCHAIANIPPSCSVYDRISIPGYKTNYNVGLQCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSY  147
+              +       +  G    L     Y
+Sbjct  123  TVVPRMGDFALVWGYANCLLISDMY  147
+
+
+>75
+Length=150
+
+ Score = 100 bits (249),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 8/147 (5%), Positives = 18/147 (12%), Gaps = 0/147 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            + +  T               W    +  A           +       +      I   
+Sbjct  2    IFIRNTFKLYQDSPFWGWHQSWNNTGIMIATQCNEMHAQTFRTQENQYCNKYMGCPIGKQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                                                  +  T      ++ +   A+ G 
+Sbjct  62   FEDKFKLCLARTCHESRPKGRKQAINYLCFSVNDMISPMHETAHHDFGMSSVWQKAENGC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYR  148
+              A                        
+Sbjct  122  AKAWCPPWFPPHFKVAHCWEADRCYGY  148
+
+
+>76
+Length=150
+
+ Score = 100 bits (248),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 10/147 (7%), Positives = 20/147 (14%), Gaps = 0/147 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            + +  T               W    +  A                S  +      I   
+Sbjct  2    IFIRNTFKLYQDSPFWDWHYSWNNTGIMIATQCNEMHAQTFYTQENSYCNKYMGCPIGKE  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                                                  +  T  +   ++ +   A+ G 
+Sbjct  62   FEDKIKYCLAYTCHESRPKGRKQAINYLCFPVNDMISPMQETAHIDFPMSSIWYNAENGC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYR  148
+              A                      Y 
+Sbjct  122  AKAWCPPWFPPHFKVAPCWEIDRCYYY  148
+
+
+>10
+Length=150
+
+ Score = 100 bits (248),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 42/149 (28%), Positives = 49/149 (33%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            +L L   A   V    IT R E +  ALG A M L T  FL          A  F+    
+Sbjct  1    ILMLFTIADNWVCTQDITRRSEDVDRALGFAFMFLHTYKFLFMTWATVAWLASAFFNGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+               A A T    M     L  V    EQ  I +A    W+F T L LL + L +D A  G
+Sbjct  61   QKDAPADTDRYMMSCCLMLDSVFIKTEQGEINYADAVWWVFITDLCLLGMNLQLDPALFG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+            T   L                   Y    
+Sbjct  121  TDWPLKMLQAGRQIFEDRKQDHSPYLCLM  149
+
+
+>25
+Length=150
+
+ Score = 100 bits (248),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 11/146 (8%), Positives = 31/146 (21%), Gaps = 0/146 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +    E         R   +                +      ++  A K      
+Sbjct  1    IMFGITCFAEPWYCQDGPRRRGQVPYDAIWCPEYDYITRSVFTKHACANRCAVKRDIHYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +   +A     +  +            +      +    +    L L      +D  ++G
+Sbjct  61   MPYTMADWWQQAQFMAGMDPFHCEFMNKMSESEPQCYHIVNKIILFLNLRIQKLDDPNEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYS  146
+             ++  +               T V  
+Sbjct  121  YMIMGLMPLETKQTCEPEAHDTVVIL  146
+
+
+>3
+Length=150
+
+ Score = 99.4 bits (246),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 97/149 (65%), Positives = 102/149 (68%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+LLPTA   V QA ITGR EW WLALGTALMGL TLYFL KG  V D DA  FY ITT 
+Sbjct  2    LDLLPTADNYVCQADITGRGEWPWLALGTALMGLNTLYFLFKGWEVVDWDAFAFYNITTQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+            VPA A T YLSML  YGL MV F  EQ+ IYWARY D LFTT L LL +AL +DLA QGT
+Sbjct  62   VPASAGTCYLSMLGAYGLNMVVFKTEQSIIYWARYVDRLFTTDLRLLSMALYLDLALQGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+              A+V  DGI IGT LV A  KV    FV
+Sbjct  122  DEAMVMLDGINIGTQLVQADHKVSCVLFV  150
+
+
+>9
+Length=150
+
+ Score = 98.6 bits (244),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 46/150 (31%), Positives = 59/150 (39%), Gaps = 0/150 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            +L+L  +A   V    IT R E +W ALG ALM L T  FL          A  F+    
+Sbjct  1    ILDLFYSADNWVCTQDITRRGERVWRALGFALMFLHTYKFLFMTWATVAWLASAFFNGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+              PA A T    M     L  V    EQ  I +A    W+F T L LL + L +D+A  G
+Sbjct  61   QKPAPADTERYMMSCCLMLDSVFIKTEQGEINYADAVWWVFITDLNLLSMNLQLDMALFG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRFV  150
+            T  A+V          +       Y    +
+Sbjct  121  TDWAMVMLQAGRQIFEIRKQDHSPYCCLML  150
+
+
+>93
+Length=150
+
+ Score = 98.6 bits (244),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 4/146 (3%), Positives = 12/146 (8%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A               +   +      L                           
+Sbjct  3    FTRNDAQYEWYSKFFNLCIVCLCTRIDFWSTYLEDTPQTYFFHESVWQQQNMNAVCRAGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +                       +    A           + +              
+Sbjct  63   RQLRPYHADDAHEMTCFWSYHHISHYDTHQIANIPPKCSVYDRISIPGYKTNYNEGLFCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +       +             Y 
+Sbjct  123  TVVCRMGDFALVVMYENCQIISDMYF  148
+
+
+>56
+Length=150
+
+ Score = 98.6 bits (244),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 12/146 (8%), Positives = 24/146 (16%), Gaps = 0/146 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+              +        S  Q+              L      +FL +    +         I   
+Sbjct  2    YFIWMHTFVIRSLQQVQKLNLKNVHGKLHYLPEAQVCHFLFRYSIRTYSTIGSHRQILMA  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                    +                 Q       Y      T   + ++ +        T
+Sbjct  62   KEMFDSETFTCKSQPIRPPSDWESYYQLCFCIFAYTIEQKWTTRFIYNVLMRTYDQTCKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSY  147
+                   +            TK  + 
+Sbjct  122  CRLGQKYEWGSFPWNFSYIDTKACTM  147
+
+
+>62
+Length=150
+
+ Score = 98.2 bits (243),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 8/147 (5%), Positives = 20/147 (14%), Gaps = 0/147 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            +  +        S+ Q                      +F                    
+Sbjct  1    IFFIWSYNFLINSRPQAFTPKLQNNRGKMIFQGRTRIDWFTFGYQMRHYSTTGMGRVEAM  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                    Y      T  +  +   +    D  
+Sbjct  61   AYEMSDSYTCTCKKVEPRKPSRWECYPSLCFNIFDYWVPSMWTTRIWYEFLCVDYKPDTP  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSY  147
+            T    +  +  +          K  + 
+Sbjct  121  TCDYPILEETGINPKNGSMIDQKGCAM  147
+
+
+>36
+Length=150
+
+ Score = 98.2 bits (243),  Expect = 7e-28, Method: Composition-based stats.
+ Identities = 5/143 (3%), Positives = 19/143 (13%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +              + +   +        L  ++        +            L 
+Sbjct  3    FFIHVDPRKHLLEWGPQQRDEFPMKDQMYKEILLIVHKSDHMFRDAYLKDVVREIRVQLP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M           +     +                   L     + +     T+
+Sbjct  63   FITLDMMGNEGEDTGNYKLYIEMEDSRCGSSGMCYYVGNKITGFLEWTTCVWNDLRWKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+            +                 +    
+Sbjct  123  IVGNAPVPTKQNWENFSTMCDTM  145
+
+
+>86
+Length=150
+
+ Score = 98.2 bits (243),  Expect = 9e-28, Method: Composition-based stats.
+ Identities = 10/146 (7%), Positives = 20/146 (14%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A +             +W  +  A   L     L       +             
+Sbjct  3    FNPNYAQDEWDSKFFNWCMYCLWTRIDFATPKLPMEAQLYYDQENQNKGWAMPEDCNLGF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                          + L                 A        + +         +    
+Sbjct  63   KKPRHYHLDQAHEFWRLWCRGHREHYCCHCIENKAPSCGVMEEIGMPGFKTNYNVNDQCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+               V +   +        L     Y 
+Sbjct  123  TVTVRSGDPISWWIGGPCLACCCMYY  148
+
+
+>37
+Length=150
+
+ Score = 97.8 bits (242),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 3/143 (2%), Positives = 15/143 (10%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +                +   +        L  ++        +              
+Sbjct  3    FFIHVDPRKHLLRWGPQLRDKFPMKDIMYKEILLIVHISDHMFRDTYLWDVVREIRVQTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M           +     +                         + +     T+
+Sbjct  63   FIDLDMMGNEGEDNGWYKLYIEMYDSRCGSSGMCYYVGNKYTGFFEWTTCVSNDLRWKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                             +     
+Sbjct  123  RVGNAPVPTKQNWENFNSHCDTM  145
+
+
+>83
+Length=150
+
+ Score = 97.5 bits (241),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 9/146 (6%), Positives = 21/146 (14%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                  ++            W+   +  A         L      S              
+Sbjct  3    FNPNYKMDYWDSGFYNWCMVWLNTRIMFATPIWEMEAQLNYDQENSYKGHSMPCGCQLEF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                          + L +              +A        + +         +    
+Sbjct  63   KKPRQYCLYQATEEWRLWIRGHRIHYVCHNDNNHAPGCGVQLFIGMPGFKWFYNVNDQCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              LV +   +              Y 
+Sbjct  123  KLLVPSGLPIYWKIAGFCEADCCMYY  148
+
+
+>65
+Length=150
+
+ Score = 97.5 bits (241),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 10/148 (7%), Positives = 23/148 (16%), Gaps = 0/148 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S+ Q T    +  +             F                    
+Sbjct  1    IIFIWSYNKLYNSRPQWTMPKHFNNIGKMIFQKRNRMWMFTFGYQMRCYLSTCMGRKEAN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            L             +                    Y      T     + + +    D G
+Sbjct  61   LFEGFDSYTCRCPKVEPRNPGRWGPIPGLCFNIYDYWVPSMETARRWYEASGVDYKDDTG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYR  148
+                 +  +             K  +  
+Sbjct  121  FCNYPLLEETGEQPKNHSYFDQKNCAMI  148
+
+
+>78
+Length=150
+
+ Score = 97.5 bits (241),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 8/147 (5%), Positives = 19/147 (13%), Gaps = 0/147 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +    T            +  W    +  A                S  +          
+Sbjct  2    IFNRNTLKLYQDSPFWDWKYVWNNTGIMFATQIDEMHAQTFYKQENSYCNKSMKCPPQKE  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                                  F               ++    +   ++     A+   
+Sbjct  62   FQDKRKYCLYGTCEESRPKGRKFAINYVCFPRNDRIPPIWHQLFIDFPMSSWWYNANNTC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYR  148
+                V +                  Y 
+Sbjct  122  AKKWVPSWFPPHWKVAPIWEIDRCYYY  148
+
+
+>61
+Length=150
+
+ Score = 97.1 bits (240),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 9/147 (6%), Positives = 24/147 (16%), Gaps = 0/147 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            +  +        S+ Q+                     +F                    
+Sbjct  1    IFFIWSYNFLINSRPQVQTPNLQNNRGKLIFQGRTRIDWFTFSYQMRHYSTTGMGRVEAM  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                     +   ++                    Y      T  +  +   +    D  
+Sbjct  61   AYEMSDSYTFTCKMVEPRKPSRWECYYSLCFNIFDYTVPQMWTTRIWYEWLCVDYDPDTM  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSY  147
+            T    +  +  +         TK  + 
+Sbjct  121  TCDYPILEEWGINPWNGSMIDTKGCTM  147
+
+
+>54
+Length=150
+
+ Score = 97.1 bits (240),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 9/145 (6%), Positives = 21/145 (14%), Gaps = 0/145 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+             +        S  Q+                     +FL +    +         I    
+Sbjct  3    FMQEHTFVIRSLPQVQKLNLKHSHGKLHYYPAQWVCHFLTRCSIRTYSTGGSHLQILMAK  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +      Q       Y          +  +          T 
+Sbjct  63   EMFDSYTFTCKSQPIRPPLRWESYLQLCNCHRAYIFEQKWGTRFMHCILKRTYDQTCKTC  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSY  147
+                  +            T+  + 
+Sbjct  123  RLGNKEEWGSFPWNFSYIDTEACTM  147
+
+
+>74
+Length=150
+
+ Score = 96.7 bits (239),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 8/148 (5%), Positives = 21/148 (14%), Gaps = 0/148 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +  T               W  +    A       +   +       +      I  
+Sbjct  1    IIFIRNTFKLYQDSPFWGWHLSWNNIGKMVATQCNEMHWQTFRTQFNQYENKYMGCPIMK  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                                                   +  T      ++ +   A+ G
+Sbjct  61   QFEDKFKLCLAVTCHESRPKGRKQAINYLCFSVIDMDSPMVETAHHDFGMSSVWRKAEGG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYR  148
+               A        +               
+Sbjct  121  MAKAWCPNWFPPLFKVAHCWEADRCYMY  148
+
+
+>8
+Length=150
+
+ Score = 96.7 bits (239),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 49/149 (33%), Positives = 61/149 (41%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+L  +A   V  A IT R E +  ALG ALM L T  FL          A  F+     
+Sbjct  2    LDLYYSADNWVCTADITRRGERVHPALGFALMILHTYKFLFMTWETVAWLASAFFNGLFQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+             PA A T  L M    GL  V F  EQ  I +A   +W+F T L LL + L +D+A  GT
+Sbjct  62   KPAPADTERLMMSCCLGLNSVTFKTEQGEINYAWAVEWVFITDLNLLSMNLQLDMALFGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+              A+           +       Y    V
+Sbjct  122  DWAMCMLQAGTQIFEIRKQDHSPYCALMV  150
+
+
+>51
+Length=150
+
+ Score = 96.3 bits (238),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 7/138 (5%), Positives = 14/138 (10%), Gaps = 0/138 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                      S A       +               +FL +    +              
+Sbjct  3    FKQEHGFNTRSLACQHDTNLYHSEGKLHYYAAQWPNHFLDRKSIRTYTSGGSHLQTLCAP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +      Q       Y          +             T 
+Sbjct  63   EMDDGITFQVKSQPSEPPLRWGSYGQLCNESKMYIALQKWLTRFMPCTLKRCYDQTCKTC  122
+
+Query  123  LALVGADGIMIGTGLVGA  140
+                              
+Sbjct  123  RQGDKDCWGKFPWNFSYI  140
+
+
+>97
+Length=150
+
+ Score = 96.3 bits (238),  Expect = 5e-27, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 16/146 (11%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A     +                   G+                           
+Sbjct  3    FTRNDAQTSWHELFFNLIIVCYCTRQVFWSTGMEDGSQTHFFAESVIRQTTMSAKRLAGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +    +      +           +    A             +       +      
+Sbjct  63   RILRAYHHGDFTECHNFWSYRHTSHYDTHVQANRPPKCSAYDDESIFRYSTNYMEGGNFN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +             G+    + Y 
+Sbjct  123  CVVCRGCDDSEVVMYWGSTYCNHMYF  148
+
+
+>81
+Length=150
+
+ Score = 95.9 bits (237),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 11/146 (8%), Positives = 25/146 (17%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                T ++            W    +  A         L      S  +           
+Sbjct  3    FNPNTIMKYWDSDFDNWCYVWNNTGIMFATAIFEMEAQLNYKQENSYWNHSMPCPCQLEF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                      +     L +  F            A  ++    +   ++      +    
+Sbjct  63   KDPRQYCLYGICEESRLWVRGFRIHYVCHPRNNRAPPIWCQLFIDCPMSKWWYNVNNQCA  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              LV +   +              Y 
+Sbjct  123  KLLVPSGLPIHWKIAGFCEADCCMYY  148
+
+
+>95
+Length=150
+
+ Score = 95.9 bits (237),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 6/146 (4%), Positives = 15/146 (10%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A               +   +     GL                           
+Sbjct  3    FTRNDAQTSWYSKFFNLIIVCLCTRIDFWSFGLEDHSQTYFFHESVWQQTNMSAKRRAGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +    +                  +    A             +       +      
+Sbjct  63   RQLRAYHHGDFTEMTCFWSYHHISHYDTHVQANIPPKCSVYDRESIFRYRTNYMEGLFCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +             G+      Y 
+Sbjct  123  CVVCRMKDFASVVMYEGSTYCSTMYF  148
+
+
+>94
+Length=150
+
+ Score = 95.9 bits (237),  Expect = 6e-27, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 13/146 (9%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A               +   +     GL                           
+Sbjct  3    FTRNDAQYSWYSKFFNLEIVCLCTRIDFWSFGLEDHSQTYFFHESVWQQTNMSAVCRAGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +                       +    A             +              
+Sbjct  63   RQLRAYHAGDWHEMTCFWSYHHISHYDTHVIANIPPKCSVYDRESIPGYRTNYNEGLFCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +       +           + Y 
+Sbjct  123  CVVCRMGDFALVVMYENMQYCSHMYF  148
+
+
+>39
+Length=150
+
+ Score = 95.5 bits (236),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 3/143 (2%), Positives = 13/143 (9%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +                    +        L  ++        +         +    
+Sbjct  3    FFIHVDPRKHLLRWGPKLARKHPMKYIFEKEILLRVHEADHMFRDTYLWDMLREQLVQTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M           +     +                         +       T+
+Sbjct  63   RIDLDMMINEGEDNSWDKLYICMYDMRCGMSLMCEASGKKYTEFFEWTTCVSYDLRCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                                   
+Sbjct  123  RVGNAPYPTKQNWENFCKHCDTM  145
+
+
+>24
+Length=150
+
+ Score = 95.1 bits (235),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 11/146 (8%), Positives = 31/146 (21%), Gaps = 0/146 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +    E         R   +   +         +  +      ++  A K      
+Sbjct  1    IMFHITCFAEPWYCQDRPRRRGMVPYDVIRCGEYDYHVRSVFTQHACANRCAVKHDRHYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +   +A     +               +      +    +    L L      +D   +G
+Sbjct  61   MPYTMADWWQQAQFWAGMDPFTCEFMNKMSESEWQCYPIVNKIILFLNLRIQKLDDPFEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYS  146
+             ++  +               T V  
+Sbjct  121  YMIMGLMPLMTKQTCEPEAHDTVVIL  146
+
+
+>18
+Length=150
+
+ Score = 95.1 bits (235),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 14/149 (9%), Positives = 30/149 (20%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +   +  V       R   +   +        T+             A K      
+Sbjct  1    IMMKITRFILPVCCQDKPVRSPTLDWDVKFCGEMWITVNSSFATDATYARLACKCDRGYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +    A   +  M               + I+ A          L LL     +D   +G
+Sbjct  61   MAFINADIDFKHMFWWLMDDFWLIKKCFHIIFEAVCYWIDNKFNLFLLMRIYQLDDLLRG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             +++                         
+Sbjct  121  YMISGKMPLPTRQIMEPEAQDIYSCLCIM  149
+
+
+>12
+Length=150
+
+ Score = 94.8 bits (234),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 32/149 (21%), Positives = 44/149 (30%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +   A+  V    IT R E + +ALG A M L T  F           A   +    
+Sbjct  1    IMMMFTIAINPVCYQDITRRSEDVDVALGFAGMFLITYPFCFSTWAPLAWLACAEFNGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+               A A T    M     L       EQ  I +A     +F T L LL +   +D    G
+Sbjct  61   QKDAPADTDLYHMSCFLMLDSWFIKTEQGIIDYADAYWNVFKTYLCLLGMNYQLDEDLFG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+                L                   +    
+Sbjct  121  MDWPLKMLQAGRQIFEEAIQDHDGWLCNM  149
+
+
+>57
+Length=150
+
+ Score = 94.8 bits (234),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 13/146 (9%), Positives = 24/146 (16%), Gaps = 0/146 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+              +        S  Q+              L      +FL +    +         I   
+Sbjct  2    YFIWMYNFLMRSLQQVQKLNLQNVHGKLFYLGETQVCHFLFRYQIRTYSTIGSHRQILMA  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                    +                 Q       Y      T   + +  +     D  T
+Sbjct  62   YEKFDSETFTCKSQPIRPPSDWECYYQLCFCIFDYTIEQKWTTRFIYNWLMRTYDQDCKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSY  147
+                   +            TK  + 
+Sbjct  122  CRLPQKYEWGDFPWNFSYIDTKGCTM  147
+
+
+>79
+Length=150
+
+ Score = 94.8 bits (234),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 10/146 (7%), Positives = 23/146 (16%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                T +          +  W    +  A +              S  +           
+Sbjct  3    FNPNTLMWYQDSPFWDWKYVWNNTGIMFATLIDEMEAQTFYKQENSYCNKSMKCPCQLEF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                            L    F               ++    +   ++     A+    
+Sbjct  63   QDKRQYCLYGFCEESRLKGRGFAINYVCFPRNNRIPPIWHQLFIDCPMSSWWYNANNQCA  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              LV +   +              Y 
+Sbjct  123  KKLVPSWFPIHWKVAPIWEIDRCMYY  148
+
+
+>23
+Length=150
+
+ Score = 94.8 bits (234),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 13/146 (9%), Positives = 32/146 (22%), Gaps = 0/146 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +    E         R   +   +         +  +      ++  A K      
+Sbjct  1    IMMKITCFAEPWYCQDRPRRRGMVDYVVIRCGEYDRHVKSVFTQCATANRCAVKHDRHYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +   +A     +              E+           +    L LL     +D   +G
+Sbjct  61   MPYDMADIWQQAQFWNGMDPFTCEFMEKISETEWCCYPIVNKIILFLLHRIYKLDDPFEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYS  146
+             ++  +               T V  
+Sbjct  121  YMIMGLMPLMTKQTCEPEAHDTVVIL  146
+
+
+>98
+Length=150
+
+ Score = 94.8 bits (234),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 6/146 (4%), Positives = 18/146 (12%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A     +                   G+                           
+Sbjct  3    FTRNDAQTSWIELFFNLIIPCYCTRQVFWDTGVEEGSQAHFFAESVLRQTTMGATRLAGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +      +         + +    A             +       +      
+Sbjct  63   RIWRAYHHGDFTECHNFFRYRHTSQYDTHIQANGPPKCSAMDDESIFRYSTNYMEGGNFG  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +  +        L G+    + Y 
+Sbjct  123  CVVCRSCDDSEVVMLWGSTMCNHMYF  148
+
+
+>92
+Length=150
+
+ Score = 94.4 bits (233),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 13/146 (9%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A               +   +      L                           
+Sbjct  3    FTRNDAQYEWGSKFFNVCIVCLCTRIDFWTTYLPDTPQTYVFHESVWQKGNMNAVCNAGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +                +           A           + +              
+Sbjct  63   WQLRPYHADYAHEMTNFWSLHHISHYCTHQIANIPPKCSVYDRISIPGYKTNYNVGLFCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +       +  G          Y 
+Sbjct  123  TVVPRMGDFALVWGYCNCQLISDMYF  148
+
+
+>40
+Length=150
+
+ Score = 94.4 bits (233),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 5/143 (3%), Positives = 18/143 (13%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       +            +        L  ++        +     +   +    
+Sbjct  3    FFIHVDPIKRTLRWGPKLARKHPMKKIFEKSILLRVHEADHMFRDTYLWDMRREQLVQTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M           +  F                      +     +       T+
+Sbjct  63   MIDLDMMINEGEDNSWDKLYWFMYLMRCGMSEMIEASYKKYTEFMEWTTCVSYDLRCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                    +             Y
+Sbjct  123  RVGCAPYWLKQNWENFCKHCDTY  145
+
+
+>64
+Length=150
+
+ Score = 94.4 bits (233),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 7/148 (5%), Positives = 21/148 (14%), Gaps = 0/148 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +        S+ Q      +  +             F                    
+Sbjct  1    IIFIWSYNKLYNSRPQWPTPKHFNNIGKMIFQKRTRMWMFTFGYQMRCYSSTGMGRKEAM  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                  + Y      T  +  +   +    D  
+Sbjct  61   AFEMSDSYTCRCPKVEPRNPSRWGCYPGLCFNISDYWVPSMWTARIWYEAKGVDYKDDTP  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYR  148
+                 +  +             K  +  
+Sbjct  121  FCDYPLLEETGENPKNWSYFDQKNCAMI  148
+
+
+>53
+Length=150
+
+ Score = 94.4 bits (233),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 9/141 (6%), Positives = 21/141 (15%), Gaps = 0/141 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+             +        S   +     +             T +FL +    +         I    
+Sbjct  3    FMQEHNFVTRSLPCLQFLNLYHSHGKLHYYPAQWTCHFLTRCSIRTYSSGGSHLQILMAQ  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +      Q       Y          +  +          T 
+Sbjct  63   EMFDSYTFQVKSQPIRPPLRWESYLQLCNESRAYIFLQKWLTRFMHCILKRCYDQTCKTC  122
+
+Query  123  LALVGADGIMIGTGLVGALTK  143
+                  +            T+
+Sbjct  123  RLGDKIEWGSFPWNFSYIDTE  143
+
+
+>15
+Length=150
+
+ Score = 94.0 bits (232),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 21/149 (14%), Positives = 37/149 (25%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ ++   +  V +     R   +   +  A   L T+             A K +    
+Sbjct  1    IMMMITIFILPVCEQDKGRRSPTLDWFVKFAGEMLITVNRCFATWACLARLACKCFRGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+               A A T    M     L       E   I+ A +   +    L LL     +D    G
+Sbjct  61   QQDAPADTDLKHMEWFLMLDFWFIKTEFGIIFEADFYWNVNKFVLCLLIEWYQLDEDLNG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             ++      G                   
+Sbjct  121  MMIPFKMCQGTRQINEKEIQDIDSCLCVM  149
+
+
+>17
+Length=150
+
+ Score = 94.0 bits (232),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 16/149 (11%), Positives = 34/149 (23%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ ++   +  V +     R   +   +      L T+             A K      
+Sbjct  1    IMMMITIFILPVCEQDKPRRSPTLDWDVKFCGEMLITVNREFATDATYARLACKCDRGYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +    A   +  M                 I+ A +        L LL     +D   +G
+Sbjct  61   MAVINADIDFKHMFWWLMDDFWLIKTCFGIIFEADFYWIDNKFNLCLLIEIYQLDDDLRG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             +++     G                   
+Sbjct  121  GMISFKMMLGTRQIMEPEAQDIYSCLCIM  149
+
+
+>72
+Length=150
+
+ Score = 93.6 bits (231),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 5/148 (3%), Positives = 19/148 (13%), Gaps = 0/148 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +  T               W  +            +   +              I  
+Sbjct  1    IIFIRNTMKLYQDSPHWFYHASWNNIGKMVNTKCNEMFWQTFRWQFAQYTSKAMGCPIMN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                +       +  T       + +    + G
+Sbjct  61   QFEDKDKKCLRVTCVESRPFGRKQAINYLCFFVIDMDVPMVETAHRDFGASGVWRKKETG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYR  148
+                      + +               
+Sbjct  121  HCDYWCPEWEMELFKNAHCWEQDRCYMY  148
+
+
+>19
+Length=150
+
+ Score = 93.6 bits (231),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 13/149 (9%), Positives = 30/149 (20%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +   +          R   +   +         +          +  A K      
+Sbjct  1    IMMKITRFILPEYCQDRPVRSPTLDWDVKFCGEMWIHVNSSFTTDATYNRLACKCDRNYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +    A   +  M               + I+ A          L LL     +D   +G
+Sbjct  61   MAFLNADIDFKEMFWNLMDPFWLEKKCFHIIFEAVCYWIDNKGWLFLLMRIYQLDDLFEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             +++                   V     
+Sbjct  121  YMISGKMPLMTRQIMEPEAQDIYVCLCIM  149
+
+
+>22
+Length=150
+
+ Score = 93.6 bits (231),  Expect = 6e-26, Method: Composition-based stats.
+ Identities = 13/149 (9%), Positives = 32/149 (21%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +    E         R   +   +         +  +       +  A K      
+Sbjct  1    IMMKITRFAEPWYCQDRPRRRGTVDNDVKRCGEYDRHVKSVFTQCATYNRKAVKHDRHYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +   +A     +               +  I        +    L LL     +D   +G
+Sbjct  61   MWFDMADIWQQAQFWNLMDPFTCEFKCKISITEWCCYPIVNKIWLFLLHRIYKLDDPFEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             ++  +               T V   + 
+Sbjct  121  YMIMGLMPLMTTQTMEPEAHDTVVCLCQM  149
+
+
+>60
+Length=150
+
+ Score = 93.2 bits (230),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 11/147 (7%), Positives = 25/147 (17%), Gaps = 0/147 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            +  +        S  Q+                     +F+                   
+Sbjct  1    IYFIWSYNFLINSLQQVQTLNLQNNHGKLNFQGRTQIDWFIFSYQMRHYSTTGMGRVEAM  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                     +    +            Q       Y      T  L  +  ++    D  
+Sbjct  61   AYEMSDSYTFTCKSVEPRKPSRWECYYQLCFCIFDYTVLQMWTTRLWYEWLMVDYDQDFM  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSY  147
+            T    +  +  +         TK  + 
+Sbjct  121  TCDYPILYEWGIGPWNGSMIDTKGCTM  147
+
+
+>52
+Length=150
+
+ Score = 93.2 bits (230),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 8/138 (6%), Positives = 18/138 (13%), Gaps = 0/138 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+             +        S A       +         +   T +FL +    +              
+Sbjct  3    FMQEHGFVTRSLACQQFLNLYHSHGKLHYYLAQWTNHFLDRCSIRTYSSGGSHLQTLMAQ  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +      Q       Y          +  +          T 
+Sbjct  63   EMFDGITFQVKSQPSRPPLRWGSYGQLCNESKAYIQLQKWLTRFMHCILKRCYDQTCKTC  122
+
+Query  123  LALVGADGIMIGTGLVGA  140
+                              
+Sbjct  123  RQGDKICWGKFPWNFSYI  140
+
+
+>58
+Length=150
+
+ Score = 93.2 bits (230),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 12/146 (8%), Positives = 25/146 (17%), Gaps = 0/146 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+              +       +S  Q+              L      +F+ +    +         I   
+Sbjct  2    YFIWMYNFLMLSLQQVQKLNLQNVHGKLNYLGETQICHFIFRYQIRTYSTIGHHRVILMA  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                    +                 Q       Y      T     +  ++    D  T
+Sbjct  62   YEKFDSYTFTCKSQPPRKPSRWECYYQLCFCIFDYTILQKWTTRFWYEWLMVTYDQDFKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSY  147
+                   +            TK  + 
+Sbjct  122  CDLPQKYEWGDFPWNGSYIDTKGCTM  147
+
+
+>20
+Length=150
+
+ Score = 93.2 bits (230),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 13/149 (9%), Positives = 31/149 (21%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +    E         R   +   +         ++ +       +  A K      
+Sbjct  1    IMMKITRFAEPEYCQDRPRRSPTLDNDVKFCGEYWIHVWSVFTQDATYNRLACKCDRNYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +   +A   + +                + I             L LL     +D   +G
+Sbjct  61   MAFDMADIDFKAQFWNLMDPFWLEKKCFHIIMEICCYWIENKGWLFLLHRIYKLDDLFEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             ++                  T V     
+Sbjct  121  YMIMGKMPLMTRQIMEPEAQDTYVCLCIM  149
+
+
+>11
+Length=150
+
+ Score = 92.8 bits (229),  Expect = 9e-26, Method: Composition-based stats.
+ Identities = 37/149 (25%), Positives = 48/149 (32%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            +  +   A   V    IT R E + +ALG A M L T  FL          A  F+    
+Sbjct  1    ISMMFTIADNWVCYQDITRRSEDVDVALGFAFMFLHTYKFLFMTWAPVAWLASAFFNGLF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+               A A T    M     L  V    EQ  I +A    W+F T L LL + L +D    G
+Sbjct  61   QKDAPADTDRYMMSCFLMLDSVFIKTEQGEINYADAYWWVFKTYLCLLGMNLQLDEDLFG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+                L            +      +    
+Sbjct  121  MDWPLKMLQAGRQIFEDLIQDHDGWLCNM  149
+
+
+>45
+Length=150
+
+ Score = 92.8 bits (229),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 9/143 (6%), Positives = 23/143 (16%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       S         +  + +      L   +   +    +     +        
+Sbjct  3    FCICVDFWWRSLFCWNKTARYHMMKVKPQKYNLWREHPNDRLSRRTYFSRGQREQTLCAP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M+     G    +  F  E                        L        T+
+Sbjct  63   EIDDGIMFNGFPEGSFDKLQWFRYEMGCKLSNMIEASYKWYITFHEWTHLRSYDLTCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                    +        A  + +
+Sbjct  123  RQGDTPYWLKFNWEFSYAEHETF  145
+
+
+>80
+Length=150
+
+ Score = 92.4 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 9/146 (6%), Positives = 21/146 (14%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                T +             W    +  A                S  +           
+Sbjct  3    FNPNTIMWYWDSDFWDWCYVWNNTGIMFATAIDEMEAQTFYKQENSYHNKSMPCPCQLEF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                            L +  F               ++    +   ++      +    
+Sbjct  63   KDKRQYCLYGTCEESRLWVRGFAIHYVCHPRNNRIPPIWCQLFIDCPMSKWWYNGNNQCA  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              LV +   +              Y 
+Sbjct  123  KKLVPSWLPIHWKVAPIWEADCCMYY  148
+
+
+>50
+Length=150
+
+ Score = 92.4 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 7/138 (5%), Positives = 15/138 (11%), Gaps = 0/138 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                      S A       +               +F  +    +              
+Sbjct  3    FKQEHGFNHRSLACQHDTCLYHSEGKLHYYANWWNNHFNDRKSIRTYTSGGSGLQTLCAP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +     EQ       Y          +             T+
+Sbjct  63   EMDDGITFQVKQQPSEDPLRWGSYEQLCNESKMYIALYKWLTTFMPCTLKRCYDQTCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGA  140
+                              
+Sbjct  123  RQGDTLCWNKFPWNFSYI  140
+
+
+>59
+Length=150
+
+ Score = 92.4 bits (228),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 10/146 (7%), Positives = 23/146 (16%), Gaps = 0/146 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+              +       +S  Q+                      F+      +             
+Sbjct  2    YFIWSYNFLMLSLQQVQKLNLQNVHGKLNYQGETQICQFIFSYQFRTYSTTGMHRVELMA  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                    +    +            Q       Y      T     +  ++    D  T
+Sbjct  62   YEMFDSYTFTCKSVEPRKPSRWECYYQLCFCIFDYTVLQKWTTRCWYEWLMVTYDQDFKT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSY  147
+                +  +            TK  + 
+Sbjct  122  CDYPILYEWGDGPWNGSMIDTKGCTM  147
+
+
+>82
+Length=150
+
+ Score = 91.7 bits (226),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 9/146 (6%), Positives = 24/146 (16%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                  ++            W    +  A         L      S  +           
+Sbjct  3    FNPNYKMDYWDSGFYNWCMVWNNTGIMFATAIFEMEAQLNYDQENSYWNHSMPCGCQLEF  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                          + L +               A  ++    + + ++      +    
+Sbjct  63   KDPRQYCLYQATEEWRLWIRGGRIHYVCHPDNNRAPGIWCQLFIDMPMSKWWYNVNDQCN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              LV +   +              Y 
+Sbjct  123  KLLVPSGLPIYWKIAGFCEADCCMYY  148
+
+
+>96
+Length=150
+
+ Score = 91.7 bits (226),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 14/146 (10%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A     +                   G+                           
+Sbjct  3    FTRNDAQTSWHELFFNLIIVCYCTRQDFWSFGMEDGSQTHFFHESVWQQTTMSAKRRAGG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+              +    +                  +    A             +       +      
+Sbjct  63   RQLRAYHHGDFTECTCFWSYHHISHYDTHVQANRPPKCSVYDRESIFRYRTNYMEGGFFN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +             G+      Y 
+Sbjct  123  CVVCRGCDFSEVVMYEGSTYCSTMYF  148
+
+
+>41
+Length=150
+
+ Score = 91.7 bits (226),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 8/143 (6%), Positives = 22/143 (15%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       +            + L      L  ++        +     +   +    
+Sbjct  3    FFIHVDWIKRTLRWGPKLARKHPMKLIFEKYILLRVHPADHLSRDTYFWRMRREQLLCTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M  S        +  F                      +    L+       T+
+Sbjct  63   MIDLGMMQNSGPDNSWDKLYWFMYLMTCGMSEMIEASYKKYIEFMEWTTLVSYDLRCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                    +           + Y
+Sbjct  123  RVGCTPYWLKQKWENFCKHCETY  145
+
+
+>21
+Length=150
+
+ Score = 91.3 bits (225),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 13/149 (9%), Positives = 32/149 (21%), Gaps = 0/149 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++  +    E         R   +   +         ++ +       +  A K      
+Sbjct  1    IMMKITRFAEPEYCQDRPRRSPTLDNDVKRCGEYWIHVWSVFTQQATYNRLAVKCDRHYF  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+            +   +A   + +                  I        +    L LL      D   +G
+Sbjct  61   MWFDMADIWFQAQFWNLMDPFWCEKKCFISITEICCYPIVNKIWLFLLHRIYKFDDPFEG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYRF  149
+             ++  +               T V   + 
+Sbjct  121  YMIMGLMPLMTRQSMEPEAMDTYVCLCQM  149
+
+
+>73
+Length=150
+
+ Score = 91.3 bits (225),  Expect = 4e-25, Method: Composition-based stats.
+ Identities = 6/148 (4%), Positives = 21/148 (14%), Gaps = 0/148 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            ++ +  T               W  +            +   +       +      I  
+Sbjct  1    IIFIRNTMKLYQDSPVWGWHASWNNIGKMVNTQCNEMFWQTFRWQFNQYENKSMGCPIMN  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                +       +  T       + +   A+ G
+Sbjct  61   QFEDKFKLCLAVTCVESRPKGRKQAINYLCFFVIDMDSPMVETAHHDFGKSGVWRKAEGG  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSYR  148
+                      + +               
+Sbjct  121  MCDYWCPNWFMELFKNAHCWEQDRCYMY  148
+
+
+>99
+Length=150
+
+ Score = 90.9 bits (224),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 16/146 (11%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A                             +                   +    
+Sbjct  3    FTRNDAQTSWIMLFFNLIIPCWCTRQVFWDTLCEEVSQAHFFAESVLRQTTMGATLLVTG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +      +         + +    A             +              
+Sbjct  63   RIWRAYHHGRFTECHNFFRYRHTSQYDTHKQANGTPKCSAMDDESIFRYSTNQSPGGNCG  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +  +        L G+    + Y 
+Sbjct  123  CVVCVSCDDSKVVMLWGSTMPPHMYF  148
+
+
+>63
+Length=150
+
+ Score = 90.9 bits (224),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 7/147 (5%), Positives = 20/147 (14%), Gaps = 0/147 (0%)
+
+Query  1    MLELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITT  60
+            +  +        S+ Q      +                F                    
+Sbjct  1    IFFIWSYNFLYNSRPQWFTPKHFNNRGKMIFQKRTRIDMFTFGYQMRCYSTTGMGRVEAM  60
+
+Query  61   LVPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQG  120
+                          +                  + Y      T  +  +   +    D  
+Sbjct  61   AFEMSDSYTCTCKKVEPRKPSRWECYPSLCFNISDYWVPSMWTARIWYEFKGVDYKPDTP  120
+
+Query  121  TILALVGADGIMIGTGLVGALTKVYSY  147
+                 +  +  +          K  + 
+Sbjct  121  FCDYPLLEETGINPKNWSYIDQKWCAM  147
+
+
+>46
+Length=150
+
+ Score = 90.5 bits (223),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 11/143 (8%), Positives = 25/143 (17%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       S         +  + + T    L   +F  +    +     + +      
+Sbjct  3    FCICVGFNWRSLFCWNKTARYHMMKVKTQYYNLWNNHFNDRLSRRTYTSRGQRFQTLCAP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +     G    +  F  E        Y               L        T+
+Sbjct  63   EMDDGITFNGFPEGSFDKLQWFRYEMGCKLSKMYIALYKWYITFHEWTLLRSYDLTCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                             A  + +
+Sbjct  123  RQGDTGYWRKFNWWFSYAEHETF  145
+
+
+>49
+Length=150
+
+ Score = 89.7 bits (221),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 9/138 (7%), Positives = 19/138 (14%), Gaps = 0/138 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       S A       +               +F  +    +     K        
+Sbjct  3    FCIEHGFNHRSLACQHKTCLYHMEGKLHYYANWWNNHFNDRKSRRTYTSCGKRLQTLCAP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +  F  EQ   +   Y          +             T+
+Sbjct  63   EMDDGITFQVKQQPSEDKLRWFRYEQGCNWSKMYIALYKWYLTFMPCTLKRSYDQTCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGA  140
+                              
+Sbjct  123  RQGDTLQWNKFPWNFSYI  140
+
+
+>43
+Length=150
+
+ Score = 89.4 bits (220),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 6/143 (4%), Positives = 20/143 (14%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +                 +  + +      L  ++   +    +     +        
+Sbjct  3    FFICVDWIKRILFWWNKLARYHPMKVAPEKYILLRVHPADRLSRRTYFWRMQREQFLCTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M  S        +  F                           L        T+
+Sbjct  63   HIDLGIMTNSGPDNSFDKLQWFRYLMTCKLSNMIEASYKWYIEFHEWTHLWSYDLRCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                    +           + +
+Sbjct  123  RVGCTPYWLKFPWENSHKHHETF  145
+
+
+>1
+Length=150
+
+ Score = 89.0 bits (219),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 130/149 (87%), Positives = 133/149 (89%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+LLPTAVE V QAQITGR EW WLALGTALMGL TLYFLVKGM VSDPDAKKFY ITTL
+Sbjct  2    LDLLPTAVEYVEQAQITGRGEWKWLALGTALMGLWTLYFLVKGMEVSDPDAKKFYNITTL  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+            VPA AFTMYLSMLL YGLTMVPF GEQNPIYWARY D LFTTPL LL +ALLVDLADQGT
+Sbjct  62   VPASAFTMYLSMLLAYGLTMVPFQGEQNPIYWARYVDQLFTTPLRLLSMALLVDLADQGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+            ILA+VGADGIMIGTGLVGAL KVYS RFV
+Sbjct  122  ILAMVGADGIMIGTGLVGALHKVYSVRFV  150
+
+
+>42
+Length=150
+
+ Score = 88.2 bits (217),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 6/143 (4%), Positives = 20/143 (14%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       +         +  + +      L  ++        +     +        
+Sbjct  3    FFICVDWIKRTLFWGNKLARYHPMKVIFEKYILLRVHPADHLSRDTYFWRMRREQFLCTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M  S        +  F                           L        T+
+Sbjct  63   MIDLGIMQNSGPDNSWDKLDWFRYLMTCKMSNMIEASYKKYIEFHEWTTLWSYDLRCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                    +           + +
+Sbjct  123  RVGCTPYWLKFKWENSHKHCETF  145
+
+
+>47
+Length=150
+
+ Score = 86.7 bits (213),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 9/142 (6%), Positives = 22/142 (15%), Gaps = 0/142 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       S A       +  + + T        +F  +    +       +      
+Sbjct  3    FCICHGFNWRSLACWNKTWRYHMMKVKTYYANWWNNHFNDRLSRRTYTSRGDRFQTLCAP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +  F  E        Y          +    L        T+
+Sbjct  63   EMDDGITFNGFPEPSEDKLQWFRYEMGCNLSKMYIALYKWYITFMPWTLLRSYDQTCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKV  144
+                                + 
+Sbjct  123  RQGDTLQWRKFNWWFSYIEHET  144
+
+
+>2
+Length=150
+
+ Score = 86.3 bits (212),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 112/149 (75%), Positives = 116/149 (78%), Gaps = 0/149 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            L+LLPTA E V QAQITGR EW WLALGTALMGL TLYFL KG  VSDPDAK FY ITT 
+Sbjct  2    LDLLPTADEYVEQAQITGRGEWKWLALGTALMGLWTLYFLFKGWEVSDPDAKAFYNITTQ  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+            VPA A T YLSMLL YGLTMV F  EQN IYWARY D LFTT L LL +ALL+DLADQGT
+Sbjct  62   VPASAGTCYLSMLLAYGLTMVVFKTEQNIIYWARYVDRLFTTGLRLLSMALLLDLADQGT  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYSYRFV  150
+              A+VG DGIMIGT LVGA  KVY  RFV
+Sbjct  122  DEAMVGLDGIMIGTQLVGADHKVYFVRFV  150
+
+
+>44
+Length=150
+
+ Score = 85.5 bits (210),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 9/143 (6%), Positives = 22/143 (15%), Gaps = 0/143 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       S         +  + +      L   +   +    +     +        
+Sbjct  3    FCICVDFWWRSLFWWNKTARYHPMKVKPQKYNLMREHPNDRLSRRTYFWRMQREQFLCTP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  M  S   G    +  F                           L        T+
+Sbjct  63   HIDDGIMTNSFPEGSFDKLQWFRYSMTCKLSNMIEASYKWYIEFHEWTHLWSYDLRCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVY  145
+                    +        A  + +
+Sbjct  123  RVGDTPYWLKFPWEFSHAHHETF  145
+
+
+>100
+Length=150
+
+ Score = 85.1 bits (209),  Expect = 9e-23, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 15/146 (10%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                 A +                           +                   +    
+Sbjct  3    FTRNDAQKSWIMLFFNLIYPCWCTRQVFWDTLCNEVSQAHAFAESVLRQTTMGATLDVTG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +      +                AR                           
+Sbjct  63   RIWRAFHHGRFTECHNFFRKRHTSHYCTHKQARGTPKNSAMDDESQFRYCTNQSPGGACN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +  +        L G+    + + 
+Sbjct  123  CVVCVSCDDSKVVWLWGSTMWEHMWF  148
+
+
+>48
+Length=150
+
+ Score = 84.4 bits (207),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 9/138 (7%), Positives = 21/138 (15%), Gaps = 0/138 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+              +       S A       +  + +          +F  +    +     K        
+Sbjct  3    FCIEHGFNYRSLACQHKTWFYHMMKVLHYYWNWWNNHFNDRKSRRTYTSRGKRLQTLCAP  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                   +          +  F  E    +   Y          +    L        T+
+Sbjct  63   EMDDGITFNGKEEPSEDKLRWFRYEMGCNWSKMYIALYKWYQTFMPCTLLRSYDQTCKTM  122
+
+Query  123  LALVGADGIMIGTGLVGA  140
+                              
+Sbjct  123  RQGDTLQWRKFPWWFSYI  140
+
+
+>101
+Length=150
+
+ Score = 80.5 bits (197),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 14/146 (10%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                                            L  +                   +    
+Sbjct  3    FTTNDYQMSWKMLFFNLIYPCWCTRQVFWDTLLNEVSQSWAFAESVKRQTTMGATLDVTG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                          +          +     AR                           
+Sbjct  63   RIWDAVNAGRWTQCHNFFCKRHTSHKCTHKQARGTPKNSAMDDESHFRYCTNQSPGYACN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +  +        L G+    + + 
+Sbjct  123  CVVCVSCDDSKVVWLWGSDMWEHMWF  148
+
+
+>102
+Length=150
+
+ Score = 78.2 bits (191),  Expect = 5e-20, Method: Composition-based stats.
+ Identities = 5/146 (3%), Positives = 15/146 (10%), Gaps = 0/146 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                                            L  +                   +    
+Sbjct  3    FTTNDYPMQWKMLFFNLIYPCWCTRQVFWDTLLNNVSQSWAFAESVRRATTMGATLDVTG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+               A      +   +          +      R                           
+Sbjct  63   RIWAAVNAGRIFQCHNFFCKRDTSHKPTHKQHRGTPKNSAMDDKPHFRYTTNQSPGYACN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYSYR  148
+              +  +        L G+    + + 
+Sbjct  123  DEVCVSCDDSKVHWLSGSDMWEHMWF  148
+
+
+>103
+Length=150
+
+ Score = 63.6 bits (153),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 5/144 (3%), Positives = 15/144 (10%), Gaps = 0/144 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                                            L  +      +            +    
+Sbjct  3    FTTWDYPMQWKILFFNLIYPCWCTRQMFWDTLLNYVSTSWAFLESVRRATTMGATLDVTG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+               A      +   +          +      R                           
+Sbjct  63   RIWAIVNAGRIFKCHNWFCKRPASHKFTHKQHRGTPANSAMDDKPHFRYRTNQSPGYACN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYS  146
+              +  +        L G+    + 
+Sbjct  123  DEVCVSCDDSKVIWLSGSDMWEHM  146
+
+
+>104
+Length=150
+
+ Score = 56.6 bits (135),  Expect = 9e-12, Method: Composition-based stats.
+ Identities = 5/144 (3%), Positives = 17/144 (12%), Gaps = 0/144 (0%)
+
+Query  3    ELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLV  62
+                                 I          L  +      +            +    
+Sbjct  3    FTTVDYPGQWDILFWNTIYPCICTRQMFWDTLLNYVSTSWAFLEGVRRATTMGATLDVFG  62
+
+Query  63   PAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGTI  122
+                  +   +   +          +      R         +                 
+Sbjct  63   RIWLIVIAGRIFKCHNWFCKRPASHKFTHKQHRGTPANSDMDVKPHFRYRTNFSPCMACN  122
+
+Query  123  LALVGADGIMIGTGLVGALTKVYS  146
+              +      +    L G+    + 
+Sbjct  123  DEVCVDCDGIKVIWLSGSDMWEHL  146
+
+
+>105
+Length=150
+
+ Score = 40.8 bits (94),  Expect = 6e-06, Method: Composition-based stats.
+ Identities = 4/145 (3%), Positives = 18/145 (12%), Gaps = 0/145 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +                 +   I             +      +            +   
+Sbjct  2    IFTTVDYPGQELILFWNTQYPCICTRQMFWDHLHNYVSTSWIFLEGVRRMTTGGATLDRF  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                   +   +   +          +   +  R         +                
+Sbjct  62   GRIWLIVIAGQIFKCHNWFCKRPASIKFTHWQHRGTPANSDMDVFPHFRYRTRFSPCMAC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYS  146
+               +      +    L G+      
+Sbjct  122  NDEVCHDCDGIKVIWLSGSQMWEVL  146
+
+
+>106
+Length=150
+
+ Score = 39.7 bits (91),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 5/145 (3%), Positives = 18/145 (12%), Gaps = 0/145 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +                 +   I             +      +            +   
+Sbjct  2    IFTTVDYPTQELWRFWNTQYPCICTRQMFWDHLHNYVSTSWIFLEGVRRMTTYGATLDRN  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                   +   +   +          +   +  R                          
+Sbjct  62   GRIDLIVIPGQIFKCHNWFPKRMASIKFTHWQHRGTPANSDMDHFPHFHYRTRFSPCMAC  121
+
+Query  122  ILALVGADGIMIGTGLVGALTKVYS  146
+               +      +  T L G+      
+Sbjct  122  NDEVWPPCDGIKPTWLSGSGIWEVL  146
+
+
+>107
+Length=150
+
+ Score = 33.1 bits (74),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 5/139 (4%), Positives = 18/139 (13%), Gaps = 0/139 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +                 +   I             +      +            +   
+Sbjct  2    IFTTQDYPTRELWRFWNTQYPCICTHQMFWDHLHNYVSTAWIFLEGVRRMTTYGATLDRY  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                   +   +   +          +   +  R                          
+Sbjct  62   GRIHLIVIPGQIFKCHNCFPWRMASIKFTHWMHRGVPANSDMDHFPHFHYDTRFSPCMVC  121
+
+Query  122  ILALVGADGIMIGTGLVGA  140
+               +      +  T L G+
+Sbjct  122  NDFVWPVCDGIKPTRLSGS  140
+
+
+>108
+Length=150
+
+ Score = 26.2 bits (56),  Expect = 0.81, Method: Composition-based stats.
+ Identities = 6/139 (4%), Positives = 22/139 (16%), Gaps = 0/139 (0%)
+
+Query  2    LELLPTAVEGVSQAQITGRPEWIWLALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTL  61
+            +   P       +     +   I             + +    +   +        +   
+Sbjct  2    IFTTPDYPTRELKRFWNYQYPCICTHQWFYDHLHKYVSWAWIFLEGVERVTTYDATLDRY  61
+
+Query  62   VPAIAFTMYLSMLLGYGLTMVPFGGEQNPIYWARYADWLFTTPLLLLDLALLVDLADQGT  121
+                   +   +   +          +   +  R                 +        
+Sbjct  62   GRIHLIVIPGQIFKCHNCFPWRMASIKFTHWMHRGVPANSDMDHFPHFHYDVRFEPCMVC  121
+
+Query  122  ILALVGADGIMIGTGLVGA  140
+               +         T L G+
+Sbjct  122  NDFVWMVLDGWKNTRLSGS  140
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.132    0.313    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0405    0.140     1.90     42.6     43.6 
+
+Effective search space used: 57760000
+
+
+  Database: ./distance20.fa
+    Posted date:  Jul 7, 2022  3:11 PM
+  Number of letters in database: 1,500,000
+  Number of sequences in database:  10,000
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

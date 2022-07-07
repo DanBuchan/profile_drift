@@ -116,8 +116,8 @@ def calculate_distances(distances, output):
 # argv[5]: file of all the RAxML distances
 # argv[6]: output csv
 
-# build_blast_db(sys.argv[1])
-# do_blast_iterations(sys.argv[1], sys.argv[2], sys.argv[3])
+build_blast_db(sys.argv[1])
+do_blast_iterations(sys.argv[1], sys.argv[2], sys.argv[3])
 blast_hits = parse_blast_hits(sys.argv[4])
 distances = get_distances(blast_hits, sys.argv[5])
 calculate_distances(distances, sys.argv[6])
