@@ -52,7 +52,9 @@ def parse_blast_hits(output):
     seen = []
     result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
     count = 0
-    for file in glob.glob(f'*.bls'):
+    print(len(glob.glob('*.bls')))
+    for number in range(1, len(glob.glob('*.bls'))+1):
+        file = f'iteration{number}.bls'
         print(file)
         count += 1
         read = False
@@ -72,7 +74,6 @@ def parse_blast_hits(output):
                                 results[count].append(result.groups()[0])
                                 seen.append(int(result.groups()[0]))
                             #print(result.groups()[0])
-
     with open(output, "w") as fhout:
         for iteration in results.keys():
             for hit in results[iteration]:
@@ -98,16 +99,17 @@ def get_distances(hits, distances):
 
 
 def calculate_distances(distances, output):
+    fhout = open(output, "w")
+    fhout.write('iteration,tot_distance,member_count,ave_distance\n')
     results = defaultdict(int)
     for iteration in distances:
         for match in distances[iteration]:
             results[iteration] += distances[iteration][match]
-        results[iteration] = results[iteration]/len(distances[iteration].keys())
+        count = len(distances[iteration].keys())
+        ave = results[iteration]/count
+        fhout.write(f'{iteration},{results[iteration]},{count},{ave)}\n')
+    fhout.close()
 
-    with open(output, "w") as fhout:
-        fhout.write('iteration,ave_distance\n')
-        for iteration in results:
-            fhout.write(f'{iteration},{results[iteration]}\n')
 
 # argv[1]: file to turn in to blast debug
 # argv[2]: seed seq to search with
