@@ -107,7 +107,7 @@ def calculate_distances(distances, output):
             results[iteration] += distances[iteration][match]
         count = len(distances[iteration].keys())
         ave = results[iteration]/count
-        fhout.write(f'{iteration},{results[iteration]},{count},{ave)}\n')
+        fhout.write(f'{iteration},{results[iteration]},{count},{ave}\n')
     fhout.close()
 
 
