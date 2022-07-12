@@ -30,7 +30,9 @@ def do_blast_iterations(fasta_file, seed_seq, n):
                             'iteration1.pssm',
                             '-out',
                             'iteration1.bls',
-                            '-save_pssm_after_last_round']
+                            '-save_pssm_after_last_round',
+                            '-max_target_seqs',
+                            '10000']
     subprocess.call(first_iteration_args)
     for i in range(2, int(n)+1):
         iteration_args = ['/home/dbuchan/Applications/ncbi-blast-2.12.0+/bin/psiblast',
@@ -44,7 +46,9 @@ def do_blast_iterations(fasta_file, seed_seq, n):
                                 f'iteration{i}.pssm',
                                 '-out',
                                 f'iteration{i}.bls',
-                                '-save_pssm_after_last_round']
+                                '-save_pssm_after_last_round',
+                                '-max_target_seqs',
+                                '10000']
         subprocess.call(iteration_args)
 
 def parse_blast_hits(output):
