@@ -104,10 +104,7 @@ the results.
 
 Plots the average distance at each iteration of the blasts in run_blasts.py
 
-
 ## EXPERIMENT
-
-
 
 ### generate datasets
 
