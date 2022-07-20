@@ -104,21 +104,17 @@ the results.
 
 Plots the average distance at each iteration of the blasts in run_blasts.py
 
-## EXPERIMENT
+## EXPERIMENTS
 
-### generate datasets
+### Distance experiment
 
-Generate multiple datasets at different distances 2, 5, 10, 20,
-python sequence_generator.py --num_string 10000 --distance 2 --random_pathing 20 --output_file distance2.fa --starting_string_file data/test_file_150.fa
-python sequence_generator.py --num_string 10000 --distance 5 --random_pathing 20 --output_file distance5.fa --starting_string_file data/test_file_150.fa
-python sequence_generator.py --num_string 10000 --distance 10 --random_pathing 20 --output_file distance10.fa --starting_string_file data/test_file_150.fa
-python sequence_generator.py --num_string 10000 --distance 20 --random_pathing 20 --output_file distance20.fa --starting_string_file data/test_file_150.fa
+How and at what rate are sequences recruited to profiles given a db density? We run this with both hhblits and psiblast to compare to common profile based search methods
 
-### Generate distance matrices
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance2.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance5.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20.fa -n full_db.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+#### Distance_experiment.sh
+
+Script runs the seq generator, calculates distances and then runs serial blasts and compiles the stats
+
+
 
 ## TODO
 
