@@ -20,7 +20,7 @@ echo "calculating distances"
 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance40.fa -n distance40.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance50.fa -n distance50.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
 
-echo "run distnace experiments"
+echo "run distance experiments"
 python ../../run_blasts.py ./distance2.fa ../../data/test_file_150.fa 20 distance2_membership.csv ./RAxML_distances.distance2.dist average_distances2.csv
 python ../../run_blasts.py ./distance5.fa ../../data/test_file_150.fa 20 distance5_membership.csv ./RAxML_distances.distance5.dist average_distances5.csv
 python ../../run_blasts.py ./distance10.fa ../../data/test_file_150.fa 20 distance10_membership.csv ./RAxML_distances.distance10.dist average_distances10.csv

@@ -114,7 +114,13 @@ How and at what rate are sequences recruited to profiles given a db density? We 
 
 Script runs the seq generator, calculates distances and then runs serial blasts and compiles the stats
 
+### Drift experiment
 
+Take the dbs we created in distance experiment. From the seed sequence pick a first sequence n steps away then another n steps away and so on. So each of those generate 500 sequences that are 1 step apart (a denser region). Then make paired databases with the first pick and the ones further and further away. Rerun the run_blasts.py and plot the results and see what happens.
+
+### create_family.py
+
+Take a fa file, read it's distance matrix. Take First seq 1000 (away from the start), then take seqs at 2000, 3000 etc... but skip 10,000. Generate 500 sequences at step 1 from these. Then create databases that cat first family, nth family and the parent fa file
 
 ## TODO
 
