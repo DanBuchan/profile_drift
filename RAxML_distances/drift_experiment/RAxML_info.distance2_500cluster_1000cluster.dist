@@ -49,3 +49,7 @@ Log Likelihood Score after parameter optimization: -189596.280887
 
 
 Computing pairwise ML-distances ...
+
+Time for pair-wise ML distance computation of 60968403 distances: 2483.202874 seconds
+
+Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/RAxML_distances.distance2_500cluster_1000cluster.dist
