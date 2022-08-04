@@ -36,3 +36,11 @@ members <- data.frame(iteration=distances2$iteration, memb2=distances2$member_co
 plot_df <- melt(members, id.vars="iteration")
 ggplot(plot_df, aes(x=iteration, y=value, col=variable)) + geom_point() + geom_line()
 ggsave("/home/dbuchan/Projects/profile_drift/plots/members_growth_at_iteration.png", dpi=100, width=800, height=600, units="px")
+
+
+###
+
+distance2_500_1000 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/average_distances2_500cluster_1000cluster.csv", header=T)
+ggplot(distance2_500_1000, aes(x=iteration, y=tot_distance)) + geom_point() + geom_line()
+ggplot(distance2_500_1000, aes(x=iteration, y=member_count)) + geom_point() + geom_line()
+ggplot(distance2_500_1000, aes(x=iteration, y=ave_distance)) + geom_point() + geom_line()

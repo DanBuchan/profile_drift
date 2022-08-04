@@ -116,7 +116,7 @@ Script runs the seq generator, calculates distances and then runs serial blasts 
 
 ### Drift experiment
 
-Take the dbs we created in distance experiment. From the seed sequence pick a first sequence n steps away then another n steps away and so on. So each of those generate 500 sequences that are 1 step apart (a denser region). Then make paired databases with the first pick and the ones further and further away. Rerun the run_blasts.py and plot the results and see what happens.
+Take the dbs we created in distance experiment. Take the distanceX_membership.csv from the distance experiment and select sequences n distnace away so they are on the search path. So each of those generate 500 sequences that are 1 step apart (a denser region). Then make paired databases with the first pick and the ones further and further away. Rerun the run_blasts.py and plot the results and see what happens.
 
 ### create_family.py
 

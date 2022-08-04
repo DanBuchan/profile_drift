@@ -51,7 +51,7 @@ def do_blast_iterations(fasta_file, seed_seq, n):
                                 '10000']
         subprocess.call(iteration_args)
 
-def parse_blast_hits(output):
+def parse_blast_hits():
     results = defaultdict(list)
     seen = []
     result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
@@ -78,10 +78,10 @@ def parse_blast_hits(output):
                                 results[count].append(result.groups()[0])
                                 seen.append(int(result.groups()[0]))
                             #print(result.groups()[0])
-    with open(output, "w") as fhout:
-        for iteration in results.keys():
-            for hit in results[iteration]:
-                fhout.write(f'{iteration},{hit}\n')
+    # with open(output, "w") as fhout:
+    #     for iteration in results.keys():
+    #         for hit in results[iteration]:
+    #             fhout.write(f'{iteration},{hit}\n')
     return results
 
 
@@ -102,12 +102,17 @@ def get_distances(hits, distances):
     return dist_results
 
 
-def calculate_distances(distances, output):
-    fhout = open(output, "w")
+def calculate_distances(distances, hits_output, summary_output):
+    fhout = open(summary_output, "w")
     fhout.write('iteration,tot_distance,member_count,ave_distance\n')
+
+    fhhit = open(hits_output, "w")
+    fhhit.write('iteration,hit,distance\n')
+
     results = defaultdict(int)
     for iteration in distances:
         for match in distances[iteration]:
+            fhhit.write(f'{iteration},{match},{distances[iteration][match]}\n')
             results[iteration] += distances[iteration][match]
         count = len(distances[iteration].keys())
         ave = results[iteration]/count
@@ -120,10 +125,11 @@ def calculate_distances(distances, output):
 # argv[3]: number of iterations of seasrch
 # argv[4]: output file for iteration membership
 # argv[5]: file of all the RAxML distances
-# argv[6]: output csv
+# argv[6]: output summary csv
+# argv[7]: output
 
 build_blast_db(sys.argv[1])
 do_blast_iterations(sys.argv[1], sys.argv[2], sys.argv[3])
-blast_hits = parse_blast_hits(sys.argv[4])
+blast_hits = parse_blast_hits()
 distances = get_distances(blast_hits, sys.argv[5])
-calculate_distances(distances, sys.argv[6])
+calculate_distances(distances, sys.argv[4], sys.argv[6])
