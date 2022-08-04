@@ -11,8 +11,9 @@ echo "generating sets with familes"
 # python /home/dbuchan/Projects/profile_drift/create_family.py distance50.fa distance50
 
 echo "run distance experiments"
-for step in '2' '5' '10' '20' '30' '40' '50';
+# for step in '2' '5' '10' '20' '30' '40' '50';
 # for step in '2';
+for step in '30' '40' '50';
 do
   for id in '1000' '1500' '2000' '2500' '3000' '3500' '4000' '4500' '5000' '5500' '6000' '6500' '7000' '7500' '8000' '8500' '9000' '9500';
   # for id in '1000';
