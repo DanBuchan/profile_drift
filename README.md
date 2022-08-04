@@ -120,7 +120,9 @@ Take the dbs we created in distance experiment. Take the distanceX_membership.cs
 
 ### create_family.py
 
-Take a fa file, read it's distance matrix. Take First seq 1000 (away from the start), then take seqs at 2000, 3000 etc... but skip 10,000. Generate 500 sequences at step 1 from these. Then create databases that cat first family, nth family and the parent fa file
+read fasta and distanceX_membership.csv. for every alternate iteration (2, 4, 6...) pick a seed
+sequence that is some distance from the start. This ensures all seeds are on the search path of
+blast. Each new seed can't be a previous seed.
 
 ## TODO
 
