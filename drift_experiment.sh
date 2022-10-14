@@ -2,13 +2,13 @@
 
 # generate sequence dbs
 echo "generating sets with familes"
-# python /home/dbuchan/Projects/profile_drift/create_family.py distance2.fa distance2_membership.csv distance2
-# python /home/dbuchan/Projects/profile_drift/create_family.py distance5.fa distance5_membership.csv distance5
-# python /home/dbuchan/Projects/profile_drift/create_family.py distance10.fa distance10_membership.csv distance10
-# python /home/dbuchan/Projects/profile_drift/create_family.py distance20.fa distance20_membership.csv distance20
-# python /home/dbuchan/Projects/profile_drift/create_family.py distance30.fa distance30_membership.csv distance30
-# python /home/dbuchan/Projects/profile_drift/create_family.py distance40.fa distance40_membership.csv distance40
-# python /home/dbuchan/Projects/profile_drift/create_family.py distance50.fa distance50_membership.csv distance50
+python /home/dbuchan/Projects/profile_drift/create_family.py distance2.fa distance2_membership.csv distance2
+python /home/dbuchan/Projects/profile_drift/create_family.py distance5.fa distance5_membership.csv distance5
+python /home/dbuchan/Projects/profile_drift/create_family.py distance10.fa distance10_membership.csv distance10
+python /home/dbuchan/Projects/profile_drift/create_family.py distance20.fa distance20_membership.csv distance20
+python /home/dbuchan/Projects/profile_drift/create_family.py distance30.fa distance30_membership.csv distance30
+python /home/dbuchan/Projects/profile_drift/create_family.py distance40.fa distance40_membership.csv distance40
+python /home/dbuchan/Projects/profile_drift/create_family.py distance50.fa distance50_membership.csv distance50
 
 echo "run distance experiments"
 # for step in '2' '5' '10' '20' '30' '40' '50';
