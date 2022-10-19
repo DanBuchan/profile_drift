@@ -124,6 +124,9 @@ read fasta and distanceX_membership.csv. for every alternate iteration (2, 4, 6.
 sequence that is some distance from the start. This ensures all seeds are on the search path of
 blast. Each new seed can't be a previous seed.
 
+# DRIFT EXPERIMENTS
+WE SAVE THE BLAST RESULTS IN A DIR SO WE CAN MONITOR WHICH SEQS ARE RECRUITED PER ITERATION
+
 ## TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
