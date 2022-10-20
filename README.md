@@ -120,9 +120,28 @@ Take the dbs we created in distance experiment. Take the distanceX_membership.cs
 
 ### create_family.py
 
-read fasta and distanceX_membership.csv. for every alternate iteration (2, 4, 6...) pick a seed
-sequence that is some distance from the start. This ensures all seeds are on the search path of
-blast. Each new seed can't be a previous seed.
+read fasta and distanceX_membership.csv. for every alternate iteration (2, 4, 6...) pick a seed sequence that is some distance from the start. This ensures all seeds are on the search path of blast. Each new seed can't be a previous seed.
+
+For instance files are named
+
+distance40_12_seed.fa - A seed sequences taken from the distance 40 file/db
+                        and is a seed from the 12th iteration
+distance40_12cluster.fa - a cluster of "near" sequences generated from that seed
+distance40_6cluster_12cluster.fa - fasta database built from the distance40 file
+                                   adding the 2 clusters at the 6th and 12th iterations
+### drift_experiment.sh
+
+create the families then run the blasts for the 30, 40 and 50 distance backgrounds
+
+### plot_average_blast_growth.R
+
+Run this again to see what the memberships look like
+
+### count_growth_members.py
+
+Quick script to look through the drift hits to see what cluster members are
+picked up at each iteration.
+
 
 ## TODO
 
