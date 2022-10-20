@@ -143,6 +143,9 @@ Quick script to look through the drift hits to see what cluster members are
 picked up at each iteration.
 
 
+# DRIFT EXPERIMENTS
+WE SAVE THE BLAST RESULTS IN A DIR SO WE CAN MONITOR WHICH SEQS ARE RECRUITED PER ITERATION
+
 ## TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
