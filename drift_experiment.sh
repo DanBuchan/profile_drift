@@ -31,7 +31,7 @@ do
     echo "python /home/dbuchan/Projects/profile_drift/run_blasts.py $db $seed 20 $membership $raxml $averages"
     # /home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s $db -n $dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
     python /home/dbuchan/Projects/profile_drift/run_blasts.py $db $seed 20 $membership $raxml $averages
-    mkdir $blastdir
-    mv *.bls $blastdir
+    # mkdir $blastdir
+    mv iteration*.bls $blastdir
   done
 done

@@ -142,9 +142,12 @@ Run this again to see what the memberships look like
 Quick script to look through the drift hits to see what cluster members are
 picked up at each iteration.
 
+produces *.membercount the shows you the recruiting numbers from each pseudo-family and the backgroun
 
-# DRIFT EXPERIMENTS
-WE SAVE THE BLAST RESULTS IN A DIR SO WE CAN MONITOR WHICH SEQS ARE RECRUITED PER ITERATION
+# plot_member_count.R
+
+Take the membercount graphs and plot some nice histograms.
+
 
 ## TODO
 
