@@ -13,7 +13,7 @@ echo "generating sets with familes"
 echo "run distance experiments"
 # for step in '2' '5' '10' '20' '30' '40' '50';
 # for step in '2';
-for step in '30' '40' '50';
+for step in '10' '20';
 do
   for entry in "./distance"$step"_"*"cluster_"*"cluster.fa";
   # for id in '1000';
@@ -29,9 +29,9 @@ do
     blastdir="distance"$step"_"$start"cluster_"$id"cluster"
     echo "/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s $db -n $dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr"
     echo "python /home/dbuchan/Projects/profile_drift/run_blasts.py $db $seed 20 $membership $raxml $averages"
-    # /home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s $db -n $dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+    /home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s $db -n $dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
     python /home/dbuchan/Projects/profile_drift/run_blasts.py $db $seed 20 $membership $raxml $averages
-    # mkdir $blastdir
+    mkdir $blastdir
     mv iteration*.bls $blastdir
   done
 done

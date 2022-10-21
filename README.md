@@ -35,7 +35,7 @@ python3 sequence_generator.py --num_string 10 --distance 1 --output_file output.
 ### Building datasets of num_strings
 
 average in h family distance in CATH is 1.6
-avaerage between family distance in cath is 11
+average between family distance in cath is 11
 
 a) python sequence_generator.py --num_string 10000 --distance 2 --random_pathing 20 --output_file test.fa --starting_string_file data/test_file_150.fa
 
@@ -147,7 +147,6 @@ produces *.membercount the shows you the recruiting numbers from each pseudo-fam
 # plot_member_count.R
 
 Take the membercount graphs and plot some nice histograms.
-
 
 ## TODO
 
