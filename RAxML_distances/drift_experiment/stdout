@@ -57,15 +57,15 @@ Using fixed base frequencies
 
 RAxML was called as follows:
 
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance50_4cluster_8cluster.fa -n distance50_4cluster_8cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_94cluster.fa -n distance20_10cluster_94cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
 
 
 
-Log Likelihood Score after parameter optimization: -2708893.523351
+Log Likelihood Score after parameter optimization: -1321729.799989
 
 
 Computing pairwise ML-distances ...
 
-Time for pair-wise ML distance computation of 60813906 distances: 4720.821486 seconds
+Time for pair-wise ML distance computation of 60769800 distances: 1232.047049 seconds
 
-Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/RAxML_distances.distance50_4cluster_8cluster.dist
+Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/RAxML_distances.distance20_10cluster_94cluster.dist
