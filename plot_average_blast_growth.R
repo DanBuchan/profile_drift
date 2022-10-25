@@ -44,3 +44,76 @@ distance2_500_1000 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_dista
 ggplot(distance2_500_1000, aes(x=iteration, y=tot_distance)) + geom_point() + geom_line()
 ggplot(distance2_500_1000, aes(x=iteration, y=member_count)) + geom_point() + geom_line()
 ggplot(distance2_500_1000, aes(x=iteration, y=ave_distance)) + geom_point() + geom_line()
+
+path <- "/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/"
+files <- Sys.glob(paste(path, "average_distances10*", sep=""))
+ldf <- lapply(files, read.csv)
+ldf[[1]]$dist <- 103
+ldf[[2]]$dist <- 121
+ldf[[3]]$dist <- 141
+ldf[[4]]$dist <- 158
+ldf[[5]]$dist <- 174
+ldf[[6]]$dist <- 196
+ldf[[7]]$dist <- 213
+ldf[[8]]$dist <- 55
+ldf[[9]]$dist <- 81
+ten_distances <- rbind(ldf[[8]], ldf[[9]], ldf[[1]], ldf[[2]], ldf[[3]], ldf[[4]], ldf[[5]], ldf[[6]], ldf[[7]])
+ten_distances$dist <- as.factor(ten_distances$dist) 
+ggplot(ten_distances, aes(x=iteration, y=member_count, group=dist, colour=dist))+ geom_point() + geom_line()
+
+files <- Sys.glob(paste(path, "average_distances20*", sep=""))
+ldf <- lapply(files, read.csv)
+ldf[[1]]$dist <- 102
+ldf[[2]]$dist <- 21
+ldf[[3]]$dist <- 35
+ldf[[4]]$dist <- 46
+ldf[[5]]$dist <- 58
+ldf[[6]]$dist <- 70
+ldf[[7]]$dist <- 77
+ldf[[8]]$dist <- 86
+ldf[[9]]$dist <- 94
+twenty_distances <- rbind(ldf[[2]], ldf[[3]], ldf[[4]], ldf[[5]], ldf[[6]], ldf[[7]], ldf[[8]], ldf[[9]], ldf[[1]])
+twenty_distances$dist <- as.factor(twenty_distances$dist) 
+ggplot(twenty_distances, aes(x=iteration, y=member_count, group=dist, colour=dist))+ geom_point() + geom_line()
+
+files <- Sys.glob(paste(path, "average_distances30*", sep=""))
+ldf <- lapply(files, read.csv)
+ldf[[1]]$dist <- 17
+ldf[[2]]$dist <- 26
+ldf[[3]]$dist <- 35
+ldf[[4]]$dist <- 38
+ldf[[5]]$dist <- 45
+ldf[[6]]$dist <- 53
+ldf[[7]]$dist <- 61
+ldf[[8]]$dist <- 65
+ldf[[9]]$dist <- 70
+thirty_distances <- rbind(ldf[[1]], ldf[[2]], ldf[[3]], ldf[[4]], ldf[[5]], ldf[[6]], ldf[[7]], ldf[[8]], ldf[[9]])
+thirty_distances$dist <- as.factor(thirty_distances$dist) 
+ggplot(thirty_distances, aes(x=iteration, y=member_count, group=dist, colour=dist))+ geom_point() + geom_line()
+
+
+files <- Sys.glob(paste(path, "average_distances40*", sep=""))
+ldf <- lapply(files, read.csv)
+ldf[[1]]$dist <- 12
+ldf[[2]]$dist <- 18
+ldf[[3]]$dist <- 25
+ldf[[4]]$dist <- 27
+ldf[[5]]$dist <- 31
+ldf[[6]]$dist <- 35
+ldf[[7]]$dist <- 39
+forty_distances <- rbind(ldf[[1]], ldf[[2]], ldf[[3]], ldf[[4]], ldf[[5]], ldf[[6]], ldf[[7]])
+forty_distances$dist <- as.factor(forty_distances$dist) 
+ggplot(forty_distances, aes(x=iteration, y=member_count, group=dist, colour=dist))+ geom_point() + geom_line()
+
+
+files <- Sys.glob(paste(path, "average_distances50*", sep=""))
+ldf <- lapply(files, read.csv)
+ldf[[1]]$dist <- 12
+ldf[[2]]$dist <- 16
+ldf[[3]]$dist <- 29
+ldf[[4]]$dist <- 21
+ldf[[5]]$dist <- 24
+ldf[[6]]$dist <- 8
+fifty_distances <- rbind(ldf[[6]], ldf[[1]], ldf[[2]], ldf[[3]], ldf[[4]], ldf[[5]])
+fifty_distances$dist <- as.factor(fifty_distances$dist) 
+ggplot(fifty_distances, aes(x=iteration, y=member_count, group=dist, colour=dist))+ geom_point() + geom_line()
