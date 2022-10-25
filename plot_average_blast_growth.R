@@ -40,7 +40,7 @@ ggsave("/home/dbuchan/Projects/profile_drift/plots/members_growth_at_iteration.p
 
 ###
 
-distance2_500_1000 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/average_distances50_4cluster_24cluster.csv", header=T)
+distance2_500_1000 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/average_distances10_23cluster_103cluster.csv", header=T)
 ggplot(distance2_500_1000, aes(x=iteration, y=tot_distance)) + geom_point() + geom_line()
 ggplot(distance2_500_1000, aes(x=iteration, y=member_count)) + geom_point() + geom_line()
 ggplot(distance2_500_1000, aes(x=iteration, y=ave_distance)) + geom_point() + geom_line()

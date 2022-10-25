@@ -12,3 +12,4 @@ draw_member_chart <- function(file){
 }
 
 lapply(files, draw_member_chart)
+

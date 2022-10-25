@@ -27,6 +27,11 @@ def read_fa_file(file):
 
 for root, dir, stuff, in os.walk(experiment_dir):
     for d in dir:
+        if d.startswith("distance10") or d.startswith("distance20") :
+            print(d)
+        else:
+            continue
+
         fa = d+".fa"
         iteration_members = {}
         if os.path.isfile(fa):
