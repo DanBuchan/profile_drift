@@ -135,7 +135,7 @@ create the families then run the blasts for the 30, 40 and 50 distance backgroun
 
 ### plot_average_blast_growth.R
 
-Run this again to see what the memberships look like
+Run this again to see what the memberships look like. and plot the average distances per iteration
 
 ### count_growth_members.py
 
@@ -147,6 +147,12 @@ produces *.membercount the shows you the recruiting numbers from each pseudo-fam
 # plot_member_count.R
 
 Take the membercount graphs and plot some nice histograms.
+
+# detect_change.py
+
+Take the average distances files and detect when the graph changes slope. Uses
+rupture.py, http://www.laurentoudre.fr/publis/TOG-SP-19.pdf
+
 
 ## TODO
 
