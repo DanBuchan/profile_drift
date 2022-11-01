@@ -142,7 +142,7 @@ Run this again to see what the memberships look like. and plot the average dista
 Quick script to look through the drift hits to see what cluster members are
 picked up at each iteration.
 
-produces *.membercount the shows you the recruiting numbers from each pseudo-family and the backgroun
+produces *.membercount the shows you the recruiting numbers from each pseudo-family and the background
 
 # plot_member_count.R
 
@@ -150,8 +150,12 @@ Take the membercount graphs and plot some nice histograms.
 
 # detect_change.py
 
-Take the average distances files and detect when the graph changes slope. Uses
-rupture.py, http://www.laurentoudre.fr/publis/TOG-SP-19.pdf
+Use this differentiation https://stackoverflow.com/questions/47519626/using-numpy-scipy-to-identify-slope-changes-in-digital-signals to find inflection points on the graphs
+
+# find_inflection_points.py
+
+Take the member counts. Find out when 1st cluster members stop being recruited or when 2nd members. Calculate the
+detect changes and see how often we're within n iterations of being right (TF) or how often we miss (FN)
 
 
 ## TODO

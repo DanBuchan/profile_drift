@@ -4,11 +4,13 @@ from matplotlib import gridspec
 import numpy as np
 
 from scipy.signal import argrelmax
+from scipy.signal import find_peaks
+
 from scipy.ndimage.filters import gaussian_filter1d
 
 
 dir = "/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/"
-file = "average_distances10_23cluster_158cluster.csv"
+file = "average_distances10_23cluster_103cluster.csv"
 path = dir+file
 
 series = np.genfromtxt(path, delimiter=',', skip_header=True)
@@ -88,7 +90,9 @@ ax4.plot(smoothed_signal)
 plt.tight_layout()
 # plt.show()
 
-max_idx = argrelmax(smoothed_signal)[0]
+#max_idx = argrelmax(smoothed_signal, order=3)[0]
+max_idx, _ = find_peaks(smoothed_signal, height=10)
+
 print(max_idx)
 fig, ax = plt.subplots()
 ax.plot(signal)
