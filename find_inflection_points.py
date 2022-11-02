@@ -12,13 +12,15 @@ from itertools import product
 dir = "/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/members/*.membercount"
 drift_dir = "/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/"
 files = glob.glob(dir)
-
+TP = 0
+FP = 0
+FN = 0
 for file in files:
     cluster_1_first_elbow_found = False
     cluster_2_first_elbow_found = False
     cluster_2_second_elbow_found = False
     parts = re.findall(r'\d+', file)
-    print(int(parts[0]), int(parts[1]), int(parts[2]))
+    # print(int(parts[0]), int(parts[1]), int(parts[2]))
     elbows = []
     with open(file, "r", encoding="utf-8") as csvfile:
 
@@ -45,7 +47,7 @@ for file in files:
                     elbows.append(count)
                 clus_1_previous = int(row[2])
                 clus_2_previous = int(row[3])
-        print(elbows)
+        # print(elbows)
     ave_file = f"average_distances{parts[0]}_{parts[1]}cluster_{parts[2]}cluster.csv"
     series = np.genfromtxt(drift_dir+ave_file, delimiter=',', skip_header=True)
     signal = series[:, 2]
@@ -55,9 +57,7 @@ for file in files:
     smoothed_signal = gaussian_filter1d(signal_2nddev_clipped, 1)
     max_idx, _ = find_peaks(smoothed_signal, height=10)
     max_idx = list(max_idx)
-    TP = 0
-    FP = 0
-    FN = 0
+
     if len(max_idx) != 0 and len(elbows) != 0:
         if abs(elbows[0] - max_idx[0]) <= 2:
             TP+=1
@@ -65,14 +65,17 @@ for file in files:
             elbows.pop(0)
     c = list(itertools.product(max_idx, elbows))
     # print(c)
-    print("REMAINING", len(max_idx), len(elbows))
+    #print("REMAINING", len(max_idx), len(elbows))
+    #print("REMAINING", elbows,  max_idx)
     if len(max_idx) != 0 and len(elbows) != 0:
         for item in elbows[:]: # make a copy of x
             for item2 in max_idx[:]:
                 if abs(item-item2) <= 2:
+                    # print(item, item2)
                     elbows.remove(item)
                     max_idx.remove(item2)
                     TP+=1
+                    break
                 if len(elbows) == 0:
                     break
                 if len(max_idx) == 0:
@@ -82,8 +85,8 @@ for file in files:
             if len(max_idx) == 0:
                 break
 
-    FP = len(max_idx)
-    FN = len(elbows)
-    print("TP,FP,FN")
-    print(f"{TP},{FP},{FN}")
+    FP+=len(max_idx)
+    FN+=len(elbows)
+print("TP,FP,FN")
+print(f"{TP},{FP},{FN}")
     #break
