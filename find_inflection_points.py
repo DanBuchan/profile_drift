@@ -58,24 +58,32 @@ for file in files:
     TP = 0
     FP = 0
     FN = 0
-    if abs(elbows[0] - max_idx[0]) <= 2:
-        TP+=1
-        max_idx.pop(0)
-        elbows.pop(0)
-    while True:
-        c = list(itertools.product(max_idx, elbows))
-        # print(c)
-        for pair in c:
-            if abs(pair[1] - pair[0]) <= 2:
-                TP+=1
-                max_idx.remove(pair[0])
-                elbows.remove(pair[1])
-                if len(max_idx) == 0 or len(elbows) == 0:
+    if len(max_idx) != 0 and len(elbows) != 0:
+        if abs(elbows[0] - max_idx[0]) <= 2:
+            TP+=1
+            max_idx.pop(0)
+            elbows.pop(0)
+    c = list(itertools.product(max_idx, elbows))
+    # print(c)
+    print("REMAINING", len(max_idx), len(elbows))
+    if len(max_idx) != 0 and len(elbows) != 0:
+        for item in elbows[:]: # make a copy of x
+            for item2 in max_idx[:]:
+                if abs(item-item2) <= 2:
+                    elbows.remove(item)
+                    max_idx.remove(item2)
+                    TP+=1
+                if len(elbows) == 0:
                     break
-        if len(max_idx) == 0 or len(elbows) == 0:
-            break
+                if len(max_idx) == 0:
+                    break
+            if len(elbows) == 0:
+                break
+            if len(max_idx) == 0:
+                break
 
     FP = len(max_idx)
     FN = len(elbows)
     print("TP,FP,FN")
     print(f"{TP},{FP},{FN}")
+    #break
