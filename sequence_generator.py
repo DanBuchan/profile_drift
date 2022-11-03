@@ -44,7 +44,7 @@ def check_positive(value):
 def read_distance_matrix():
     '''Read in the blosum csv from the data dir'''
     blosum_matrix = []
-    with open('../../matrices/blosum62.csv', "r", encoding="utf-8") as fh_bl:
+    with open('./matrices/blosum62.csv', "r", encoding="utf-8") as fh_bl:
         blosumreader = csv.reader(fh_bl, delimiter=",")
         next(blosumreader)
         for line in blosumreader:
@@ -61,10 +61,10 @@ def generate_mat_dist_string(length, distance):
     replace_list = random.choices(range(0, alphabet_size), k=length)
     # the change to make
 
-    cummulative_dist = 0
     changes = []
     replacing = []
     score = 0
+    print(change_list, replace_list)
     for i, entity in enumerate(change_list):
         source = curr_string[entity]
         replacement = replace_list[i]
@@ -77,29 +77,31 @@ def generate_mat_dist_string(length, distance):
     return changes, replacing
 
 
-def generate_prob_dist_string(length, distance, curr_string):
+def generate_prob_dist_string(length, distance, string_copy):
     '''Creates a randomised list of possible changes and selects the changes
     based on the distance matrix as though it were a probability '''
     changes = []
     replacing = []
     replace_list = []
     change_list = random.sample(range(0, length), length)
-    for aa in curr_string:
+    for aa in string_copy:
         selection = random.choices(range(0, alphabet_size),
-                                   weights=DIST_MATRIX[aa][:20],
+                                   weights=PROB_MATRIX[aa][:20],
                                    k=1)
         replace_list.append(selection[0])
-    cummulative_dist = 0
     score = 0
+    # print(change_list, replace_list)
     for i, entity in enumerate(change_list):
         source = curr_string[entity]
         replacement = replace_list[i]
-        if DIST_MATRIX[source][replacement] < 0:
-            score += abs(DIST_MATRIX[source][replacement])
-            changes.append(entity)
-            replacing.append(replace_list[i])
+
+        score += -DIST_MATRIX[source][replacement]
+        changes.append(entity)
+        replacing.append(replace_list[i])
+
         if score >= distance:
             break
+    # print(changes, replacing)
     return changes, replacing
 
 
@@ -167,7 +169,7 @@ if args.matrix_distance:
     DIST_MATRIX = read_distance_matrix()
 if args.probability_selection:
     DIST_MATRIX = read_distance_matrix()
-    DIST_MATRIX = prob_transform_matrix()
+    PROB_MATRIX = prob_transform_matrix()
 
 alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
         'P', 'S', 'T', 'W', 'Y', 'V']
@@ -191,6 +193,7 @@ for w in range(0, args.walk_number):
     new_strings = []
     selected_strings = []
     while True:
+        # print(len(strings))
         iter_strings = copy.deepcopy(seed_strings)
         if args.random_pathing:
             iter_strings = random.choices(seed_strings, k=args.random_pathing)
@@ -204,8 +207,7 @@ for w in range(0, args.walk_number):
                     pos_to_change, replacements = generate_prob_dist_string(
                                                   length_of_strings,
                                                   args.distance,
-                                                  curr_string)
-                    exit()
+                                                  copy.deepcopy(curr_string))
                 else:
                     pos_to_change = random.sample(range(0, length_of_strings),
                                                   args.distance)
