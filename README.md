@@ -18,6 +18,7 @@ Options:
 * --output_file : Name of a fasta file to put the protein strings in
 * --starting_string_file : Seed string to start. All strings will be the same size as the seed string
 * --matrix_distance : flag to toggle if the distance should be interpreted as a substitution distance or a value from a distance matrix
+* --probability_selection : when selecting a substitution draw it from the distance matrix as though it were a probability distribution
 
 #### matrix_distance
 

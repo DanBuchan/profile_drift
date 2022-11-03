@@ -56,8 +56,10 @@ def generate_mat_dist_string(length, distance):
     '''Creates a randomised list of possible changes and a list of replacements
     counts them up until the distance score has been reached and returns that
     subset'''
-    change_list = random.sample(range(0, length), length)
+    change_list = random.sample(range(0, length), length) # The residue
+                                                          # position to change
     replace_list = random.choices(range(0, alphabet_size), k=length)
+    # the change to make
 
     cummulative_dist = 0
     changes = []
@@ -75,6 +77,44 @@ def generate_mat_dist_string(length, distance):
     return changes, replacing
 
 
+def generate_prob_dist_string(length, distance, curr_string):
+    '''Creates a randomised list of possible changes and selects the changes
+    based on the distance matrix as though it were a probability '''
+    changes = []
+    replacing = []
+    replace_list = []
+    change_list = random.sample(range(0, length), length)
+    for aa in curr_string:
+        selection = random.choices(range(0, alphabet_size),
+                                   weights=DIST_MATRIX[aa][:20],
+                                   k=1)
+        replace_list.append(selection[0])
+    cummulative_dist = 0
+    score = 0
+    for i, entity in enumerate(change_list):
+        source = curr_string[entity]
+        replacement = replace_list[i]
+        if DIST_MATRIX[source][replacement] < 0:
+            score += abs(DIST_MATRIX[source][replacement])
+            changes.append(entity)
+            replacing.append(replace_list[i])
+        if score >= distance:
+            break
+    return changes, replacing
+
+
+def prob_transform_matrix():
+    '''
+    Take a distance matrix and convert the propensities to probabilities
+    '''
+    new_mat = []
+    for row in DIST_MATRIX:
+        row_replacement = [x+abs(min(row))+1 for x in row]
+        row_replacement = [x/sum(row_replacement) for x in row_replacement]
+        new_mat.append(row_replacement)
+    return(new_mat)
+
+
 parser = argparse.ArgumentParser(description='Generate a sets of (approx)'
                                  'equi-spaced proteins',
                                  prog='sequence_generator.py',
@@ -90,6 +130,9 @@ parser.add_argument('--distance', help="distance apart for each generated "
 parser.add_argument('--matrix_distance', help="Toggle whether distances are"
                     "calculated from a dist matrix of as the raw number of"
                     "substitutions", action="store_true")
+parser.add_argument('--probability_selection', help="when selecting a "
+                    "substitution draw it from the distance matrix as though"
+                    " it were a probability distribution", action="store_true")
 parser.add_argument('--breadth_traversal', help="Toggle whether the sequences"
                     "are generated as a single random walk or a set of "
                     "n fanning out walks. Value is the number of sequences to "
@@ -122,6 +165,10 @@ if args.random_pathing and args.walk_number > 1:
 
 if args.matrix_distance:
     DIST_MATRIX = read_distance_matrix()
+if args.probability_selection:
+    DIST_MATRIX = read_distance_matrix()
+    DIST_MATRIX = prob_transform_matrix()
+
 alph = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F',
         'P', 'S', 'T', 'W', 'Y', 'V']
 alphabet_size = len(alph)
@@ -151,7 +198,14 @@ for w in range(0, args.walk_number):
             for i in range(0, args.breadth_traversal):
                 if args.matrix_distance:
                     pos_to_change, replacements = generate_mat_dist_string(
-                                                  length_of_strings, args.distance)
+                                                  length_of_strings,
+                                                  args.distance)
+                elif args.probability_selection:
+                    pos_to_change, replacements = generate_prob_dist_string(
+                                                  length_of_strings,
+                                                  args.distance,
+                                                  curr_string)
+                    exit()
                 else:
                     pos_to_change = random.sample(range(0, length_of_strings),
                                                   args.distance)
