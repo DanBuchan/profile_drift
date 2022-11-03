@@ -44,7 +44,7 @@ def check_positive(value):
 def read_distance_matrix():
     '''Read in the blosum csv from the data dir'''
     blosum_matrix = []
-    with open('./matrices/blosum62.csv', "r", encoding="utf-8") as fh_bl:
+    with open('../../matrices/blosum62.csv', "r", encoding="utf-8") as fh_bl:
         blosumreader = csv.reader(fh_bl, delimiter=",")
         next(blosumreader)
         for line in blosumreader:
