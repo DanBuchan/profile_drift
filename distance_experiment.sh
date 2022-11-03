@@ -2,13 +2,13 @@
 
 # generate sequence dbs
 echo "generating sequences"
-python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 2 --random_pathing 20 --output_file distance2.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa
-python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 5 --random_pathing 20 --output_file distance5.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa
-python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 10 --random_pathing 20 --output_file distance10.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa
-python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 20 --random_pathing 20 --output_file distance20.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa
-python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 30 --random_pathing 20 --output_file distance30.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa
-python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 40 --random_pathing 20 --output_file distance40.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa
-python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 50 --random_pathing 20 --output_file distance50.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa
+python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 2 --random_pathing 20 --output_file distance2.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa --probability_selection
+python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 5 --random_pathing 20 --output_file distance5.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa --probability_selection
+python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 10 --random_pathing 20 --output_file distance10.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa --probability_selection
+python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 20 --random_pathing 20 --output_file distance20.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa --probability_selection
+python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 30 --random_pathing 20 --output_file distance30.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa --probability_selection
+python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 40 --random_pathing 20 --output_file distance40.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa --probability_selection
+python /home/dbuchan/Projects/profile_drift/sequence_generator.py --num_string 10000 --distance 50 --random_pathing 20 --output_file distance50.fa --starting_string_file /home/dbuchan/Projects/profile_drift/data/test_file_150.fa --probability_selection
 
 # ### Generate distance matrices
 echo "calculating distances"
