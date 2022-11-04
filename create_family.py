@@ -61,8 +61,8 @@ def generate_families(seeds, fasta, file_stub):
                         '--output_file',
                         f'{file_stub}_{seq[0]}cluster.fa',
                         '--starting_string_file',
-                        f'{file_stub}_{seq[0]}_seed.fa'],
-                        '--probability_selection',
+                        f'{file_stub}_{seq[0]}_seed.fa',
+                        '--probability_selection',]
         subprocess.call(seq_gen_args)
 
     for seq in seeds:
