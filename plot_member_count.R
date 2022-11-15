@@ -2,7 +2,7 @@ library(ggplot2)
 library(reshape2)
 library(tidyr)
 
-setwd("/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/members/")
+setwd("/home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/")
 files <- Sys.glob("*.membercount")
 
 draw_member_chart <- function(file){

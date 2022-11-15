@@ -1,0 +1,92 @@
+generating sets with familes
+run distance experiments
+./distance10_23cluster_103cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_103cluster.fa -n distance10_23cluster_103cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_103cluster.fa distance10_23_seed.fa 20 distance10_23cluster_103cluster_membership.csv RAxML_distances.distance10_23cluster_103cluster.dist average_distances10_23cluster_103cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_121cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_121cluster.fa -n distance10_23cluster_121cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_121cluster.fa distance10_23_seed.fa 20 distance10_23cluster_121cluster_membership.csv RAxML_distances.distance10_23cluster_121cluster.dist average_distances10_23cluster_121cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_141cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_141cluster.fa -n distance10_23cluster_141cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_141cluster.fa distance10_23_seed.fa 20 distance10_23cluster_141cluster_membership.csv RAxML_distances.distance10_23cluster_141cluster.dist average_distances10_23cluster_141cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_158cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_158cluster.fa -n distance10_23cluster_158cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_158cluster.fa distance10_23_seed.fa 20 distance10_23cluster_158cluster_membership.csv RAxML_distances.distance10_23cluster_158cluster.dist average_distances10_23cluster_158cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_174cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_174cluster.fa -n distance10_23cluster_174cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_174cluster.fa distance10_23_seed.fa 20 distance10_23cluster_174cluster_membership.csv RAxML_distances.distance10_23cluster_174cluster.dist average_distances10_23cluster_174cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_196cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_196cluster.fa -n distance10_23cluster_196cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_196cluster.fa distance10_23_seed.fa 20 distance10_23cluster_196cluster_membership.csv RAxML_distances.distance10_23cluster_196cluster.dist average_distances10_23cluster_196cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_213cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_213cluster.fa -n distance10_23cluster_213cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_213cluster.fa distance10_23_seed.fa 20 distance10_23cluster_213cluster_membership.csv RAxML_distances.distance10_23cluster_213cluster.dist average_distances10_23cluster_213cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_55cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_55cluster.fa -n distance10_23cluster_55cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_55cluster.fa distance10_23_seed.fa 20 distance10_23cluster_55cluster_membership.csv RAxML_distances.distance10_23cluster_55cluster.dist average_distances10_23cluster_55cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance10_23cluster_81cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance10_23cluster_81cluster.fa -n distance10_23cluster_81cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance10_23cluster_81cluster.fa distance10_23_seed.fa 20 distance10_23cluster_81cluster_membership.csv RAxML_distances.distance10_23cluster_81cluster.dist average_distances10_23cluster_81cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_102cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_102cluster.fa -n distance20_10cluster_102cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_102cluster.fa distance20_10_seed.fa 20 distance20_10cluster_102cluster_membership.csv RAxML_distances.distance20_10cluster_102cluster.dist average_distances20_10cluster_102cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_21cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_21cluster.fa -n distance20_10cluster_21cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_21cluster.fa distance20_10_seed.fa 20 distance20_10cluster_21cluster_membership.csv RAxML_distances.distance20_10cluster_21cluster.dist average_distances20_10cluster_21cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_35cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_35cluster.fa -n distance20_10cluster_35cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_35cluster.fa distance20_10_seed.fa 20 distance20_10cluster_35cluster_membership.csv RAxML_distances.distance20_10cluster_35cluster.dist average_distances20_10cluster_35cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_46cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_46cluster.fa -n distance20_10cluster_46cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_46cluster.fa distance20_10_seed.fa 20 distance20_10cluster_46cluster_membership.csv RAxML_distances.distance20_10cluster_46cluster.dist average_distances20_10cluster_46cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_58cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_58cluster.fa -n distance20_10cluster_58cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_58cluster.fa distance20_10_seed.fa 20 distance20_10cluster_58cluster_membership.csv RAxML_distances.distance20_10cluster_58cluster.dist average_distances20_10cluster_58cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_70cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_70cluster.fa -n distance20_10cluster_70cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_70cluster.fa distance20_10_seed.fa 20 distance20_10cluster_70cluster_membership.csv RAxML_distances.distance20_10cluster_70cluster.dist average_distances20_10cluster_70cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_77cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_77cluster.fa -n distance20_10cluster_77cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_77cluster.fa distance20_10_seed.fa 20 distance20_10cluster_77cluster_membership.csv RAxML_distances.distance20_10cluster_77cluster.dist average_distances20_10cluster_77cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_86cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_86cluster.fa -n distance20_10cluster_86cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_86cluster.fa distance20_10_seed.fa 20 distance20_10cluster_86cluster_membership.csv RAxML_distances.distance20_10cluster_86cluster.dist average_distances20_10cluster_86cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory
+./distance20_10cluster_94cluster.fa
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_94cluster.fa -n distance20_10cluster_94cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x > stdout 2> stderr
+python /home/dbuchan/Projects/profile_drift/run_blasts.py distance20_10cluster_94cluster.fa distance20_10_seed.fa 20 distance20_10cluster_94cluster_membership.csv RAxML_distances.distance20_10cluster_94cluster.dist average_distances20_10cluster_94cluster.csv
+../../drift_experiment.sh: line 33: python: command not found
+mv: cannot stat 'iteration*.bls': No such file or directory

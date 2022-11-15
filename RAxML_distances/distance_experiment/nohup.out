@@ -1,0 +1,360 @@
+generating sequences
+calculating distances
+run distance experiments
+
+
+Building a new DB, current time: 11/03/2022 20:59:52
+New DB name:   /home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/distance2.fa
+New DB title:  ./distance2.fa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10019 sequences in 0.051244 seconds.
+
+
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+20
+iteration1.bls
+iteration2.bls
+iteration3.bls
+iteration4.bls
+iteration5.bls
+iteration6.bls
+iteration7.bls
+iteration8.bls
+iteration9.bls
+iteration10.bls
+iteration11.bls
+iteration12.bls
+iteration13.bls
+iteration14.bls
+iteration15.bls
+iteration16.bls
+iteration17.bls
+iteration18.bls
+iteration19.bls
+iteration20.bls
+
+
+Building a new DB, current time: 11/03/2022 21:21:23
+New DB name:   /home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/distance5.fa
+New DB title:  ./distance5.fa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10000 sequences in 0.0521049 seconds.
+
+
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+20
+iteration1.bls
+iteration2.bls
+iteration3.bls
+iteration4.bls
+iteration5.bls
+iteration6.bls
+iteration7.bls
+iteration8.bls
+iteration9.bls
+iteration10.bls
+iteration11.bls
+iteration12.bls
+iteration13.bls
+iteration14.bls
+iteration15.bls
+iteration16.bls
+iteration17.bls
+iteration18.bls
+iteration19.bls
+iteration20.bls
+
+
+Building a new DB, current time: 11/03/2022 21:26:32
+New DB name:   /home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/distance10.fa
+New DB title:  ./distance10.fa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10000 sequences in 0.0525539 seconds.
+
+
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+20
+iteration1.bls
+iteration2.bls
+iteration3.bls
+iteration4.bls
+iteration5.bls
+iteration6.bls
+iteration7.bls
+iteration8.bls
+iteration9.bls
+iteration10.bls
+iteration11.bls
+iteration12.bls
+iteration13.bls
+iteration14.bls
+iteration15.bls
+iteration16.bls
+iteration17.bls
+iteration18.bls
+iteration19.bls
+iteration20.bls
+
+
+Building a new DB, current time: 11/03/2022 21:38:05
+New DB name:   /home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/distance20.fa
+New DB title:  ./distance20.fa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10000 sequences in 0.0524349 seconds.
+
+
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+20
+iteration1.bls
+iteration2.bls
+iteration3.bls
+iteration4.bls
+iteration5.bls
+iteration6.bls
+iteration7.bls
+iteration8.bls
+iteration9.bls
+iteration10.bls
+iteration11.bls
+iteration12.bls
+iteration13.bls
+iteration14.bls
+iteration15.bls
+iteration16.bls
+iteration17.bls
+iteration18.bls
+iteration19.bls
+iteration20.bls
+
+
+Building a new DB, current time: 11/03/2022 21:38:19
+New DB name:   /home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/distance30.fa
+New DB title:  ./distance30.fa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10000 sequences in 0.052664 seconds.
+
+
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+20
+iteration1.bls
+iteration2.bls
+iteration3.bls
+iteration4.bls
+iteration5.bls
+iteration6.bls
+iteration7.bls
+iteration8.bls
+iteration9.bls
+iteration10.bls
+iteration11.bls
+iteration12.bls
+iteration13.bls
+iteration14.bls
+iteration15.bls
+iteration16.bls
+iteration17.bls
+iteration18.bls
+iteration19.bls
+iteration20.bls
+
+
+Building a new DB, current time: 11/03/2022 21:38:31
+New DB name:   /home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/distance40.fa
+New DB title:  ./distance40.fa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10000 sequences in 0.0530901 seconds.
+
+
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+20
+iteration1.bls
+iteration2.bls
+iteration3.bls
+iteration4.bls
+iteration5.bls
+iteration6.bls
+iteration7.bls
+iteration8.bls
+iteration9.bls
+iteration10.bls
+iteration11.bls
+iteration12.bls
+iteration13.bls
+iteration14.bls
+iteration15.bls
+iteration16.bls
+iteration17.bls
+iteration18.bls
+iteration19.bls
+iteration20.bls
+
+
+Building a new DB, current time: 11/03/2022 21:38:44
+New DB name:   /home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/distance50.fa
+New DB title:  ./distance50.fa
+Sequence type: Protein
+Keep MBits: T
+Maximum file size: 1000000000B
+Adding sequences from FASTA; added 10000 sequences in 0.0524242 seconds.
+
+
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+Warning: [psiblast] Query_1 test: Composition-based score adjustment conditioned on sequence properties and unconditional composition-based score adjustment is not supported with PSSMs, resetting to default value of standard composition-based statistics 
+20
+iteration1.bls
+iteration2.bls
+iteration3.bls
+iteration4.bls
+iteration5.bls
+iteration6.bls
+iteration7.bls
+iteration8.bls
+iteration9.bls
+iteration10.bls
+iteration11.bls
+iteration12.bls
+iteration13.bls
+iteration14.bls
+iteration15.bls
+iteration16.bls
+iteration17.bls
+iteration18.bls
+iteration19.bls
+iteration20.bls

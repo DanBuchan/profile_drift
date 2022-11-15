@@ -45,11 +45,11 @@ RAxML was called as follows:
 
 
 
-Log Likelihood Score after parameter optimization: -2708893.523351
+Log Likelihood Score after parameter optimization: -2691452.808611
 
 
 Computing pairwise ML-distances ...
 
-Time for pair-wise ML distance computation of 60813906 distances: 4720.821486 seconds
+Time for pair-wise ML distance computation of 60494500 distances: 1569.056701 seconds
 
 Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/RAxML_distances.distance50_4cluster_8cluster.dist

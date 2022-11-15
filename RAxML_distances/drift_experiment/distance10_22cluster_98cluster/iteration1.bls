@@ -1,0 +1,3965 @@
+PSIBLAST 2.12.0+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: distance10_22cluster_98cluster.fa
+           11,000 sequences; 1,650,000 total letters
+
+Results from round 1
+
+
+Query= 22; distance 4.176106
+
+Length=150
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+22                                                                    318     9e-115
+1_22                                                                  315     1e-113
+2_22                                                                  311     5e-112
+3_22                                                                  308     7e-111
+4_22                                                                  306     7e-110
+5_22                                                                  303     8e-109
+6_22                                                                  301     5e-108
+7_22                                                                  292     1e-104
+21                                                                    284     3e-101
+8_22                                                                  278     9e-99 
+9_22                                                                  277     1e-98 
+10_22                                                                 275     1e-97 
+11_22                                                                 270     9e-96 
+12_22                                                                 268     9e-95 
+13_22                                                                 265     9e-94 
+14_22                                                                 261     3e-92 
+15_22                                                                 259     3e-91 
+16_22                                                                 254     1e-89 
+20                                                                    253     4e-89 
+17_22                                                                 252     1e-88 
+18_22                                                                 250     9e-88 
+23                                                                    248     3e-87 
+19_22                                                                 244     1e-85 
+20_22                                                                 242     1e-84 
+21_22                                                                 239     1e-83 
+23_22                                                                 238     7e-83 
+19                                                                    237     1e-82 
+22_22                                                                 236     3e-82 
+24_22                                                                 233     3e-81 
+26_22                                                                 230     5e-80 
+25_22                                                                 230     8e-80 
+27_22                                                                 228     5e-79 
+24                                                                    224     1e-77 
+28_22                                                                 223     3e-77 
+29_22                                                                 220     6e-76 
+31_22                                                                 217     1e-74 
+30_22                                                                 217     1e-74 
+18                                                                    215     6e-74 
+32_22                                                                 214     1e-73 
+33_22                                                                 211     2e-72 
+34_22                                                                 208     3e-71 
+17                                                                    201     3e-68 
+25                                                                    200     4e-68 
+37_22                                                                 186     2e-62 
+35_22                                                                 186     3e-62 
+38_22                                                                 183     2e-61 
+26                                                                    183     2e-61 
+36_22                                                                 183     3e-61 
+39_22                                                                 181     2e-60 
+16                                                                    179     8e-60 
+40_22                                                                 179     1e-59 
+41_22                                                                 176     2e-58 
+42_22                                                                 171     1e-56 
+27                                                                    170     4e-56 
+43_22                                                                 169     5e-56 
+44_22                                                                 167     4e-55 
+28                                                                    167     5e-55 
+29                                                                    166     2e-54 
+45_22                                                                 164     6e-54 
+15                                                                    163     2e-53 
+46_22                                                                 161     2e-52 
+47_22                                                                 157     4e-51 
+48_22                                                                 157     5e-51 
+14                                                                    156     1e-50 
+49_22                                                                 155     3e-50 
+50_22                                                                 152     3e-49 
+52_22                                                                 151     1e-48 
+30                                                                    150     3e-48 
+51_22                                                                 150     4e-48 
+13                                                                    149     7e-48 
+53_22                                                                 146     1e-46 
+31                                                                    142     4e-45 
+12                                                                    138     1e-43 
+54_22                                                                 135     2e-42 
+55_22                                                                 134     4e-42 
+57_22                                                                 132     4e-41 
+11                                                                    132     5e-41 
+56_22                                                                 131     7e-41 
+59_22                                                                 131     8e-41 
+32                                                                    130     1e-40 
+58_22                                                                 130     2e-40 
+60_22                                                                 127     2e-39 
+61_22                                                                 127     3e-39 
+62_22                                                                 124     3e-38 
+63_22                                                                 122     2e-37 
+64_22                                                                 115     1e-34 
+65_22                                                                 113     1e-33 
+67_22                                                                 112     1e-33 
+69_22                                                                 110     1e-32 
+66_22                                                                 110     1e-32 
+68_22                                                                 110     1e-32 
+70_22                                                                 108     1e-31 
+33                                                                    102     1e-29 
+71_22                                                                 99.0    4e-28 
+10                                                                    98.6    6e-28 
+34                                                                    97.4    2e-27 
+72_22                                                                 97.4    2e-27 
+74_22                                                                 95.9    7e-27 
+75_22                                                                 95.9    8e-27 
+73_22                                                                 95.9    8e-27 
+78_22                                                                 93.2    7e-26 
+35                                                                    93.2    9e-26 
+80_22                                                                 92.4    1e-25 
+76_22                                                                 92.0    2e-25 
+77_22                                                                 92.0    2e-25 
+79_22                                                                 90.9    6e-25 
+82_22                                                                 89.7    2e-24 
+81_22                                                                 89.7    2e-24 
+86_22                                                                 88.2    7e-24 
+83_22                                                                 88.2    7e-24 
+84_22                                                                 87.8    1e-23 
+85_22                                                                 87.8    1e-23 
+9                                                                     87.4    1e-23 
+88_22                                                                 86.3    4e-23 
+87_22                                                                 86.3    4e-23 
+89_22                                                                 83.2    7e-22 
+8                                                                     79.0    3e-20 
+90_22                                                                 70.5    4e-17 
+96_22                                                                 70.1    8e-17 
+97_22                                                                 69.7    9e-17 
+95_22                                                                 69.7    1e-16 
+7                                                                     69.3    1e-16 
+93_22                                                                 68.9    2e-16 
+94_22                                                                 68.9    2e-16 
+92_22                                                                 68.6    3e-16 
+91_22                                                                 68.2    4e-16 
+98_22                                                                 65.9    3e-15 
+99_22                                                                 64.7    8e-15 
+100_22                                                                62.4    6e-14 
+6                                                                     58.2    2e-12 
+101_22                                                                57.4    5e-12 
+103_22                                                                57.4    6e-12 
+102_22                                                                57.0    6e-12 
+104_22                                                                56.6    9e-12 
+5                                                                     56.6    1e-11 
+105_22                                                                56.2    1e-11 
+107_22                                                                55.8    2e-11 
+106_22                                                                55.8    2e-11 
+109_22                                                                54.3    6e-11 
+108_22                                                                53.9    1e-10 
+110_22                                                                52.8    3e-10 
+36                                                                    50.4    2e-09 
+114_22                                                                49.7    4e-09 
+111_22                                                                49.3    5e-09 
+112_22                                                                49.3    6e-09 
+3                                                                     48.5    1e-08 
+38                                                                    48.1    1e-08 
+4                                                                     47.4    2e-08 
+113_22                                                                47.4    3e-08 
+2                                                                     45.4    1e-07 
+117_22                                                                45.4    2e-07 
+115_22                                                                45.1    2e-07 
+116_22                                                                44.7    3e-07 
+37                                                                    44.3    4e-07 
+120_22                                                                43.5    7e-07 
+119_22                                                                43.1    1e-06 
+118_22                                                                42.7    1e-06 
+123_22                                                                41.6    3e-06 
+121_22                                                                41.2    4e-06 
+122_22                                                                41.2    6e-06 
+40                                                                    40.8    6e-06 
+1                                                                     40.8    6e-06 
+39                                                                    40.8    6e-06 
+129_22                                                                40.8    7e-06 
+128_22                                                                40.8    7e-06 
+126_22                                                                40.0    1e-05 
+125_22                                                                40.0    1e-05 
+127_22                                                                39.7    2e-05 
+124_22                                                                39.7    2e-05 
+134_22                                                                37.7    1e-04 
+130_22                                                                37.7    1e-04 
+131_22                                                                37.4    1e-04 
+133_22                                                                37.4    1e-04 
+132_22                                                                37.4    1e-04 
+41                                                                    36.2    3e-04 
+42                                                                    33.9    0.002 
+135_22                                                                31.6    0.013 
+43                                                                    31.2    0.017 
+136_22                                                                29.6    0.058 
+137_22                                                                29.6    0.064 
+142_22                                                                28.9    0.10  
+140_22                                                                28.9    0.10  
+141_22                                                                28.9    0.10  
+139_22                                                                28.9    0.10  
+138_22                                                                28.9    0.11  
+147_22                                                                27.3    0.38  
+145_22                                                                27.3    0.39  
+143_22                                                                27.3    0.39  
+144_22                                                                27.3    0.39  
+151_22                                                                27.3    0.40  
+146_22                                                                27.3    0.40  
+149_22                                                                27.3    0.40  
+148_22                                                                27.3    0.40  
+150_22                                                                27.3    0.41  
+154_22                                                                27.3    0.41  
+155_22                                                                27.3    0.42  
+156_22                                                                27.3    0.42  
+153_22                                                                27.3    0.43  
+152_22                                                                27.3    0.44  
+157_22                                                                26.9    0.45  
+158_22                                                                26.9    0.50  
+159_22                                                                26.9    0.51  
+162_22                                                                26.6    0.76  
+160_22                                                                26.6    0.76  
+161_22                                                                26.6    0.77  
+164_22                                                                26.2    0.81  
+163_22                                                                26.2    0.82  
+7006                                                                  25.8    1.2   
+7005                                                                  25.0    2.4   
+7007                                                                  24.6    2.7   
+7008                                                                  24.3    3.8   
+6194                                                                  23.9    5.3   
+3107                                                                  23.9    6.1   
+5022                                                                  23.5    7.7   
+3108                                                                  23.5    8.1   
+795                                                                   23.1    9.1   
+
+
+>22
+Length=150
+
+ Score = 318 bits (815),  Expect = 9e-115, Method: Compositional matrix adjust.
+ Identities = 150/150 (100%), Positives = 150/150 (100%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN
+Sbjct  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+
+
+>1_22
+Length=150
+
+ Score = 315 bits (808),  Expect = 1e-113, Method: Compositional matrix adjust.
+ Identities = 149/150 (99%), Positives = 149/150 (99%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGER GREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGERDGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN
+Sbjct  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+
+
+>2_22
+Length=150
+
+ Score = 311 bits (797),  Expect = 5e-112, Method: Compositional matrix adjust.
+ Identities = 147/150 (98%), Positives = 147/150 (98%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGER GREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGERDGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTDRCKMRYITVLALRCYKG TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN
+Sbjct  61   LKWTDRCKMRYITVLALRCYKGNTGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGST CCDKVVVHMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTTCCDKVVVHMWC  150
+
+
+>3_22
+Length=150
+
+ Score = 308 bits (790),  Expect = 7e-111, Method: Compositional matrix adjust.
+ Identities = 146/150 (97%), Positives = 146/150 (97%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGER GREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGERDGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTDRCKMRYITVLALRCYKG TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN
+Sbjct  61   LKWTDRCKMRYITVLALRCYKGNTGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGST CCDKVV HMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTTCCDKVVDHMWC  150
+
+
+>4_22
+Length=150
+
+ Score = 306 bits (783),  Expect = 7e-110, Method: Compositional matrix adjust.
+ Identities = 145/150 (97%), Positives = 145/150 (97%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGER GREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGERDGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD CKMRYITVLALRCYKG TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN
+Sbjct  61   LKWTDYCKMRYITVLALRCYKGNTGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGST CCDKVV HMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTTCCDKVVDHMWC  150
+
+
+>5_22
+Length=150
+
+ Score = 303 bits (776),  Expect = 8e-109, Method: Compositional matrix adjust.
+ Identities = 144/150 (96%), Positives = 144/150 (96%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGER GREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGERDGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD CKMRYITVLALRCYKG TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHK CDDN
+Sbjct  61   LKWTDYCKMRYITVLALRCYKGNTGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKTCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGST CCDKVV HMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTTCCDKVVDHMWC  150
+
+
+>6_22
+Length=150
+
+ Score = 301 bits (771),  Expect = 5e-108, Method: Compositional matrix adjust.
+ Identities = 143/150 (95%), Positives = 143/150 (95%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGER GREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGERDGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD CKMRYITVLALRCYKG TGGELHYFPWSRQPD LNTTVAKTVWPNLLHK CDDN
+Sbjct  61   LKWTDYCKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLNTTVAKTVWPNLLHKTCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGST CCDKVV HMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTTCCDKVVDHMWC  150
+
+
+>7_22
+Length=150
+
+ Score = 292 bits (748),  Expect = 1e-104, Method: Compositional matrix adjust.
+ Identities = 139/150 (93%), Positives = 141/150 (94%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFN T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNDT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD CKMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK CDDN
+Sbjct  61   LKWTDYCKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGST CCDKV+ HMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTTCCDKVMDHMWC  150
+
+
+>21
+Length=150
+
+ Score = 284 bits (727),  Expect = 3e-101, Method: Compositional matrix adjust.
+ Identities = 138/150 (92%), Positives = 139/150 (93%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPHPPGE PGREM QS EQGWSRLM+LYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT
+Sbjct  1    FIPHPPGELPGREMWQSEEQGWSRLMTLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTDRC MRY TVL L CYK ETGGELHYFPWSRQPD LNTTVAKTV PNLLHKPCDDN
+Sbjct  61   LKWTDRCSMRYSTVLFLCCYKVETGGELHYFPWSRQPDWLNTTVAKTVQPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCCEVKSAYVMIQQGSTD CDKVVVHMWC
+Sbjct  121  TWCCEVKSAYVMIQQGSTDHCDKVVVHMWC  150
+
+
+>8_22
+Length=150
+
+ Score = 278 bits (710),  Expect = 9e-99, Method: Compositional matrix adjust.
+ Identities = 133/150 (89%), Positives = 136/150 (91%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLMSLY+AVREFPFLVFLVLWAQVMDPVQKTFYFN T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMSLYDAVREFPFLVFLVLWAQVMDPVQKTFYFNDT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK CDD 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCDDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TWCCTVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>9_22
+Length=150
+
+ Score = 277 bits (709),  Expect = 1e-98, Method: Compositional matrix adjust.
+ Identities = 133/150 (89%), Positives = 136/150 (91%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLMSLY+AVREFPFLVFLVLWAQVMDPVQKTFYFN T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMSLYDAVREFPFLVFLVLWAQVMDPVQKTFYFNDT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK CDD 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCDDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TWCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>10_22
+Length=150
+
+ Score = 275 bits (702),  Expect = 1e-97, Method: Compositional matrix adjust.
+ Identities = 132/150 (88%), Positives = 135/150 (90%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLM LY+AVREFPFLVFLVLWAQVMDPVQKTFYFN T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMLLYDAVREFPFLVFLVLWAQVMDPVQKTFYFNDT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK CDD 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCDDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TWCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>11_22
+Length=150
+
+ Score = 270 bits (690),  Expect = 9e-96, Method: Compositional matrix adjust.
+ Identities = 131/150 (87%), Positives = 134/150 (89%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLM LY+AVREFPFLVFLVLWAQVMDPVQKTFYFN T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMLLYDAVREFPFLVFLVLWAQVMDPVQKTFYFNDT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TWCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>12_22
+Length=150
+
+ Score = 268 bits (684),  Expect = 9e-95, Method: Compositional matrix adjust.
+ Identities = 130/150 (87%), Positives = 133/150 (89%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLM LY+AVREFPFLVFLVLWAQVMDPVQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMLLYDAVREFPFLVFLVLWAQVMDPVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TWCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>13_22
+Length=150
+
+ Score = 265 bits (677),  Expect = 9e-94, Method: Compositional matrix adjust.
+ Identities = 129/150 (86%), Positives = 132/150 (88%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLM  Y+AVREFPFLVFLVLWAQVMDPVQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMLEYDAVREFPFLVFLVLWAQVMDPVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            TWCC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TWCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>14_22
+Length=150
+
+ Score = 261 bits (667),  Expect = 3e-92, Method: Compositional matrix adjust.
+ Identities = 128/150 (85%), Positives = 131/150 (87%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGWSRLM  Y+AVREFPFLVFLVLWAQVMDPVQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWSRLMLEYDAVREFPFLVFLVLWAQVMDPVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>15_22
+Length=150
+
+ Score = 259 bits (661),  Expect = 3e-91, Method: Compositional matrix adjust.
+ Identities = 127/150 (85%), Positives = 130/150 (87%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQVMDPVQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVMDPVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWPNLLHK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPNLLHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>16_22
+Length=150
+
+ Score = 254 bits (650),  Expect = 1e-89, Method: Compositional matrix adjust.
+ Identities = 125/150 (83%), Positives = 128/150 (85%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQVMDPVQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVMDPVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>20
+Length=150
+
+ Score = 253 bits (647),  Expect = 4e-89, Method: Compositional matrix adjust.
+ Identities = 126/150 (84%), Positives = 127/150 (85%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPH PGE PGR M QS EQGWS LM+LYNAV EFPFLVFLVLWA VMDP QKTFYFNAT
+Sbjct  1    FIPHAPGECPGRSMWQSEEQGWSILMTLYNAVTEFPFLVFLVLWAMVMDPTQKTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK TDRC MRYITVL L CYK  TGGE HYFPWSRQPD LNTTVAKTV PNLLHKPCDDN
+Sbjct  61   LKMTDRCSMRYITVLFLCCYKVATGGETHYFPWSRQPDWLNTTVAKTVQPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CCEV SA VMIQQGSTD CDKVVV MWC
+Sbjct  121  TLCCEVPSADVMIQQGSTDHCDKVVVQMWC  150
+
+
+>17_22
+Length=150
+
+ Score = 252 bits (644),  Expect = 1e-88, Method: Compositional matrix adjust.
+ Identities = 124/150 (83%), Positives = 127/150 (85%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQV DPVQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVYDPVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ HMWC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHMWC  150
+
+
+>18_22
+Length=150
+
+ Score = 250 bits (638),  Expect = 9e-88, Method: Compositional matrix adjust.
+ Identities = 123/150 (82%), Positives = 126/150 (84%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQV DPVQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVYDPVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG TGGELHYFPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGNTGGELHYFPWSRQPDYLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHSWC  150
+
+
+>23
+Length=150
+
+ Score = 248 bits (634),  Expect = 3e-87, Method: Compositional matrix adjust.
+ Identities = 123/150 (82%), Positives = 127/150 (85%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P REMIQSGEQGWSRLMSLYNAV EFP+LVF VLWAQV  PVQ TFYFNAT
+Sbjct  1    FWPHPPGMMPWREMIQSGEQGWSRLMSLYNAVNEFPWLVFGVLWAQVHYPVQLTFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L WTD C+MRY TVLA+RCYKGETGGE HYF WSRQPD L TTVAKTVWPNLLHKPCD N
+Sbjct  61   LIWTDVCQMRYSTVLAMRCYKGETGGENHYFAWSRQPDHLQTTVAKTVWPNLLHKPCDHN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T C E + AYV IQQGSTDC DKVVVHMWC
+Sbjct  121  TLCKEPQLAYVDIQQGSTDCSDKVVVHMWC  150
+
+
+>19_22
+Length=150
+
+ Score = 244 bits (624),  Expect = 1e-85, Method: Compositional matrix adjust.
+ Identities = 121/150 (81%), Positives = 125/150 (83%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVYDFVQKTFYFADT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KMRYITVLALRCYKG+TGGELH FPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMRYITVLALRCYKGKTGGELHMFPWSRQPDFLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHSWC  150
+
+
+>20_22
+Length=150
+
+ Score = 242 bits (618),  Expect = 1e-84, Method: Compositional matrix adjust.
+ Identities = 120/150 (80%), Positives = 124/150 (83%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER GREMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGERDGREMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLALRCYKG+TGGELH FPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMHYITVLALRCYKGKTGGELHMFPWSRQPDFLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHSWC  150
+
+
+>21_22
+Length=150
+
+ Score = 239 bits (611),  Expect = 1e-83, Method: Compositional matrix adjust.
+ Identities = 119/150 (79%), Positives = 123/150 (82%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER G EMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGERDGDEMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLALRCYKG+TGGELH FPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMHYITVLALRCYKGKTGGELHMFPWSRQPDFLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHSWC  150
+
+
+>23_22
+Length=150
+
+ Score = 238 bits (606),  Expect = 7e-83, Method: Compositional matrix adjust.
+ Identities = 118/150 (79%), Positives = 123/150 (82%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER G EMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGERDGDEMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRQPDFLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA+VMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAFVMIQQGSTTCTDKVMSHSWC  150
+
+
+>19
+Length=150
+
+ Score = 237 bits (605),  Expect = 1e-82, Method: Compositional matrix adjust.
+ Identities = 120/150 (80%), Positives = 121/150 (81%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPH PG  PGR M QS EQ WS LM+LYNAV EFPFLVFLVLWA VMDP QK FYFNAT
+Sbjct  1    FIPHAPGICPGRSMWQSEEQCWSILMTLYNAVTEFPFLVFLVLWAMVMDPTQKVFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK TDRC MR ITVL L CYK  TGGE HYFPWSRQPD LNTTVAK V PNLLHKPCDDN
+Sbjct  61   LKMTDRCSMRKITVLFLCCYKVATGGETHYFPWSRQPDWLNTTVAKYVQPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T C EV SA VMIQQGSTD CDKVVV MWC
+Sbjct  121  TLCAEVPSADVMIQQGSTDHCDKVVVQMWC  150
+
+
+>22_22
+Length=150
+
+ Score = 236 bits (602),  Expect = 3e-82, Method: Compositional matrix adjust.
+ Identities = 118/150 (79%), Positives = 122/150 (81%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGER G EMIQSGEQGW RLM  Y+AVREFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGERDGDEMIQSGEQGWIRLMLEYDAVREFPFLVFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRQPDFLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA VMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAAVMIQQGSTTCTDKVMSHSWC  150
+
+
+>24_22
+Length=150
+
+ Score = 233 bits (595),  Expect = 3e-81, Method: Compositional matrix adjust.
+ Identities = 116/150 (77%), Positives = 122/150 (81%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGEKDGDEMIQSGEQGWIRLMLEYDAWREFPFLVFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSRQPD L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRQPDFLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSA+VMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAFVMIQQGSTTCTDKVMSHSWC  150
+
+
+>26_22
+Length=150
+
+ Score = 230 bits (587),  Expect = 5e-80, Method: Compositional matrix adjust.
+ Identities = 115/150 (77%), Positives = 121/150 (81%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGEKDGDEMIQSGEQGWIRLMLEYDAWREFPFLVFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR  D L TTVAKTVWP L HK C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFADFLLTTVAKTVWPGLYHKTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>25_22
+Length=150
+
+ Score = 230 bits (586),  Expect = 8e-80, Method: Compositional matrix adjust.
+ Identities = 115/150 (77%), Positives = 120/150 (80%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFLVFLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGEKDGDEMIQSGEQGWIRLMLEYDAWREFPFLVFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR  D L TTVAKTVWP L HK C D 
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFADFLLTTVAKTVWPGLYHKTCWDR  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>27_22
+Length=150
+
+ Score = 228 bits (581),  Expect = 5e-79, Method: Compositional matrix adjust.
+ Identities = 114/150 (76%), Positives = 120/150 (80%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D VQKTFYF  T
+Sbjct  1    FIPYPPGEKDGDEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVQKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR  D L TTVAKTVWP L HK C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFADFLLTTVAKTVWPGLYHKTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>24
+Length=150
+
+ Score = 224 bits (572),  Expect = 1e-77, Method: Compositional matrix adjust.
+ Identities = 114/150 (76%), Positives = 119/150 (79%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P REMI+SGEQGWS LMSLYNAV EFP+L F VLW QV  PVQ T YF AT
+Sbjct  1    FWPHPPGMMPWREMIRSGEQGWSMLMSLYNAVNEFPWLCFGVLWQQVHYPVQLTPYFAAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L WTD C+MRY TVLA+RCYKGETGGE  YF WSRQPD L TTVAKTVWPNLL  PCD N
+Sbjct  61   LIWTDVCQMRYSTVLAMRCYKGETGGENAYFFWSRQPDHLQTTVAKTVWPNLLSHPCDHN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T C E + AYV IQQGSTDC DKVVVHMWC
+Sbjct  121  TLCKEPQQAYVDIQQGSTDCSDKVVVHMWC  150
+
+
+>28_22
+Length=150
+
+ Score = 223 bits (569),  Expect = 3e-77, Method: Compositional matrix adjust.
+ Identities = 112/150 (75%), Positives = 118/150 (79%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D V KTFYF  T
+Sbjct  1    FIPYPPGEKDGDEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVSKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR  D L TTVAKTVWP L H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFADFLLTTVAKTVWPGLYHFTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T CC VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLCCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>29_22
+Length=150
+
+ Score = 220 bits (560),  Expect = 6e-76, Method: Compositional matrix adjust.
+ Identities = 111/150 (74%), Positives = 117/150 (78%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D V KTFYF  T
+Sbjct  1    FIPYPPGEKDGDEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVSKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR  D L TTVAKTVWP L H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFADFLLTTVAKTVWPGLYHFTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLWCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>31_22
+Length=150
+
+ Score = 217 bits (553),  Expect = 1e-74, Method: Compositional matrix adjust.
+ Identities = 110/150 (73%), Positives = 116/150 (77%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D V KTFYF  T
+Sbjct  1    FIPYPPGEKDGTEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVSKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR    L TTVAKTVWP L H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFAVFLLTTVAKTVWPGLYHFTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLWCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>30_22
+Length=150
+
+ Score = 217 bits (552),  Expect = 1e-74, Method: Compositional matrix adjust.
+ Identities = 110/150 (73%), Positives = 116/150 (77%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIP+PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D V KTFYF  T
+Sbjct  1    FIPYPPGEKDGDEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVSKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR    L TTVAKTVWP L H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFAVFLLTTVAKTVWPGLYHFTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLWCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>18
+Length=150
+
+ Score = 215 bits (547),  Expect = 6e-74, Method: Compositional matrix adjust.
+ Identities = 111/150 (74%), Positives = 113/150 (75%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPH PG   GR M QS EQ WS L +LYNA+ E PFLVFLVLWA VMDP QK FYFNAT
+Sbjct  1    FIPHAPGICEGRSMWQSEEQCWSILATLYNALTELPFLVFLVLWAMVMDPTQKVFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK TDRC MR IT L L CYK  TGGE H FPWSRQPD L TTVAK V PNLLHKPCDDN
+Sbjct  61   LKMTDRCSMRKITWLFLCCYKVATGGETHRFPWSRQPDWLVTTVAKYVQPNLLHKPCDDN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T C EV SA VMIQQ STD CDKV V MWC
+Sbjct  121  TLCAEVPSADVMIQQNSTDHCDKVFVQMWC  150
+
+
+>32_22
+Length=150
+
+ Score = 214 bits (545),  Expect = 1e-73, Method: Compositional matrix adjust.
+ Identities = 109/150 (73%), Positives = 115/150 (77%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FI +PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D V KTFYF  T
+Sbjct  1    FIFYPPGEKDGTEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVSKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR    L TTVAKTVWP L H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFAVFLLTTVAKTVWPGLYHFTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLWCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>33_22
+Length=150
+
+ Score = 211 bits (537),  Expect = 2e-72, Method: Compositional matrix adjust.
+ Identities = 108/150 (72%), Positives = 114/150 (76%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FI +PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D V KTFYF  T
+Sbjct  1    FIFYPPGEKDGTEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVSKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR    L TTVAKTVWP   H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFAVFLLTTVAKTVWPGDYHFTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMIQQGST C DKV+ H WC
+Sbjct  121  TLWCMVKSAYVMIQQGSTTCTDKVMSHSWC  150
+
+
+>34_22
+Length=150
+
+ Score = 208 bits (530),  Expect = 3e-71, Method: Compositional matrix adjust.
+ Identities = 107/150 (71%), Positives = 113/150 (75%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FI +PPGE+ G EMIQSGEQGW RLM  Y+A REFPFL FLVLWAQV D V KTFYF  T
+Sbjct  1    FIFYPPGEKDGTEMIQSGEQGWIRLMLEYDAWREFPFLHFLVLWAQVYDFVSKTFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGGELH FPWSR    L TTVAKTVWP   H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGELHMFPWSRFAVFLLTTVAKTVWPGDYHFTCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMIQQGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIQQGSTTCTDKWMSHSWC  150
+
+
+>17
+Length=150
+
+ Score = 201 bits (510),  Expect = 3e-68, Method: Compositional matrix adjust.
+ Identities = 105/150 (70%), Positives = 109/150 (73%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPH P    GR M QS EQ WS L +LYNA+ E PFLVFLVLWA VMDP QK FYFNAT
+Sbjct  1    FIPHCPTICEGRSMWQSEEQCWSILATLYNALTELPFLVFLVLWAMVMDPTQKVFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  DRC M+YI+ L L CYK  TGGE H FPWSRQPD L TTVAK V PNLLH PCDD 
+Sbjct  61   LKMRDRCTMKYISWLFLCCYKVATGGETHRFPWSRQPDWLVTTVAKYVQPNLLHMPCDDV  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T C EV SA VMIQQ STD  DKV V MWC
+Sbjct  121  TLCAEVPSADVMIQQNSTDGLDKVKVQMWC  150
+
+
+>25
+Length=150
+
+ Score = 200 bits (509),  Expect = 4e-68, Method: Compositional matrix adjust.
+ Identities = 105/150 (70%), Positives = 112/150 (75%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P REMI+SGEQGWS LMSLYNAV EFP+L F VL  QV  PVQ T YF AT
+Sbjct  1    FWPHPPGMMPWREMIRSGEQGWSMLMSLYNAVNEFPWLCFGVLSQQVHYPVQLTPYFAAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L WTD C+MRY T LA+RCYKGETG    Y  WSRQPD L TTVAKTVWPNLL  PCD N
+Sbjct  61   LIWTDVCQMRYSTELAMRCYKGETGMGNAYKFWSRQPDHLQTTVAKTVWPNLLSHPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+              C E + AYV I+ GSTDC DKV+VHMWC
+Sbjct  121  FSCKEPQQAYVDIECGSTDCSDKVLVHMWC  150
+
+
+>37_22
+Length=150
+
+ Score = 186 bits (472),  Expect = 2e-62, Method: Compositional matrix adjust.
+ Identities = 98/150 (65%), Positives = 105/150 (70%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FI +PPGE+ G EMI SG Q W RLM  Y+A  EFPFL FLVLWAQV DP  K FYF  T
+Sbjct  1    FIFYPPGEKDGTEMIASGGQDWIRLMLEYDAWEEFPFLHFLVLWAQVYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAKTVW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKTVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>35_22
+Length=150
+
+ Score = 186 bits (471),  Expect = 3e-62, Method: Compositional matrix adjust.
+ Identities = 98/150 (65%), Positives = 105/150 (70%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FI +PPGE+ G EMI SG Q W RLM  Y+A  EFPFL FLVLWAQV D   K FYF  T
+Sbjct  1    FIFYPPGEKDGTEMIASGGQDWIRLMLEYDAWEEFPFLHFLVLWAQVYDFYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TGG+LH FPWSR    L TTVAKTVW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGGQLHMFPWSRFAVFLLTTVAKTVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>38_22
+Length=150
+
+ Score = 183 bits (465),  Expect = 2e-61, Method: Compositional matrix adjust.
+ Identities = 97/150 (65%), Positives = 104/150 (69%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FI +PPGE+ G EMI SG Q W RLM  Y+A  EFPFL FLVLWAQ  DP  K FYF  T
+Sbjct  1    FIFYPPGEKDGTEMIASGGQDWIRLMLEYDAWEEFPFLHFLVLWAQWYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAKTVW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKTVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>26
+Length=150
+
+ Score = 183 bits (465),  Expect = 2e-61, Method: Compositional matrix adjust.
+ Identities = 99/150 (66%), Positives = 106/150 (71%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P  E I+SGEQGWS LM LYNAV EFP+L F VL  QV  PVQ T YF AT
+Sbjct  1    FWPHPPGMMPWMENIRSGEQGWSMLMFLYNAVNEFPWLCFGVLIQQVHYPVQVTPYFAAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L+ TD C MRY T  A+RCYKGETG    Y  WSRQPD   TTVAKTVWPNLL  PCD N
+Sbjct  61   LQRTDVCMMRYSTEWAMRCYKGETGMGNAYKFWSRQPDHPQTTVAKTVWPNLLSHPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+              C E + AYV I+ GSTDC DKV+VHMWC
+Sbjct  121  FSCKEPQQAYVDIECGSTDCSDKVLVHMWC  150
+
+
+>36_22
+Length=150
+
+ Score = 183 bits (464),  Expect = 3e-61, Method: Compositional matrix adjust.
+ Identities = 97/150 (65%), Positives = 104/150 (69%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FI +PPGE+ G EMI SG Q W RLM  Y+A  EFPFL FLVLWAQV D   K FYF  T
+Sbjct  1    FIFYPPGEKDGTEMIASGGQDWIRLMLEYDAWEEFPFLHFLVLWAQVYDFYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAKTVW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKTVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>39_22
+Length=150
+
+ Score = 181 bits (459),  Expect = 2e-60, Method: Compositional matrix adjust.
+ Identities = 96/150 (64%), Positives = 102/150 (68%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  +PPGE  G EMI SG Q W RLM  Y+A  EFPFL FLVLWAQ  DP  K FYF  T
+Sbjct  1    FFFYPPGEADGTEMIASGGQDWIRLMLEYDAWEEFPFLHFLVLWAQWYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAKTVW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKTVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>16
+Length=150
+
+ Score = 179 bits (455),  Expect = 8e-60, Method: Compositional matrix adjust.
+ Identities = 97/149 (65%), Positives = 101/149 (68%), Gaps = 0/149 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            FIPH P    GR M QS EQ WS L +LYNA+ E P LVFLV WA VMDP QK FYFNAT
+Sbjct  1    FIPHCPTICEGRSMWQSEEQCWSILATLYNALTELPNLVFLVTWAMVMDPTQKVFYFNAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  DRC M+YI+ L L CYK  TGGE H  PWSRQPD L TTV K V PNLL  P DD 
+Sbjct  61   LKMQDRCTMKYISWLFLCCYKVATGGETHRVPWSRQPDWLVTTVTKYVQPNLLTMPMDDV  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+            T C EV SA VMIQQ STD  DKV V  W
+Sbjct  121  TLCAEVPSADVMIQQNSTDGLDKVKVQRW  149
+
+
+>40_22
+Length=150
+
+ Score = 179 bits (453),  Expect = 1e-59, Method: Compositional matrix adjust.
+ Identities = 95/150 (63%), Positives = 101/150 (67%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  +PPGE  G EMI SG Q W RLM  Y+A  EFPFL FLVLWAQ  DP  K FYF  T
+Sbjct  1    FFFYPPGEADGTEMIASGGQDWIRLMLEYDAWEEFPFLHFLVLWAQWYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAK VW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKFVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>41_22
+Length=150
+
+ Score = 176 bits (446),  Expect = 2e-58, Method: Compositional matrix adjust.
+ Identities = 94/150 (63%), Positives = 100/150 (67%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  +PPGE  G E I SG Q W RLM  Y+A  EFPFL FLVLWAQ  DP  K FYF  T
+Sbjct  1    FFFYPPGEADGTEHIASGGQDWIRLMLEYDAWEEFPFLHFLVLWAQWYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAK VW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKFVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>42_22
+Length=150
+
+ Score = 171 bits (434),  Expect = 1e-56, Method: Compositional matrix adjust.
+ Identities = 92/150 (61%), Positives = 98/150 (65%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PGE  G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K FYF  T
+Sbjct  1    FFFYGPGEADGTEHIASGGQDWIRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAK VW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKFVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>27
+Length=150
+
+ Score = 170 bits (430),  Expect = 4e-56, Method: Compositional matrix adjust.
+ Identities = 94/150 (63%), Positives = 100/150 (67%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P  E I+SGEQGWS LM LYN V EFP+L F VL  QV  PVQ T YF A 
+Sbjct  1    FWPHPPGMMPWMENIRSGEQGWSMLMFLYNKVNEFPWLCFGVLIQQVHYPVQVTPYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L+  D C MRY T  A RCYKGETG    Y  WSRQPD   TTVAKTVWPNL   PCD N
+Sbjct  61   LQREDVCMMRYSTEWAYRCYKGETGMGNWYKFWSRQPDHPQTTVAKTVWPNLYSHPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+              C E + AYV I+ GSTD  DKV+VHMWC
+Sbjct  121  FSCKEPQQAYVDIECGSTDPSDKVLVHMWC  150
+
+
+>43_22
+Length=150
+
+ Score = 169 bits (429),  Expect = 5e-56, Method: Compositional matrix adjust.
+ Identities = 92/150 (61%), Positives = 98/150 (65%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PGE  G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K FYF  T
+Sbjct  1    FDFYGPGEADGTEHIASGGQDWIRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPWSR    L TTVAK VW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWSRFAVFLLTTVAKFVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>44_22
+Length=150
+
+ Score = 167 bits (424),  Expect = 4e-55, Method: Compositional matrix adjust.
+ Identities = 91/150 (61%), Positives = 97/150 (65%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PGE  G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K FYF  T
+Sbjct  1    FDFYGPGEADGTEHIASGGQDWIRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFYFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPW R    L TTVAK VW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>28
+Length=150
+
+ Score = 167 bits (423),  Expect = 5e-55, Method: Compositional matrix adjust.
+ Identities = 93/150 (62%), Positives = 98/150 (65%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P  E I+SGEQGWS LM  YN V EFP+L F VL  QV  PVQ T YF A 
+Sbjct  1    FWPHPPGMMPWMENIRSGEQGWSMLMFGYNKVNEFPWLCFGVLEQQVHYPVQVTPYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L   D C MRY T  A RCYKGETG    Y  WSRQPD   TTVAKTVWPNL   PCD N
+Sbjct  61   LLREDVCMMRYSTEWAYRCYKGETGQGNWYKFWSRQPDHPQTTVAKTVWPNLYSHPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+              C E + AYV I+ GSTD  DKV+VHMWC
+Sbjct  121  FSCKEPQQAYVQIECGSTDESDKVLVHMWC  150
+
+
+>29
+Length=150
+
+ Score = 166 bits (419),  Expect = 2e-54, Method: Compositional matrix adjust.
+ Identities = 92/150 (61%), Positives = 99/150 (66%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P  E I+SGEQGWS LM  YN V EFP+L F VL  QV  PVQ T YF A 
+Sbjct  1    FWPHPPGMMPWMENIRSGEQGWSMLMFGYNKVNEFPWLCFPVLEPQVHYPVQVTPYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L   D C MRY T  A RCYKGETG  + Y  WSRQPD   TTVAKTVWPNL   PCD N
+Sbjct  61   LLREDVCMMRYSTEWAYRCYKGETGQGMWYKFWSRQPDHPQTTVAKTVWPNLYSHPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+             +C E + AYV I+ GSTD  DKV+VHM C
+Sbjct  121  FYCKEPQYAYVQIECGSTDESDKVLVHMHC  150
+
+
+>45_22
+Length=150
+
+ Score = 164 bits (416),  Expect = 6e-54, Method: Compositional matrix adjust.
+ Identities = 90/150 (60%), Positives = 96/150 (64%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PGE  G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGEADGTEHIASGGQDWIRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPW R    L TTVAK VW    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFVWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGST C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSTTCPDKWMSHSWC  150
+
+
+>15
+Length=150
+
+ Score = 163 bits (412),  Expect = 2e-53, Method: Compositional matrix adjust.
+ Identities = 90/149 (60%), Positives = 95/149 (64%), Gaps = 0/149 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F+P  P    GR M Q  EQ WS L +LYNA+   P LVFLV WA VMDP QK FYF AT
+Sbjct  1    FLPLCPTICEGRSMWQDEEQCWSILATLYNALTGLPTLVFLVTWASVMDPTQKVFYFPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  DRC M+YI+ L L C K  TGGE H  PWSRQPD L TTV K V PNLL  P DD 
+Sbjct  61   LKMQDRCTMKYISWLFLCCQKVATGGEQHRVPWSRQPDWLVTTVTKYVQPNLLTMPADDK  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+            T C EV SA VMIQ  STD  DKV V  W
+Sbjct  121  TLCDEVPSADVMIQLNSTDALDKVSVQRW  149
+
+
+>46_22
+Length=150
+
+ Score = 161 bits (407),  Expect = 2e-52, Method: Compositional matrix adjust.
+ Identities = 88/150 (59%), Positives = 94/150 (63%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PGE  G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGEADGTEHIASGGQDWIRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWTD  KM YITVLAL CYKG+TG +LH FPW R    L TTVAK  W    H  C D+
+Sbjct  61   LKWTDYHKMHYITVLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>47_22
+Length=150
+
+ Score = 157 bits (397),  Expect = 4e-51, Method: Compositional matrix adjust.
+ Identities = 87/150 (58%), Positives = 93/150 (62%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PGE  G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGEADGTEHIASGGQDWVRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   KM YITVLAL CYKG+TG +LH FPW R    L TTVAK  W    H  C D+
+Sbjct  61   LKWTMDHKMHYITVLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHFYCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>48_22
+Length=150
+
+ Score = 157 bits (397),  Expect = 5e-51, Method: Compositional matrix adjust.
+ Identities = 87/150 (58%), Positives = 93/150 (62%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PGE  G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGEADGTEHIASGGQDWVRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   KM YITVLAL CYKG+TG +LH FPW R    L TTVAK  W    H  C D+
+Sbjct  61   LKWTMDHKMHYITVLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHFLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>14
+Length=150
+
+ Score = 156 bits (394),  Expect = 1e-50, Method: Compositional matrix adjust.
+ Identities = 88/149 (59%), Positives = 92/149 (62%), Gaps = 0/149 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F+P  P    GR M Q  E  WS L +LYNA+   P LVFLV WA VMDP QK FYF AT
+Sbjct  1    FLPLLPTICEGRSMWQDEEHCWSILATLYNALTGLPTLVFLVTWASVMDPTQKVFYFPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  DRC M YI+ L L C K  TGGE H  PWSRQPD L TTV K V PNLL  P DD 
+Sbjct  61   LKMQDRCTMFYISWLFLCCQKVATGGEQHRVPWSRQPDWLVTTVTKYVQPNLLTMPADDK  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+            T C EV SA VMIQ   TD  DKV V  W
+Sbjct  121  TPCDEVPSADVMIQLTCTDALDKVSVQRW  149
+
+
+>49_22
+Length=150
+
+ Score = 155 bits (392),  Expect = 3e-50, Method: Compositional matrix adjust.
+ Identities = 86/150 (57%), Positives = 92/150 (61%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G E I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTEHIASGGQDWVRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   KM YITVLAL CYKG+TG +LH FPW R    L TTVAK  W    H  C D+
+Sbjct  61   LKWTMDHKMHYITVLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHFLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>50_22
+Length=150
+
+ Score = 152 bits (385),  Expect = 3e-49, Method: Compositional matrix adjust.
+ Identities = 85/150 (57%), Positives = 91/150 (61%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFHIASGGQDWVRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   KM YITVLAL CYKG+TG +LH FPW R    L TTVAK  W    H  C D+
+Sbjct  61   LKWTMDHKMHYITVLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHFLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>52_22
+Length=150
+
+ Score = 151 bits (381),  Expect = 1e-48, Method: Compositional matrix adjust.
+ Identities = 84/150 (56%), Positives = 91/150 (61%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFHIASGGQDWVRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   LKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>30
+Length=150
+
+ Score = 150 bits (379),  Expect = 3e-48, Method: Compositional matrix adjust.
+ Identities = 86/150 (57%), Positives = 92/150 (61%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P  E I SGEQGWS LM  YN V EFP+L F VL  QV  PVQ T YF A 
+Sbjct  1    FDPHPPGMMPWMENITSGEQGWSMLMFGYNKVFEFPWLCFPVLEPQVHYPVQVTMYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            L   D C MRY    A RCYK ETG  + Y   SRQP    TTVA TVWPNL   PCD N
+Sbjct  61   LLREDVCMMRYSYSYAYRCYKTETGQGMWYKFRSRQPPYPFTTVAATVWPNLYSHPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+             +C E + AYV I+  STD  DKV+VHM C
+Sbjct  121  FYCKEPEYAYVQIECTSTDESDKVLVHMHC  150
+
+
+>51_22
+Length=150
+
+ Score = 150 bits (378),  Expect = 4e-48, Method: Compositional matrix adjust.
+ Identities = 84/150 (56%), Positives = 90/150 (60%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q W RLM  Y+A   FPFL FLVLWAQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFHIASGGQDWVRLMLEYDAWERFPFLHFLVLWAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   KM YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    H  C D+
+Sbjct  61   LKWTMDHKMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHFLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>13
+Length=150
+
+ Score = 149 bits (376),  Expect = 7e-48, Method: Compositional matrix adjust.
+ Identities = 84/149 (56%), Positives = 90/149 (60%), Gaps = 0/149 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F+P  P    GR   Q  E  WS L +LYNA++  P LVFLV WA VMDP  K FYF AT
+Sbjct  1    FLPLLPTICEGRSQPQDEEHCWSILAALYNALKGLPTLVFLVTWASVMDPTAKVFYFPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  DRC M YI+ L L C K  TGGE H  PW+RQPD L TTV K V PNLL  P D  
+Sbjct  61   LKMQDRCTMFYISWLNLCCCKVATGGEQHRVPWARQPDWLVTTVTKLVQPNLLTMPADLK  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+            T C EV SA VMIQ   TD  DKV V  W
+Sbjct  121  TPCDEVPSAGVMIQLTCTDALDKVSVQRW  149
+
+
+>53_22
+Length=150
+
+ Score = 146 bits (368),  Expect = 1e-46, Method: Compositional matrix adjust.
+ Identities = 83/150 (55%), Positives = 90/150 (60%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q W RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFHIASGGQDWVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   LKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H WC
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSWC  150
+
+
+>31
+Length=150
+
+ Score = 142 bits (358),  Expect = 4e-45, Method: Compositional matrix adjust.
+ Identities = 83/150 (55%), Positives = 89/150 (59%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P  E I SGEQGWS LM  YN V EF +L F+VL  QV  PVQ T YF A 
+Sbjct  1    FDPHPPGMMPWMENITSGEQGWSMLMFGYNKVFEFNWLCFIVLEPQVHYPVQVTMYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+                D C MRY    A RCYK ETG  L Y   SRQP    TTVA TVWPNL   PCD N
+Sbjct  61   CLREDVCMMRYSYSYAYRCYKTETGQGLWYKFRSRQPPYPFTTVAATVWPNLYSVPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+             +C E + AYV  +  STD  DKV+ HM C
+Sbjct  121  FYCKEPEYAYVQDECTSTDESDKVLTHMHC  150
+
+
+>12
+Length=150
+
+ Score = 138 bits (348),  Expect = 1e-43, Method: Compositional matrix adjust.
+ Identities = 80/148 (54%), Positives = 88/148 (59%), Gaps = 0/148 (0%)
+
+Query  2    IPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATL  61
+            +P  P +  GR   Q  E+ WS L +L NA++  P LVFLV WA VMDP  K FYF ATL
+Sbjct  2    LPLLPTKCEGRSQPQDEERCWSILAALGNALKGLPTLVFLVTWASVMDPTAKVFYFPATL  61
+
+Query  62   KWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNT  121
+            K  DR  M YI  L L C K  TGGE H  PW+RQPD L TTV K V PNLL  P D  T
+Sbjct  62   KMQDRRTMYYIMWLNLCCCKVATGGEQHRVPWARQPDWLVTTVTKLVQPNLLTMPADLKT  121
+
+Query  122  WCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+             C  V SA VMIQ   TD  DKV V+ W
+Sbjct  122  PCDSVPSAGVMIQLTCTDALDKVSVYRW  149
+
+
+>54_22
+Length=150
+
+ Score = 135 bits (340),  Expect = 2e-42, Method: Compositional matrix adjust.
+ Identities = 81/150 (54%), Positives = 88/150 (59%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFHIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   LKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWLGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSQC  150
+
+
+>55_22
+Length=150
+
+ Score = 134 bits (338),  Expect = 4e-42, Method: Compositional matrix adjust.
+ Identities = 81/150 (54%), Positives = 88/150 (59%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFHIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   LKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWCGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS  C DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQGSFTCPDKWMSHSQC  150
+
+
+>57_22
+Length=150
+
+ Score = 132 bits (332),  Expect = 4e-41, Method: Compositional matrix adjust.
+ Identities = 80/150 (53%), Positives = 87/150 (58%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFTIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   LKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKLAWCGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS    DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQGSFTLPDKWMSHSQC  150
+
+
+>11
+Length=150
+
+ Score = 132 bits (331),  Expect = 5e-41, Method: Compositional matrix adjust.
+ Identities = 77/148 (52%), Positives = 84/148 (57%), Gaps = 0/148 (0%)
+
+Query  2    IPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATL  61
+            +P  P    GR   Q  E+ WS L +L NA++  P LVFLV WA VMDP  K FYF ATL
+Sbjct  2    LPLLPTACEGRSQPQDEERCWSILAALGNALKGLPTLVFLVTWASVMDPTAKAFYFPATL  61
+
+Query  62   KWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNT  121
+            K  D   M YI  L   C K  TGGE H  PW+RQPD L TTV K V PNLL  P D  T
+Sbjct  62   KMQDPRTMYYIMWLNYNCCKVATGGEQHRVPWARQPDWLVTTVTKLVQPNLLTMPADLKT  121
+
+Query  122  WCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+             C    SA VMIQ   TD  DKV V+ W
+Sbjct  122  DCDSKPSAGVMIQLTCTDALDKVSVYRW  149
+
+
+>56_22
+Length=150
+
+ Score = 131 bits (330),  Expect = 7e-41, Method: Compositional matrix adjust.
+ Identities = 80/150 (53%), Positives = 87/150 (58%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFHIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LKWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   LKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKFAWCGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS    DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQGSFTLPDKWMSHSQC  150
+
+
+>59_22
+Length=150
+
+ Score = 131 bits (329),  Expect = 8e-41, Method: Compositional matrix adjust.
+ Identities = 79/150 (53%), Positives = 87/150 (58%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFTIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            +KWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   IKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKLAWCGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS    DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQGSFTLPDKWMSHSQC  150
+
+
+>32
+Length=150
+
+ Score = 130 bits (328),  Expect = 1e-40, Method: Compositional matrix adjust.
+ Identities = 80/150 (53%), Positives = 87/150 (58%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG  P  E I SG QG S LM  YN V EF +L F+VL  QV  PVQ T YF A 
+Sbjct  1    FDPHPPGCMPWMENITSGPQGNSMLMFGYNKVMEFNWLCFIVLEPQVHYPVQVTMYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+                D C MRY    A RCYK ETG  L Y   SRQ     TTVA TVWPNL + PCD N
+Sbjct  61   CLKEDVCMMRYSYSDAYRCYKTETGQGLWYKFRSRQLYYPFTTVAATVWPNLYNVPCDQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+             +C E + AYV  +  STD  DKV+ HM C
+Sbjct  121  FYCYEPEYAYVQDECTSTDESDKVLTHMHC  150
+
+
+>58_22
+Length=150
+
+ Score = 130 bits (326),  Expect = 2e-40, Method: Compositional matrix adjust.
+ Identities = 79/150 (53%), Positives = 86/150 (57%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFTIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+             KWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   TKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKLAWCGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI QGS    DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQGSFTLPDKWMSHSQC  150
+
+
+>60_22
+Length=150
+
+ Score = 127 bits (320),  Expect = 2e-39, Method: Compositional matrix adjust.
+ Identities = 78/150 (52%), Positives = 86/150 (57%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGTFTIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            +KWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   IKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKLAWCGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI Q S    DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQISFTLPDKWMSHSQC  150
+
+
+>61_22
+Length=150
+
+ Score = 127 bits (319),  Expect = 3e-39, Method: Compositional matrix adjust.
+ Identities = 78/150 (52%), Positives = 86/150 (57%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F  + PG   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T
+Sbjct  1    FDFYGPGTADGFFTIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            +KWT   +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+
+Sbjct  61   IKWTMDHQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKLAWCGDYHKLCWDS  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T  C VKSAYVMI Q S    DK + H  C
+Sbjct  121  TLWCMVKSAYVMIWQISFTLPDKWMSHSQC  150
+
+
+>62_22
+Length=150
+
+ Score = 124 bits (312),  Expect = 3e-38, Method: Compositional matrix adjust.
+ Identities = 76/144 (53%), Positives = 83/144 (58%), Gaps = 0/144 (0%)
+
+Query  7    GERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDR  66
+            G   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T+KWT  
+Sbjct  7    GTADGFFTIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPTIKWTMD  66
+
+Query  67   CKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEV  126
+             +M YIT LAL CYKG+TG +LH FPW R    L TTVAK  W    HK C D+T  C V
+Sbjct  67   HQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLTTVAKLAWCGDYHKLCWDSTLWCMV  126
+
+Query  127  KSAYVMIQQGSTDCCDKVVVHMWC  150
+            KSAYVMI Q S    DK + H  C
+Sbjct  127  KSAYVMIWQISFTLPDKWMSHSQC  150
+
+
+>63_22
+Length=150
+
+ Score = 122 bits (306),  Expect = 2e-37, Method: Compositional matrix adjust.
+ Identities = 75/144 (52%), Positives = 82/144 (57%), Gaps = 0/144 (0%)
+
+Query  7    GERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDR  66
+            G   G   I SG Q   RLM  Y+A   FPFL FLVL AQ  DP  K F F  T+KWT  
+Sbjct  7    GTADGFFTIASGGQDPVRLMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFAPTIKWTMD  66
+
+Query  67   CKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEV  126
+             +M YIT LAL CYKG+TG +LH FPW R    L  TVAK  W    HK C D+T  C V
+Sbjct  67   HQMHYITRLALWCYKGKTGTQLHMFPWRRFAVFLLYTVAKLAWCGDYHKLCWDSTLWCMV  126
+
+Query  127  KSAYVMIQQGSTDCCDKVVVHMWC  150
+            KSAYVMI Q S    DK + H  C
+Sbjct  127  KSAYVMIWQISFTLPDKWMSHSQC  150
+
+
+>64_22
+Length=150
+
+ Score = 115 bits (289),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 72/144 (50%), Positives = 79/144 (55%), Gaps = 0/144 (0%)
+
+Query  7    GERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDR  66
+            G   G   I SG Q   R M  Y+A   FPFL FLVL AQ  DP  K F F  T+KWT  
+Sbjct  7    GTADGFFTIASGGQDPVRFMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFTPTIKWTMD  66
+
+Query  67   CKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEV  126
+             +M YIT LAL CYKG+TG +LH F W R    L  TVAK  W    HK C D+T  C V
+Sbjct  67   YQMHYITRLALWCYKGKTGTQLHMFWWRRFAVFLLYTVAKLAWCGDYHKLCWDSTLWCMV  126
+
+Query  127  KSAYVMIQQGSTDCCDKVVVHMWC  150
+            KS YVMI Q S    DK + H  C
+Sbjct  127  KSPYVMIWQISFTLPDKWMSHSQC  150
+
+
+>65_22
+Length=150
+
+ Score = 113 bits (282),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 70/136 (51%), Positives = 77/136 (57%), Gaps = 0/136 (0%)
+
+Query  15   IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITV  74
+            I SG Q   R M  Y+A   FPFL FLVL AQ  DP  K F F  T+KWT   +M YIT 
+Sbjct  15   IASGGQDPVRFMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFTPTIKWTMDYQMHYITR  74
+
+Query  75   LALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQ  134
+            LAL CYKG+TG +LH F W R    L  TVAK  W    HK C D+T  C VKS YVMI 
+Sbjct  75   LALWCYKGKTGTQLHMFWWRRFAVFLLYTVAKLAWCGDYHKLCWDSTLWCMVKSPYVMIW  134
+
+Query  135  QGSTDCCDKVVVHMWC  150
+            Q S    DK + H  C
+Sbjct  135  QISFTLPDKWMSHSQC  150
+
+
+>67_22
+Length=150
+
+ Score = 112 bits (281),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 70/136 (51%), Positives = 77/136 (57%), Gaps = 0/136 (0%)
+
+Query  15   IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITV  74
+            I SG     R M  Y+A   FPFLVFLVL AQ  DP  K F F  T+KWT   +M YIT 
+Sbjct  15   IASGGIDPVRFMLEYDAWERFPFLVFLVLTAQWYDPYSKCFVFTPTIKWTMDYQMHYITR  74
+
+Query  75   LALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQ  134
+            LAL CYKG+TG +LH F W R    L  TVAK  W    HK C D+T  C VKS YVMI 
+Sbjct  75   LALWCYKGKTGTQLHMFWWRRFAVFLLYTVAKLAWCGDYHKLCWDSTLWCMVKSPYVMIW  134
+
+Query  135  QGSTDCCDKVVVHMWC  150
+            Q S    DK + H  C
+Sbjct  135  QISFTFPDKWMSHSQC  150
+
+
+>69_22
+Length=150
+
+ Score = 110 bits (276),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 69/136 (51%), Positives = 76/136 (56%), Gaps = 0/136 (0%)
+
+Query  15   IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITV  74
+            I SG     R M  Y+A   FPFLVFLVL AQ  DP  K F F  T+KWT   +M YIT 
+Sbjct  15   IASGGIDPVRFMLEYDAWERFPFLVFLVLTAQWYDPYSKRFVFTPTIKWTMDYQMHYITR  74
+
+Query  75   LALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQ  134
+            LAL CYKG+TG +LH F W R    L  TVAK  W    HK C  +T  C VKS YVMI 
+Sbjct  75   LALWCYKGKTGTQLHMFWWRRFAVFLLYTVAKLAWCGDYHKLCWGSTLWCMVKSPYVMIW  134
+
+Query  135  QGSTDCCDKVVVHMWC  150
+            Q S    DK + H  C
+Sbjct  135  QISFTFPDKWMSHSQC  150
+
+
+>66_22
+Length=150
+
+ Score = 110 bits (275),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 69/136 (51%), Positives = 76/136 (56%), Gaps = 0/136 (0%)
+
+Query  15   IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITV  74
+            I SG     R M  Y+A   FPFL FLVL AQ  DP  K F F  T+KWT   +M YIT 
+Sbjct  15   IASGGIDPVRFMLEYDAWERFPFLHFLVLTAQWYDPYSKCFVFTPTIKWTMDYQMHYITR  74
+
+Query  75   LALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQ  134
+            LAL CYKG+TG +LH F W R    L  TVAK  W    HK C D+T  C VKS YVMI 
+Sbjct  75   LALWCYKGKTGTQLHMFWWRRFAVFLLYTVAKLAWCGDYHKLCWDSTLWCMVKSPYVMIW  134
+
+Query  135  QGSTDCCDKVVVHMWC  150
+            Q S    DK + H  C
+Sbjct  135  QISFTFPDKWMSHSQC  150
+
+
+>68_22
+Length=150
+
+ Score = 110 bits (275),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 69/136 (51%), Positives = 76/136 (56%), Gaps = 0/136 (0%)
+
+Query  15   IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITV  74
+            I SG     R M  Y+A   FPFLVFLVL AQ  DP  K F F  T+KWT   +M YIT 
+Sbjct  15   IASGGIDPVRFMLEYDAWERFPFLVFLVLTAQWYDPYSKCFVFTPTIKWTMDYQMHYITR  74
+
+Query  75   LALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQ  134
+            LAL CYKG+TG +LH F W R    L  TVAK  W    HK C  +T  C VKS YVMI 
+Sbjct  75   LALWCYKGKTGTQLHMFWWRRFAVFLLYTVAKLAWCGDYHKLCWGSTLWCMVKSPYVMIW  134
+
+Query  135  QGSTDCCDKVVVHMWC  150
+            Q S    DK + H  C
+Sbjct  135  QISFTFPDKWMSHSQC  150
+
+
+>70_22
+Length=150
+
+ Score = 108 bits (269),  Expect = 1e-31, Method: Compositional matrix adjust.
+ Identities = 64/120 (53%), Positives = 70/120 (58%), Gaps = 0/120 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y+A   FPFLVFLVL AQ  DP  K F F  T+KWT   +M YIT LAL CYKG+
+Sbjct  24   RFMLEYDAWERFPFLVFLVLTAQWYDPYSKRFVFTPTIKWTMDYQMHYITRLALWCYKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    HK C  +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLAWCGDYHKLCWGSTLWCMVKSPYVMIWQISFTFPDK  143
+
+
+>33
+Length=150
+
+ Score = 102 bits (255),  Expect = 1e-29, Method: Compositional matrix adjust.
+ Identities = 70/148 (47%), Positives = 78/148 (53%), Gaps = 0/148 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG     E I SG Q  S LM  YN V EF +L F+VL  QV  PVQ T YF A 
+Sbjct  1    FDPHPPGCMAWMENITSGPQSNSMLMRGYNKVMEFNWLCFIVLEPQVHYPVQVTMYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+                D C MRY    A R YK ETG  L     SRQ     TTVA TVW NL + PC  N
+Sbjct  61   CLKEDVCMMRYSYSDAYRVYKTETGQGLWPKFRSRQAYYPFTTVAATVWWNLYNVPCYQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHM  148
+             +C E + A V  +  +T   DKV+ HM
+Sbjct  121  FYCHEPEYASVQDECTNTKESDKVLTHM  148
+
+
+>71_22
+Length=150
+
+ Score = 99.0 bits (245),  Expect = 4e-28, Method: Compositional matrix adjust.
+ Identities = 61/120 (51%), Positives = 68/120 (57%), Gaps = 0/120 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y+A   FPFLVFLVL AQ  DP  K F F  T+KWT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYDAWERFPFLVFLVLTAQWYDPYSKRFVFTPTIKWTMDYQMVYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTFPDK  143
+
+
+>10
+Length=150
+
+ Score = 98.6 bits (244),  Expect = 6e-28, Method: Compositional matrix adjust.
+ Identities = 64/149 (43%), Positives = 73/149 (49%), Gaps = 0/149 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+             +P  P    GR   Q  E+ WS L +L NA+   P LVFLV    V DP  K FY  AT
+Sbjct  1    MLPLLPTACEGRSQPQDEERHWSILAALGNALMGLPTLVFLVTTMGVADPDMKAFYMPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  D   M Y   L   C K  TGGE +  PW+RQ D L TT  K + PNLL  P D  
+Sbjct  61   LKMDDARTMYYSMWLGYNCCKVATGGEQNRVPWARQMDWLVTTALKLIQPNLLTMPADLK  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+            T C    +A  MIQ   T   DKV  + W
+Sbjct  121  TDCDLKPAAGHMIQCTCTAALDKVCEYRW  149
+
+
+>34
+Length=150
+
+ Score = 97.4 bits (241),  Expect = 2e-27, Method: Compositional matrix adjust.
+ Identities = 68/148 (46%), Positives = 75/148 (51%), Gaps = 0/148 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG     E I SG Q  S LM  YN V EF +L F+VL  QV  PVQ T YF A 
+Sbjct  1    FDPHPPGCMAVMENITSGPQSNSMLMRGYNKVMEFNWLCFIVLEPQVHVPVQVTMYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+                D C MRY    A R YK ETG  L     SRQ     TTV  TVW NL + PC  N
+Sbjct  61   CLKEDVCMMRYSYSDAYRVYKTETGQGLWPKFRSRQAYYPFTTVNATVWWNLYNVPCYQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHM  148
+             +C E     V  +  +T   DKV+ HM
+Sbjct  121  FYCHEPIYNSVQDECTNTKESDKVLTHM  148
+
+
+>72_22
+Length=150
+
+ Score = 97.4 bits (241),  Expect = 2e-27, Method: Compositional matrix adjust.
+ Identities = 60/120 (50%), Positives = 67/120 (56%), Gaps = 0/120 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y+A   FPFLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYDAWERFPFLVFLVLTAQWYDPYSKRFTFTPTISWTMDYQMVYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+
+>74_22
+Length=150
+
+ Score = 95.9 bits (237),  Expect = 7e-27, Method: Compositional matrix adjust.
+ Identities = 61/127 (48%), Positives = 68/127 (54%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   FPFLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYCAWERFPFLVFLVLTAQWYDPYSKRFTFTPTISWTMDYQMVYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             +    C
+Sbjct  144  FMTQSQC  150
+
+
+>75_22
+Length=150
+
+ Score = 95.9 bits (237),  Expect = 8e-27, Method: Compositional matrix adjust.
+ Identities = 61/127 (48%), Positives = 68/127 (54%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   FPFLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYCAWERFPFLVFLVLTAQWYDPYMKRFTFTPTISWTMDYQMVYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             +    C
+Sbjct  144  FMTQSQC  150
+
+
+>73_22
+Length=150
+
+ Score = 95.9 bits (237),  Expect = 8e-27, Method: Compositional matrix adjust.
+ Identities = 61/127 (48%), Positives = 68/127 (54%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   FPFLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYCAWERFPFLVFLVLTAQWYDPYSKRFTFTPTISWTMDYQMVYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             +    C
+Sbjct  144  FMTQSQC  150
+
+
+>78_22
+Length=150
+
+ Score = 93.2 bits (230),  Expect = 7e-26, Method: Compositional matrix adjust.
+ Identities = 61/127 (48%), Positives = 67/127 (53%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYCAWERFIFLVFLVLTAQWYDPYMKRFTFTPTISWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKEGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>35
+Length=150
+
+ Score = 93.2 bits (230),  Expect = 9e-26, Method: Compositional matrix adjust.
+ Identities = 66/148 (45%), Positives = 74/148 (50%), Gaps = 0/148 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F PHPPG     E+I SG Q    L   YN V EF +L F+VL  QV  PVQ T YF A 
+Sbjct  1    FDPHPPGCMAVMEIITSGPQSNWMLPRGYNKVMEFNWLCFIVLEPQVHVPVQVTMYFAAV  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+                D C MRY    A R YK ETG  L     SRQ     TTV  TVW NL + PC  N
+Sbjct  61   CLKEDVCMMRYSYSDAYRVYKTETGQGLWPKFRSRQAYYPFTTVNATVWWNLYNVPCYQN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHM  148
+             +C E     V  +  +T   DKV+ HM
+Sbjct  121  EYCHEPIYNSVQDECTNTKESDKVLTHM  148
+
+
+>80_22
+Length=150
+
+ Score = 92.4 bits (228),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 60/127 (47%), Positives = 66/127 (52%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRFTFTPTISWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYPVAKEGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>76_22
+Length=150
+
+ Score = 92.0 bits (227),  Expect = 2e-25, Method: Compositional matrix adjust.
+ Identities = 60/127 (47%), Positives = 67/127 (53%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYCAWERFIFLVFLVLTAQWYDPYMKRFTFTPTISWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             +    C
+Sbjct  144  FMTQSQC  150
+
+
+>77_22
+Length=150
+
+ Score = 92.0 bits (227),  Expect = 2e-25, Method: Compositional matrix adjust.
+ Identities = 60/127 (47%), Positives = 67/127 (53%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYCAWERFIFLVFLVLTAQWYDPYMKRFTFTPTISWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L  TVAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYTVAKLGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             +    C
+Sbjct  144  FMTQSQC  150
+
+
+>79_22
+Length=150
+
+ Score = 90.9 bits (224),  Expect = 6e-25, Method: Compositional matrix adjust.
+ Identities = 60/127 (47%), Positives = 66/127 (52%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K F F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLEYCAWERFIFLVFLVLTAQWYDPYMKRFTFTPTISWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYPVAKEGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>82_22
+Length=150
+
+ Score = 89.7 bits (221),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 59/127 (46%), Positives = 65/127 (51%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTISWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYPVAKEGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>81_22
+Length=150
+
+ Score = 89.7 bits (221),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 59/127 (46%), Positives = 65/127 (51%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T+ WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTISWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYPVAKEGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>86_22
+Length=150
+
+ Score = 88.2 bits (217),  Expect = 7e-24, Method: Compositional matrix adjust.
+ Identities = 58/124 (47%), Positives = 63/124 (51%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T  WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTTSWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGIQLHMFWWRRFAVFLLYPVAKEGWCQDYHILMWGSTLWCMVKSPYVMIWQISFTMFDK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>83_22
+Length=150
+
+ Score = 88.2 bits (217),  Expect = 7e-24, Method: Compositional matrix adjust.
+ Identities = 59/127 (46%), Positives = 64/127 (50%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T  WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTTSWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGTQLHMFWWRRFAVFLLYPVAKEGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>84_22
+Length=150
+
+ Score = 87.8 bits (216),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 59/127 (46%), Positives = 64/127 (50%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T  WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTTSWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGIQLHMFWWRRFAVFLLYPVAKEGWCGDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>85_22
+Length=150
+
+ Score = 87.8 bits (216),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 59/127 (46%), Positives = 64/127 (50%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T  WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTTSWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH F W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGIQLHMFWWRRFAVFLLYPVAKEGWCQDYHILMWGSTLWCMVKSPYVMIWQISFTMPDK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>9
+Length=150
+
+ Score = 87.4 bits (215),  Expect = 1e-23, Method: Compositional matrix adjust.
+ Identities = 61/149 (41%), Positives = 70/149 (47%), Gaps = 0/149 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+             +P  P    GR   Q  E+ WS L +L NA+   P LVFLV    V DP  K FY  AT
+Sbjct  1    MLPLLPTACEGRSQKQDEERHWSILAALGNALMGLPTLVFLVTTMGVADPDMKAFYMPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  D   M Y   L   C K  TGGE +  PW+R  D L TT  K +  NLL  P D  
+Sbjct  61   LKMDDARTMYYSMWLGYNCCKVATGGEQNRVPWARFMDWLVTTALKLIQYNLLTMPADLG  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMW  149
+            T      +A  MIQ   T   DKV  + W
+Sbjct  121  TDLDLKPAAGHMIQCYCTAALDKVCEYRW  149
+
+
+>88_22
+Length=150
+
+ Score = 86.3 bits (212),  Expect = 4e-23, Method: Compositional matrix adjust.
+ Identities = 57/124 (46%), Positives = 63/124 (51%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T  WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTTSWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLWCMVKSPYVMIWQISFTMFDK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>87_22
+Length=150
+
+ Score = 86.3 bits (212),  Expect = 4e-23, Method: Compositional matrix adjust.
+ Identities = 57/124 (46%), Positives = 63/124 (51%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T  WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTTSWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS YVMI Q S    DK
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLWCMVKSPYVMIWQISFTMFDK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>89_22
+Length=150
+
+ Score = 83.2 bits (204),  Expect = 7e-22, Method: Compositional matrix adjust.
+ Identities = 56/124 (45%), Positives = 62/124 (50%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL AQ  DP  K   F  T  WT   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTAQWYDPYMKRVTFTPTTSWTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS YVMI Q S     K
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLWCMVKSPYVMIWQISFTMFYK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>8
+Length=150
+
+ Score = 79.0 bits (193),  Expect = 3e-20, Method: Compositional matrix adjust.
+ Identities = 57/150 (38%), Positives = 67/150 (45%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+             +P  P    G    Q  E+ WS L +L NA+   P LVFLV    V DP  K FY  AT
+Sbjct  1    MLPLLPTACEGLSQKQDEERHWSILAALGNALMGLPTLVFLVTTMGVADPDVKAFYMPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK  D   M Y   L   C+K  TGGE +  PW+R  D L TT  K +   LL    D  
+Sbjct  61   LKMDDARTMYYSMWLGYNCWKVATGGEQNRVPWARYMDWLVTTALKLIDYALLTMLADLG  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T      +   MIQ   T   DKV  + W 
+Sbjct  121  TILALKPAMGHMIQCYCTAALDKVCEYRWA  150
+
+
+>90_22
+Length=150
+
+ Score = 70.5 bits (171),  Expect = 4e-17, Method: Compositional matrix adjust.
+ Identities = 54/122 (44%), Positives = 60/122 (49%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q  DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTVQWYDPYMKRVTFTPTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS YVMI Q S     K
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYVMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>96_22
+Length=150
+
+ Score = 70.1 bits (170),  Expect = 8e-17, Method: Compositional matrix adjust.
+ Identities = 54/127 (43%), Positives = 61/127 (48%), Gaps = 0/127 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VVVHMWC  150
+             V    C
+Sbjct  144  FVTQSQC  150
+
+
+>97_22
+Length=150
+
+ Score = 69.7 bits (169),  Expect = 9e-17, Method: Compositional matrix adjust.
+ Identities = 53/122 (43%), Positives = 60/122 (49%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>95_22
+Length=150
+
+ Score = 69.7 bits (169),  Expect = 1e-16, Method: Compositional matrix adjust.
+ Identities = 53/122 (43%), Positives = 60/122 (49%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>7
+Length=150
+
+ Score = 69.3 bits (168),  Expect = 1e-16, Method: Compositional matrix adjust.
+ Identities = 54/150 (36%), Positives = 63/150 (42%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+             +P  P    G    Q  E+ WS L +L  A+   P LVFLV    V DP  K FY  AT
+Sbjct  1    MLPLLPTACEGLSQKQDEERHWSILAALGTALMGLPTLVFLVTGMGVADPDVKKFYAPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK      M Y   L   C K  TGGE +  PW+R  D L TT  K +   LL    D  
+Sbjct  61   LKMDIARTMYYSMWLGYNCTKVATGGEQNLVPWARYMDWLVTTALKLIDYALLTMLADLG  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T      +   MIQ   T   DK   + W 
+Sbjct  121  TILALKPAMGHMIQCYCTAALDKPYSYRWA  150
+
+
+>93_22
+Length=150
+
+ Score = 68.9 bits (167),  Expect = 2e-16, Method: Compositional matrix adjust.
+ Identities = 53/122 (43%), Positives = 59/122 (48%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q  DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWYDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>94_22
+Length=150
+
+ Score = 68.9 bits (167),  Expect = 2e-16, Method: Compositional matrix adjust.
+ Identities = 53/122 (43%), Positives = 59/122 (48%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q  DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWYDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>92_22
+Length=150
+
+ Score = 68.6 bits (166),  Expect = 3e-16, Method: Compositional matrix adjust.
+ Identities = 53/122 (43%), Positives = 59/122 (48%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q  DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWYDPYMKRVTFTPTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>91_22
+Length=150
+
+ Score = 68.2 bits (165),  Expect = 4e-16, Method: Compositional matrix adjust.
+ Identities = 53/122 (43%), Positives = 59/122 (48%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q  DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLTVQWYDPYMKRVTFTPTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W    H     +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWWWRRFAVFLLYPVAKEPWCQDYHILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>98_22
+Length=150
+
+ Score = 65.9 bits (159),  Expect = 3e-15, Method: Compositional matrix adjust.
+ Identities = 52/124 (42%), Positives = 59/124 (48%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLYPVAKEPWCQDYIILMWGSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>99_22
+Length=150
+
+ Score = 64.7 bits (156),  Expect = 8e-15, Method: Compositional matrix adjust.
+ Identities = 52/122 (43%), Positives = 59/122 (48%), Gaps = 0/122 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FLVFLVL  Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLVFLVLHVQWIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLYPVAKEPWCQDYIILMWWSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VV  145
+             V
+Sbjct  144  FV  145
+
+
+>100_22
+Length=150
+
+ Score = 62.4 bits (150),  Expect = 6e-14, Method: Compositional matrix adjust.
+ Identities = 51/124 (41%), Positives = 58/124 (47%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M  Y A   F FL FLVL  Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFYCAWERFIFLWFLVLHVQWIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLYPVAKEPWCQDYIILMWWSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>6
+Length=150
+
+ Score = 58.2 bits (139),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 50/150 (33%), Positives = 60/150 (40%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+             +P  P    G    Q  E+ WS L +L  A+     LVFLV    V DP  K FY  AT
+Sbjct  1    MLPLLPTACEGLSQKQDEERHWSILAALGTALMGLGTLVFLVTGMGVADPDVKKFYAPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK      M Y   L     K  TGGE +   W+R  D L TT  K +   LL    D  
+Sbjct  61   LKMDIARTMYYSMWLGYHFTKVATGGEQNLVYWARYMDWLVTTALKLIDYALLTMLADLG  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T      +  +MIQ   T    K   + W 
+Sbjct  121  TILALKPAMGIMIQCYCTGALTKPYSYRWA  150
+
+
+>101_22
+Length=150
+
+ Score = 57.4 bits (137),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 49/124 (40%), Positives = 56/124 (45%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL FLV   Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAWERFIFLWFLVWHVQYIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLFPVAKEPWCQDYIILMWWSTLFCMVKSPYWMIWQISFTMFYK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>103_22
+Length=150
+
+ Score = 57.4 bits (137),  Expect = 6e-12, Method: Compositional matrix adjust.
+ Identities = 49/124 (40%), Positives = 56/124 (45%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL FLV   Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAWERFIFLWFLVWHVQYIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLFPVAKEPWCQDYIILMWWSTLFCMVKSPYWMIWQISFTMFVK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>102_22
+Length=150
+
+ Score = 57.0 bits (136),  Expect = 6e-12, Method: Compositional matrix adjust.
+ Identities = 49/124 (40%), Positives = 56/124 (45%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL FLV   Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAWERFIFLWFLVWHVQYIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLFPVAKEPWCQDYIILMWWSTLFCMVKSPYWMIWQISFTMFVK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  FVTQ  147
+
+
+>104_22
+Length=150
+
+ Score = 56.6 bits (135),  Expect = 9e-12, Method: Compositional matrix adjust.
+ Identities = 49/124 (40%), Positives = 56/124 (45%), Gaps = 0/124 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL FLV   Q +DP  K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAWERFIFLWFLVWHVQYIDPYMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S     K
+Sbjct  84   TGIQLHMWRWRRFAVFLLFPVAKEPWCQDYIILMWWSTLFCMVKSPYWMIWQISFTMFVK  143
+
+Query  144  VVVH  147
+             V  
+Sbjct  144  SVTQ  147
+
+
+>5
+Length=150
+
+ Score = 56.6 bits (135),  Expect = 1e-11, Method: Compositional matrix adjust.
+ Identities = 48/150 (32%), Positives = 58/150 (39%), Gaps = 0/150 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+             +P  P    G    Q   + WS L +L  A+     LVFLV    V DP  K FY  AT
+Sbjct  1    MLPLLPTAVEGVSQKQDEGRHWSILAALGTALMGLGTLVFLVTGMGVADPDVKKFYAPAT  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            LK      M     L     K  TGGE +   W+R  D L TT  K +   LL    D  
+Sbjct  61   LKMAIARTMYMSMALGYHFTKVATGGEQNLVYWARYMDWLVTTALKLIDYALLTMLADKG  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVVVHMWC  150
+            T      +  +MIQ   T    K   + W 
+Sbjct  121  TILALKPAMGIMIQCYCTGALTKPYSYRWA  150
+
+
+>105_22
+Length=150
+
+ Score = 56.2 bits (134),  Expect = 1e-11, Method: Compositional matrix adjust.
+ Identities = 47/114 (41%), Positives = 54/114 (47%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +DPV K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDPVMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S
+Sbjct  84   TGIQLHMWRWRRFAVFLLFPVAKEPWCQDYIILMWWSTLFCMVKSPYWMIWQIS  137
+
+
+>107_22
+Length=150
+
+ Score = 55.8 bits (133),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 47/114 (41%), Positives = 54/114 (47%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +DPV K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDPVMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAKEPWCQDYIIFMWWSTLFCMVKSPYWMIWQIS  137
+
+
+>106_22
+Length=150
+
+ Score = 55.8 bits (133),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 47/114 (41%), Positives = 54/114 (47%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +DPV K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDPVMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VAK  W          +T  C VKS Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAKEPWCQDYIIFMWWSTLFCMVKSPYWMIWQIS  137
+
+
+>109_22
+Length=150
+
+ Score = 54.3 bits (129),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 46/114 (40%), Positives = 53/114 (46%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +DPV K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDPVMKRVTFTMTTSTTMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VA   W          +T  C VKS Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAHEPWCQDYIIFMWWSTLFCMVKSPYWMIWQIS  137
+
+
+>108_22
+Length=150
+
+ Score = 53.9 bits (128),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 46/114 (40%), Positives = 53/114 (46%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +DPV K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDPVMKRVTFTMTTSTTMDYQMPYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VA   W          +T  C VKS Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAHEPWCQDYIIFMWWSTLFCMVKSPYWMIWQIS  137
+
+
+>110_22
+Length=150
+
+ Score = 52.8 bits (125),  Expect = 3e-10, Method: Compositional matrix adjust.
+ Identities = 45/114 (39%), Positives = 52/114 (46%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +DPV K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDPVMKRVTFTMTTSTTMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VA   W          +T  C VK  Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAHEPWCQDYIIFMWWSTLFCMVKHPYWMIWQIS  137
+
+
+>36
+Length=150
+
+ Score = 50.4 bits (119),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 46/145 (32%), Positives = 62/145 (43%), Gaps = 0/145 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F P  PG +   E+I SG Q   RL   YN   +F  + F VL  QV  PV  T YF   
+Sbjct  1    FDPAFPGCKAVMEIITSGPQSNYRLPLGYNKYMQFNKVCFRVLEPQVHVPVILTMYFRIM  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            +   D C   +        YK ETG  L      RQ     T +  T+  NL++ PC  N
+Sbjct  61   MLKEDVCMPPHSYCDWYVVYKTETGWNLWRKGRIRQDYYPFTIMFATISWNLMNVPCYLN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVV  145
+             +C E +   +  +  +T   D V+
+Sbjct  121  EYCHEPRYNSIQDECTNTRQSDDVL  145
+
+
+>114_22
+Length=150
+
+ Score = 49.7 bits (117),  Expect = 4e-09, Method: Compositional matrix adjust.
+ Identities = 44/122 (36%), Positives = 52/122 (43%), Gaps = 16/122 (13%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V K   F      T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECMHERFIFLWFYVWHVQYIDIVMKRVTFTMNTSTTMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKP-CDD-------NTWCCEVKSAYVMIQQ  135
+            TG +LH + W R    L   VA        H+P C D       +T  C V   Y MI Q
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVA--------HEPWCQDYIIFMWWSTLFCMVNHLYWMIWQ  135
+
+Query  136  GS  137
+             S
+Sbjct  136  IS  137
+
+
+>111_22
+Length=150
+
+ Score = 49.3 bits (116),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 44/114 (39%), Positives = 51/114 (45%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +D V K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDIVMKRVTFTMTTSTTMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VA   W          +T  C VK  Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAHEPWCQDYIIFMWWSTLFCMVKHPYWMIWQIS  137
+
+
+>112_22
+Length=150
+
+ Score = 49.3 bits (116),  Expect = 6e-09, Method: Compositional matrix adjust.
+ Identities = 44/114 (39%), Positives = 51/114 (45%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M    A   F FL F V   Q +D V K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECAHERFIFLWFYVWHVQYIDIVMKRVTFTMTTSTTMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VA   W          +T  C VK  Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAHEPWCQDYIIFMWWSTLFCMVKHPYWMIWQIS  137
+
+
+>3
+Length=150
+
+ Score = 48.5 bits (114),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 41/121 (34%), Positives = 49/121 (40%), Gaps = 0/121 (0%)
+
+Query  23   SRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKG  82
+            S L +L  A+     LVFLV    V DP  K FY  ATLK      M    +L       
+Sbjct  23   SILAALGTALMGLGTLVFLVTGMGVSDPDVKKFYAIATLKMAIARTMYLSMLLGYHFTMV  82
+
+Query  83   ETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCD  142
+              GGE +   W+R  D L TT  K +   LL    D  T    V +  +MIQ   T    
+Sbjct  83   PFGGEQNPIYWARYADWLFTTALKLIDLALLTDLADKGTILALVGAMGIMIQCDLTGALT  142
+
+Query  143  K  143
+            K
+Sbjct  143  K  143
+
+
+>38
+Length=150
+
+ Score = 48.1 bits (113),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 44/143 (31%), Positives = 59/143 (41%), Gaps = 0/143 (0%)
+
+Query  3    PHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLK  62
+            P  PG +   E+I SG Q   RL   YN   +F  + F VL  QV  P   T  F   + 
+Sbjct  3    PANPGCKIVGEIITSGPQSNYRLNLGYNKYMQFNKVCFNVLEPQVHVPCILTMQFRIMML  62
+
+Query  63   WTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTW  122
+              D     Y        YK ETGG L      RQ     T +  T+  NL++ PC  N +
+Sbjct  63   GEDVRMPPYSYCDWYVVYKHETGGNLWRKGRIRQTYYPFTIMCATILWNLMNVPCKLNEY  122
+
+Query  123  CCEVKSAYVMIQQGSTDCCDKVV  145
+            C E    ++  +  +T   D V+
+Sbjct  123  CHEPPYNFIQDECTNTRTSDDVL  145
+
+
+>4
+Length=150
+
+ Score = 47.4 bits (111),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 42/128 (33%), Positives = 50/128 (39%), Gaps = 0/128 (0%)
+
+Query  23   SRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKG  82
+            S L +L  A+     LVFLV    V DP  K FY  ATLK      M     L       
+Sbjct  23   SILAALGTALMGLGTLVFLVTGMGVSDPDVKKFYAPATLKMAIARTMYLSMALGYHFTMV  82
+
+Query  83   ETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCD  142
+             TGGE +   W+R  D L TT  K +   LL    D  T      +  +MIQ   T    
+Sbjct  83   PTGGEQNPVYWARYADWLVTTALKLIDYALLTMLADKGTILALKGAMGIMIQCYCTGALT  142
+
+Query  143  KVVVHMWC  150
+            K   + W 
+Sbjct  143  KPYSYRWA  150
+
+
+>113_22
+Length=150
+
+ Score = 47.4 bits (111),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 43/114 (38%), Positives = 50/114 (44%), Gaps = 0/114 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V K   F  T   T   +M YIT LAL C+KG+
+Sbjct  24   RFMLFECMHERFIFLWFYVWHVQYIDIVMKRVTFTMTTSTTMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGS  137
+            TG +LH + W R    L   VA   W          +T  C VK  Y MI Q S
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVAHEPWCQDYIIFMWWSTLFCMVKHPYWMIWQIS  137
+
+
+>2
+Length=150
+
+ Score = 45.4 bits (106),  Expect = 1e-07, Method: Compositional matrix adjust.
+ Identities = 38/118 (32%), Positives = 47/118 (40%), Gaps = 0/118 (0%)
+
+Query  26   MSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGETG  85
+            ++L  A+     LVFLV    V DP  K FY   TLK      M    +L         G
+Sbjct  26   LALGTALMGLGTLVFLVKGMGVSDPDAKKFYAITTLKNAIALTMYLSMLLGYHLTMVPFG  85
+
+Query  86   GELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMIQQGSTDCCDK  143
+            GE +   W+R  D L TT  K +   LL    D  T    V +  +MIQ   T    K
+Sbjct  86   GEQNPIYWARYADWLFTTALKLIDLALLVDLADQGTILALVGADGIMIQCDLTGALTK  143
+
+
+>117_22
+Length=150
+
+ Score = 45.4 bits (106),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 42/122 (34%), Positives = 50/122 (41%), Gaps = 16/122 (13%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V     F          +M YIT LAL C+KG+
+Sbjct  24   RFMLFECMHERFIFLWFYVWHQQYIDIVMFRVTFTMNTSTVMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKP-CDD-------NTWCCEVKSAYVMIQQ  135
+            TG +LH + W R    L   VA        H+P C D       +T  C V   Y MI Q
+Sbjct  84   TGIQLHSWRWRRFAVFLLNPVA--------HEPWCQDYIIFMWWSTLFCMVNHLYWMIWQ  135
+
+Query  136  GS  137
+             S
+Sbjct  136  IS  137
+
+
+>115_22
+Length=150
+
+ Score = 45.1 bits (105),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 42/122 (34%), Positives = 50/122 (41%), Gaps = 16/122 (13%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V     F          +M YIT LAL C+KG+
+Sbjct  24   RFMLFECMHERFIFLWFYVWHVQYIDIVMFRVTFTMNTSTVMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKP-CDD-------NTWCCEVKSAYVMIQQ  135
+            TG +LH + W R    L   VA        H+P C D       +T  C V   Y MI Q
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVA--------HEPWCQDYIIFMWWSTLFCMVNHLYWMIWQ  135
+
+Query  136  GS  137
+             S
+Sbjct  136  IS  137
+
+
+>116_22
+Length=150
+
+ Score = 44.7 bits (104),  Expect = 3e-07, Method: Compositional matrix adjust.
+ Identities = 42/122 (34%), Positives = 50/122 (41%), Gaps = 16/122 (13%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V     F          +M YIT LAL C+KG+
+Sbjct  24   RFMLFECMHERFIFLWFYVWHQQYIDIVMFRVTFTMNTSTVMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKP-CDD-------NTWCCEVKSAYVMIQQ  135
+            TG +LH + W R    L   VA        H+P C D       +T  C V   Y MI Q
+Sbjct  84   TGIQLHSWRWRRFAVFLLFPVA--------HEPWCQDYIIFMWWSTLFCMVNHLYWMIWQ  135
+
+Query  136  GS  137
+             S
+Sbjct  136  IS  137
+
+
+>37
+Length=150
+
+ Score = 44.3 bits (103),  Expect = 4e-07, Method: Compositional matrix adjust.
+ Identities = 45/145 (31%), Positives = 60/145 (41%), Gaps = 0/145 (0%)
+
+Query  1    FIPHPPGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNAT  60
+            F P  PG +   E+I SG Q   RL   YN   +F  + F VL  QV  PV  T  F   
+Sbjct  1    FDPAFPGCKIVMEIITSGPQSNYRLPLGYNKYMQFNKVCFRVLEPQVHVPVILTMQFRIM  60
+
+Query  61   LKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDN  120
+            +   D              YK ETGG L      RQ     T +  T+  NL++ PC  N
+Sbjct  61   MLKEDVRMPPKSYCDWYVVYKTETGGNLWRKGRIRQTYYPFTIMFATISWNLMNVPCYLN  120
+
+Query  121  TWCCEVKSAYVMIQQGSTDCCDKVV  145
+             +C E +   +  +  +T   D V+
+Sbjct  121  EYCHEPRYNSIQDECTNTRQSDDVL  145
+
+
+>120_22
+Length=150
+
+ Score = 43.5 bits (101),  Expect = 7e-07, Method: Compositional matrix adjust.
+ Identities = 31/86 (36%), Positives = 37/86 (43%), Gaps = 0/86 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V     F          +M YIT LAL C+KG+
+Sbjct  24   RFMLFMCMHERFIFLWFYVWHQQYIDIVMFRVTFTMNTSTVMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVW  109
+            TG +LH + W R    L   VA   W
+Sbjct  84   TGIQLHSWRWRRFAVFLLNPVAHEPW  109
+
+
+>119_22
+Length=150
+
+ Score = 43.1 bits (100),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 31/86 (36%), Positives = 37/86 (43%), Gaps = 0/86 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V     F          +M YIT LAL C+KG+
+Sbjct  24   RFMLFECMHERFIFLWFYVWHQQYIDIVMFRVTFTMNTSTVMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVW  109
+            TG +LH + W R    L   VA   W
+Sbjct  84   TGIQLHSWRWRRFAVFLLNPVAHEPW  109
+
+
+>118_22
+Length=150
+
+ Score = 42.7 bits (99),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 31/86 (36%), Positives = 37/86 (43%), Gaps = 0/86 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M        F FL F V   Q +D V     F          +M YIT LAL C+KG+
+Sbjct  24   RFMLFECMHERFIFLWFYVWHQQYIDIVMFRVTFTMNTSTVMDYQMAYITRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVW  109
+            TG +LH + W R    L   VA   W
+Sbjct  84   TGIQLHSWRWRRFAVFLLNPVAHEPW  109
+
+
+>123_22
+Length=150
+
+ Score = 41.6 bits (96),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 32/88 (36%), Positives = 42/88 (48%), Gaps = 4/88 (5%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYK  81
+            R M       +F FL F V   Q +D V  + TF+ N +       +M Y T LAL C+K
+Sbjct  24   RFMLFMCMHEQFIFLWFYVWHQQYIDIVMFRVTFFMNTST--VMDYQMAYDTRLALWCFK  81
+
+Query  82   GETGGELHYFPWSRQPDLLNTTVAKTVW  109
+            G+TG +LH + W R    L   VA   W
+Sbjct  82   GKTGIQLHSWRWRRFAVFLLNPVAHEPW  109
+
+
+>121_22
+Length=150
+
+ Score = 41.2 bits (95),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 30/86 (35%), Positives = 37/86 (43%), Gaps = 0/86 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M       +F FL F V   Q +D V     F          +M Y T LAL C+KG+
+Sbjct  24   RFMLFMCMHEQFIFLWFYVWHQQYIDIVMFRVTFTMNTSTVMDYQMAYDTRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVW  109
+            TG +LH + W R    L   VA   W
+Sbjct  84   TGIQLHSWRWRRFAVFLLNPVAHEPW  109
+
+
+>122_22
+Length=150
+
+ Score = 41.2 bits (95),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 30/86 (35%), Positives = 37/86 (43%), Gaps = 0/86 (0%)
+
+Query  24   RLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+            R M       +F FL F V   Q +D V     F          +M Y T LAL C+KG+
+Sbjct  24   RFMLFMCMHEQFIFLWFYVWHQQYIDIVMFRVTFTMNTSTVMDYQMAYDTRLALWCFKGK  83
+
+Query  84   TGGELHYFPWSRQPDLLNTTVAKTVW  109
+            TG +LH + W R    L   VA   W
+Sbjct  84   TGIQLHSWRWRRFAVFLLNPVAHEPW  109
+
+
+>40
+Length=150
+
+ Score = 40.8 bits (94),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 40/140 (29%), Positives = 55/140 (39%), Gaps = 0/140 (0%)
+
+Query  6    PGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTD  65
+            PG +   E+I S  Q   RL   YN   +F  + F VL  QV  P   +  F   +   D
+Sbjct  6    PGCKIVGEIITSEPQSNYRLNLGYNKYMQFNKVCFNVLEPQVHVPRILSMQFRIAMLGED  65
+
+Query  66   RCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCE  125
+                 Y        YK ETGG L       Q     T +  T+  NL++ PC  N +C E
+Sbjct  66   VRMPPYSYCDWYVVYKHETGGNLWRMGRIDQTYYPFTIMCATILWNLMNVPCKQNEYCAE  125
+
+Query  126  VKSAYVMIQQGSTDCCDKVV  145
+                ++     +T   D V+
+Sbjct  126  PPYNFIQDFCMNTRTSDAVL  145
+
+
+>1
+Length=150
+
+ Score = 40.8 bits (94),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 34/108 (31%), Positives = 43/108 (40%), Gaps = 0/108 (0%)
+
+Query  26   MSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGETG  85
+            ++L  A+     L FLV    V DP  K FY   TLK      M    +L         G
+Sbjct  26   LALGTALMGLGTLYFLVKGMGVSDPDAKKFYAITTLKNAIALTMYLSMLLGYHLTMVPFG  85
+
+Query  86   GELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCEVKSAYVMI  133
+            GE +   W+R  D L TT  K +   LL    D  T    V +  +MI
+Sbjct  86   GEQNPIYWARYADWLFTTALKLIDLALLVDLADQGTILALVGADGIMI  133
+
+
+>39
+Length=150
+
+ Score = 40.8 bits (94),  Expect = 6e-06, Method: Compositional matrix adjust.
+ Identities = 40/140 (29%), Positives = 56/140 (40%), Gaps = 0/140 (0%)
+
+Query  6    PGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTD  65
+            PG +   E+I S  Q   RL   YN   +F  + F VL  QV  P   +  F   +   D
+Sbjct  6    PGCKIVGEIITSEPQSNYRLNLGYNKYMQFNKVCFNVLEPQVHVPCILSMQFRIMMLGED  65
+
+Query  66   RCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCE  125
+                 Y        YK ETGG L       Q     T +  T+  NL++ PC  N +C E
+Sbjct  66   VRMPPYSYCDWYVVYKHETGGNLWRMGRIDQTYYPFTIMCATILWNLMNVPCKLNEYCHE  125
+
+Query  126  VKSAYVMIQQGSTDCCDKVV  145
+                ++  +  +T   D V+
+Sbjct  126  PPYNFIQDECMNTRTSDAVL  145
+
+
+>129_22
+Length=150
+
+ Score = 40.8 bits (94),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 27/70 (39%), Positives = 39/70 (56%), Gaps = 4/70 (6%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F+V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFIVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLHS  90
+
+Query  91  FPWSRQPDLL  100
+           + W R    L
+Sbjct  91  WRWRRFAVFL  100
+
+
+>128_22
+Length=150
+
+ Score = 40.8 bits (94),  Expect = 7e-06, Method: Compositional matrix adjust.
+ Identities = 27/70 (39%), Positives = 39/70 (56%), Gaps = 4/70 (6%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F+V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFIVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLHS  90
+
+Query  91  FPWSRQPDLL  100
+           + W R    L
+Sbjct  91  WRWRRFAVFL  100
+
+
+>126_22
+Length=150
+
+ Score = 40.0 bits (92),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 29/79 (37%), Positives = 40/79 (51%), Gaps = 4/79 (5%)
+
+Query  24  RLMSLYNAVREFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYK  81
+           R M       +F FL F V   Q +D V  + TF+ N++       +M Y T LAL C+K
+Sbjct  24  RFMWFMCMHEQFIFLWFYVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFK  81
+
+Query  82  GETGGELHYFPWSRQPDLL  100
+           G+TG +LH + W R    L
+Sbjct  82  GKTGIQLHSWRWRRFAVFL  100
+
+
+>125_22
+Length=150
+
+ Score = 40.0 bits (92),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 29/79 (37%), Positives = 40/79 (51%), Gaps = 4/79 (5%)
+
+Query  24  RLMSLYNAVREFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYK  81
+           R M       +F FL F V   Q +D V  + TF+ N++       +M Y T LAL C+K
+Sbjct  24  RFMLFMCMHEQFIFLWFYVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFK  81
+
+Query  82  GETGGELHYFPWSRQPDLL  100
+           G+TG +LH + W R    L
+Sbjct  82  GKTGIQLHSWRWRRFAVFL  100
+
+
+>127_22
+Length=150
+
+ Score = 39.7 bits (91),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 27/70 (39%), Positives = 38/70 (54%), Gaps = 4/70 (6%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFYVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLHS  90
+
+Query  91  FPWSRQPDLL  100
+           + W R    L
+Sbjct  91  WRWRRFAVFL  100
+
+
+>124_22
+Length=150
+
+ Score = 39.7 bits (91),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 29/79 (37%), Positives = 39/79 (49%), Gaps = 4/79 (5%)
+
+Query  24  RLMSLYNAVREFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYK  81
+           R M       +F FL F V   Q +D V  + TF+ N +       +M Y T LAL C+K
+Sbjct  24  RFMLFMCMHEQFIFLWFYVWHQQYIDIVMFRVTFFMNTST--VMDYQMAYDTRLALWCFK  81
+
+Query  82  GETGGELHYFPWSRQPDLL  100
+           G+TG +LH + W R    L
+Sbjct  82  GKTGIQLHSWRWRRFAVFL  100
+
+
+>134_22
+Length=150
+
+ Score = 37.7 bits (86),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 26/66 (39%), Positives = 38/66 (58%), Gaps = 6/66 (9%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F+V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFIVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLH-  89
+
+Query  91  FPWSRQ  96
+             W R+
+Sbjct  90  -SWRRR  94
+
+
+>130_22
+Length=150
+
+ Score = 37.7 bits (86),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 26/66 (39%), Positives = 38/66 (58%), Gaps = 6/66 (9%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F+V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFIVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLH-  89
+
+Query  91  FPWSRQ  96
+             W R+
+Sbjct  90  -SWRRR  94
+
+
+>131_22
+Length=150
+
+ Score = 37.4 bits (85),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 26/66 (39%), Positives = 38/66 (58%), Gaps = 6/66 (9%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F+V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFIVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLH-  89
+
+Query  91  FPWSRQ  96
+             W R+
+Sbjct  90  -SWRRR  94
+
+
+>133_22
+Length=150
+
+ Score = 37.4 bits (85),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 26/66 (39%), Positives = 38/66 (58%), Gaps = 6/66 (9%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F+V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFIVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLH-  89
+
+Query  91  FPWSRQ  96
+             W R+
+Sbjct  90  -SWRRR  94
+
+
+>132_22
+Length=150
+
+ Score = 37.4 bits (85),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 26/66 (39%), Positives = 38/66 (58%), Gaps = 6/66 (9%)
+
+Query  33  REFPFLVFLVLWAQVMDPV--QKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHY  90
+            +F FL F+V   Q +D V  + TF+ N++       +M Y T LAL C+KG+TG +LH 
+Sbjct  33  EQFIFLWFIVWHQQYIDIVMFRVTFFMNSST--VMDYQMAYDTRLALWCFKGKTGIQLH-  89
+
+Query  91  FPWSRQ  96
+             W R+
+Sbjct  90  -SWRRR  94
+
+
+>41
+Length=150
+
+ Score = 36.2 bits (82),  Expect = 3e-04, Method: Compositional matrix adjust.
+ Identities = 38/140 (27%), Positives = 52/140 (37%), Gaps = 0/140 (0%)
+
+Query  6    PGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTD  65
+            PG +   E+I S  Q   RL    N   +F  + F V   QV  P   +  F   +   D
+Sbjct  6    PGCKIVGEIITSEPQSSYRLYLGCNKYMQFNKVCFNVSEPQVHVPRILSMQFRIAMLGED  65
+
+Query  66   RCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCE  125
+                 Y        YK ETGG L       Q     T +  T+  NL+  PC  N +C E
+Sbjct  66   VRMPPYSYCDWYVVYKHETGGNLWRMGRIEQTYYPFTIMCDTIDWNLMFVPCKQNEYCAE  125
+
+Query  126  VKSAYVMIQQGSTDCCDKVV  145
+                ++     +T   D V+
+Sbjct  126  PPYNFIQDFHMNTRTSDAVL  145
+
+
+>42
+Length=150
+
+ Score = 33.9 bits (76),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 39/147 (27%), Positives = 56/147 (38%), Gaps = 16/147 (11%)
+
+Query  6    PGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTD  65
+            PG +   E+I S  Q   RL    N   +F  + F V   QV  P   +  F  ++   D
+Sbjct  6    PGCKIVGEIITSEPQSSYRLYLGCNKYMQFLKVCFNVSEPQVHWPRILSMQFAISMLGED  65
+
+Query  66   RCKMRYITVLALRCYKGETGG--------ELHYFPWSRQPDLLNTTVAKTVWPNLLHKPC  117
+                 Y        YK ETGG        E+ Y+P+        T +  T+  NL+  PC
+Sbjct  66   VRMPPYSYCDWYVVYKHETGGNLWRMGRIEITYYPF--------TIMCDTIDWNLMFVPC  117
+
+Query  118  DDNTWCCEVKSAYVMIQQGSTDCCDKV  144
+              N +C E    ++     +T   D V
+Sbjct  118  KQNEYCAEPPYNFIQDFHMNTRTSDAV  144
+
+
+>135_22
+Length=150
+
+ Score = 31.6 bits (70),  Expect = 0.013, Method: Compositional matrix adjust.
+ Identities = 22/73 (30%), Positives = 42/73 (58%), Gaps = 8/73 (11%)
+
+Query  28  LYNAVREFPFLVF-LVLWAQ---VMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+           ++ A   + F+ + +++W Q    +  ++ TF++ ++   T   +M Y T LAL C+KG+
+Sbjct  26  MWFACMHYQFIFWWMIVWHQPGNWITMIRVTFFWCSST--TIDYQMAYDTDLALWCFKGK  83
+
+Query  84  TGGELHYFPWSRQ  96
+           TG +LH   W R+
+Sbjct  84  TGHQLH--SWGRR  94
+
+
+>43
+Length=150
+
+ Score = 31.2 bits (69),  Expect = 0.017, Method: Compositional matrix adjust.
+ Identities = 36/139 (26%), Positives = 51/139 (37%), Gaps = 0/139 (0%)
+
+Query  6    PGERPGREMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTD  65
+            PG +   E+I S  Q   RL    N   +F  + F V   QV  P   +  F  +++  D
+Sbjct  6    PGCKIVGEIITSEPQSSYRLYLGCNKYMQFLKVCFNVSEPQVHWPSILSMQFMISMRGED  65
+
+Query  66   RCKMRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCE  125
+                 Y        YK ETGG L             T +  T+  NL+  PC  N +C  
+Sbjct  66   VRMPPYSYCDWYVVYKHETGGNLWRMGRIEITGYPFTIMCDTIDWNLMFVPCKVNEYCAT  125
+
+Query  126  VKSAYVMIQQGSTDCCDKV  144
+                ++     +T   D V
+Sbjct  126  PPYNFIQDFHMNTRTSDAV  144
+
+
+>136_22
+Length=150
+
+ Score = 29.6 bits (65),  Expect = 0.058, Method: Compositional matrix adjust.
+ Identities = 21/73 (29%), Positives = 41/73 (56%), Gaps = 8/73 (11%)
+
+Query  28  LYNAVREFPFLVF-LVLWAQ---VMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+           ++ A   + F+ + +++W Q    +  ++ TF++ ++   T   +M Y   LAL C+KG+
+Sbjct  26  MWFACMHYQFIFWWMIVWHQPGNWITMIRVTFFWCSST--TIDYQMAYDIDLALWCFKGK  83
+
+Query  84  TGGELHYFPWSRQ  96
+           TG +LH   W R+
+Sbjct  84  TGHQLH--SWGRR  94
+
+
+>137_22
+Length=150
+
+ Score = 29.6 bits (65),  Expect = 0.064, Method: Compositional matrix adjust.
+ Identities = 21/73 (29%), Positives = 41/73 (56%), Gaps = 8/73 (11%)
+
+Query  28  LYNAVREFPFLVF-LVLWAQ---VMDPVQKTFYFNATLKWTDRCKMRYITVLALRCYKGE  83
+           ++ A   + F+ + +++W Q    +  ++ TF++ ++   T   +M Y   LAL C+KG+
+Sbjct  26  MWFACMHYQFIFWWMIVWHQPGNWITMIRVTFFWCSST--TIDYQMAYDIDLALWCFKGK  83
+
+Query  84  TGGELHYFPWSRQ  96
+           TG +LH   W R+
+Sbjct  84  TGHQLH--SWGRR  94
+
+
+>142_22
+Length=150
+
+ Score = 28.9 bits (63),  Expect = 0.10, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 0/22 (0%)
+
+Query  68  KMRYITVLALRCYKGETGGELH  89
+           +M Y   LAL C+KG+TG +LH
+Sbjct  68  QMAYDIDLALWCFKGKTGTQLH  89
+
+
+>140_22
+Length=150
+
+ Score = 28.9 bits (63),  Expect = 0.10, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 0/22 (0%)
+
+Query  68  KMRYITVLALRCYKGETGGELH  89
+           +M Y   LAL C+KG+TG +LH
+Sbjct  68  QMAYDIDLALWCFKGKTGHQLH  89
+
+
+>141_22
+Length=150
+
+ Score = 28.9 bits (63),  Expect = 0.10, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 0/22 (0%)
+
+Query  68  KMRYITVLALRCYKGETGGELH  89
+           +M Y   LAL C+KG+TG +LH
+Sbjct  68  QMAYDIDLALWCFKGKTGHQLH  89
+
+
+>139_22
+Length=150
+
+ Score = 28.9 bits (63),  Expect = 0.10, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 0/22 (0%)
+
+Query  68  KMRYITVLALRCYKGETGGELH  89
+           +M Y   LAL C+KG+TG +LH
+Sbjct  68  QMAYDIDLALWCFKGKTGHQLH  89
+
+
+>138_22
+Length=150
+
+ Score = 28.9 bits (63),  Expect = 0.11, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 0/22 (0%)
+
+Query  68  KMRYITVLALRCYKGETGGELH  89
+           +M Y   LAL C+KG+TG +LH
+Sbjct  68  QMAYDIDLALWCFKGKTGHQLH  89
+
+
+>147_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.38, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>145_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.39, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>143_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.39, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>144_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.39, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>151_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.40, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>146_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.40, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>149_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.40, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>148_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.40, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 17/26 (65%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG+TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGKTGTQLH--SWGRR  94
+
+
+>150_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.41, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>154_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.41, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>155_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.42, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 17/26 (65%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG+TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGKTGTQLH--SWGRR  94
+
+
+>156_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.42, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 17/26 (65%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG+TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGKTGTQLH--SWGRR  94
+
+
+>153_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.43, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>152_22
+Length=150
+
+ Score = 27.3 bits (59),  Expect = 0.44, Method: Compositional matrix adjust.
+ Identities = 12/22 (55%), Positives = 16/22 (73%), Gaps = 2/22 (9%)
+
+Query  75  LALRCYKGETGGELHYFPWSRQ  96
+           LAL C+KG+TG +LH   W R+
+Sbjct  75  LALWCFKGKTGTQLH--SWGRR  94
+
+
+>157_22
+Length=150
+
+ Score = 26.9 bits (58),  Expect = 0.45, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 17/26 (65%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG+TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGKTGTQLH--SWGRR  94
+
+
+>158_22
+Length=150
+
+ Score = 26.9 bits (58),  Expect = 0.50, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 17/26 (65%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG+TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGKTGTQLH--SWGRR  94
+
+
+>159_22
+Length=150
+
+ Score = 26.9 bits (58),  Expect = 0.51, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 17/26 (65%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG+TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGKTGTQLH--SWGRR  94
+
+
+>162_22
+Length=150
+
+ Score = 26.6 bits (57),  Expect = 0.76, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 16/26 (62%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGATGTQLH--SWGRR  94
+
+
+>160_22
+Length=150
+
+ Score = 26.6 bits (57),  Expect = 0.76, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 16/26 (62%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGATGTQLH--SWGRR  94
+
+
+>161_22
+Length=150
+
+ Score = 26.6 bits (57),  Expect = 0.77, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 16/26 (62%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGATGTQLH--SWGRR  94
+
+
+>164_22
+Length=150
+
+ Score = 26.2 bits (56),  Expect = 0.81, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 16/26 (62%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGATGTQLH--SWGRR  94
+
+
+>163_22
+Length=150
+
+ Score = 26.2 bits (56),  Expect = 0.82, Method: Compositional matrix adjust.
+ Identities = 13/26 (50%), Positives = 16/26 (62%), Gaps = 2/26 (8%)
+
+Query  71  YITVLALRCYKGETGGELHYFPWSRQ  96
+           Y   LAL C+KG TG +LH   W R+
+Sbjct  71  YDIDLALWCFKGATGTQLH--SWGRR  94
+
+
+>7006
+Length=150
+
+ Score = 25.8 bits (55),  Expect = 1.2, Method: Compositional matrix adjust.
+ Identities = 13/41 (32%), Positives = 22/41 (54%), Gaps = 2/41 (5%)
+
+Query  15  IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVM--DPVQK  53
+           ++SG     R  +  +A+ +FPF  F V +A+     PVQ+
+Sbjct  3   VKSGNTRVGRTHAFIDALTKFPFTEFAVQYAEATACAPVQR  43
+
+
+>7005
+Length=150
+
+ Score = 25.0 bits (53),  Expect = 2.4, Method: Compositional matrix adjust.
+ Identities = 13/41 (32%), Positives = 22/41 (54%), Gaps = 2/41 (5%)
+
+Query  15  IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVM--DPVQK  53
+           ++SG     R  +  +A+ +FPF  F V +A+     PVQ+
+Sbjct  3   VKSGNTRVGRTHAFIDALTKFPFTEFDVQYAEATACAPVQR  43
+
+
+>7007
+Length=150
+
+ Score = 24.6 bits (52),  Expect = 2.7, Method: Compositional matrix adjust.
+ Identities = 10/33 (30%), Positives = 18/33 (55%), Gaps = 0/33 (0%)
+
+Query  15  IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQV  47
+           ++SG     R  +  +A+ +FPF  F V +A+ 
+Sbjct  3   VKSGNTRVGRTHAFIDALTKFPFTEFAVQYAEA  35
+
+
+>7008
+Length=150
+
+ Score = 24.3 bits (51),  Expect = 3.8, Method: Compositional matrix adjust.
+ Identities = 10/33 (30%), Positives = 18/33 (55%), Gaps = 0/33 (0%)
+
+Query  15  IQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQV  47
+           ++SG     R  +  +A+ +FPF  F V +A+ 
+Sbjct  3   VKSGNTRVGRTHAFIDALTKFPFTEFAVQYAEA  35
+
+
+>6194
+Length=150
+
+ Score = 23.9 bits (50),  Expect = 5.3, Method: Compositional matrix adjust.
+ Identities = 11/47 (23%), Positives = 23/47 (49%), Gaps = 0/47 (0%)
+
+Query  51  VQKTFYFNATLKWTDRCKMRYITVLALRCYKGETGGELHYFPWSRQP  97
+           ++K +Y+    K T   +  + + L  R ++ +   ++HYF   R P
+Sbjct  23  IRKVWYYQREHKITPSTRRDFESFLCPRMFRKQFPADIHYFRERRIP  69
+
+
+>3107
+Length=150
+
+ Score = 23.9 bits (50),  Expect = 6.1, Method: Compositional matrix adjust.
+ Identities = 10/21 (48%), Positives = 13/21 (62%), Gaps = 0/21 (0%)
+
+Query  35   FPFLVFLVLWAQVMDPVQKTF  55
+            F FL F + W Q++DP  K F
+Sbjct  126  FNFLQFDLNWDQLLDPYIKQF  146
+
+
+>5022
+Length=150
+
+ Score = 23.5 bits (49),  Expect = 7.7, Method: Compositional matrix adjust.
+ Identities = 15/63 (24%), Positives = 26/63 (41%), Gaps = 2/63 (3%)
+
+Query  16   QSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTFYFNATLKWTDRCKMRYITVL  75
+            Q G +G +  +  +   + + +  +  +W        K  +  AT +WT  CKM  I  L
+Sbjct  90   QCGNEGSTTALMYFYCDKNWDYNEYWDMWGFAQKCQDK--WNTATRRWTPACKMNEIRYL  147
+
+Query  76   ALR  78
+             L 
+Sbjct  148  ELE  150
+
+
+>3108
+Length=150
+
+ Score = 23.5 bits (49),  Expect = 8.1, Method: Compositional matrix adjust.
+ Identities = 10/21 (48%), Positives = 13/21 (62%), Gaps = 0/21 (0%)
+
+Query  35   FPFLVFLVLWAQVMDPVQKTF  55
+            F FL F + W Q++DP  K F
+Sbjct  126  FNFLQFDLNWDQLLDPYIKQF  146
+
+
+>795
+Length=150
+
+ Score = 23.1 bits (48),  Expect = 9.1, Method: Compositional matrix adjust.
+ Identities = 24/117 (21%), Positives = 44/117 (38%), Gaps = 10/117 (9%)
+
+Query  13   EMIQSGEQGWSRLMSLYNAVREFPFLVFLVLWAQVMDPVQKTF----YFNATLKWTDRCK  68
+             + + G   +  +M   +A +E P  VF++L +    P    F    +  A L W     
+Sbjct  25   HLYKHGSVAFVNVMHSQDATKEAP--VFMMLISYNFFPPAPVFSAVAHVGAHLHWKQCHY  82
+
+Query  69   MRYITVLALRCYKGETGGELHYFPWSRQPDLLNTTVAKTVWPNLLHKPCDDNTWCCE  125
+             +++         G+   +   F    +      TV KT+ P ++HK  +   W  E
+Sbjct  83   SQFVMACGPHHEHGKHYEQFKIF----RTSAYAITVDKTLPPTVVHKKKEFFYWTSE  135
+
+
+
+Lambda      K        H        a         alpha
+   0.326    0.139    0.493    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 63536000
+
+
+  Database: distance10_22cluster_98cluster.fa
+    Posted date:  Nov 4, 2022  9:58 PM
+  Number of letters in database: 1,650,000
+  Number of sequences in database:  11,000
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -11,9 +11,9 @@ This is RAxML Worker Pthread Number: 2
 
 This is RAxML Worker Pthread Number: 3
 
-This is RAxML Worker Pthread Number: 4
-
 This is RAxML Worker Pthread Number: 5
+
+This is RAxML Worker Pthread Number: 4
 
 
 This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
@@ -57,15 +57,15 @@ Using fixed base frequencies
 
 RAxML was called as follows:
 
-/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance20_10cluster_94cluster.fa -n distance20_10cluster_94cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 6 -s distance50_4cluster_8cluster.fa -n distance50_4cluster_8cluster.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
 
 
 
-Log Likelihood Score after parameter optimization: -1321729.799989
+Log Likelihood Score after parameter optimization: -2691452.808611
 
 
 Computing pairwise ML-distances ...
 
-Time for pair-wise ML distance computation of 60769800 distances: 1232.047049 seconds
+Time for pair-wise ML distance computation of 60494500 distances: 1569.056701 seconds
 
-Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/RAxML_distances.distance20_10cluster_94cluster.dist
+Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances/drift_experiment/RAxML_distances.distance50_4cluster_8cluster.dist
