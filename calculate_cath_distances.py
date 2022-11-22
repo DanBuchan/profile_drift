@@ -49,13 +49,8 @@ def process_distances(data):
 
     rep_seqs = []
     for h_family in sequences:
-<<<<<<< HEAD
-        if f'RAxML_distances.{h_family}.dist' :
-            continue
-=======
-        # if '1.10.168.10' not in h_family:
+        # if f'RAxML_distances.{h_family}.dist' :
         #     continue
->>>>>>> 659446b1c14a7ced56d15e60f1f9d2ef7068498a
         h_file = f'{h_family}.fa'
         align_file = f'{h_family}.afa'
         dist_file = f'{h_family}.dist'
@@ -64,54 +59,54 @@ def process_distances(data):
         if len(sequences[h_family]) == 0:
             continue
         for i, seq in enumerate(sequences[h_family]):
-            fhOut.write(f'>{i}\n')
-            fhOut.write(f'{seq}\n')
+            fhOut.write(f'>{i} {list(seq.keys())[0]}\n')
+            fhOut.write(f'{list(seq.values())[0]}\n')
         fhOut.close()
         if i > 0:
             pass
             #RUN MUSCLE
-            mafft_args = ['/usr/local/bin/mafft',
-                           h_file]
-            execute_process(mafft_args, align_file)
-            # run raxml
-            raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX',
-                          '-T',
-                          '4',
-                          '-s',
-                          align_file,
-                          '-n',
-                          dist_file,
-                          '-m',
-                          'PROTGAMMABLOSUM62',
-                          '-N'
-                          '2',
-                          '-p',
-                          '123',
-                          '-f',
-                          'x']
-            execute_process(raxml_args)
-            #exit()
-            #tidy up
-            try:
-                os.remove(h_file)
-            except:
-                pass
-            try:
-                os.remove(align_file)
-            except:
-                pass
-            try:
-                os.remove(align_file+".reduced")
-            except:
-                pass
-            try:
-                os.remove(f'RAxML_info.{h_family}.dist')
-            except:
-                pass
-            try:
-                os.remove(f'RAxML_parsimonyTree.{h_family}.dist.RUN.0')
-            except:
-                pass
+            # mafft_args = ['/usr/local/bin/mafft',
+            #                h_file]
+            # execute_process(mafft_args, align_file)
+            # # run raxml
+            # raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX',
+            #               '-T',
+            #               '4',
+            #               '-s',
+            #               align_file,
+            #               '-n',
+            #               dist_file,
+            #               '-m',
+            #               'PROTGAMMABLOSUM62',
+            #               '-N'
+            #               '2',
+            #               '-p',
+            #               '123',
+            #               '-f',
+            #               'x']
+            # execute_process(raxml_args)
+            # #exit()
+            # #tidy up
+            # try:
+            #     os.remove(h_file)
+            # except:
+            #     pass
+            # try:
+            #     os.remove(align_file)
+            # except:
+            #     pass
+            # try:
+            #     os.remove(align_file+".reduced")
+            # except:
+            #     pass
+            # try:
+            #     os.remove(f'RAxML_info.{h_family}.dist')
+            # except:
+            #     pass
+            # try:
+            #     os.remove(f'RAxML_parsimonyTree.{h_family}.dist.RUN.0')
+            # except:
+            #     pass
             # exit()
 
     rep_file = 'reps.fa'
@@ -119,8 +114,8 @@ def process_distances(data):
     dist_file = 'reps.dist'
     fhOut = open(rep_file, "w")
     for i, seq in enumerate(rep_seqs):
-        fhOut.write(f'>{i}\n')
-        fhOut.write(f'{seq}\n')
+        fhOut.write(f'>{i} {list(seq.keys())[0]}\n')
+        fhOut.write(f'{list(seq.values())[0]}\n')
     fhOut.close()
     mafft_args = ['/usr/local/bin/mafft',
                    rep_file]
@@ -171,13 +166,15 @@ input_file = sys.argv[1]
 results = None
 sequences = defaultdict(list)
 hfamily = ''
+rep_id = ''
 with open(input_file) as fh:
     for line in fh:
         line = line.rstrip()
         if line.startswith(">"):
             entries = line.split("|")
             hfamily = entries[3]
+            rep_id = entries[2].split("/")[0]
         else:
-            sequences[hfamily].append(line)
-
+            sequences[hfamily].append({rep_id:line})
+# print(sequences)
 process_distances(sequences)
