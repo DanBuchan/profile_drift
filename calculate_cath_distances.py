@@ -117,10 +117,11 @@ def process_distances(data):
         fhOut.write(f'>{i} {list(seq.keys())[0]}\n')
         fhOut.write(f'{list(seq.values())[0]}\n')
     fhOut.close()
-    mafft_args = ['/usr/local/bin/mafft',
+    mafft_args = ['/usr/bin/mafft',
                    rep_file]
     execute_process(mafft_args, align_file)
     # run raxml
+
     raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX',
                   '-T',
                   '4',
