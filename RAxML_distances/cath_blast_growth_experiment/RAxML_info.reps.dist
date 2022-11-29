@@ -1,0 +1,83 @@
+IMPORTANT WARNING: Alignment column 1670 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 4502 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 4881 contains only undetermined values which will be treated as missing data
+IMPORTANT WARNING: Alignment column 4895 contains only undetermined values which will be treated as missing data
+
+
+IMPORTANT WARNING: Sequences 611 and 4358 are exactly identical
+
+
+IMPORTANT WARNING: Sequences 699 and 4766 are exactly identical
+
+
+IMPORTANT WARNING: Sequences 2300 and 5910 are exactly identical
+
+IMPORTANT WARNING
+Found 3 sequences that are exactly identical to other sequences in the alignment.
+Normally they should be excluded from the analysis.
+
+
+IMPORTANT WARNING
+Found 4 columns that contain only undetermined values which will be treated as missing data.
+Normally these columns should be excluded from the analysis.
+
+Just in case you might need it, an alignment file with 
+sequence duplicates and undetermined columns removed is printed to file reps.afa.reduced
+
+Alignment has 4 completely undetermined sites that will be automatically removed from the input data
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 5297 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 97.91%
+
+RAxML Computation of pairwise distances
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 5297
+Name: No Name Provided
+DataType: AA
+Substitution Matrix: BLOSUM62
+Using fixed base frequencies
+
+
+
+
+RAxML was called as follows:
+
+/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 4 -s reps.afa -n reps.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
+
+
+
+Log Likelihood Score after parameter optimization: -2179934.269986
+
+
+Computing pairwise ML-distances ...
+
+Time for pair-wise ML distance computation of 21981765 distances: 9146.962104 seconds
+
+Distances written to file: /home/dbuchan/Projects/profile_drift/RAxML_distances.reps.dist

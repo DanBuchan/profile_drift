@@ -119,7 +119,7 @@ Script runs the seq generator, calculates distances and then runs serial blasts 
 
 Take the dbs we created in distance experiment. Take the distanceX_membership.csv from the distance experiment and select sequences n distnace away so they are on the search path. So each of those generate 500 sequences that are 1 step apart (a denser region). Then make paired databases with the first pick and the ones further and further away. Rerun the run_blasts.py and plot the results and see what happens.
 
-### create_family.py
+#### create_family.py
 
 read fasta and distanceX_membership.csv. for every alternate iteration (2, 4, 6...) pick a seed sequence that is some distance from the start. This ensures all seeds are on the search path of blast. Each new seed can't be a previous seed.
 
@@ -130,35 +130,43 @@ distance40_12_seed.fa - A seed sequences taken from the distance 40 file/db
 distance40_12cluster.fa - a cluster of "near" sequences generated from that seed
 distance40_6cluster_12cluster.fa - fasta database built from the distance40 file
                                    adding the 2 clusters at the 6th and 12th iterations
-### drift_experiment.sh
+
+### DRIFT EXPERIMENT
+
+#### drift_experiment.sh
 
 create the families then run the blasts for the 30, 40 and 50 distance backgrounds
 
-### plot_average_blast_growth.R
+#### plot_average_blast_growth.R
 
 Run this again to see what the memberships look like. and plot the average distances per iteration
 
-### count_growth_members.py
+#### count_growth_members.py
 
 Quick script to look through the drift hits to see what cluster members are
 picked up at each iteration.
 
 produces *.membercount the shows you the recruiting numbers from each pseudo-family and the background
 
-# plot_member_count.R
+#### plot_member_count.R
 
 Take the membercount graphs and plot some nice histograms.
 
-# detect_change.py
+#### detect_change.py
 
 Use this differentiation https://stackoverflow.com/questions/47519626/using-numpy-scipy-to-identify-slope-changes-in-digital-signals to find inflection points on the graphs
 
-# find_inflection_points.py
+#### find_inflection_points.py
 
 Take the member counts. Find out when 1st cluster members stop being recruited or when 2nd members. Calculate the
 detect changes and see how often we're within n iterations of being right (TF) or how often we miss (FN)
 
+### CATH BLAST GROWTH EXPERIMENT
 
-## TODO
+#### run_cath_rep_blasts.py
+
+take a rep from each H family and blast against the annotated reps set
+
+# TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)

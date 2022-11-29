@@ -177,5 +177,5 @@ with open(input_file) as fh:
             rep_id = entries[2].split("/")[0]
         else:
             sequences[hfamily].append({rep_id:line})
-# print(sequences)
+print(sequences)
 process_distances(sequences)
