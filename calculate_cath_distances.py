@@ -1,6 +1,6 @@
 '''
 We calculate the NW alignment with MUSCLE then the distance
-calculation with RAxML. Stretcher is 10x quicker than biopython align.globaldx
+calculation with RAxML.
 
 python calculate_distance.py FASTAFILE
 '''
@@ -45,6 +45,27 @@ def execute_process(executable_args, stdout_location=None):
         fhalign.write(output.decode("utf-8") )
         fhalign.close()
 
+def print_families(data):
+    rep_seqs = []
+    for h_family in sequences:
+        # if f'RAxML_distances.{h_family}.dist' :
+        #     continue
+        h_file = f'{h_family}.fa'
+        fhOut = open(h_file, "w")
+        rep_seqs.append(select_string(sequences[h_family]))
+        if len(sequences[h_family]) == 0:
+            continue
+        for i, seq in enumerate(sequences[h_family]):
+            fhOut.write(f'>{i} {list(seq.keys())[0]}\n')
+            fhOut.write(f'{list(seq.values())[0]}\n')
+        fhOut.close()
+    rep_file = 'reps.fa'
+    fhOut = open(rep_file, "w")
+    for i, seq in enumerate(rep_seqs):
+        fhOut.write(f'>{i} {list(seq.keys())[0]}\n')
+        fhOut.write(f'{list(seq.values())[0]}\n')
+    fhOut.close()
+
 def process_distances(data):
 
     rep_seqs = []
@@ -63,51 +84,51 @@ def process_distances(data):
             fhOut.write(f'{list(seq.values())[0]}\n')
         fhOut.close()
         if i > 0:
-            pass
+            #pass
             #RUN MUSCLE
-            # mafft_args = ['/usr/local/bin/mafft',
-            #                h_file]
-            # execute_process(mafft_args, align_file)
-            # # run raxml
-            # raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX',
-            #               '-T',
-            #               '4',
-            #               '-s',
-            #               align_file,
-            #               '-n',
-            #               dist_file,
-            #               '-m',
-            #               'PROTGAMMABLOSUM62',
-            #               '-N'
-            #               '2',
-            #               '-p',
-            #               '123',
-            #               '-f',
-            #               'x']
-            # execute_process(raxml_args)
-            # #exit()
-            # #tidy up
-            # try:
-            #     os.remove(h_file)
-            # except:
-            #     pass
-            # try:
-            #     os.remove(align_file)
-            # except:
-            #     pass
-            # try:
-            #     os.remove(align_file+".reduced")
-            # except:
-            #     pass
-            # try:
-            #     os.remove(f'RAxML_info.{h_family}.dist')
-            # except:
-            #     pass
-            # try:
-            #     os.remove(f'RAxML_parsimonyTree.{h_family}.dist.RUN.0')
-            # except:
-            #     pass
-            # exit()
+            mafft_args = ['/usr/local/bin/mafft',
+                           h_file]
+            execute_process(mafft_args, align_file)
+            # run raxml
+            raxml_args = ['/home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX',
+                          '-T',
+                          '4',
+                          '-s',
+                          align_file,
+                          '-n',
+                          dist_file,
+                          '-m',
+                          'PROTGAMMABLOSUM62',
+                          '-N'
+                          '2',
+                          '-p',
+                          '123',
+                          '-f',
+                          'x']
+            execute_process(raxml_args)
+            #exit()
+            #tidy up
+            try:
+                os.remove(h_file)
+            except:
+                pass
+            try:
+                os.remove(align_file)
+            except:
+                pass
+            try:
+                os.remove(align_file+".reduced")
+            except:
+                pass
+            try:
+                os.remove(f'RAxML_info.{h_family}.dist')
+            except:
+                pass
+            try:
+                os.remove(f'RAxML_parsimonyTree.{h_family}.dist.RUN.0')
+            except:
+                pass
+            exit()
 
     rep_file = 'reps.fa'
     align_file = 'reps.afa'
@@ -161,7 +182,6 @@ def process_distances(data):
         pass
 
 
-
 input_file = sys.argv[1]
 
 results = None
@@ -177,5 +197,6 @@ with open(input_file) as fh:
             rep_id = entries[2].split("/")[0]
         else:
             sequences[hfamily].append({rep_id:line})
-print(sequences)
-process_distances(sequences)
+# print(sequences)
+print_families(sequences)
+#process_distances(sequences)
