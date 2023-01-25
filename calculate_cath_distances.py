@@ -1,5 +1,5 @@
 '''
-We calculate the NW alignment with MUSCLE then the distance
+We calculate the NW alignment with MAFFT then the distance
 calculation with RAxML.
 
 python calculate_distance.py FASTAFILE
