@@ -75,14 +75,9 @@ def process_distances(data):
         h_file = f'{h_family}.fa'
         align_file = f'{h_family}.afa'
         dist_file = f'{h_family}.dist'
-        fhOut = open(h_file, "w")
-        rep_seqs.append(select_string(sequences[h_family]))
         if len(sequences[h_family]) == 0:
             continue
-        for i, seq in enumerate(sequences[h_family]):
-            fhOut.write(f'>{i} {list(seq.keys())[0]}\n')
-            fhOut.write(f'{list(seq.values())[0]}\n')
-        fhOut.close()
+        i = len(sequences[h_family])
         if i > 0:
             #pass
             #RUN MUSCLE
@@ -108,14 +103,14 @@ def process_distances(data):
             execute_process(raxml_args)
             #exit()
             #tidy up
-            try:
-                os.remove(h_file)
-            except:
-                pass
-            try:
-                os.remove(align_file)
-            except:
-                pass
+            # try:
+            #     os.remove(h_file)
+            # except:
+            #     pass
+            # try:
+            #     os.remove(align_file)
+            # except:
+            #     pass
             try:
                 os.remove(align_file+".reduced")
             except:
@@ -133,13 +128,7 @@ def process_distances(data):
     rep_file = 'reps.fa'
     align_file = 'reps.afa'
     dist_file = 'reps.dist'
-    fhOut = open(rep_file, "w")
-    for i, seq in enumerate(rep_seqs):
-        fhOut.write(f'>{i} {list(seq.keys())[0]}\n')
-        fhOut.write(f'{list(seq.values())[0]}\n')
-    fhOut.close()
-    mafft_args = ['/usr/bin/mafft',
-                   rep_file]
+    i = len(reps_seqs)
     execute_process(mafft_args, align_file)
     # run raxml
 
@@ -160,14 +149,14 @@ def process_distances(data):
                   'x']
     execute_process(raxml_args)
     #tidy up
-    try:
-        os.remove(rep_file)
-    except:
-        pass
-    try:
-        os.remove(align_file)
-    except:
-        pass
+    # try:
+    #     os.remove(rep_file)
+    # except:
+    #     pass
+    # try:
+    #     os.remove(align_file)
+    # except:
+    #     pass
     try:
         os.remove(align_file+".reduced")
     except:
@@ -199,4 +188,4 @@ with open(input_file) as fh:
             sequences[hfamily].append({rep_id:line})
 # print(sequences)
 print_families(sequences)
-#process_distances(sequences)
+process_distances(sequences)
