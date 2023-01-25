@@ -123,12 +123,14 @@ def process_distances(data):
                 os.remove(f'RAxML_parsimonyTree.{h_family}.dist.RUN.0')
             except:
                 pass
-            exit()
+            # exit()
 
     rep_file = 'reps.fa'
     align_file = 'reps.afa'
     dist_file = 'reps.dist'
     i = len(reps_seqs)
+    mafft_args = ['/usr/bin/mafft',
+                   rep_file]
     execute_process(mafft_args, align_file)
     # run raxml
 
