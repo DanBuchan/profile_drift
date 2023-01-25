@@ -81,7 +81,7 @@ def process_distances(data):
         if i > 0:
             #pass
             #RUN MUSCLE
-            mafft_args = ['/usr/local/bin/mafft',
+            mafft_args = ['/usr/bin/mafft',
                            h_file]
             execute_process(mafft_args, align_file)
             # run raxml
