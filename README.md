@@ -167,6 +167,11 @@ detect changes and see how often we're within n iterations of being right (TF) o
 
 take a rep from each H family and blast against the annotated reps set
 
+#### calculate_cath_recruitment.py
+
+read in reps.fa (/cath_distances/REPS) to get the mapping of seq index to cath domain ID.
+parse the various blasts at different distances to see when overlapping H families are recruited
+
 # TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
