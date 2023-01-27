@@ -69,7 +69,8 @@ def run_blasts(reps, dom_seqs):
             fhRep.close()
             do_blast_iterations(dom_seqs, rep_id, 20)
 
-dom_seqs = '/home/dbuchan/Projects/profile_drift/RAxML_distances/cath_blast_growth_experiment/blast_data/cath-domain-seqs-S100.fa.annotated'
+#dom_seqs = '/home/dbuchan/Projects/profile_drift/RAxML_distances/cath_blast_growth_experiment/blast_data/cath-domain-seqs-S100.fa.annotated'
+dom_seqs = '/home/dbuchan/Data/cath/cath-domain-seqs-S100.fa.annotated'
 
 reps = read_pseudo_reps(dom_seqs)
 run_blasts(reps, dom_seqs)
