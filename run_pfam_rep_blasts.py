@@ -79,8 +79,6 @@ tp = ThreadPool(1)
 for family in reps:
     id = list(reps[family].keys())[0]
     tp.apply_async(run_blasts, (family, id, reps[family][id], blast_db))
-    tp.close()
-    tp.join()
-    exit()
+    
 tp.close()
 tp.join()
