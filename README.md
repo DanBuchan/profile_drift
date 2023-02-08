@@ -185,6 +185,12 @@ Takes an annotated pfam seqs file uses mafft to build alignments of each and the
 
 python3 ../calculate_pfam_distances.py ~/Data/pfam/reps_renumbered.fasta.fa
 
+#### run_pfam_rep_blasts.py
+
+take a rep from each pfam family and blast against the annotated pfam_fasta that we
+built from the Stockholm format interpro data
+
+
 # TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)

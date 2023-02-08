@@ -45,7 +45,7 @@ def read_blast_db(file):
 def parse_blast_results(distances, h_family_membership, blast_data_dir):
     fileOut = "parsed_blast_rep_iteration_data.csv"
     fhOut = open(fileOut, "w")
-    fhOut.write("QueryRep,RepHFamily,Iteration,HitID,HitHFamily\n")
+    fhOut.write("QueryRep,RepHFamily,Iteration,HitID,HitHFamily,Distance\n")
     for i, rep in enumerate(distances):
         # print(f'{blast_data_dir}/{rep}*.bls')
         print(f'{i} {h_family_membership[rep]}')
@@ -60,7 +60,9 @@ def parse_blast_results(distances, h_family_membership, blast_data_dir):
             hits = parse_blast_data(rep, file)
             for rep in hits:
                 for hit in hits[rep]:
-                    fhOut.write(f'{rep},{h_family_membership[rep]},{i+1},{hit},{h_family_membership[hit]}\n')
+                    pass
+                    # SUPPOSED TO OUTPUT DISTANCE TOO
+                    # fhOut.write(f'{rep},{h_family_membership[rep]},{i+1},{hit},{h_family_membership[hit]}\n')
 #        exit()
     fhOut.close()
 
@@ -94,13 +96,23 @@ def parse_blast_data(rep, file):
     return results
 
 def read_parsed_data(data_file):
+    results = {}
     with open("parsed_blast_rep_iteration_data.csv", "r") as fhIn:
         hitreader = csv.reader(fhIn, delimiter=',',)
+        next(hitreader)
         for row in hitreader:
-            print(', '.join(row))
+            if row[1] == row[4]:
+                print(','.join(row))
 
-def process_blast_data(distances, blast_data):
-    pass
+    return(results)
+
+
+def convert_distances(distances, h_family_membership):
+    new_dists_lookup = defaultdict(dict)
+    for id in distances:
+        for id2 in distances[id]:
+            new_dists_lookup[h_family_membership[id]][h_family_membership[id2]] = distances[id][id2]
+    return(new_dists_lookup)
 
 reps_file = sys.argv[1]
 dist_file = sys.argv[2]
@@ -108,15 +120,18 @@ blast_db_file = sys.argv[3]
 blast_data_dir = sys.argv[4]
 blast_data = None
 if exists("parsed_blast_rep_iteration_data.csv"):
-    print("hello")
+    # lookup = read_reps(reps_file) # dist ID # to CATH domianID
+    # h_family_membership = read_blast_db(blast_db_file) # ALL cath domainIDs to h_family
+    # distances = read_distances(lookup, dist_file) # distances between pairs of cath rep domain IDs
+    # distances = convert_distances(distances, h_family_membership)
     blast_data = read_parsed_data("parsed_blast_rep_iteration_data.csv")
     exit()
-    distances = read_distances(lookup, dist_file)
 else:
     lookup = read_reps(reps_file)
-    distances = read_distances(lookup, dist_file)
     h_family_membership = read_blast_db(blast_db_file)
+    distances = read_distances(lookup, dist_file)
+    distances = convert_distances(distances, h_family_membership)
     parse_blast_results(distances, h_family_membership, blast_data_dir)
-    blast_data = read_parsed_data()
+    blast_data = read_parsed_data("parsed_blast_rep_iteration_data.csv", distances)
 
 # process_blast_data(distances, blast_data)
