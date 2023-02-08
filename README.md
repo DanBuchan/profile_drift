@@ -165,7 +165,7 @@ detect changes and see how often we're within n iterations of being right (TF) o
 
 #### run_cath_rep_blasts.py
 
-take a rep from each H family and blast against the annotated reps set
+take a rep from each H family and blast against the annotated dom-seq set
 
 #### calculate_cath_drift.py
 
@@ -174,6 +174,16 @@ parse the various blasts at different distances to see when overlapping H famili
 
 outputs:
 parsed_blast_rep_iteration_data.csv: summarise which domain were hit and their H-family
+
+ABORTED AS REPS vs REPS isn't dense enough for drift. See Pfam A version
+
+### Pfam BLAST GROWTH EXPERIMENTS
+
+### calculate_pfam_distances.py
+
+Takes an annotated pfam seqs file uses mafft to build alignments of each and then runs RAxML to work out the distances. Produces .dist files in the pfam_distances dir
+
+python3 ../calculate_pfam_distances.py ~/Data/pfam/reps_renumbered.fasta.fa
 
 # TODO
 
