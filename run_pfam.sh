@@ -1,15 +1,14 @@
 #!/bin/bash -l
-#$ -o /home/ucbcdwb/Scratch/output/profile/srd.out
-#$ -e /home/ucbcdwb/Scratch/output/profile/srd.err
+#$ -o /home/ucbcdwb/Scratch/output/profile/std.out
+#$ -e /home/ucbcdwb/Scratch/output/profile/std.err
 
-# Batch script to run a serial array job under SGE.
-# Request ten minutes of wallclock time (format hours:minutes:seconds).
+# Request an hour of run time
 #$ -l h_rt=1:00:0
 
 # Request 1 gigabyte of RAM (must be an integer followed by M, G, or T)
-#$ -l mem=1G
+#$ -l mem=3G
 
-# Request 15 gigabyte of TMPDIR space (default is 10 GB - remove if cluster is diskless)
+# Request 10 gigabyte of TMPDIR space (default is 10 GB - remove if cluster is diskless)
 #$ -l tmpfs=10G
 
 # Set up the job array.  In this instance we have requested 10000 tasks
@@ -25,4 +24,5 @@
 
 # Run the application.
 source /home/ucbcdwb/Scratch/profile_drift/profile_drift/bin/activate
+pip freeze
 echo "python run_pfam_rep_blasts.py ~/Scratch/Data/pfam/reps.fasta.fa ~/Scratch/Data/pfam/pfam_fasta.fa $JOB_NAME $SGE_TASK_ID"
