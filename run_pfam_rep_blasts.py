@@ -27,7 +27,7 @@ def read_reps(dom_seqs):
 
 def do_blast_iterations(id, blast_db, n):
     in_file = f'{id}.fa'
-    first_iteration_args = ['/home/dbuchan/Applications/ncbi-blast-2.12.0+/bin/psiblast',
+    first_iteration_args = ['/home/ucbcdwb/Applications/ncbi-blast-2.12.0+/bin/psiblast',
                             '-query',
                             in_file,
                             '-num_iterations',
@@ -43,7 +43,7 @@ def do_blast_iterations(id, blast_db, n):
                             '10000']
     subprocess.call(first_iteration_args)
     for i in range(2, int(n)+1):
-        iteration_args = ['/home/dbuchan/Applications/ncbi-blast-2.12.0+/bin/psiblast',
+        iteration_args = ['/home/ucbcdwb/Applications/ncbi-blast-2.12.0+/bin/psiblast',
                                 '-in_pssm',
                                 f'{id}_iteration{i-1}.pssm',
                                 '-num_iterations',
