@@ -73,15 +73,27 @@ def run_blasts(family, id, seq, blast_db):
 #dom_seqs = '/home/dbuchan/Projects/profile_drift/RAxML_distances/cath_blast_growth_experiment/blast_data/cath-domain-seqs-S100.fa.annotated'
 rep_seqs = sys.argv[1]
 blast_db = sys.argv[2]
+seq_index = None
+try:
+    seq_index = sys.argv[3]-1
+except:
+    pass
 
 reps = read_reps(rep_seqs)
 tp = ThreadPool(1)
-for family in reps:
+if seq_index:
+    family = list(reps)[seq_index]
     id = list(reps[family].keys())[0]
-    tp.apply_async(run_blasts, (family, id, reps[family][id], blast_db))
+    apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
     tp.close()
     tp.join()
     exit()
-
+else:
+    for family in reps:
+        id = list(reps[family].keys())[0]
+        apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
+        tp.close()
+        tp.join()
+        exit()
 tp.close()
 tp.join()
