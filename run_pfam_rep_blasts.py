@@ -84,14 +84,14 @@ tp = ThreadPool(1)
 if seq_index:
     family = list(reps)[seq_index]
     id = list(reps[family].keys())[0]
-    apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
+    tp.apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
     tp.close()
     tp.join()
     exit()
 else:
     for family in reps:
         id = list(reps[family].keys())[0]
-        apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
+        tp.apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
         tp.close()
         tp.join()
         exit()
