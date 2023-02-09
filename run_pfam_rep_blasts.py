@@ -82,10 +82,9 @@ except:
 
 reps = read_reps(rep_seqs)
 tp = ThreadPool(1)
-print(seq_index)
 if seq_index:
-    print("hi")
     family = list(reps)[seq_index]
+    print("Analysing Family: "+family)
     id = list(reps[family].keys())[0]
     tp.apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
     tp.close()
@@ -93,7 +92,6 @@ if seq_index:
     exit()
 else:
     for family in reps:
-        print("yo")
         id = list(reps[family].keys())[0]
         tp.apply_async(run_blasts, (family, id, reps[family][id], blast_db, ))
         tp.close()
