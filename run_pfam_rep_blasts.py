@@ -81,6 +81,7 @@ except:
 
 reps = read_reps(rep_seqs)
 tp = ThreadPool(1)
+print(seq_index)
 if seq_index:
     print("hi")
     family = list(reps)[seq_index]
