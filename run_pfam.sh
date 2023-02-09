@@ -3,10 +3,10 @@
 #$ -e /home/ucbcdwb/Scratch/output/profile/std.err
 
 # Request an hour of run time
-#$ -l h_rt=1:00:0
+#$ -l h_rt=2:00:0
 
 # Request 1 gigabyte of RAM (must be an integer followed by M, G, or T)
-#$ -l mem=3G
+#$ -l mem=2G
 
 # Request 10 gigabyte of TMPDIR space (default is 10 GB - remove if cluster is diskless)
 #$ -l tmpfs=10G
