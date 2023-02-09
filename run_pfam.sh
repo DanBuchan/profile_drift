@@ -1,4 +1,6 @@
 #!/bin/bash -l
+#$ -o /home/ucbcdwb/Scratch/output/profile/srd.out
+#$ -e /home/ucbcdwb/Scratch/output/profile/srd.err
 
 # Batch script to run a serial array job under SGE.
 # Request ten minutes of wallclock time (format hours:minutes:seconds).
