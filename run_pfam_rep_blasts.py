@@ -75,7 +75,8 @@ rep_seqs = sys.argv[1]
 blast_db = sys.argv[2]
 seq_index = None
 try:
-    seq_index = sys.argv[3]-1
+    seq_index = sys.argv[3]
+    seq_index = seq_index-1
 except:
     pass
 
