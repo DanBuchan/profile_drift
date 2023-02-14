@@ -30,6 +30,6 @@ for dir in subfolders:
                             #print(result.groups()[0])
 
         for iteration in results.keys():
-        for hit in results[iteration]:
-            pass
-            #print(f'{iteration},{hit}')
+            for hit in results[iteration]:
+                pass
+                #print(f'{iteration},{hit}')
