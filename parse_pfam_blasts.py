@@ -9,9 +9,11 @@ results_path = sys.argv[1]
 subfolders = [ f.path for f in os.scandir(results_path) if f.is_dir() ]
 
 result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
+print("Query,iteration,hit,hit_family\n")
 for dir in subfolders:
     results = defaultdict(list)
     seen = []
+    quert = ''
     for file in glob.glob(f"{dir}/*.bls"):
         print(file)
         file_parts = file.split("_")
@@ -35,9 +37,9 @@ for dir in subfolders:
                                 results[iteration].append(result.groups()[0])
                                 seen.append(result.groups()[0])
                             #print(result.groups()[0])
-    print("Query,iteration,hit,hit_family\n")
+
     for iteration in results.keys():
         for hit in results[iteration]:
-            pass
+            print(query,iteration,hit)
             #print(f'{iteration},{hit}')
     exit()
