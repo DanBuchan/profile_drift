@@ -7,13 +7,16 @@ from collections import defaultdict
 results_path = sys.argv[1]
 
 subfolders = [ f.path for f in os.scandir(results_path) if f.is_dir() ]
-count = 0
 results = defaultdict(list)
 seen = []
 result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
 for dir in subfolders:
     for file in glob.glob(f"{dir}/*.bls"):
         print(file)
+        file_parts = file.split("_")
+        query = file_parts[0]
+        iteration = file_parts[1].split(".")[0][9:]
+        print(query, iteration)
         count+=1
         read = False
         with open(file, "r") as fh:
@@ -35,5 +38,6 @@ for dir in subfolders:
 
         for iteration in results.keys():
             for hit in results[iteration]:
-                print(f'{iteration},{hit}')
+                pass
+                #print(f'{iteration},{hit}')
         exit()
