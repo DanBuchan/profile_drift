@@ -12,7 +12,6 @@ result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
 print("Query,iteration,hit,hit_family\n")
 for dir in subfolders:
     results = defaultdict(list)
-    seen = []
     query = ''
     iteration = None
     for file in glob.glob(f"{dir}/*.bls"):
@@ -20,7 +19,6 @@ for dir in subfolders:
         file_parts = file.split("_")
         query = file_parts[0][len(dir)+1:]
         iteration = int(file_parts[1].split(".")[0][9:])
-        print(query, iteration)
         read = False
         with open(file, "r") as fh:
             for line in fh:
@@ -34,11 +32,8 @@ for dir in subfolders:
                     result = re.match(result_list_pattern, line)
                     if result:
                         if float(result.groups()[2]) < 1e-5:
-                            if result.groups()[0] not in seen:
-                                results[iteration].append(result.groups()[0])
-                                seen.append(result.groups()[0])
-                            #print(result.groups()[0])
-
+                            results[iteration].append(result.groups()[0])
+                            
     for iteration in results.keys():
         for hit in results[iteration]:
             parts = hit.split("|")
