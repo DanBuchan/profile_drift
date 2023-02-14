@@ -35,9 +35,9 @@ for dir in subfolders:
                                 results[iteration].append(result.groups()[0])
                                 seen.append(result.groups()[0])
                             #print(result.groups()[0])
-        print("Query,iteration,hit,hit_family\n")
-        for iteration in results.keys():
-            for hit in results[iteration]:
-                pass
-                #print(f'{iteration},{hit}')
+    print("Query,iteration,hit,hit_family\n")
+    for iteration in results.keys():
+        for hit in results[iteration]:
+            pass
+            #print(f'{iteration},{hit}')
     exit()
