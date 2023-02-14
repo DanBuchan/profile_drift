@@ -33,10 +33,8 @@ for dir in subfolders:
                     if result:
                         if float(result.groups()[2]) < 1e-5:
                             results[iteration].append(result.groups()[0])
-                            
+
     for iteration in results.keys():
         for hit in results[iteration]:
             parts = hit.split("|")
             print(f'{query},{iteration},{parts[0]},{parts[1]}')
-            #print(f'{iteration},{hit}')
-    exit()
