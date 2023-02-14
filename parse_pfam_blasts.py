@@ -35,5 +35,5 @@ for dir in subfolders:
 
         for iteration in results.keys():
             for hit in results[iteration]:
-                pass
-                #print(f'{iteration},{hit}')
+                print(f'{iteration},{hit}')
+        exit()
