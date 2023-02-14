@@ -40,6 +40,7 @@ for dir in subfolders:
 
     for iteration in results.keys():
         for hit in results[iteration]:
-            print(query,iteration,hit)
+            parts = hit.split("|")
+            print(f'{query},{iteration},{parts[0]},{parts[1]}\n')
             #print(f'{iteration},{hit}')
     exit()
