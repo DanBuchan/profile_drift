@@ -185,11 +185,14 @@ Takes an annotated pfam seqs file uses mafft to build alignments of each and the
 
 python3 ../calculate_pfam_distances.py ~/Data/pfam/reps_renumbered.fasta.fa
 
-#### run_pfam_rep_blasts.py
+### run_pfam_rep_blasts.py
 
 take a rep from each pfam family and blast against the annotated pfam_fasta that we
 built from the Stockholm format interpro data
 
+### parse_pfam_blasts.py
+
+Short script to collate the information in all the pfam blasts on myriad so I can delete the 1tb of files
 
 # TODO
 
