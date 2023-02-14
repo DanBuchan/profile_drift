@@ -8,6 +8,9 @@ results_path = sys.argv[1]
 
 subfolders = [ f.path for f in os.scandir(results_path) if f.is_dir() ]
 count = 0
+results = defaultdict(list)
+seen = []
+result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
 for dir in subfolders:
     for file in glob.glob(f"{dir}/*.bls"):
         print(file)
