@@ -14,7 +14,7 @@ for dir in subfolders:
     for file in glob.glob(f"{dir}/*.bls"):
         print(file)
         file_parts = file.split("_")
-        query = file_parts[0][len(dir):]
+        query = file_parts[0][len(dir)+1:]
         iteration = int(file_parts[1].split(".")[0][9:])
         print(query, iteration)
         read = False
