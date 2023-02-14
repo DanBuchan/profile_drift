@@ -13,7 +13,8 @@ print("Query,iteration,hit,hit_family\n")
 for dir in subfolders:
     results = defaultdict(list)
     seen = []
-    quert = ''
+    query = ''
+    iteration = None
     for file in glob.glob(f"{dir}/*.bls"):
         print(file)
         file_parts = file.split("_")
