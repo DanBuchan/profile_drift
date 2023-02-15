@@ -5,7 +5,7 @@ from collections import defaultdict
 blast_summary_file = sys.argv[1]
 current_query = None
 query_count = 0
-data = {}
+data = defaultdict(list)
 with open(blast_summary_file, 'r') as datafile:
     blast_reader = csv.reader(datafile, delimiter=',',)
     next(blast_reader)
@@ -20,9 +20,9 @@ with open(blast_summary_file, 'r') as datafile:
             exit()
         if not current_query:
             current_query = row[0]
-            data[int(row[1])] = row
+            data[int(row[1])].append(row)
 
         current_query = row[0]
-        data[int(row[1])] = row
+        data[int(row[1])].append(row)
 
 print(f"Processed pfam families: {query_count}")
