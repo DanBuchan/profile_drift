@@ -9,13 +9,13 @@ results_path = sys.argv[1]
 subfolders = [ f.path for f in os.scandir(results_path) if f.is_dir() ]
 
 result_list_pattern = re.compile(r"^(.+?)\s+(.+?)\s+(.+?)\n")
-print("Query,iteration,hit,hit_family\n")
+print("Query,iteration,hit,hit_family")
 for dir in subfolders:
     results = defaultdict(list)
     query = ''
     iteration = None
     for file in glob.glob(f"{dir}/*.bls"):
-        print(file)
+        # print(file)
         file_parts = file.split("_")
         query = file_parts[0][len(dir)+1:]
         iteration = int(file_parts[1].split(".")[0][9:])

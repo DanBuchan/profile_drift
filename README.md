@@ -192,7 +192,13 @@ built from the Stockholm format interpro data
 
 ### parse_pfam_blasts.py
 
-Short script to collate the information in all the pfam blasts on myriad so I can delete the 1tb of files
+Short script to collate the information in all the pfam blasts on myriad so I can delete the 1tb of files.
+
+outputs: parsed_pfam_blasts.csv
+
+### find_drift.py
+
+take the parsed_pfam_blasts and find families where drift has occurred. And output some summary stats for plotting such families
 
 # TODO
 
