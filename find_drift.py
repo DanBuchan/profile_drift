@@ -21,7 +21,7 @@ def process_data(current_query, data):
     for iteration in summary:
         output_string = output_string+f"|{iteration},"
         for family in summary[iteration]:
-            output_string = output_string+f"|{family},{summary[iteration][family]},"
+            output_string = output_string+f"{family},{summary[iteration][family]},"
     print(output_string)
 
 blast_summary_file = sys.argv[1]
