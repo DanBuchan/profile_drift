@@ -35,8 +35,8 @@ with open(blast_summary_file, 'r') as datafile:
     next(blast_reader)
 
     for row in blast_reader:
-        if query_count == 5:
-            exit()
+        # if query_count == 5:
+        #     exit()
         if current_query and not row[0] == current_query:
             process_data(current_query, data)
             data = defaultdict(list)
