@@ -14,7 +14,7 @@ with open(blast_summary_file, 'r') as datafile:
     for row in blast_reader:
         if not current_query:
             current_query = row[0]
-        elif (current_query not None) and not row[0] == current_query:
+        elif (not current_query) and not row[0] == current_query:
             #process prior data
             count+=1
             current_query = row[0]
