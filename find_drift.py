@@ -11,7 +11,7 @@ def process_data(data):
         for data_row in data[iteration]:
             if not data_row[2] in seen:
                 seen.append(data_row[2])
-                counts[data[3]] += 1
+                counts[data_row[3]] += 1
         summary[iteration] = counts
     print(summary)
 
