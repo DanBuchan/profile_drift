@@ -13,6 +13,7 @@ def process_data(current_query, data):
             # if not data_row[2] in seen:
             #     seen.append(data_row[2])
             counts[data_row[3]] += 1
+            pfam_family_set.add(data_row[3])
         summary[iteration] = counts
 
     output_string = f'{current_query},{len(pfam_family_set)},"
