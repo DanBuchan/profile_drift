@@ -17,7 +17,7 @@ def process_data(current_query, data):
         summary[iteration] = counts
 
     seen_count = len(pfam_family_set)
-    output_string = f'{current_query},{seen_count},"
+    output_string = f'{current_query},{seen_count},'
     for iteration in summary:
         output_string = output_string+f"|{iteration},"
         for family in summary[iteration]:
@@ -47,6 +47,6 @@ with open(blast_summary_file, 'r') as datafile:
         current_query = row[0]
         data[int(row[1])].append(row)
 
-process_data(data)
+process_data(current_query, data)
 query_count+=1
 print(f"Processed pfam families: {query_count}")
