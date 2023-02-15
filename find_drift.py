@@ -14,11 +14,11 @@ with open(blast_summary_file, 'r') as datafile:
     for row in blast_reader:
         if (not current_query) and not row[0] == current_query:
             #process prior data
-            count+=1
+            query_count+=1
             current_query = row[0]
             print(data)
             exit()
         current_query = row[0]
         data[int(row[1])] = row
 
-print(f"Processed pfam families: {count}")
+print(f"Processed pfam families: {query_count}")
