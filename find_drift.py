@@ -2,6 +2,11 @@ import sys
 import csv
 from collections import defaultdict
 
+
+def process_data(data):
+    for iteration in data:
+        print(iteration)
+
 blast_summary_file = sys.argv[1]
 current_query = None
 query_count = 0
@@ -13,10 +18,10 @@ with open(blast_summary_file, 'r') as datafile:
 
     for row in blast_reader:
         if current_query and not row[0] == current_query:
-            #process prior data
+            process_data(data)
+            data = defaultdict(list)
             query_count+=1
             current_query = row[0]
-            print(data)
             exit()
         if not current_query:
             current_query = row[0]
@@ -25,4 +30,6 @@ with open(blast_summary_file, 'r') as datafile:
         current_query = row[0]
         data[int(row[1])].append(row)
 
+process_data(data)
+query_count+=1
 print(f"Processed pfam families: {query_count}")
