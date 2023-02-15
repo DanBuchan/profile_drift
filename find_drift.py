@@ -34,12 +34,13 @@ with open(blast_summary_file, 'r') as datafile:
     next(blast_reader)
 
     for row in blast_reader:
+        if quey_count == 5:
+            exit()
         if current_query and not row[0] == current_query:
             process_data(current_query, data)
             data = defaultdict(list)
             query_count+=1
             current_query = row[0]
-            exit()
         if not current_query:
             current_query = row[0]
             data[int(row[1])].append(row)
