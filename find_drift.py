@@ -4,14 +4,15 @@ from collections import defaultdict
 
 
 def process_data(data):
-    seen = []
     summary = {}
+    # seen = []
+    pfam_family_set = set()
     for iteration in sorted(data):
         counts = defaultdict(int)
         for data_row in data[iteration]:
-            if not data_row[2] in seen:
-                seen.append(data_row[2])
-                counts[data_row[3]] += 1
+            # if not data_row[2] in seen:
+            #     seen.append(data_row[2])
+            counts[data_row[3]] += 1
         summary[iteration] = counts
     print(summary)
 
