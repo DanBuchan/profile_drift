@@ -8,7 +8,7 @@ def process_data(data):
     summary = {}
     for iteration in sorted(data):
         counts = defaultdict(int)
-        for data_row in iteration:
+        for data_row in data[iteration]:
             if not data_row[2] in seen:
                 seen.append(data_row[2])
                 counts[data[3]] += 1
