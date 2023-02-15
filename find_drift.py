@@ -3,7 +3,7 @@ import csv
 from collections import defaultdict
 
 
-def process_data(data):
+def process_data(current_query, data):
     summary = {}
     # seen = []
     pfam_family_set = set()
@@ -14,6 +14,12 @@ def process_data(data):
             #     seen.append(data_row[2])
             counts[data_row[3]] += 1
         summary[iteration] = counts
+
+    output_string = f'{current_query},{len(pfam_family_set)},"
+    for iteration in summary:
+        output_string = output_string+f"|{iteration},"
+        for family in summary[iteration]:
+            output_string = output_string+f"|{family},{summary[iteration][family]},"
     print(summary)
 
 blast_summary_file = sys.argv[1]
@@ -27,7 +33,7 @@ with open(blast_summary_file, 'r') as datafile:
 
     for row in blast_reader:
         if current_query and not row[0] == current_query:
-            process_data(data)
+            process_data(current_query, data)
             data = defaultdict(list)
             query_count+=1
             current_query = row[0]
