@@ -16,7 +16,8 @@ def process_data(current_query, data):
             pfam_family_set.add(data_row[3])
         summary[iteration] = counts
 
-    output_string = f'{current_query},{len(pfam_family_set)},"
+    seen_count = len(pfam_family_set)
+    output_string = f'{current_query},{seen_count},"
     for iteration in summary:
         output_string = output_string+f"|{iteration},"
         for family in summary[iteration]:
