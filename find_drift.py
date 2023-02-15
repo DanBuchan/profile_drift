@@ -4,7 +4,7 @@ from collections import defaultdict
 
 
 def process_data(data):
-    for iteration in data:
+    for iteration in sorted(data):
         print(iteration)
 
 blast_summary_file = sys.argv[1]
