@@ -9,4 +9,4 @@ RAxML_distances.*.dist
 *annotated*
 *.bls
 *.pssm
-
+parsed_pfam_blasts.csv

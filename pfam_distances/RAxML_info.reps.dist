@@ -44,3 +44,12 @@ RAxML was called as follows:
 /home/dbuchan/Applications/standard-RAxML/raxmlHPC-PTHREADS-AVX -T 4 -s reps.afa -n reps.dist -m PROTGAMMABLOSUM62 -N2 -p 123 -f x 
 
 
+
+Log Likelihood Score after parameter optimization: -7709349.574167
+
+
+Computing pairwise ML-distances ...
+
+Time for pair-wise ML distance computation of 192678265 distances: 199683.148733 seconds
+
+Distances written to file: /home/dbuchan/Projects/profile_drift/pfam_distances/RAxML_distances.reps.dist
