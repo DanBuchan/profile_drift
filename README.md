@@ -200,6 +200,19 @@ outputs: parsed_pfam_blasts.csv
 
 take the parsed_pfam_blasts and find families where drift has occurred. And output some summary stats for plotting such families
 
+outputs: parsed_pfam_iteration_data.csv
+
+### rearrange_pfam_drift_data.py
+
+rearrange parsed_pfam_iteration_data.csv for use with ggplot
+
+iteration_summary.csv
+
+### plot_pfam_growth.R
+
+Take iteration_summary.csv and plot some barcharts.
+>
+
 # TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
