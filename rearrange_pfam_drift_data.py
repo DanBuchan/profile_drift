@@ -18,7 +18,7 @@ summary_file = sys.argv[2]
 
 rep_lookup = get_lookup(rep_file)
 
-print("rep,rep_famiy,iteration,hit_family,hit_count")
+print("rep,rep_family,iteration,hit_family,hit_count")
 with open(summary_file, "r") as fh:
     for line in fh:
         line = line.rstrip()
@@ -31,5 +31,3 @@ with open(summary_file, "r") as fh:
             iteration = iter_data.pop(0)
             for pair in  [iter_data[i:i + 2] for i in range(0, len(iter_data), 2)]:
                 print(f"{rep[0]},{rep_lookup[rep[0]]},{iteration},{pair[0]},{pair[1]}")
-
-        exit()
