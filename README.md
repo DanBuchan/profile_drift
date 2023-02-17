@@ -211,7 +211,26 @@ iteration_summary.csv
 ### plot_pfam_growth.R
 
 Take iteration_summary.csv and plot some barcharts.
->
+
+### TO DO pfam analysis
+
+Average number of iterations before a contaminant family appears
+Average number of contaminating families
+
+Types of drift:
+Loss of query family PF06646
+Reduction of query family
+  New family dominates PF09134 PF14814 PF06347
+  Query spikes, reduces as contaminant family achieves steady equale state PF16697
+  Query spikes, reduces as contaminant family achieves steady state, contaminant dominates PF14814
+
+Accumulation of multiple families PF18725
+Purifying selection: loss or reduction of contaminant family PF06733 PF09224
+Tiny contaminant family that never grows: PF10203 PF16428
+
+Multiple behaviours: PF14398 PF03142 PF15356 PF03266 PF03284
+
+Need to know the size of each family
 
 # TODO
 
