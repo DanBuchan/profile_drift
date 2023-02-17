@@ -7,7 +7,6 @@ iteration_summary <- read.csv("/home/dbuchan/Projects/profile_drift/iteration_su
 testdf <- head(iteration_summary, 334)
 
 print_chart <- function(groupdata) {
-  me
   ggplot(data=groupdata, aes(x=iteration, y=hit_count, fill=hit_family)) + geom_bar(stat="identity", position=position_dodge2(preserve = "single")) + labs(title=groupdata$rep_family)
 }
   
