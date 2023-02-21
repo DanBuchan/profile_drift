@@ -212,7 +212,9 @@ iteration_summary.csv
 
 Take iteration_summary.csv and plot some barcharts.
 
-### TO DO pfam analysis
+### calculate_drift_types.py
+
+Take iteration_summary.csv and work out what kinds of drift and stats we can see
 
 Average number of iterations before a contaminant family appears
 Average number of contaminating families
