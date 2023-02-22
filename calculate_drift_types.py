@@ -24,6 +24,7 @@ alignment_file = sys.argv[2]
 
 if(os.path.exists("pfam_family_size.p")):
     size_lookup = pickle.load( open("pfam_family_size.p", "rb" ) )
+    print(size_lookup)
 else:
     size_lookup = count_alignments(alignment_file)
     pickle.dump(size_lookup, open("pfam_family_size.p", "wb"))
