@@ -3,6 +3,7 @@ import sys
 from collections import defaultdict
 import statistics
 import pickle
+import os
 
 '''
 python calculate_drift_types.py iteration_summary.csv /home/dbuchan/Data/pfam/pfam_fasta.fa
