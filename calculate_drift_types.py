@@ -2,11 +2,33 @@ import csv
 import sys
 from collections import defaultdict
 import statistics
+import pickle
+
 '''
-python calculate_drift_types.py iteration_summary.csv
+python calculate_drift_types.py iteration_summary.csv /home/dbuchan/Data/pfam/pfam_fasta.fa
 '''
 
+def count_alignments(file):
+    size_lookup = defaultdict(int)
+    with open(file, "r") as fh:
+        for line in fh:
+            if line.startswith(">"):
+                line = line.rstrip()
+                entries = line.split("|")
+                size_lookup[entries[1]] += 1
+    return size_lookup
+
 input_file = sys.argv[1]
+alignment_file = sys.argv[2]
+
+if(os.path.exists("pfam_family_size.p")):
+    size_lookup = pickle.load( open("pfam_family_size.p", "rb" ) )
+else:
+    size_lookup = count_alignments(alignment_file)
+    pickle.dump(size_lookup, open("pfam_family_size.p", "wb"))
+
+exit()
+
 drift_data = defaultdict(lambda: defaultdict(list))
 with open(input_file, "r") as fh:
     driftreader = csv.reader(fh, delimiter=",")
@@ -33,6 +55,8 @@ for family in drift_data:
             iteration_set[matches[0]] += int(matches[1])
         # do some min and max tests
 
+        # we now have iteration set which are all the matches seen in a run.
+        # loop through the matches again and see when they arrive and go
         if family not in iteration_set:
             purified_lost_query += 1
             break
