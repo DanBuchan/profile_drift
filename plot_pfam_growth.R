@@ -8,7 +8,7 @@ print_chart <- function(groupdata) {
 }
 
 iteration_summary <- read.csv("/home/dbuchan/Projects/profile_drift/iteration_summary.csv", header=T)
-testdf <- head(iteration_summary, 2000)
+testdf <- head(iteration_summary, 300)
 
 testdf %>% group_by(rep) %>% group_map(~ print_chart(.x))
 
