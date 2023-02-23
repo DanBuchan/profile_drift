@@ -109,12 +109,12 @@ for family in drift_data:
         if hit_family not in final_set:
             iteration_set_stops[hit_family] = 0
 
-    print("family", family)
-    print("Peak", iteration_set_peaks)
-    print("Lowest", iteration_set_nadirs)
-    print("First value", iteration_set_starts)
-    print("Final value", iteration_set_stops)
-    print("Last seen iter", last_seen_iteration)
+    # print("family", family)
+    # print("Peak", iteration_set_peaks)
+    # print("Lowest", iteration_set_nadirs)
+    # print("First value", iteration_set_starts)
+    # print("Final value", iteration_set_stops)
+    # print("Last seen iter", last_seen_iteration)
     for hit_family in families_set:
         ten_percent_of_peak = iteration_set_peaks[hit_family]/10
         if hit_family == family:
@@ -147,7 +147,7 @@ for family in drift_data:
     number_families_at_end = 0
     small_non_growing_contaminant = 0
     for hit_family in iteration_set_stops:
-        if iteration_set_stops[family] < 0:
+        if iteration_set_stops[hit_family] < 0:
             number_families_at_end += 1
         if hit_family != family:
             if iteration_set_starts[hit_family] <= iteration_set_peaks[family]*0.1 and iteration_set_stops[hit_family] <= iteration_set_peaks[family]*0.1:
@@ -158,7 +158,7 @@ for family in drift_data:
     if number_families_at_end > 2:
         multiple_families += 1
         
-    exit()
+    # exit()
     family_hits_sizes.append(len(families_set))
 
 print(f"Mean families found: {statistics.mean(family_hits_sizes)}")
