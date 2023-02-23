@@ -23,13 +23,10 @@ input_file = sys.argv[1]
 alignment_file = sys.argv[2]
 
 if(os.path.exists("pfam_family_size.p")):
-    size_lookup = pickle.load( open("pfam_family_size.p", "rb" ) )
-    print(size_lookup)
+    size_lookup = pickle.load( open("pfam_family_size.p", "rb" ))
 else:
     size_lookup = count_alignments(alignment_file)
     pickle.dump(size_lookup, open("pfam_family_size.p", "wb"))
-
-exit()
 
 drift_data = defaultdict(lambda: defaultdict(list))
 with open(input_file, "r") as fh:
@@ -50,8 +47,7 @@ for family in drift_data:
     previous_iteration_set = defaultdict(int) # set of families from the prior iteration
     for iteration in sorted(drift_data[family]):
         iteration_set = defaultdict(int) # The set of families we've seen in this iteration
-        iteration_set_peaks = defaultdict(int) # The set of families we've seen in this iteration
-        iteration_set_nadirs = defaultdict(int) # The set of families we've seen in this iteration
+
         for matches in drift_data[family][iteration]:
             families_set.add(matches[0])
             iteration_set[matches[0]] += int(matches[1])
@@ -59,6 +55,33 @@ for family in drift_data:
 
         # we now have iteration set which are all the matches seen in a run.
         # loop through the matches again and see when they arrive and go
+        iteration_set_peaks = defaultdict(int) # The set of families we've seen in this iteration
+        iteration_set_nadirs = defaultdict(int) # The set of families we've seen in this iteration
+        iteration_set_start = defaultdict(int) # The set of families we've seen in this iteration
+        iteration_set_stop = defaultdict(int) # The set of families we've seen in this iteration
+        contaminant_iteration = 0
+        for i, matches in enumerate(drift_data[family][iteration]):
+            print(matches)
+            if i == 0:
+                iteration_set_peaks[matches[0]] = 0
+                iteration_set_nadirs[matches[0]] = 0
+            if matches[0] not in iteration_set_start.keys():
+                iteration_set_start[matches[0]] = matches[1]
+                iteration_set_stop[matches[0]] = matches[1]
+
+            iteration_set_stop[matches[0]] = matches[1]
+            if int(matches[1]) > iteration_set_peaks[matches[0]]:
+                iteration_set_peaks[matches[0]] = int(matches[1])
+            if int(matches[1]) < iteration_set_nadirs[matches[0]]:
+                iteration_set_nadirs[matches[0]] = int(matches[1])
+
+        print(iteration_set_peaks)
+        print(iteration_set_nadirs)
+        print(iteration_set_start)
+        print(iteration_set_stop)
+
+
+        exit()
         if family not in iteration_set:
             purified_lost_query += 1
             break
