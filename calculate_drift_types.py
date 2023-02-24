@@ -4,6 +4,7 @@ from collections import defaultdict
 import statistics
 import pickle
 import os
+import operator
 
 
 '''
@@ -42,11 +43,19 @@ with open(input_file, "r") as fh:
 family_count = 0  # TOTAL NUMBER OF FAMILIES WITH DRIFT
 family_hits_sizes = []  # list of the number of drift families in each blast
 purified_lost_query = 0
+purified_query = 0
+spiked_query = 0
+grew_query = 0
+purified_contaminant = 0
+spiked_contaminant = 0
+grew_contaminant = 0
 purified_total_lost_hit = 0
 multiple_families = 0
 non_growing_contaminants = 0
 
 for family in drift_data:
+    # if family != 'PF05325':
+    #     continue
     family_count += 1
     families_set = set()  # The fullset of families seen in this blast run
     final_set = None # set of families in the final iteration
@@ -57,9 +66,9 @@ for family in drift_data:
     # seen in this iteration
     iteration_set_nadirs = defaultdict(int)  # The set of families we've
     # seen in this iteration
-    iteration_set_starts = defaultdict(int)  # The set of families we've
+    iteration_set_initial = defaultdict(int)  # The set of families we've
     # seen in this iteration
-    iteration_set_stops = defaultdict(int)  # The set of families we've
+    iteration_set_final = defaultdict(int)  # The set of families we've
     # seen in this iteration
     final_iteration = 0
     for iteration in sorted(drift_data[family]):
@@ -85,11 +94,11 @@ for family in drift_data:
             if iteration == 1:
                 iteration_set_peaks[hit_family] = 0
                 iteration_set_nadirs[hit_family] = num_hits
-            if hit_family not in iteration_set_starts.keys():
-                iteration_set_starts[hit_family] = num_hits
-                iteration_set_stops[hit_family] = num_hits
+            if hit_family not in iteration_set_initial.keys():
+                iteration_set_initial[hit_family] = num_hits
+                iteration_set_final[hit_family] = num_hits
 
-            iteration_set_stops[hit_family] = num_hits
+            iteration_set_final[hit_family] = num_hits
 
             if num_hits > iteration_set_peaks[hit_family]:
                 iteration_set_peaks[hit_family] = num_hits
@@ -107,64 +116,87 @@ for family in drift_data:
 
     for hit_family in families_set:
         if hit_family not in final_set:
-            iteration_set_stops[hit_family] = 0
+            iteration_set_final[hit_family] = 0
 
-    # print("family", family)
-    # print("Peak", iteration_set_peaks)
-    # print("Lowest", iteration_set_nadirs)
-    # print("First value", iteration_set_starts)
-    # print("Final value", iteration_set_stops)
-    # print("Last seen iter", last_seen_iteration)
+    print("family", family)
+    print("Peak", iteration_set_peaks)
+    print("Lowest", iteration_set_nadirs)
+    print("First value", iteration_set_initial)
+    print("Final value", iteration_set_final)
+    print("Last seen iter", last_seen_iteration)
+    number_families_at_end = 0
+    small_non_growing_contaminant = False
+    query_grew = False
+    query_spiked = False
+    query_purified = False
+    contaminant_grew = False
+    contaminant_spiked = False
+    contaminant_purified = False
+    max_pairing = max(iteration_set_final.items(), key=operator.itemgetter(1))
+
     for hit_family in families_set:
-        ten_percent_of_peak = iteration_set_peaks[hit_family]/10
+        if last_seen_iteration[hit_family] == final_iteration:
+            number_families_at_end += 1
+        ten_percent_of_peak = iteration_set_peaks[hit_family]*0.2
+
         if hit_family == family:
             if iteration_set_peaks[hit_family] \
-               > iteration_set_starts[hit_family]+ten_percent_of_peak:
-                # accumulated querey
-                pass
-            if iteration_set_stops[hit_family] \
+               > iteration_set_initial[hit_family]+ten_percent_of_peak:
+                query_grew = True
+            if iteration_set_final[hit_family] \
                < iteration_set_peaks[hit_family]*0.8:
-                # spiked querey
-                pass
-            if iteration_set_stops[hit_family] \
+                query_spiked = True
+            if iteration_set_final[hit_family] \
                < iteration_set_peaks[hit_family]*0.2:
-                # query purified out
-                pass     
+                query_purified = True
+            if max_pairing[0] != hit_family and max_pairing[1]*0.9 \
+               > iteration_set_final[hit_family]:
+                query_purified = True
         else:
             if iteration_set_peaks[hit_family] \
-               > iteration_set_starts[hit_family]+ten_percent_of_peak:
-                # accumulated hit
-                pass
+               > iteration_set_initial[hit_family]+ten_percent_of_peak:
+                contaminant_grew = True
             if iteration_set_peaks[hit_family] \
-               > iteration_set_stops[hit_family]*0.8:
-                # spiked hit
-                pass
-            if iteration_set_stops[hit_family]*2 \
+               > iteration_set_final[hit_family]*0.8:
+                contaminant_spiked = True
+            if iteration_set_final[hit_family]*2 \
                < iteration_set_peaks[hit_family]*0.2:
-                # hit purified out
-                pass
+                contaminant_purified = True
 
-    number_families_at_end = 0
-    small_non_growing_contaminant = 0
-    for hit_family in iteration_set_stops:
-        if iteration_set_stops[hit_family] < 0:
-            number_families_at_end += 1
+    for hit_family in families_set:
         if hit_family != family:
-            if iteration_set_starts[hit_family] <= iteration_set_peaks[family]*0.1 and iteration_set_stops[hit_family] <= iteration_set_peaks[family]*0.1:
-                small_non_growing_contaminant += 0
+            if iteration_set_initial[hit_family] <= max_pairing[1]*0.1 and iteration_set_final[hit_family] <= max_pairing[1]*0.1:
+                small_non_growing_contaminant = True
     
-    if small_non_growing_contaminant > 0:
+    if small_non_growing_contaminant:
         non_growing_contaminants += 1
     if number_families_at_end > 2:
         multiple_families += 1
-        
+    if query_purified:
+        purified_query += 1
+    if query_spiked:
+        spiked_query += 1
+    if query_grew:
+        grew_query += 1
+    if contaminant_purified:
+        purified_contaminant += 1
+    if contaminant_spiked:
+        spiked_contaminant += 1
+    if contaminant_grew:
+        grew_contaminant += 1
     # exit()
     family_hits_sizes.append(len(families_set))
 
-print(f"Mean families found: {statistics.mean(family_hits_sizes)}")
-print(f"SD families found: {statistics.stdev(family_hits_sizes)}")
+# print(f"Mean families found: {statistics.mean(family_hits_sizes)}")
+# print(f"SD families found: {statistics.stdev(family_hits_sizes)}")
 print("---")
 print(f"Purifying Selection: LOST QUERY: {purified_lost_query}")
+print(f"Purifying Selection: QUERY REDUCED: {purified_query}")
+print(f"Purifying Selection: CONTAMINANT REDUCED: {purified_contaminant}")
 print(f"Purifying Selection: TOTALLY MISSING HIT: {purified_total_lost_hit}")
+print(f"Count with Growing Query: {grew_query}")
+print(f"Count with Spiked Query: {spiked_query}")
+print(f"Count with Growing Contaminant: {grew_contaminant}")
+print(f"Count with Spiked Contaminant: {spiked_contaminant}")
 print(f"Count with Non growing contaminants: {non_growing_contaminants}")
 print(f"Count with multiple contaminants: {multiple_families}")
