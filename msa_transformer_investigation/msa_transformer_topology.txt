@@ -1,0 +1,425 @@
+MSATransformer(
+  (embed_tokens): Embedding(33, 768, padding_idx=1)
+  (dropout_module): Dropout(p=0.1, inplace=False)
+  (layers): ModuleList(
+    (0): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (1): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (2): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (3): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (4): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (5): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (6): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (7): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (8): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (9): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (10): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (11): AxialTransformerLayer(
+      (row_self_attention): NormalizedResidualBlock(
+        (layer): RowSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (column_self_attention): NormalizedResidualBlock(
+        (layer): ColumnSelfAttention(
+          (k_proj): Linear(in_features=768, out_features=768, bias=True)
+          (v_proj): Linear(in_features=768, out_features=768, bias=True)
+          (q_proj): Linear(in_features=768, out_features=768, bias=True)
+          (out_proj): Linear(in_features=768, out_features=768, bias=True)
+          (dropout_module): Dropout(p=0.1, inplace=False)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+      (feed_forward_layer): NormalizedResidualBlock(
+        (layer): FeedForwardNetwork(
+          (activation_fn): GELU(approximate='none')
+          (activation_dropout_module): Dropout(p=0.0, inplace=False)
+          (fc1): Linear(in_features=768, out_features=3072, bias=True)
+          (fc2): Linear(in_features=3072, out_features=768, bias=True)
+        )
+        (dropout_module): Dropout(p=0.1, inplace=False)
+        (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (contact_head): ContactPredictionHead(
+    (regression): Linear(in_features=144, out_features=1, bias=True)
+    (activation): Sigmoid()
+  )
+  (embed_positions): LearnedPositionalEmbedding(1026, 768, padding_idx=1)
+  (emb_layer_norm_before): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (emb_layer_norm_after): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (lm_head): RobertaLMHead(
+    (dense): Linear(in_features=768, out_features=768, bias=True)
+    (layer_norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  )
+)

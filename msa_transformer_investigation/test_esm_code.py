@@ -261,18 +261,21 @@ def plot_contacts_and_predictions(
     ax.set_xlim([0, seqlen])
     ax.set_ylim([0, seqlen])
 
-PDB_IDS = ["1a3a", "5ahw", "1xcr"]
+#PDB_IDS = ["1a3a", "5ahw", "1xcr"]
+PDB_IDS = ["toy", ]
 
-structures = {
-    name.lower(): get_structure(PDBxFile.read(rcsb.fetch(name, "cif")))[0]
-    for name in PDB_IDS
-}
+# structures = {
+#     name.lower(): get_structure(PDBxFile.read(rcsb.fetch(name, "cif")))[0]
+#     for name in PDB_IDS
+# }
 
-contacts = {
-    name: contacts_from_pdb(structure, chain="A") 
-    for name, structure in structures.items()
-}
+# contacts = {
+#     name: contacts_from_pdb(structure, chain="A") 
+#     for name, structure in structures.items()
+# }
 
+# msas layout
+# {"ALIGNMENT NAME": [("FASTA NAME", "SEQ"), ]} 
 msas = {
     name: read_msa(f"data/{name.lower()}_1_A.a3m")
     for name in PDB_IDS
@@ -284,26 +287,38 @@ sequences = {
 
 
 msa_transformer, msa_transformer_alphabet = esm.pretrained.esm_msa1b_t12_100M_UR50S()
-msa_transformer = msa_transformer.eval().cuda()
+# msa_transformer = msa_transformer.eval().cuda()
 msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
 
 msa_transformer_predictions = {}
 msa_transformer_results = []
-for name, inputs in msas.items():
-    inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequences
-    msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
-    msa_transformer_batch_tokens = msa_transformer_batch_tokens.to(next(msa_transformer.parameters()).device)
-    msa_transformer_predictions[name] = msa_transformer.predict_contacts(msa_transformer_batch_tokens)[0].cpu()
-    metrics = {"id": name, "model": "MSA Transformer (Unsupervised)"}
-    metrics.update(evaluate_prediction(msa_transformer_predictions[name], contacts[name]))
-    msa_transformer_results.append(metrics)
-msa_transformer_results = pd.DataFrame(msa_transformer_results)
 
-fig, axes = plt.subplots(figsize=(18, 6), ncols=3)
-for ax, name in zip(axes, PDB_IDS):
-    prediction = msa_transformer_predictions[name]
-    target = contacts[name]
-    plot_contacts_and_predictions(
-        prediction, target, ax=ax, title = lambda prec: f"{name}: Long Range P@L: {100 * prec:0.1f}"
-    )
-plt.show()
+for name, inputs in msas.items():
+    inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequence
+    msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
+    print(msa_transformer_batch_labels)
+    print(msa_transformer_batch_strs)
+    print(msa_transformer_batch_tokens)
+    print(msa_transformer_batch_tokens.size())
+    # HERE MASK n(75%) tokens - 0 is the masking/padding token?
+    # Pdding IDX is 1
+    # Mask IDX is 32
+    
+
+#   msa_transformer_batch_tokens = msa_transformer_batch_tokens.to(next(msa_transformer.parameters()).device)
+#     msa_transformer_predictions[name] = msa_transformer.predict_contacts(msa_transformer_batch_tokens)[0].cpu()
+#     metrics = {"id": name, "model": "MSA Transformer (Unsupervised)"}
+#     metrics.update(evaluate_prediction(msa_transformer_predictions[name], contacts[name]))
+#     msa_transformer_results.append(metrics)
+# msa_transformer_results = pd.DataFrame(msa_transformer_results)
+
+# fig, axes = plt.subplots(figsize=(18, 6), ncols=3)
+# for ax, name in zip(axes, PDB_IDS):
+#     prediction = msa_transformer_predictions[name]
+#     target = contacts[name]
+#     plot_contacts_and_predictions(
+#         prediction, target, ax=ax, title = lambda prec: f"{name}: Long Range P@L: {100 * prec:0.1f}"
+#     )
+# plt.show()
+
+# https://stackoverflow.com/questions/70986805/how-to-save-and-load-only-particular-layers-of-a-neural-network-with-pytorch
