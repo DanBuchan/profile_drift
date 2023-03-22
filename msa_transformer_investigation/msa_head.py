@@ -7,8 +7,10 @@ import torch.nn as nn
 # output layer/matrix?
 # workout how to fix/no_grad the model bits
 
+# Don't think I need this as it ends with a RobertaLMHead
+
 # CONTACT PRED HEAD FROM ESM
-class MSAPredictionHead(nn.Module):
+class MSAPredictor(nn.Module):
     def __init__(msa_n, msa_m);
         super(msa_transformer, self).__init__()
         self._head1 = torch.nn.Linear(in_features=768, out_features=768)

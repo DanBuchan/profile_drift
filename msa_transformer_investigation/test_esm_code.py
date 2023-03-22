@@ -287,7 +287,17 @@ sequences = {
 
 
 msa_transformer, msa_transformer_alphabet = esm.pretrained.esm_msa1b_t12_100M_UR50S()
-# msa_transformer = msa_transformer.eval().cuda()
+
+# remove contact head
+# https://stackoverflow.com/questions/52548174/how-to-remove-the-last-fc-layer-from-a-resnet-model-in-pytorch
+# layer_list = list(msa_transformer.children())
+# layer_list.pop(3)
+# msa_transformer = torch.nn.Sequential(*layer_list)
+for name, param in msa_transformer.named_parameters():
+    # print(name)
+    param.requires_grad = False
+msa_transformer = msa_transformer.eval().cuda()
+
 msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
 
 msa_transformer_predictions = {}
@@ -296,20 +306,25 @@ msa_transformer_results = []
 for name, inputs in msas.items():
     inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequence
     msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
-    print(msa_transformer_batch_labels)
-    print(msa_transformer_batch_strs)
+    # print(msa_transformer_batch_labels)
+    # print(msa_transformer_batch_strs)
     print(msa_transformer_batch_tokens)
-    print(msa_transformer_batch_tokens.size())
+    # print(msa_transformer_batch_tokens.size())
     # HERE MASK n(75%) tokens - 0 is the masking/padding token?
     # Pdding IDX is 1
     # Mask IDX is 32
-    
+    msa_transformer_batch_tokens = msa_transformer_batch_tokens.to(next(msa_transformer.parameters()).device)
+    msa_transformer_predictions[name] = msa_transformer(msa_transformer_batch_tokens)
+    # print(msa_transformer_predictions[name]['logits'])
+    # print(msa_transformer_predictions[name]['logits'].size())
+    for result in msa_transformer_predictions[name]['logits'].cpu().numpy():
+        for seq in result:
+            print(np.argmax(seq, axis=1))
 
-#   msa_transformer_batch_tokens = msa_transformer_batch_tokens.to(next(msa_transformer.parameters()).device)
-#     msa_transformer_predictions[name] = msa_transformer.predict_contacts(msa_transformer_batch_tokens)[0].cpu()
-#     metrics = {"id": name, "model": "MSA Transformer (Unsupervised)"}
-#     metrics.update(evaluate_prediction(msa_transformer_predictions[name], contacts[name]))
-#     msa_transformer_results.append(metrics)
+#    metrics = {"id": name, "model": "MSA Transformer (Unsupervised)"}
+#    metrics.update(evaluate_prediction(msa_transformer_predictions[name], contacts[name]))
+#    msa_transformer_results.append(metrics)    
+
 # msa_transformer_results = pd.DataFrame(msa_transformer_results)
 
 # fig, axes = plt.subplots(figsize=(18, 6), ncols=3)
