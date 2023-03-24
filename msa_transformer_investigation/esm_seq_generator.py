@@ -351,4 +351,5 @@ for name, param in msa_transformer.named_parameters():
 msa_transformer = msa_transformer.eval().cuda()
 
 msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
+# READ LIST OF FAMILIES THAT HAVE DRIFT
 read_pfam_alignments(sys.argv[1], msa_transformer, msa_transformer_alphabet)
