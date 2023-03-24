@@ -1,6 +1,7 @@
 from typing import List, Tuple, Optional, Dict, NamedTuple, Union, Callable
 import itertools
 import os
+import sys
 import string
 from pathlib import Path
 
@@ -262,31 +263,79 @@ def plot_contacts_and_predictions(
     ax.set_xlim([0, seqlen])
     ax.set_ylim([0, seqlen])
 
-PDB_IDS = ["1a3a", "5ahw", "1xcr"]
-# PDB_IDS = ["toy"]
+# read in Pfam stockholm data ~/data/pfam/Pfam-A.full.uniprot
 
-# PDB_IDS = ["toy", ]
 
-# structures = {
-#     name.lower(): get_structure(PDBxFile.read(rcsb.fetch(name, "cif")))[0]
-#     for name in PDB_IDS
-# }
+def generate_seqs(msa, msa_transformer, msa_transformer_alphabet):
 
-# contacts = {
-#     name: contacts_from_pdb(structure, chain="A") 
-#     for name, structure in structures.items()
-# }
+    msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
+    msa_transformer_predictions = {}
+    msa_transformer_results = []
+    results = defaultdict(float)
 
-# msas layout
-# {"ALIGNMENT NAME": [("FASTA NAME", "SEQ"), ]} 
-msas = {
-    name: read_msa(f"data/{name.lower()}_1_A.a3m")
-    for name in PDB_IDS
-}
+    for name, inputs in msa.items():
+        inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequence
+        msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
+        input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
+        substitution_numbers = round(len(input_tokens[0])*0.75)
+        mask = torch.rand(msa_transformer_batch_tokens.shape).argsort(2) < substitution_numbers
+        msa_transformer_batch_tokens = torch.where(mask, 31, msa_transformer_batch_tokens)
+        # print(msa_transformer_batch_labels)
+        # print(msa_transformer_batch_strs)
+        # print(input_tokens)
+        #print(msa_transformer_batch_tokens)
+        # HERE MASK n(75%) tokens - 0 is the masking/padding token?
+        # Char index (see data.py from_architerture()):
+        #    <cls>    0
+        #    <pad>    1
+        #    <eos>    2
+        #    <unk>    3
+        #    residues in constants.py 4-30, '.' is 29, '-' is 30
+        #    <mask>   31
+        # Mask IDX is 31
+        msa_transformer_batch_tokens = msa_transformer_batch_tokens.to(next(msa_transformer.parameters()).device)
+        msa_transformer_predictions[name] = msa_transformer(msa_transformer_batch_tokens)
+        # print(msa_transformer_predictions[name]['logits'])
+        # print(msa_transformer_predictions[name]['logits'].size())
+        input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
+        for result in msa_transformer_predictions[name]['logits'].cpu().numpy():
+            for i, seq in enumerate(result):
+                # print("comparing")
+                # print(input_tokens[i])
+                pred_array = np.argmax(seq, axis=1)
+                # print(pred_array)
+                tp_count = np.sum(input_tokens[i] == pred_array)
+                pred_size = len(input_tokens[i])
+                tpr = tp_count/pred_size
+                # print(f'{name} {i} tpr: {tpr}: {pred_size}')
+                results[name] += tpr
+            results[name] = results[name]/(i+1)
+    print(results)
+   
+def read_pfam_alignments(file, msa_transformer, msa_transformer_alphabet):
+    align_count = 0
+    with open(file, "r") as fh:
+        align_name = ''
+        msa = defaultdict(list)
+        for line in fh:
+            if line.startswith("//"):
+                continue
+            if line.startswith("# STOCKHOLM"):
+                if align_count != 0:
+                    print(f"Processing: {align_name}")
+                    generate_seqs(msa, msa_transformer, msa_transformer_alphabet)
+                    exit()
+                    # run generator 
+                    # reinitialise
+                else:
+                    align_count+=1
+            if line.startswith("#=GF AC   "):
+                align_name = line[10:].rstrip()
+            if not line.startswith("#"):
+                entries = line.split()
+                seq_data = (entries[0], remove_insertions(entries[1]))
+                msa[align_name].append(seq_data)
 
-sequences = {
-    name: msa[0] for name, msa in msas.items()
-}
 
 
 msa_transformer, msa_transformer_alphabet = esm.pretrained.esm_msa1b_t12_100M_UR50S()
@@ -302,47 +351,4 @@ for name, param in msa_transformer.named_parameters():
 msa_transformer = msa_transformer.eval().cuda()
 
 msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
-
-msa_transformer_predictions = {}
-msa_transformer_results = []
-
-results = defaultdict(float)
-for name, inputs in msas.items():
-    inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequence
-    msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
-    input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
-    substitution_numbers = round(len(input_tokens[0])*0.75)
-    mask = torch.rand(msa_transformer_batch_tokens.shape).argsort(2) < substitution_numbers
-    msa_transformer_batch_tokens = torch.where(mask, 31, msa_transformer_batch_tokens)
-    # print(msa_transformer_batch_labels)
-    # print(msa_transformer_batch_strs)
-    # print(input_tokens)
-    #print(msa_transformer_batch_tokens)
-    # HERE MASK n(75%) tokens - 0 is the masking/padding token?
-    # Char index (see data.py from_architerture()):
-    #    <cls>    0
-    #    <pad>    1
-    #    <eos>    2
-    #    <unk>    3
-    #    residues in constants.py 4-30, '.' is 29, '-' is 30
-    #    <mask>   31
-    # Mask IDX is 31
-    msa_transformer_batch_tokens = msa_transformer_batch_tokens.to(next(msa_transformer.parameters()).device)
-    msa_transformer_predictions[name] = msa_transformer(msa_transformer_batch_tokens)
-    # print(msa_transformer_predictions[name]['logits'])
-    # print(msa_transformer_predictions[name]['logits'].size())
-    input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
-    for result in msa_transformer_predictions[name]['logits'].cpu().numpy():
-        for i, seq in enumerate(result):
-            # print("comparing")
-            # print(input_tokens[i])
-            pred_array = np.argmax(seq, axis=1)
-            # print(pred_array)
-            tp_count = np.sum(input_tokens[i] == pred_array)
-            pred_size = len(input_tokens[i])
-            tpr = tp_count/pred_size
-            # print(f'{name} {i} tpr: {tpr}: {pred_size}')
-            results[name] += tpr
-        results[name] = results[name]/(i+1)
-    
-print(results)  
+read_pfam_alignments(sys.argv[1], msa_transformer, msa_transformer_alphabet)

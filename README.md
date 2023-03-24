@@ -219,6 +219,19 @@ Take iteration_summary.csv and work out what kinds of drift and stats we can see
 Average number of iterations before a contaminant family appears
 Average number of contaminating families
 
+# ESM MSATransformer experiment
+
+### esm_seq_generator.py
+
+Here we use MSAtransformer to generate new sequences for pfam alignments
+
+
+### NEXT
+
+Calculate which pfam families our new sequences are closest to.
+
+
+
 Types of drift:
 Loss of query family PF06646
 Reduction of query family
