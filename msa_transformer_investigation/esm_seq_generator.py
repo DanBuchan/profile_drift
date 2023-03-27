@@ -329,8 +329,8 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                 if align_count != 0:
                     if align_name in drift_families:
                         print(f"Processing: {align_name}")
-                        print(msa)
-                        print(len(msa))
+                        # print(msa)
+                        # print(len(msa))
                         for mask_amount in [[0.25, fh25], [0.5, fh50], [0.75, fh75]]:
                             generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount[0], mask_amount[1])
 
