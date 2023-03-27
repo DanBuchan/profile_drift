@@ -305,7 +305,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount, O
                 print(pred_array)
                 output_seq = ''
                 for token in pred_array:
-                    output_seq += msa_transformer_alphaber.get_tok(token)
+                    output_seq += msa_transformer_alphabet.get_tok(token)
                 print(output_seq)
                 exit()
                 # print(pred_array)
