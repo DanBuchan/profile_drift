@@ -337,6 +337,9 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                         # print(len(msa))
                         for mask_amount in [[0.25, fh25], [0.5, fh50], [0.75, fh75]]:
                             generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, mask_amount[0], mask_amount[1])
+                        fh25.flush()
+                        fh50.flush()
+                        fh75.flush()
 
                         # exit()
                     # run generator 
