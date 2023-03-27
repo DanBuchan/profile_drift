@@ -272,7 +272,6 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet):
     msa_transformer_predictions = {}
     msa_transformer_results = []
     results = defaultdict(float)
-
     for name, inputs in msa.items():
         inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequence
         msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
@@ -312,7 +311,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet):
             results[name] = results[name]/(i+1)
     print(results)
    
-def read_pfam_alignments(file, drift_families msa_transformer, msa_transformer_alphabet):
+def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
     with open(file, "r") as fh:
         align_name = ''
@@ -324,6 +323,8 @@ def read_pfam_alignments(file, drift_families msa_transformer, msa_transformer_a
                 if align_count != 0:
                     if align_name in drift_families:
                         print(f"Processing: {align_name}")
+                        print(msa)
+                        print(len(msa))
                         generate_seqs(msa, msa_transformer, msa_transformer_alphabet)
                         exit()
                     # run generator 
@@ -366,6 +367,5 @@ msa_transformer = msa_transformer.eval().cuda()
 msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
 # READ LIST OF FAMILIES THAT HAVE DRIFT
 
-# python esm_seq_generator.py parsed_pfam_iteration_data.csv Pfam-A.full.uniprot
-
+# python esm_seq_generator.py ../parsed_pfam_iteration_data.csv ~/Data/pfam/Pfam-A.full.uniprot
 read_pfam_alignments(sys.argv[2], drift_families, msa_transformer, msa_transformer_alphabet)
