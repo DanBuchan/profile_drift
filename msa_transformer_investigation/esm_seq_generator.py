@@ -346,6 +346,8 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                     # reinitialise
                 else:
                     align_count+=1
+                align_name = ''
+                msa = defaultdict(list)
             if line.startswith("#=GF AC   "):
                 align_name = line[10:].rstrip()
                 align_name = align_name.split(".", 1)[0]
