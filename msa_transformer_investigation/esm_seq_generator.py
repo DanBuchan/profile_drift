@@ -266,7 +266,7 @@ def plot_contacts_and_predictions(
 # read in Pfam stockholm data ~/data/pfam/Pfam-A.full.uniprot
 
 
-def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount):
+def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount, Outfh):
 
     msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
     msa_transformer_predictions = {}
@@ -302,6 +302,8 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount):
                 # print("comparing")
                 # print(input_tokens[i])
                 pred_array = np.argmax(seq, axis=1)
+                print(pred_array)
+                exit()
                 # print(pred_array)
                 tp_count = np.sum(input_tokens[i] == pred_array)
                 pred_size = len(input_tokens[i])
@@ -314,6 +316,9 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount):
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
 
+    fh25 = open("masked_25.fa", "w")
+    fh50 = open("masked_50.fa", "w")
+    fh75 = open("masked_75.fa", "w")
     with open(file, "r") as fh:
         align_name = ''
         msa = defaultdict(list)
@@ -326,8 +331,8 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                         print(f"Processing: {align_name}")
                         print(msa)
                         print(len(msa))
-                        for mask_amount in [0.25, 0.5, 0.75]:
-                            generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount)
+                        for mask_amount in [[0.25, fh25], [0.5, fh50], [0.75, fh75]]:
+                            generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount[0], mask_amount[1])
 
                         exit()
                     # run generator 
@@ -341,6 +346,9 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                 entries = line.split()
                 seq_data = (entries[0], remove_insertions(entries[1]))
                 msa[align_name].append(seq_data)
+    fh25.close()
+    fh50.close()
+    fh75.close()
 
 
 def get_drift_set(file):
