@@ -264,16 +264,6 @@ def plot_contacts_and_predictions(
 #PDB_IDS = ["1a3a", "5ahw", "1xcr"]
 PDB_IDS = ["toy", ]
 
-# structures = {
-#     name.lower(): get_structure(PDBxFile.read(rcsb.fetch(name, "cif")))[0]
-#     for name in PDB_IDS
-# }
-
-# contacts = {
-#     name: contacts_from_pdb(structure, chain="A") 
-#     for name, structure in structures.items()
-# }
-
 # msas layout
 # {"ALIGNMENT NAME": [("FASTA NAME", "SEQ"), ]} 
 msas = {
