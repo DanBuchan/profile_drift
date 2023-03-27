@@ -308,7 +308,6 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount, O
                     output_seq += msa_transformer_alphabet.get_tok(token)
                 print(f">{i}")
                 print(output_seq)
-                exit()
                 # print(pred_array)
                 tp_count = np.sum(input_tokens[i] == pred_array)
                 pred_size = len(input_tokens[i])
@@ -316,6 +315,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount, O
                 # print(f'{name} {i} tpr: {tpr}: {pred_size}')
                 results[name] += tpr
             results[name] = results[name]/(i+1)
+            exit()
     print(results)
    
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
