@@ -303,6 +303,10 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount, O
                 # print(input_tokens[i])
                 pred_array = np.argmax(seq, axis=1)
                 print(pred_array)
+                output_seq = ''
+                for token in pred_array:
+                    output_seq += msa_transformer_alphaber.get_tok(token)
+                print(output_seq)
                 exit()
                 # print(pred_array)
                 tp_count = np.sum(input_tokens[i] == pred_array)
