@@ -266,7 +266,7 @@ def plot_contacts_and_predictions(
 # read in Pfam stockholm data ~/data/pfam/Pfam-A.full.uniprot
 
 
-def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount, Outfh):
+def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, mask_amount, fhOut):
 
     msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
     msa_transformer_predictions = {}
@@ -302,12 +302,12 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount, O
                 # print("comparing")
                 # print(input_tokens[i])
                 pred_array = np.argmax(seq, axis=1)
-                print(pred_array)
+                # print(pred_array)
                 output_seq = ''
                 for token in pred_array:
                     output_seq += msa_transformer_alphabet.get_tok(token)
-                print(f">{i}")
-                print(output_seq)
+                fhOut.write(f">{align_name}_{i}\n")
+                fhOut.write(f"{output_seq}\n")
                 # print(pred_array)
                 tp_count = np.sum(input_tokens[i] == pred_array)
                 pred_size = len(input_tokens[i])
@@ -336,7 +336,7 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                         # print(msa)
                         # print(len(msa))
                         for mask_amount in [[0.25, fh25], [0.5, fh50], [0.75, fh75]]:
-                            generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount[0], mask_amount[1])
+                            generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, mask_amount[0], mask_amount[1])
 
                         exit()
                     # run generator 
