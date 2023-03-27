@@ -312,7 +312,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet):
             results[name] = results[name]/(i+1)
     print(results)
    
-def read_pfam_alignments(file, msa_transformer, msa_transformer_alphabet):
+def read_pfam_alignments(file, drift_families msa_transformer, msa_transformer_alphabet):
     align_count = 0
     with open(file, "r") as fh:
         align_name = ''
@@ -322,9 +322,10 @@ def read_pfam_alignments(file, msa_transformer, msa_transformer_alphabet):
                 continue
             if line.startswith("# STOCKHOLM"):
                 if align_count != 0:
-                    print(f"Processing: {align_name}")
-                    generate_seqs(msa, msa_transformer, msa_transformer_alphabet)
-                    exit()
+                    if align_name in drift_families:
+                        print(f"Processing: {align_name}")
+                        generate_seqs(msa, msa_transformer, msa_transformer_alphabet)
+                        exit()
                     # run generator 
                     # reinitialise
                 else:
@@ -337,7 +338,19 @@ def read_pfam_alignments(file, msa_transformer, msa_transformer_alphabet):
                 msa[align_name].append(seq_data)
 
 
+def get_drift_set(file):
+    drifts = set()
+    with open(file, "r") as fh:
+        for line in fh:
+            entries = line.split("|")
+            for entry in entries:
+                hit_data = entry.split(",") 
+                for element in hit_data:
+                    if element.startswith("PF"):
+                        drifts.add(element)
+    return list(drifts)    
 
+drift_families = get_drift_set(sys.argv[1])
 msa_transformer, msa_transformer_alphabet = esm.pretrained.esm_msa1b_t12_100M_UR50S()
 
 # remove contact head
@@ -352,4 +365,7 @@ msa_transformer = msa_transformer.eval().cuda()
 
 msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
 # READ LIST OF FAMILIES THAT HAVE DRIFT
-read_pfam_alignments(sys.argv[1], msa_transformer, msa_transformer_alphabet)
+
+# python esm_seq_generator.py parsed_pfam_iteration_data.csv Pfam-A.full.uniprot
+
+read_pfam_alignments(sys.argv[2], drift_families, msa_transformer, msa_transformer_alphabet)
