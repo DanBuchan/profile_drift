@@ -273,7 +273,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
     msa_transformer_results = []
     results = defaultdict(float)
     for name, inputs in msa.items():
-        inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequence
+        inputs = greedy_select(inputs, num_seqs=500) # can change this to pass more/fewer sequence
         msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
         input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
         substitution_numbers = round(len(input_tokens[0])*mask_amount)
