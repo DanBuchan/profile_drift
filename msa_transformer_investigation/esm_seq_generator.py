@@ -266,7 +266,7 @@ def plot_contacts_and_predictions(
 # read in Pfam stockholm data ~/data/pfam/Pfam-A.full.uniprot
 
 
-def generate_seqs(msa, msa_transformer, msa_transformer_alphabet):
+def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount):
 
     msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
     msa_transformer_predictions = {}
@@ -276,7 +276,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet):
         inputs = greedy_select(inputs, num_seqs=128) # can change this to pass more/fewer sequence
         msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
         input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
-        substitution_numbers = round(len(input_tokens[0])*0.75)
+        substitution_numbers = round(len(input_tokens[0])*mask_amount)
         mask = torch.rand(msa_transformer_batch_tokens.shape).argsort(2) < substitution_numbers
         msa_transformer_batch_tokens = torch.where(mask, 31, msa_transformer_batch_tokens)
         # print(msa_transformer_batch_labels)
@@ -313,6 +313,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet):
    
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
+
     with open(file, "r") as fh:
         align_name = ''
         msa = defaultdict(list)
@@ -325,7 +326,9 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                         print(f"Processing: {align_name}")
                         print(msa)
                         print(len(msa))
-                        generate_seqs(msa, msa_transformer, msa_transformer_alphabet)
+                        for mask_amount in [0.25, 0.5, 0.75]:
+                            generate_seqs(msa, msa_transformer, msa_transformer_alphabet, mask_amount)
+
                         exit()
                     # run generator 
                     # reinitialise
@@ -333,6 +336,7 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
                     align_count+=1
             if line.startswith("#=GF AC   "):
                 align_name = line[10:].rstrip()
+                align_name = align_name.split(".", 1)[0]
             if not line.startswith("#"):
                 entries = line.split()
                 seq_data = (entries[0], remove_insertions(entries[1]))
