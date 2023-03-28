@@ -3,7 +3,7 @@ import csv
 from collections import defaultdict
 
 """
-python find_closest_family_rep.py iteration_summary.csv
+python find_closest_family_rep.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
 """
 
 def parse_pfam_alignments(pfam_aligns, drift_families):
@@ -23,7 +23,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 if align_count != 0:
                     if align_name in nr_list:
                         print(f"Printing: {align_name}")
-                        with open(f"{align_name}.fa") as fhOut
+                        with open(f"{align_name}.fa") as fhOut:
                             for line in msa[align_name]:
                                 fhOut.write(f">{line[0]}\n")
                                 fhOut.write(f"{line[1]}\n")             
@@ -39,7 +39,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 seq_data = (entries[0], remove_insertions(entries[1]))
                 msa[align_name].append(seq_data)
         print(f"Printing: {align_name}")
-        with open(f"{align_name}.fa") as fhOut
+        with open(f"{align_name}.fa") as fhOut:
             for line in msa[align_name]:
                 fhOut.write(f">{line[0]}\n")
                 fhOut.write(f"{line[1]}\n")
