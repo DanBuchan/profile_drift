@@ -13,6 +13,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
          for item in drift_families[family]:
              nr_list.add(item)
 
+    align_count = 0
     with open(pfam_aligns, "r") as fh:
         align_name = ''
         msa = defaultdict(list)
@@ -46,7 +47,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
 
     with open("famiies_list.txt") as fhOut:
         for entry in nr_list:
-            fhOut.write(f'nr_list\n')
+            fhOut.write(f'{entry}}\n')
         
 
 
