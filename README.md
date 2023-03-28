@@ -221,31 +221,27 @@ Average number of contaminating families
 
 # ESM MSATransformer experiment
 
-### esm_seq_generator.py
+## esm_seq_generator.py
 
-Here we use MSAtransformer to generate new sequences for pfam alignments
+Here we use MSAtransformer to generate new sequences for pfam alignments masked with
+differing amounts
+
+masked_25.fa, masked_50.fa, masked_75.fa
+
+## find_closest_family_rep.py
+
+Open the list of drift families (parsed_pfam_iteration_data.csv). 
+
+Calculate which pfam families our new sequences are closest to. Open parsed_pfam_iteration_data.csv to work out which families were are working on. 
+Open ~/Data/pfam/Pfam-A.full.uniprot to get all the family members for each of these. 
+
+Output them to some files as we don't have to process the whole pfam file each time.
+
+Then take our generated seqs (i.e. masked_25.fa) and all against all fasta them against 
+the family and drift family members. Taken an n-nearest (1, 3, and 5) nearest neighbour vote.
 
 
-### NEXT
 
-Calculate which pfam families our new sequences are closest to.
-
-
-
-Types of drift:
-Loss of query family PF06646
-Reduction of query family
-  New family dominates PF09134 PF14814 PF06347
-  Query spikes, reduces as contaminant family achieves steady equale state PF16697
-  Query spikes, reduces as contaminant family achieves steady state, contaminant dominates PF14814
-
-Accumulation of multiple families PF18725
-Purifying selection: loss or reduction of contaminant family PF06733 PF09224
-Tiny contaminant family that never grows: PF10203 PF16428
-
-Multiple behaviours: PF14398 PF03142 PF15356 PF03266 PF03284
-
-Need to know the size of each family
 
 # TODO
 

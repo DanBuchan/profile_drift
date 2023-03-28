@@ -360,6 +360,7 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
     fh75.close()
 
 
+# WE SHOULD REALLY PARSE iteration_summary.csv NOT parsed_pfam_iteration_data.csv
 def get_drift_set(file):
     drifts = set()
     with open(file, "r") as fh:
