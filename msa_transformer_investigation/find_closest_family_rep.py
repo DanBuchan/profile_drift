@@ -37,7 +37,8 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 align_name = align_name.split(".", 1)[0]
             if not line.startswith("#"):
                 entries = line.split()
-                seq_data = (entries[0], remove_insertions(entries[1]))
+                seq = entries[1].replace('-', '')
+                seq_data = (entries[0], seq)
                 msa[align_name].append(seq_data)
         print(f"Printing: {align_name}")
         with open(f"{align_name}.fa") as fhOut:
