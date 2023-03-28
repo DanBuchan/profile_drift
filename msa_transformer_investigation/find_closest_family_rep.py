@@ -24,7 +24,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 if align_count != 0:
                     if align_name in nr_list:
                         print(f"Printing: {align_name}")
-                        with open(f"{align_name}.fa") as fhOut:
+                        with open(f"{align_name}.fa", "w") as fhOut:
                             for line in msa[align_name]:
                                 fhOut.write(f">{line[0]}\n")
                                 fhOut.write(f"{line[1]}\n")             
