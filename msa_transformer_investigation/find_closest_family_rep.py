@@ -25,9 +25,9 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                     if align_name in nr_list:
                         print(f"Printing: {align_name}")
                         with open(f"{align_name}.fa", "w") as fhOut:
-                            for line in msa[align_name]:
-                                fhOut.write(f">{line[0]}\n")
-                                fhOut.write(f"{line[1]}\n")             
+                            for msa_line in msa[align_name]:
+                                fhOut.write(f">{msa_line[0]}\n")
+                                fhOut.write(f"{msa_line[1]}\n")             
                 else:
                     align_count+=1
                 align_name = ''
@@ -42,9 +42,9 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 msa[align_name].append(seq_data)
         print(f"Printing: {align_name}")
         with open(f"{align_name}.fa") as fhOut:
-            for line in msa[align_name]:
-                fhOut.write(f">{line[0]}\n")
-                fhOut.write(f"{line[1]}\n")
+            for msa_line in msa[align_name]:
+                fhOut.write(f">{msa_line[0]}\n")
+                fhOut.write(f"{msa_line[1]}\n")
 
     with open("famiies_list.txt") as fhOut:
         for entry in nr_list:
