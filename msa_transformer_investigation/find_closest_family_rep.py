@@ -38,7 +38,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
             if not line.startswith("#"):
                 entries = line.split()
                 seq = entries[1].replace('-', '')
-                seq = entries[1].replace('.', '')
+                seq = seq.replace('.', '')
                 seq_data = (entries[0], seq)
                 msa[align_name].append(seq_data)
         print(f"Printing: {align_name}")
