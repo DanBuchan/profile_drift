@@ -22,7 +22,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 line = line_binary.decode("utf-8")
             except Exception as e:
                 print(e)
-                exit()
+                continue
             if line.startswith("//"):
                 continue
             if line.startswith("# STOCKHOLM"):
