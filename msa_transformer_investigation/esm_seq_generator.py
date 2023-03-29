@@ -306,6 +306,9 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
                 output_seq = ''
                 for token in pred_array:
                     output_seq += msa_transformer_alphabet.get_tok(token)
+                    output_seq = output_seq.replace(".", "")
+                    output_seq = output_seq.replace("-", "")
+                    output_seq = output_seq.replace("-", "")
                 fhOut.write(f">{align_name}_{i}\n")
                 fhOut.write(f"{output_seq}\n")
                 # print(pred_array)

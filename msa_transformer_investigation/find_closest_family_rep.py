@@ -17,35 +17,39 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
     with open(pfam_aligns, "r") as fh:
         align_name = ''
         msa = defaultdict(list)
-        for line in fh:
-            if line.startswith("//"):
-                continue
-            if line.startswith("# STOCKHOLM"):
-                if align_count != 0:
-                    if align_name in nr_list:
-                        print(f"Printing: {align_name}")
-                        with open(f"{align_name}.fa", "w") as fhOut:
-                            for msa_line in msa[align_name]:
-                                fhOut.write(f">{msa_line[0]}\n")
-                                fhOut.write(f"{msa_line[1]}\n")             
-                else:
-                    align_count+=1
-                align_name = ''
-                msa = defaultdict(list)
-            if line.startswith("#=GF AC   "):
-                align_name = line[10:].rstrip()
-                align_name = align_name.split(".", 1)[0]
-            if not line.startswith("#"):
-                entries = line.split()
-                seq = entries[1].replace('-', '')
-                seq = seq.replace('.', '')
-                seq_data = (entries[0], seq)
-                msa[align_name].append(seq_data)
-        print(f"Printing: {align_name}")
-        with open(f"{align_name}.fa") as fhOut:
-            for msa_line in msa[align_name]:
-                fhOut.write(f">{msa_line[0]}\n")
-                fhOut.write(f"{msa_line[1]}\n")
+        try:
+            for line in fh:
+                if line.startswith("//"):
+                    continue
+                if line.startswith("# STOCKHOLM"):
+                    if align_count != 0:
+                        if align_name in nr_list:
+                            print(f"Printing: {align_name}")
+                            with open(f"{align_name}.fa", "w") as fhOut:
+                                for msa_line in msa[align_name]:
+                                    fhOut.write(f">{msa_line[0]}\n")
+                                    fhOut.write(f"{msa_line[1]}\n")             
+                    else:
+                        align_count+=1
+                    align_name = ''
+                    msa = defaultdict(list)
+                if line.startswith("#=GF AC   "):
+                    align_name = line[10:].rstrip()
+                    align_name = align_name.split(".", 1)[0]
+                if not line.startswith("#"):
+                    entries = line.split()
+                    seq = entries[1].replace('-', '')
+                    seq = seq.replace('.', '')
+                    seq_data = (entries[0], seq)
+                    msa[align_name].append(seq_data)
+            print(f"Printing: {align_name}")
+            with open(f"{align_name}.fa") as fhOut:
+                for msa_line in msa[align_name]:
+                    fhOut.write(f">{msa_line[0]}\n")
+                    fhOut.write(f"{msa_line[1]}\n")
+        except Exception as e:
+            print(e)
+            exit()
 
     with open("famiies_list.txt") as fhOut:
         for entry in nr_list:
