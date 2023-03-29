@@ -22,6 +22,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 line = line_binary.decode("utf-8")
             except Exception as e:
                 print(e)
+                print(line_binary)
                 continue
             if line.startswith("//"):
                 continue
