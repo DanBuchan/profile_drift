@@ -1,0 +1,1537 @@
+Processing: PF10417
+defaultdict(<class 'float'>, {'PF10417': 0.7095121951219509})
+defaultdict(<class 'float'>, {'PF10417': 0.4802439024390241})
+defaultdict(<class 'float'>, {'PF10417': 0.22597560975609698})
+Processing: PF09847
+defaultdict(<class 'float'>, {'PF09847': 0.7292777777777786})
+defaultdict(<class 'float'>, {'PF09847': 0.48438888888888926})
+defaultdict(<class 'float'>, {'PF09847': 0.24022222222222298})
+Processing: PF16998
+defaultdict(<class 'float'>, {'PF16998': 0.7227350427350419})
+defaultdict(<class 'float'>, {'PF16998': 0.4848290598290599})
+defaultdict(<class 'float'>, {'PF16998': 0.23794871794871797})
+Processing: PF00389
+defaultdict(<class 'float'>, {'PF00389': 0.7146666666666666})
+defaultdict(<class 'float'>, {'PF00389': 0.4749999999999997})
+defaultdict(<class 'float'>, {'PF00389': 0.2417777777777781})
+Processing: PF02826
+defaultdict(<class 'float'>, {'PF02826': 0.7168715083798887})
+defaultdict(<class 'float'>, {'PF02826': 0.47578212290502814})
+defaultdict(<class 'float'>, {'PF02826': 0.24159217877094946})
+Processing: PF00198
+defaultdict(<class 'float'>, {'PF00198': 0.7235897435897438})
+defaultdict(<class 'float'>, {'PF00198': 0.47955128205128156})
+defaultdict(<class 'float'>, {'PF00198': 0.2377991452991453})
+Processing: PF04029
+defaultdict(<class 'float'>, {'PF04029': 0.7188766519823779})
+defaultdict(<class 'float'>, {'PF04029': 0.4787665198237869})
+defaultdict(<class 'float'>, {'PF04029': 0.2409030837004402})
+Processing: PF20150
+defaultdict(<class 'float'>, {'PF20150': 0.7138499999999989})
+defaultdict(<class 'float'>, {'PF20150': 0.47869999999999957})
+defaultdict(<class 'float'>, {'PF20150': 0.24075})
+Processing: PF01257
+defaultdict(<class 'float'>, {'PF01257': 0.7196917808219154})
+defaultdict(<class 'float'>, {'PF01257': 0.4801027397260278})
+defaultdict(<class 'float'>, {'PF01257': 0.23602739726027427})
+Processing: PF03390
+defaultdict(<class 'float'>, {'PF03390': 0.7283693045563553})
+defaultdict(<class 'float'>, {'PF03390': 0.48557553956834537})
+defaultdict(<class 'float'>, {'PF03390': 0.2408513189448441})
+Processing: PF03171
+defaultdict(<class 'float'>, {'PF03171': 0.7118137254901962})
+defaultdict(<class 'float'>, {'PF03171': 0.474264705882352})
+defaultdict(<class 'float'>, {'PF03171': 0.24240196078431353})
+Processing: PF13532
+defaultdict(<class 'float'>, {'PF13532': 0.7188717948717944})
+defaultdict(<class 'float'>, {'PF13532': 0.4771282051282049})
+defaultdict(<class 'float'>, {'PF13532': 0.24192307692307677})
+Processing: PF13640
+defaultdict(<class 'float'>, {'PF13640': 0.7154123711340198})
+defaultdict(<class 'float'>, {'PF13640': 0.4814948453608242})
+defaultdict(<class 'float'>, {'PF13640': 0.23675257731958743})
+Processing: PF13661
+defaultdict(<class 'float'>, {'PF13661': 0.7156060606060621})
+defaultdict(<class 'float'>, {'PF13661': 0.4733333333333327})
+defaultdict(<class 'float'>, {'PF13661': 0.24101010101010079})
+Processing: PF13759
+defaultdict(<class 'float'>, {'PF13759': 0.7115686274509804})
+defaultdict(<class 'float'>, {'PF13759': 0.4790686274509794})
+defaultdict(<class 'float'>, {'PF13759': 0.24549019607843126})
+Processing: PF13239
+defaultdict(<class 'float'>, {'PF13239': 0.7120253164556957})
+defaultdict(<class 'float'>, {'PF13239': 0.47037974683544326})
+defaultdict(<class 'float'>, {'PF13239': 0.24322784810126646})
+Processing: PF13563
+defaultdict(<class 'float'>, {'PF13563': 0.7211688311688315})
+defaultdict(<class 'float'>, {'PF13563': 0.47957792207792216})
+defaultdict(<class 'float'>, {'PF13563': 0.23840909090909038})
+Processing: PF06983
+defaultdict(<class 'float'>, {'PF06983': 0.7174358974358968})
+defaultdict(<class 'float'>, {'PF06983': 0.48299145299145296})
+defaultdict(<class 'float'>, {'PF06983': 0.23880341880341874})
+Processing: PF06052
+defaultdict(<class 'float'>, {'PF06052': 0.7255592105263166})
+defaultdict(<class 'float'>, {'PF06052': 0.48210526315789537})
+defaultdict(<class 'float'>, {'PF06052': 0.24085526315789493})
+Processing: PF12578
+defaultdict(<class 'float'>, {'PF12578': 0.7284210526315783})
+defaultdict(<class 'float'>, {'PF12578': 0.4859398496240598})
+defaultdict(<class 'float'>, {'PF12578': 0.23763157894736847})
+Processing: PF00803
+defaultdict(<class 'float'>, {'PF00803': 0.7354219409282711})
+defaultdict(<class 'float'>, {'PF00803': 0.48921940928270047})
+defaultdict(<class 'float'>, {'PF00803': 0.2391772151898733})
+Processing: PF01073
+defaultdict(<class 'float'>, {'PF01073': 0.7199644128113879})
+defaultdict(<class 'float'>, {'PF01073': 0.4800711743772244})
+defaultdict(<class 'float'>, {'PF01073': 0.23866548042704633})
+Processing: PF10605
+defaultdict(<class 'float'>, {'PF10605': 0.7277753623188401})
+defaultdict(<class 'float'>, {'PF10605': 0.48253623188405853})
+defaultdict(<class 'float'>, {'PF10605': 0.23801449275362355})
+Processing: PF02737
+defaultdict(<class 'float'>, {'PF02737': 0.7207182320441983})
+defaultdict(<class 'float'>, {'PF02737': 0.4829281767955799})
+defaultdict(<class 'float'>, {'PF02737': 0.2404143646408843})
+Processing: PF18321
+defaultdict(<class 'float'>, {'PF18321': 0.7068571428571429})
+defaultdict(<class 'float'>, {'PF18321': 0.4749999999999992})
+defaultdict(<class 'float'>, {'PF18321': 0.24414285714285694})
+Processing: PF06439
+defaultdict(<class 'float'>, {'PF06439': 0.719758064516128})
+defaultdict(<class 'float'>, {'PF06439': 0.4777956989247315})
+defaultdict(<class 'float'>, {'PF06439': 0.2375537634408604})
+Processing: PF16122
+defaultdict(<class 'float'>, {'PF16122': 0.7166145833333328})
+defaultdict(<class 'float'>, {'PF16122': 0.47744791666666664})
+defaultdict(<class 'float'>, {'PF16122': 0.24109375000000002})
+Processing: PF03061
+defaultdict(<class 'float'>, {'PF03061': 0.71175})
+defaultdict(<class 'float'>, {'PF03061': 0.4778124999999994})
+defaultdict(<class 'float'>, {'PF03061': 0.23962499999999998})
+Processing: PF13279
+defaultdict(<class 'float'>, {'PF13279': 0.718306451612902})
+defaultdict(<class 'float'>, {'PF13279': 0.47737903225806405})
+defaultdict(<class 'float'>, {'PF13279': 0.23931451612903254})
+Processing: PF13622
+defaultdict(<class 'float'>, {'PF13622': 0.716553784860558})
+defaultdict(<class 'float'>, {'PF13622': 0.4784860557768928})
+defaultdict(<class 'float'>, {'PF13622': 0.241354581673307})
+Processing: PF12729
+defaultdict(<class 'float'>, {'PF12729': 0.7257692307692313})
+defaultdict(<class 'float'>, {'PF12729': 0.48689560439560375})
+defaultdict(<class 'float'>, {'PF12729': 0.24766483516483515})
+Processing: PF04476
+defaultdict(<class 'float'>, {'PF04476': 0.7245633187772927})
+defaultdict(<class 'float'>, {'PF04476': 0.483122270742359})
+defaultdict(<class 'float'>, {'PF04476': 0.23888646288209653})
+Processing: PF17837
+defaultdict(<class 'float'>, {'PF17837': 0.718550724637681})
+defaultdict(<class 'float'>, {'PF17837': 0.48231884057971075})
+defaultdict(<class 'float'>, {'PF17837': 0.23500000000000043})
+Processing: PF09038
+defaultdict(<class 'float'>, {'PF09038': 0.7284146341463414})
+defaultdict(<class 'float'>, {'PF09038': 0.4819918699186986})
+defaultdict(<class 'float'>, {'PF09038': 0.24178861788617817})
+Processing: PF07694
+defaultdict(<class 'float'>, {'PF07694': 0.7256508875739657})
+defaultdict(<class 'float'>, {'PF07694': 0.48633136094674734})
+defaultdict(<class 'float'>, {'PF07694': 0.23955621301775232})
+Processing: PF01591
+defaultdict(<class 'float'>, {'PF01591': 0.724508928571428})
+defaultdict(<class 'float'>, {'PF01591': 0.48198660714285685})
+defaultdict(<class 'float'>, {'PF01591': 0.23977678571428584})
+Processing: PF07698
+defaultdict(<class 'float'>, {'PF07698': 0.7238917525773185})
+defaultdict(<class 'float'>, {'PF07698': 0.4818814432989681})
+defaultdict(<class 'float'>, {'PF07698': 0.2396649484536078})
+Processing: PF07697
+defaultdict(<class 'float'>, {'PF07697': 0.7226244343891398})
+defaultdict(<class 'float'>, {'PF07697': 0.4849321266968327})
+defaultdict(<class 'float'>, {'PF07697': 0.24128959276018092})
+Processing: PF00001
+defaultdict(<class 'float'>, {'PF00001': 0.7258301886792451})
+defaultdict(<class 'float'>, {'PF00001': 0.4868113207547164})
+defaultdict(<class 'float'>, {'PF00001': 0.2422264150943393})
+Processing: PF00002
+defaultdict(<class 'float'>, {'PF00002': 0.7220242914979762})
+defaultdict(<class 'float'>, {'PF00002': 0.48093117408906866})
+defaultdict(<class 'float'>, {'PF00002': 0.24170040485829924})
+Processing: PF02949
+defaultdict(<class 'float'>, {'PF02949': 0.7233598726114654})
+defaultdict(<class 'float'>, {'PF02949': 0.48278662420382124})
+defaultdict(<class 'float'>, {'PF02949': 0.24138535031847097})
+Processing: PF08395
+defaultdict(<class 'float'>, {'PF08395': 0.7262668463611861})
+defaultdict(<class 'float'>, {'PF08395': 0.48448787061994625})
+defaultdict(<class 'float'>, {'PF08395': 0.24456873315363892})
+Processing: PF02117
+defaultdict(<class 'float'>, {'PF02117': 0.7262158054711243})
+defaultdict(<class 'float'>, {'PF02117': 0.48332826747720353})
+defaultdict(<class 'float'>, {'PF02117': 0.23691489361702106})
+Processing: PF10292
+defaultdict(<class 'float'>, {'PF10292': 0.72616923076923})
+defaultdict(<class 'float'>, {'PF10292': 0.4848615384615381})
+defaultdict(<class 'float'>, {'PF10292': 0.2407692307692304})
+Processing: PF02175
+defaultdict(<class 'float'>, {'PF02175': 0.7328902953586506})
+defaultdict(<class 'float'>, {'PF02175': 0.48797468354430357})
+defaultdict(<class 'float'>, {'PF02175': 0.23968354430379743})
+Processing: PF10316
+defaultdict(<class 'float'>, {'PF10316': 0.7221739130434781})
+defaultdict(<class 'float'>, {'PF10316': 0.48079710144927595})
+defaultdict(<class 'float'>, {'PF10316': 0.23954710144927574})
+Processing: PF10317
+defaultdict(<class 'float'>, {'PF10317': 0.7247269624573383})
+defaultdict(<class 'float'>, {'PF10317': 0.48470989761092087})
+defaultdict(<class 'float'>, {'PF10317': 0.24092150170648435})
+Processing: PF10318
+defaultdict(<class 'float'>, {'PF10318': 0.7233498349834986})
+defaultdict(<class 'float'>, {'PF10318': 0.4817161716171618})
+defaultdict(<class 'float'>, {'PF10318': 0.24280528052805322})
+Processing: PF10327
+defaultdict(<class 'float'>, {'PF10327': 0.7270559210526316})
+defaultdict(<class 'float'>, {'PF10327': 0.4831578947368428})
+defaultdict(<class 'float'>, {'PF10327': 0.2396546052631584})
+Processing: PF10319
+defaultdict(<class 'float'>, {'PF10319': 0.7272508038585207})
+defaultdict(<class 'float'>, {'PF10319': 0.481993569131832})
+defaultdict(<class 'float'>, {'PF10319': 0.2415755627009643})
+Processing: PF10320
+defaultdict(<class 'float'>, {'PF10320': 0.7249612403100782})
+defaultdict(<class 'float'>, {'PF10320': 0.4825581395348847})
+defaultdict(<class 'float'>, {'PF10320': 0.24065891472868267})
+Processing: PF10321
+defaultdict(<class 'float'>, {'PF10321': 0.7244585987261152})
+defaultdict(<class 'float'>, {'PF10321': 0.48149681528662375})
+defaultdict(<class 'float'>, {'PF10321': 0.23939490445859854})
+Processing: PF10322
+defaultdict(<class 'float'>, {'PF10322': 0.7251311475409836})
+defaultdict(<class 'float'>, {'PF10322': 0.48226229508196705})
+defaultdict(<class 'float'>, {'PF10322': 0.23778688524590158})
+Processing: PF10323
+defaultdict(<class 'float'>, {'PF10323': 0.7231514084507041})
+defaultdict(<class 'float'>, {'PF10323': 0.48274647887323935})
+defaultdict(<class 'float'>, {'PF10323': 0.241637323943662})
+Processing: PF10324
+defaultdict(<class 'float'>, {'PF10324': 0.722140625})
+defaultdict(<class 'float'>, {'PF10324': 0.48084375000000007})
+defaultdict(<class 'float'>, {'PF10324': 0.24157812499999998})
+Processing: PF10328
+defaultdict(<class 'float'>, {'PF10328': 0.7247159090909103})
+defaultdict(<class 'float'>, {'PF10328': 0.4828219696969704})
+defaultdict(<class 'float'>, {'PF10328': 0.24142045454545483})
+Processing: PF10325
+defaultdict(<class 'float'>, {'PF10325': 0.7205243445692879})
+defaultdict(<class 'float'>, {'PF10325': 0.4784082397003753})
+defaultdict(<class 'float'>, {'PF10325': 0.2404494382022476})
+Processing: PF10326
+defaultdict(<class 'float'>, {'PF10326': 0.7263311688311681})
+defaultdict(<class 'float'>, {'PF10326': 0.48310064935064945})
+defaultdict(<class 'float'>, {'PF10326': 0.24120129870129875})
+Processing: PF17028
+defaultdict(<class 'float'>, {'PF17028': 0.7251116071428572})
+defaultdict(<class 'float'>, {'PF17028': 0.48091517857142857})
+defaultdict(<class 'float'>, {'PF17028': 0.23738839285714286})
+Processing: PF07388
+defaultdict(<class 'float'>, {'PF07388': 0.7240192926045016})
+defaultdict(<class 'float'>, {'PF07388': 0.4819131832797421})
+defaultdict(<class 'float'>, {'PF07388': 0.24271704180064266})
+Processing: PF00207
+defaultdict(<class 'float'>, {'PF00207': 0.7190860215053755})
+defaultdict(<class 'float'>, {'PF00207': 0.4831182795698927})
+defaultdict(<class 'float'>, {'PF00207': 0.23736559139784974})
+Processing: PF07703
+defaultdict(<class 'float'>, {'PF07703': 0.7180575539568345})
+defaultdict(<class 'float'>, {'PF07703': 0.47719424460431703})
+defaultdict(<class 'float'>, {'PF07703': 0.24118705035971227})
+Processing: PF07677
+defaultdict(<class 'float'>, {'PF07677': 0.7121052631578948})
+defaultdict(<class 'float'>, {'PF07677': 0.4696315789473685})
+defaultdict(<class 'float'>, {'PF07677': 0.24021052631578957})
+Processing: PF00004
+defaultdict(<class 'float'>, {'PF00004': 0.721353383458647})
+defaultdict(<class 'float'>, {'PF00004': 0.4843609022556386})
+defaultdict(<class 'float'>, {'PF00004': 0.23962406015037582})
+Processing: PF09820
+defaultdict(<class 'float'>, {'PF09820': 0.7234875444839857})
+defaultdict(<class 'float'>, {'PF09820': 0.4830427046263346})
+defaultdict(<class 'float'>, {'PF09820': 0.23987544483985765})
+Processing: PF12846
+defaultdict(<class 'float'>, {'PF12846': 0.721969696969697})
+defaultdict(<class 'float'>, {'PF12846': 0.4795454545454547})
+defaultdict(<class 'float'>, {'PF12846': 0.24050964187327847})
+Processing: PF13086
+defaultdict(<class 'float'>, {'PF13086': 0.7237022900763364})
+defaultdict(<class 'float'>, {'PF13086': 0.48513358778625915})
+defaultdict(<class 'float'>, {'PF13086': 0.2442748091603047})
+Processing: PF13087
+defaultdict(<class 'float'>, {'PF13087': 0.7184249999999999})
+defaultdict(<class 'float'>, {'PF13087': 0.47999999999999965})
+defaultdict(<class 'float'>, {'PF13087': 0.24062499999999978})
+Processing: PF13166
+defaultdict(<class 'float'>, {'PF13166': 0.7233356643356643})
+defaultdict(<class 'float'>, {'PF13166': 0.4826503496503496})
+defaultdict(<class 'float'>, {'PF13166': 0.2412027972027973})
+Processing: PF13173
+defaultdict(<class 'float'>, {'PF13173': 0.7170992366412229})
+defaultdict(<class 'float'>, {'PF13173': 0.47778625954198334})
+defaultdict(<class 'float'>, {'PF13173': 0.2437786259541983})
+Processing: PF13175
+defaultdict(<class 'float'>, {'PF13175': 0.7301866666666662})
+defaultdict(<class 'float'>, {'PF13175': 0.48674666666666694})
+defaultdict(<class 'float'>, {'PF13175': 0.24510666666666672})
+Processing: PF13191
+defaultdict(<class 'float'>, {'PF13191': 0.7207602339181303})
+defaultdict(<class 'float'>, {'PF13191': 0.4799999999999995})
+defaultdict(<class 'float'>, {'PF13191': 0.24435672514619872})
+Processing: PF13207
+defaultdict(<class 'float'>, {'PF13207': 0.7199999999999993})
+defaultdict(<class 'float'>, {'PF13207': 0.48266423357664306})
+defaultdict(<class 'float'>, {'PF13207': 0.23868613138686154})
+Processing: PF13238
+defaultdict(<class 'float'>, {'PF13238': 0.7215384615384611})
+defaultdict(<class 'float'>, {'PF13238': 0.4809999999999986})
+defaultdict(<class 'float'>, {'PF13238': 0.2384230769230765})
+Processing: PF13245
+defaultdict(<class 'float'>, {'PF13245': 0.7205743243243231})
+defaultdict(<class 'float'>, {'PF13245': 0.4814189189189178})
+defaultdict(<class 'float'>, {'PF13245': 0.2426013513513509})
+Processing: PF07724
+defaultdict(<class 'float'>, {'PF07724': 0.7224127906976753})
+defaultdict(<class 'float'>, {'PF07724': 0.4819767441860474})
+defaultdict(<class 'float'>, {'PF07724': 0.24026162790697725})
+Processing: PF13304
+defaultdict(<class 'float'>, {'PF13304': 0.7338524590163942})
+defaultdict(<class 'float'>, {'PF13304': 0.49159016393442556})
+defaultdict(<class 'float'>, {'PF13304': 0.24473770491803232})
+Processing: PF13401
+defaultdict(<class 'float'>, {'PF13401': 0.7253260869565211})
+defaultdict(<class 'float'>, {'PF13401': 0.48173913043478334})
+defaultdict(<class 'float'>, {'PF13401': 0.23800724637681203})
+Processing: PF13476
+defaultdict(<class 'float'>, {'PF13476': 0.7260447761194031})
+defaultdict(<class 'float'>, {'PF13476': 0.48912935323383117})
+defaultdict(<class 'float'>, {'PF13476': 0.2427611940298508})
+Processing: PF13479
+defaultdict(<class 'float'>, {'PF13479': 0.7204314720812179})
+defaultdict(<class 'float'>, {'PF13479': 0.4833756345177666})
+defaultdict(<class 'float'>, {'PF13479': 0.2408883248730964})
+Processing: PF13481
+defaultdict(<class 'float'>, {'PF13481': 0.7167435897435894})
+defaultdict(<class 'float'>, {'PF13481': 0.478230769230769})
+defaultdict(<class 'float'>, {'PF13481': 0.24197435897435884})
+Processing: PF13500
+defaultdict(<class 'float'>, {'PF13500': 0.7163567839195981})
+defaultdict(<class 'float'>, {'PF13500': 0.47889447236180893})
+defaultdict(<class 'float'>, {'PF13500': 0.24198492462311566})
+Processing: PF13514
+defaultdict(<class 'float'>, {'PF13514': 0.7233894230769231})
+defaultdict(<class 'float'>, {'PF13514': 0.4829807692307683})
+defaultdict(<class 'float'>, {'PF13514': 0.2420913461538459})
+Processing: PF13521
+defaultdict(<class 'float'>, {'PF13521': 0.7178353658536578})
+defaultdict(<class 'float'>, {'PF13521': 0.48112804878048776})
+defaultdict(<class 'float'>, {'PF13521': 0.24158536585365795})
+Processing: PF13555
+defaultdict(<class 'float'>, {'PF13555': 0.7072580645161267})
+defaultdict(<class 'float'>, {'PF13555': 0.4770967741935489})
+defaultdict(<class 'float'>, {'PF13555': 0.24685483870967748})
+Processing: PF07726
+defaultdict(<class 'float'>, {'PF07726': 0.7212878787878801})
+defaultdict(<class 'float'>, {'PF07726': 0.47931818181818237})
+defaultdict(<class 'float'>, {'PF07726': 0.23856060606060583})
+Processing: PF13604
+defaultdict(<class 'float'>, {'PF13604': 0.7216580310880835})
+defaultdict(<class 'float'>, {'PF13604': 0.4830051813471503})
+defaultdict(<class 'float'>, {'PF13604': 0.240336787564767})
+Processing: PF13614
+defaultdict(<class 'float'>, {'PF13614': 0.7221348314606739})
+defaultdict(<class 'float'>, {'PF13614': 0.48221910112359617})
+defaultdict(<class 'float'>, {'PF13614': 0.23887640449438244})
+Processing: PF13671
+defaultdict(<class 'float'>, {'PF13671': 0.719305555555556})
+defaultdict(<class 'float'>, {'PF13671': 0.47972222222222344})
+defaultdict(<class 'float'>, {'PF13671': 0.24142361111111163})
+Processing: PF14516
+defaultdict(<class 'float'>, {'PF14516': 0.7204969879518063})
+defaultdict(<class 'float'>, {'PF14516': 0.48057228915662636})
+defaultdict(<class 'float'>, {'PF14516': 0.24111445783132518})
+Processing: PF07728
+defaultdict(<class 'float'>, {'PF07728': 0.7185611510791362})
+defaultdict(<class 'float'>, {'PF07728': 0.4756115107913675})
+defaultdict(<class 'float'>, {'PF07728': 0.24352517985611505})
+Processing: PF12775
+defaultdict(<class 'float'>, {'PF12775': 0.7177472527472533})
+defaultdict(<class 'float'>, {'PF12775': 0.4809340659340651})
+defaultdict(<class 'float'>, {'PF12775': 0.2427472527472528})
+Processing: PF14363
+defaultdict(<class 'float'>, {'PF14363': 0.7144845360824731})
+defaultdict(<class 'float'>, {'PF14363': 0.47871134020618483})
+defaultdict(<class 'float'>, {'PF14363': 0.23489690721649467})
+Processing: PF17872
+defaultdict(<class 'float'>, {'PF17872': 0.7271999999999992})
+defaultdict(<class 'float'>, {'PF17872': 0.48459999999999986})
+defaultdict(<class 'float'>, {'PF17872': 0.24014999999999995})
+Processing: PF17867
+defaultdict(<class 'float'>, {'PF17867': 0.7175000000000008})
+defaultdict(<class 'float'>, {'PF17867': 0.47717592592592667})
+defaultdict(<class 'float'>, {'PF17867': 0.24018518518518497})
+Processing: PF18280
+defaultdict(<class 'float'>, {'PF18280': 0.7262745098039213})
+defaultdict(<class 'float'>, {'PF18280': 0.48761904761904745})
+defaultdict(<class 'float'>, {'PF18280': 0.23843137254901908})
+Processing: PF08142
+defaultdict(<class 'float'>, {'PF08142': 0.717183908045977})
+defaultdict(<class 'float'>, {'PF08142': 0.474137931034482})
+defaultdict(<class 'float'>, {'PF08142': 0.24097701149425313})
+Processing: PF03417
+defaultdict(<class 'float'>, {'PF03417': 0.7200219298245634})
+defaultdict(<class 'float'>, {'PF03417': 0.4797807017543866})
+defaultdict(<class 'float'>, {'PF03417': 0.24153508771929805})
+Processing: PF07247
+defaultdict(<class 'float'>, {'PF07247': 0.7232335329341315})
+defaultdict(<class 'float'>, {'PF07247': 0.4817764471057886})
+defaultdict(<class 'float'>, {'PF07247': 0.23794411177644723})
+Processing: PF13339
+defaultdict(<class 'float'>, {'PF13339': 0.7242391304347819})
+defaultdict(<class 'float'>, {'PF13339': 0.4809057971014501})
+defaultdict(<class 'float'>, {'PF13339': 0.23688405797101492})
+Processing: PF00324
+defaultdict(<class 'float'>, {'PF00324': 0.7239375000000003})
+defaultdict(<class 'float'>, {'PF00324': 0.48148958333333325})
+defaultdict(<class 'float'>, {'PF00324': 0.2397708333333332})
+Processing: PF13520
+defaultdict(<class 'float'>, {'PF13520': 0.7234345794392526})
+defaultdict(<class 'float'>, {'PF13520': 0.48287383177570087})
+defaultdict(<class 'float'>, {'PF13520': 0.24275700934579414})
+Processing: PF13906
+defaultdict(<class 'float'>, {'PF13906': 0.7104807692307686})
+defaultdict(<class 'float'>, {'PF13906': 0.47326923076923066})
+defaultdict(<class 'float'>, {'PF13906': 0.23586538461538467})
+Processing: PF01490
+defaultdict(<class 'float'>, {'PF01490': 0.725109756097561})
+defaultdict(<class 'float'>, {'PF01490': 0.4829268292682928})
+defaultdict(<class 'float'>, {'PF01490': 0.24074390243902458})
+Processing: PF14108
+defaultdict(<class 'float'>, {'PF14108': 0.71859375})
+defaultdict(<class 'float'>, {'PF14108': 0.478828125})
+defaultdict(<class 'float'>, {'PF14108': 0.239375})
+Processing: PF12430
+defaultdict(<class 'float'>, {'PF12430': 0.7223497267759563})
+defaultdict(<class 'float'>, {'PF12430': 0.47841530054644793})
+defaultdict(<class 'float'>, {'PF12430': 0.24062841530054616})
+Processing: PF03109
+defaultdict(<class 'float'>, {'PF03109': 0.7232448979591831})
+defaultdict(<class 'float'>, {'PF03109': 0.4825102040816329})
+defaultdict(<class 'float'>, {'PF03109': 0.23981632653061266})
+Processing: PF01061
+defaultdict(<class 'float'>, {'PF01061': 0.7203317535545036})
+defaultdict(<class 'float'>, {'PF01061': 0.479052132701422})
+defaultdict(<class 'float'>, {'PF01061': 0.2427251184834124})
+Processing: PF12679
+defaultdict(<class 'float'>, {'PF12679': 0.727058823529411})
+defaultdict(<class 'float'>, {'PF12679': 0.4876470588235297})
+defaultdict(<class 'float'>, {'PF12679': 0.24214532871972325})
+Processing: PF12698
+defaultdict(<class 'float'>, {'PF12698': 0.7252449567723341})
+defaultdict(<class 'float'>, {'PF12698': 0.4844812680115273})
+defaultdict(<class 'float'>, {'PF12698': 0.24481268011527343})
+Processing: PF12730
+defaultdict(<class 'float'>, {'PF12730': 0.7232777777777777})
+defaultdict(<class 'float'>, {'PF12730': 0.48430555555555577})
+defaultdict(<class 'float'>, {'PF12730': 0.24308333333333335})
+Processing: PF13346
+defaultdict(<class 'float'>, {'PF13346': 0.723689320388349})
+defaultdict(<class 'float'>, {'PF13346': 0.4849271844660193})
+defaultdict(<class 'float'>, {'PF13346': 0.2461407766990289})
+Processing: PF06182
+defaultdict(<class 'float'>, {'PF06182': 0.721152173913043})
+defaultdict(<class 'float'>, {'PF06182': 0.48265217391304416})
+defaultdict(<class 'float'>, {'PF06182': 0.24369565217391334})
+Processing: PF19055
+defaultdict(<class 'float'>, {'PF19055': 0.7312195121951222})
+defaultdict(<class 'float'>, {'PF19055': 0.4850365853658539})
+defaultdict(<class 'float'>, {'PF19055': 0.24036585365853674})
+Processing: PF09818
+defaultdict(<class 'float'>, {'PF09818': 0.7274471830985917})
+defaultdict(<class 'float'>, {'PF09818': 0.4831866197183103})
+defaultdict(<class 'float'>, {'PF09818': 0.24047535211267632})
+Processing: PF09819
+defaultdict(<class 'float'>, {'PF09819': 0.7259426229508196})
+defaultdict(<class 'float'>, {'PF09819': 0.47999999999999976})
+defaultdict(<class 'float'>, {'PF09819': 0.23672131147541012})
+Processing: PF16962
+defaultdict(<class 'float'>, {'PF16962': 0.723904494382022})
+defaultdict(<class 'float'>, {'PF16962': 0.48294943820224795})
+defaultdict(<class 'float'>, {'PF16962': 0.2425374531835209})
+Processing: PF00664
+defaultdict(<class 'float'>, {'PF00664': 0.7278363636363641})
+defaultdict(<class 'float'>, {'PF00664': 0.4852545454545452})
+defaultdict(<class 'float'>, {'PF00664': 0.24487272727272724})
+Processing: PF06472
+defaultdict(<class 'float'>, {'PF06472': 0.718722222222222})
+defaultdict(<class 'float'>, {'PF06472': 0.48090740740740684})
+defaultdict(<class 'float'>, {'PF06472': 0.2416481481481481})
+Processing: PF13748
+defaultdict(<class 'float'>, {'PF13748': 0.7240254237288134})
+defaultdict(<class 'float'>, {'PF13748': 0.4815677966101696})
+defaultdict(<class 'float'>, {'PF13748': 0.2411016949152547})
+Processing: PF20446
+defaultdict(<class 'float'>, {'PF20446': 0.7189634146341461})
+defaultdict(<class 'float'>, {'PF20446': 0.4793597560975615})
+defaultdict(<class 'float'>, {'PF20446': 0.23878048780487782})
+Processing: PF04392
+defaultdict(<class 'float'>, {'PF04392': 0.7218367346938787})
+defaultdict(<class 'float'>, {'PF04392': 0.48324829931972874})
+defaultdict(<class 'float'>, {'PF04392': 0.24306122448979617})
+Processing: PF00005
+defaultdict(<class 'float'>, {'PF00005': 0.707246376811594})
+defaultdict(<class 'float'>, {'PF00005': 0.4751449275362327})
+defaultdict(<class 'float'>, {'PF00005': 0.23931159420289902})
+Processing: PF09822
+defaultdict(<class 'float'>, {'PF09822': 0.7243796992481198})
+defaultdict(<class 'float'>, {'PF09822': 0.4817669172932332})
+defaultdict(<class 'float'>, {'PF09822': 0.23937969924812005})
+Processing: PF16949
+defaultdict(<class 'float'>, {'PF16949': 0.727127071823204})
+defaultdict(<class 'float'>, {'PF16949': 0.4839963167587475})
+defaultdict(<class 'float'>, {'PF16949': 0.24226519337016586})
+Processing: PF16326
+defaultdict(<class 'float'>, {'PF16326': 0.7072857142857137})
+defaultdict(<class 'float'>, {'PF16326': 0.4758571428571422})
+defaultdict(<class 'float'>, {'PF16326': 0.2462857142857141})
+Processing: PF03806
+defaultdict(<class 'float'>, {'PF03806': 0.7274055666003976})
+defaultdict(<class 'float'>, {'PF03806': 0.4833200795228627})
+defaultdict(<class 'float'>, {'PF03806': 0.2404075546719682})
+Processing: PF09752
+defaultdict(<class 'float'>, {'PF09752': 0.7297167138810207})
+defaultdict(<class 'float'>, {'PF09752': 0.48556657223795974})
+defaultdict(<class 'float'>, {'PF09752': 0.23995750708215258})
+Processing: PF00561
+defaultdict(<class 'float'>, {'PF00561': 0.7225000000000015})
+defaultdict(<class 'float'>, {'PF00561': 0.48253875968992366})
+defaultdict(<class 'float'>, {'PF00561': 0.24184108527131834})
+Processing: PF20091
+defaultdict(<class 'float'>, {'PF20091': 0.7191362530413627})
+defaultdict(<class 'float'>, {'PF20091': 0.4769586374695865})
+defaultdict(<class 'float'>, {'PF20091': 0.23783454987834537})
+Processing: PF20408
+defaultdict(<class 'float'>, {'PF20408': 0.7195641025641016})
+defaultdict(<class 'float'>, {'PF20408': 0.4765641025641025})
+defaultdict(<class 'float'>, {'PF20408': 0.2412307692307692})
+Processing: PF02230
+defaultdict(<class 'float'>, {'PF02230': 0.7213761467889903})
+defaultdict(<class 'float'>, {'PF02230': 0.4806880733944955})
+defaultdict(<class 'float'>, {'PF02230': 0.24000000000000032})
+Processing: PF07859
+defaultdict(<class 'float'>, {'PF07859': 0.7175943396226413})
+defaultdict(<class 'float'>, {'PF07859': 0.4797169811320748})
+defaultdict(<class 'float'>, {'PF07859': 0.24191037735849005})
+Processing: PF08386
+defaultdict(<class 'float'>, {'PF08386': 0.717451923076922})
+defaultdict(<class 'float'>, {'PF08386': 0.478990384615384})
+defaultdict(<class 'float'>, {'PF08386': 0.2397596153846152})
+Processing: PF12695
+defaultdict(<class 'float'>, {'PF12695': 0.7220303030303035})
+defaultdict(<class 'float'>, {'PF12695': 0.4827575757575757})
+defaultdict(<class 'float'>, {'PF12695': 0.23836363636363644})
+Processing: PF12697
+defaultdict(<class 'float'>, {'PF12697': 0.7224660633484153})
+defaultdict(<class 'float'>, {'PF12697': 0.48506787330316703})
+defaultdict(<class 'float'>, {'PF12697': 0.24371040723981896})
+Processing: PF12715
+defaultdict(<class 'float'>, {'PF12715': 0.7289460154241644})
+defaultdict(<class 'float'>, {'PF12715': 0.48539845758354766})
+defaultdict(<class 'float'>, {'PF12715': 0.2403856041131104})
+Processing: PF06259
+defaultdict(<class 'float'>, {'PF06259': 0.7214525139664808})
+defaultdict(<class 'float'>, {'PF06259': 0.47807262569832426})
+defaultdict(<class 'float'>, {'PF06259': 0.2416759776536312})
+Processing: PF08843
+defaultdict(<class 'float'>, {'PF08843': 0.7233541666666663})
+defaultdict(<class 'float'>, {'PF08843': 0.48295833333333343})
+defaultdict(<class 'float'>, {'PF08843': 0.24262499999999976})
+Processing: PF09407
+defaultdict(<class 'float'>, {'PF09407': 0.7151748251748254})
+defaultdict(<class 'float'>, {'PF09407': 0.4767132867132864})
+defaultdict(<class 'float'>, {'PF09407': 0.24174825174825237})
+Processing: PF17194
+defaultdict(<class 'float'>, {'PF17194': 0.7125531914893617})
+defaultdict(<class 'float'>, {'PF17194': 0.4776063829787225})
+defaultdict(<class 'float'>, {'PF17194': 0.2410638297872339})
+Processing: PF13338
+defaultdict(<class 'float'>, {'PF13338': 0.7230999999999999})
+defaultdict(<class 'float'>, {'PF13338': 0.47679999999999984})
+defaultdict(<class 'float'>, {'PF13338': 0.22829999999999992})
+Processing: PF10899
+defaultdict(<class 'float'>, {'PF10899': 0.7210571428571423})
+defaultdict(<class 'float'>, {'PF10899': 0.4785142857142848})
+defaultdict(<class 'float'>, {'PF10899': 0.24117142857142831})
+Processing: PF20578
+defaultdict(<class 'float'>, {'PF20578': 0.7193333333333333})
+defaultdict(<class 'float'>, {'PF20578': 0.4777222222222218})
+defaultdict(<class 'float'>, {'PF20578': 0.2326666666666668})
+Processing: PF07751
+defaultdict(<class 'float'>, {'PF07751': 0.7233425414364639})
+defaultdict(<class 'float'>, {'PF07751': 0.48342541436464104})
+defaultdict(<class 'float'>, {'PF07751': 0.23955801104972413})
+Processing: PF14337
+defaultdict(<class 'float'>, {'PF14337': 0.7219487179487172})
+defaultdict(<class 'float'>, {'PF14337': 0.4796666666666664})
+defaultdict(<class 'float'>, {'PF14337': 0.2429487179487178})
+Processing: PF03992
+defaultdict(<class 'float'>, {'PF03992': 0.7096202531645566})
+defaultdict(<class 'float'>, {'PF03992': 0.47196202531645587})
+defaultdict(<class 'float'>, {'PF03992': 0.24500000000000072})
+Processing: PF13000
+defaultdict(<class 'float'>, {'PF13000': 0.7331693989071033})
+defaultdict(<class 'float'>, {'PF13000': 0.4880965391621129})
+defaultdict(<class 'float'>, {'PF13000': 0.24034608378870645})
+Processing: PF00887
+defaultdict(<class 'float'>, {'PF00887': 0.7077710843373484})
+defaultdict(<class 'float'>, {'PF00887': 0.46783132530120514})
+defaultdict(<class 'float'>, {'PF00887': 0.24114457831325342})
+Processing: PF08326
+defaultdict(<class 'float'>, {'PF08326': 0.7265612104539203})
+defaultdict(<class 'float'>, {'PF08326': 0.4815955983493813})
+defaultdict(<class 'float'>, {'PF08326': 0.23846629986244836})
+Processing: PF00871
+defaultdict(<class 'float'>, {'PF00871': 0.7258396946564882})
+defaultdict(<class 'float'>, {'PF00871': 0.4846437659033076})
+defaultdict(<class 'float'>, {'PF00871': 0.23977099236641197})
+Processing: PF02550
+defaultdict(<class 'float'>, {'PF02550': 0.7191206030150754})
+defaultdict(<class 'float'>, {'PF02550': 0.4770100502512562})
+defaultdict(<class 'float'>, {'PF02550': 0.24012562814070365})
+Processing: PF13336
+defaultdict(<class 'float'>, {'PF13336': 0.7155161290322585})
+defaultdict(<class 'float'>, {'PF13336': 0.4736451612903226})
+defaultdict(<class 'float'>, {'PF13336': 0.23909677419354802})
+Processing: PF00583
+defaultdict(<class 'float'>, {'PF00583': 0.7120762711864408})
+defaultdict(<class 'float'>, {'PF00583': 0.47932203389830563})
+defaultdict(<class 'float'>, {'PF00583': 0.24567796610169487})
+Processing: PF13673
+defaultdict(<class 'float'>, {'PF13673': 0.7170155038759699})
+defaultdict(<class 'float'>, {'PF13673': 0.4827906976744192})
+defaultdict(<class 'float'>, {'PF13673': 0.23918604651162806})
+Processing: PF13880
+defaultdict(<class 'float'>, {'PF13880': 0.7070714285714285})
+defaultdict(<class 'float'>, {'PF13880': 0.4756428571428566})
+defaultdict(<class 'float'>, {'PF13880': 0.24585714285714286})
+Processing: PF17013
+defaultdict(<class 'float'>, {'PF17013': 0.7221912461667133})
+defaultdict(<class 'float'>, {'PF17013': 0.4761639252857542})
+defaultdict(<class 'float'>, {'PF17013': 0.23822135489266802})
+Processing: PF13302
+defaultdict(<class 'float'>, {'PF13302': 0.7106474820143883})
+defaultdict(<class 'float'>, {'PF13302': 0.4755035971223029})
+defaultdict(<class 'float'>, {'PF13302': 0.24370503597122295})
+Processing: PF13420
+defaultdict(<class 'float'>, {'PF13420': 0.71926282051282})
+defaultdict(<class 'float'>, {'PF13420': 0.479839743589743})
+defaultdict(<class 'float'>, {'PF13420': 0.23884615384615407})
+Processing: PF13444
+defaultdict(<class 'float'>, {'PF13444': 0.716067961165048})
+defaultdict(<class 'float'>, {'PF13444': 0.47281553398058285})
+defaultdict(<class 'float'>, {'PF13444': 0.24174757281553422})
+Processing: PF13480
+defaultdict(<class 'float'>, {'PF13480': 0.717482517482518})
+defaultdict(<class 'float'>, {'PF13480': 0.4767482517482516})
+defaultdict(<class 'float'>, {'PF13480': 0.24297202797202858})
+Processing: PF13508
+defaultdict(<class 'float'>, {'PF13508': 0.7191358024691367})
+defaultdict(<class 'float'>, {'PF13508': 0.48320987654320935})
+defaultdict(<class 'float'>, {'PF13508': 0.23697530864197502})
+Processing: PF13523
+defaultdict(<class 'float'>, {'PF13523': 0.718493150684929})
+defaultdict(<class 'float'>, {'PF13523': 0.4756849315068499})
+defaultdict(<class 'float'>, {'PF13523': 0.23640410958904137})
+Processing: PF13527
+defaultdict(<class 'float'>, {'PF13527': 0.7159765625})
+defaultdict(<class 'float'>, {'PF13527': 0.479765625})
+defaultdict(<class 'float'>, {'PF13527': 0.24109375})
+Processing: PF03767
+defaultdict(<class 'float'>, {'PF03767': 0.7227705627705631})
+defaultdict(<class 'float'>, {'PF03767': 0.47872294372294383})
+defaultdict(<class 'float'>, {'PF03767': 0.239199134199134})
+Processing: PF12689
+defaultdict(<class 'float'>, {'PF12689': 0.723294117647059})
+defaultdict(<class 'float'>, {'PF12689': 0.4797352941176464})
+defaultdict(<class 'float'>, {'PF12689': 0.23567647058823543})
+Processing: PF06648
+defaultdict(<class 'float'>, {'PF06648': 0.7248032004129566})
+defaultdict(<class 'float'>, {'PF06648': 0.477287391921537})
+defaultdict(<class 'float'>, {'PF06648': 0.24183765647180264})
+Processing: PF06856
+defaultdict(<class 'float'>, {'PF06856': 0.7322789194181486})
+defaultdict(<class 'float'>, {'PF06856': 0.4847033017778801})
+defaultdict(<class 'float'>, {'PF06856': 0.23608866312629873})
+Processing: PF00694
+defaultdict(<class 'float'>, {'PF00694': 0.7184469696969713})
+defaultdict(<class 'float'>, {'PF00694': 0.4767803030303035})
+defaultdict(<class 'float'>, {'PF00694': 0.23621212121212096})
+Processing: PF01756
+defaultdict(<class 'float'>, {'PF01756': 0.7142307692307692})
+defaultdict(<class 'float'>, {'PF01756': 0.4788186813186806})
+defaultdict(<class 'float'>, {'PF01756': 0.24324175824175803})
+Processing: PF01648
+defaultdict(<class 'float'>, {'PF01648': 0.7182173913043475})
+defaultdict(<class 'float'>, {'PF01648': 0.47647826086956613})
+defaultdict(<class 'float'>, {'PF01648': 0.24439130434782633})
+Processing: PF08541
+defaultdict(<class 'float'>, {'PF08541': 0.7133516483516479})
+defaultdict(<class 'float'>, {'PF08541': 0.471153846153846})
+defaultdict(<class 'float'>, {'PF08541': 0.24197802197802187})
+Processing: PF00873
+defaultdict(<class 'float'>, {'PF00873': 0.723796477495105})
+defaultdict(<class 'float'>, {'PF00873': 0.4829549902152646})
+defaultdict(<class 'float'>, {'PF00873': 0.23945205479452078})
+Processing: PF01842
+defaultdict(<class 'float'>, {'PF01842': 0.7087313432835828})
+defaultdict(<class 'float'>, {'PF01842': 0.46888059701492507})
+defaultdict(<class 'float'>, {'PF01842': 0.24298507462686567})
+Processing: PF09192
+defaultdict(<class 'float'>, {'PF09192': 0.7297703180212016})
+defaultdict(<class 'float'>, {'PF09192': 0.48318021201413536})
+defaultdict(<class 'float'>, {'PF09192': 0.24215547703180323})
+Processing: PF11821
+defaultdict(<class 'float'>, {'PF11821': 0.7160526315789489})
+defaultdict(<class 'float'>, {'PF11821': 0.4754093567251456})
+defaultdict(<class 'float'>, {'PF11821': 0.2393567251461986})
+Processing: PF00022
+defaultdict(<class 'float'>, {'PF00022': 0.7225518134715021})
+defaultdict(<class 'float'>, {'PF00022': 0.4807124352331612})
+defaultdict(<class 'float'>, {'PF00022': 0.23928756476683957})
+Processing: PF17003
+defaultdict(<class 'float'>, {'PF17003': 0.7348291687914328})
+defaultdict(<class 'float'>, {'PF17003': 0.48500764915859274})
+defaultdict(<class 'float'>, {'PF17003': 0.2398266190719022})
+Processing: PF01064
+defaultdict(<class 'float'>, {'PF01064': 0.7156024096385528})
+defaultdict(<class 'float'>, {'PF01064': 0.47126506024096415})
+defaultdict(<class 'float'>, {'PF01064': 0.24210843373494012})
+Processing: PF13710
+defaultdict(<class 'float'>, {'PF13710': 0.7100000000000005})
+defaultdict(<class 'float'>, {'PF13710': 0.46698412698412695})
+defaultdict(<class 'float'>, {'PF13710': 0.2393650793650791})
+Processing: PF13740
+defaultdict(<class 'float'>, {'PF13740': 0.7181168831168837})
+defaultdict(<class 'float'>, {'PF13740': 0.48350649350649305})
+defaultdict(<class 'float'>, {'PF13740': 0.23499999999999935})
+Processing: PF13840
+defaultdict(<class 'float'>, {'PF13840': 0.7153030303030318})
+defaultdict(<class 'float'>, {'PF13840': 0.47295454545454485})
+defaultdict(<class 'float'>, {'PF13840': 0.23007575757575718})
+Processing: PF19571
+defaultdict(<class 'float'>, {'PF19571': 0.7164084507042259})
+defaultdict(<class 'float'>, {'PF19571': 0.48056338028169})
+defaultdict(<class 'float'>, {'PF19571': 0.24095070422535256})
+Processing: PF18859
+defaultdict(<class 'float'>, {'PF18859': 0.7172519083969473})
+defaultdict(<class 'float'>, {'PF18859': 0.4748473282442734})
+defaultdict(<class 'float'>, {'PF18859': 0.2399236641221372})
+Processing: PF01643
+defaultdict(<class 'float'>, {'PF01643': 0.7240562248995969})
+defaultdict(<class 'float'>, {'PF01643': 0.4836345381526098})
+defaultdict(<class 'float'>, {'PF01643': 0.23937751004016075})
+Processing: PF00441
+defaultdict(<class 'float'>, {'PF00441': 0.713940397350992})
+defaultdict(<class 'float'>, {'PF00441': 0.4751986754966893})
+defaultdict(<class 'float'>, {'PF00441': 0.24205298013245052})
+Processing: PF08028
+defaultdict(<class 'float'>, {'PF08028': 0.7151481481481481})
+defaultdict(<class 'float'>, {'PF08028': 0.4750740740740739})
+defaultdict(<class 'float'>, {'PF08028': 0.24355555555555594})
+Processing: PF12806
+defaultdict(<class 'float'>, {'PF12806': 0.7173599999999998})
+defaultdict(<class 'float'>, {'PF12806': 0.4818799999999996})
+defaultdict(<class 'float'>, {'PF12806': 0.23875999999999958})
+Processing: PF02771
+defaultdict(<class 'float'>, {'PF02771': 0.7191228070175464})
+defaultdict(<class 'float'>, {'PF02771': 0.47842105263157847})
+defaultdict(<class 'float'>, {'PF02771': 0.2379824561403506})
+Processing: PF14749
+defaultdict(<class 'float'>, {'PF14749': 0.7106746031746037})
+defaultdict(<class 'float'>, {'PF14749': 0.47527777777777735})
+defaultdict(<class 'float'>, {'PF14749': 0.24146825396825392})
+Processing: PF12186
+defaultdict(<class 'float'>, {'PF12186': 0.7154910714285718})
+defaultdict(<class 'float'>, {'PF12186': 0.47477678571428633})
+defaultdict(<class 'float'>, {'PF12186': 0.23799107142857143})
+Processing: PF01553
+defaultdict(<class 'float'>, {'PF01553': 0.717536764705883})
+defaultdict(<class 'float'>, {'PF01553': 0.4787500000000003})
+defaultdict(<class 'float'>, {'PF01553': 0.24058823529411724})
+Processing: PF19576
+defaultdict(<class 'float'>, {'PF19576': 0.7203183520599247})
+defaultdict(<class 'float'>, {'PF19576': 0.4787640449438209})
+defaultdict(<class 'float'>, {'PF19576': 0.24013108614232248})
+Processing: PF02551
+defaultdict(<class 'float'>, {'PF02551': 0.7313157894736839})
+defaultdict(<class 'float'>, {'PF02551': 0.4880451127819544})
+defaultdict(<class 'float'>, {'PF02551': 0.23875939849624067})
+Processing: PF00698
+defaultdict(<class 'float'>, {'PF00698': 0.7200625})
+defaultdict(<class 'float'>, {'PF00698': 0.48035937499999987})
+defaultdict(<class 'float'>, {'PF00698': 0.23953125})
+Processing: PF02273
+defaultdict(<class 'float'>, {'PF02273': 0.7303050847457626})
+defaultdict(<class 'float'>, {'PF02273': 0.4855423728813566})
+defaultdict(<class 'float'>, {'PF02273': 0.2427627118644063})
+Processing: PF01757
+defaultdict(<class 'float'>, {'PF01757': 0.7256304985337237})
+defaultdict(<class 'float'>, {'PF01757': 0.48661290322580664})
+defaultdict(<class 'float'>, {'PF01757': 0.24385630498533764})
+Processing: PF18883
+defaultdict(<class 'float'>, {'PF18883': 0.7197391304347822})
+defaultdict(<class 'float'>, {'PF18883': 0.4756086956521748})
+defaultdict(<class 'float'>, {'PF18883': 0.24086956521739164})
+Processing: PF09793
+defaultdict(<class 'float'>, {'PF09793': 0.7142307692307689})
+defaultdict(<class 'float'>, {'PF09793': 0.47296703296703235})
+defaultdict(<class 'float'>, {'PF09793': 0.242032967032967})
+Processing: PF17771
+defaultdict(<class 'float'>, {'PF17771': 0.7161971830985914})
+defaultdict(<class 'float'>, {'PF17771': 0.4709154929577471})
+defaultdict(<class 'float'>, {'PF17771': 0.2411971830985912})
+Processing: PF10199
+defaultdict(<class 'float'>, {'PF10199': 0.7200806451612894})
+defaultdict(<class 'float'>, {'PF10199': 0.4808467741935478})
+defaultdict(<class 'float'>, {'PF10199': 0.24133064516129055})
+Processing: PF01602
+defaultdict(<class 'float'>, {'PF01602': 0.7230476190476186})
+defaultdict(<class 'float'>, {'PF01602': 0.4818476190476191})
+defaultdict(<class 'float'>, {'PF01602': 0.23856190476190492})
+Processing: PF00928
+defaultdict(<class 'float'>, {'PF00928': 0.7233962264150943})
+defaultdict(<class 'float'>, {'PF00928': 0.4826792452830182})
+defaultdict(<class 'float'>, {'PF00928': 0.23877358490566017})
+Processing: PF03352
+defaultdict(<class 'float'>, {'PF03352': 0.7264044943820218})
+defaultdict(<class 'float'>, {'PF03352': 0.48022471910112435})
+defaultdict(<class 'float'>, {'PF03352': 0.23598314606741616})
+Processing: PF01696
+defaultdict(<class 'float'>, {'PF01696': 0.7367396907216485})
+defaultdict(<class 'float'>, {'PF01696': 0.48894329896907107})
+defaultdict(<class 'float'>, {'PF01696': 0.24207474226804082})
+Processing: PF02440
+defaultdict(<class 'float'>, {'PF02440': 0.7315625000000001})
+defaultdict(<class 'float'>, {'PF02440': 0.4850520833333334})
+defaultdict(<class 'float'>, {'PF02440': 0.23781250000000007})
+Processing: PF16579
+defaultdict(<class 'float'>, {'PF16579': 0.7220588235294109})
+defaultdict(<class 'float'>, {'PF16579': 0.47802521008403365})
+defaultdict(<class 'float'>, {'PF16579': 0.24079831932773096})
+Processing: PF00709
+defaultdict(<class 'float'>, {'PF00709': 0.7214543269230773})
+defaultdict(<class 'float'>, {'PF00709': 0.47914663461538515})
+defaultdict(<class 'float'>, {'PF00709': 0.23850961538461507})
+Processing: PF04439
+defaultdict(<class 'float'>, {'PF04439': 0.722410714285714})
+defaultdict(<class 'float'>, {'PF04439': 0.4818214285714281})
+defaultdict(<class 'float'>, {'PF04439': 0.2402857142857142})
+Processing: PF19582
+defaultdict(<class 'float'>, {'PF19582': 0.7364885496183207})
+defaultdict(<class 'float'>, {'PF19582': 0.48979643765903247})
+defaultdict(<class 'float'>, {'PF19582': 0.24218829516539433})
+Processing: PF09085
+defaultdict(<class 'float'>, {'PF09085': 0.7236936936936925})
+defaultdict(<class 'float'>, {'PF09085': 0.47702702702702654})
+defaultdict(<class 'float'>, {'PF09085': 0.2403603603603603})
+Processing: PF00106
+defaultdict(<class 'float'>, {'PF00106': 0.7133928571428579})
+defaultdict(<class 'float'>, {'PF00106': 0.4785969387755113})
+defaultdict(<class 'float'>, {'PF00106': 0.24239795918367385})
+Processing: PF13561
+defaultdict(<class 'float'>, {'PF13561': 0.7151489361702135})
+defaultdict(<class 'float'>, {'PF13561': 0.47687234042553156})
+defaultdict(<class 'float'>, {'PF13561': 0.24278723404255312})
+Processing: PF00107
+defaultdict(<class 'float'>, {'PF00107': 0.7161068702290087})
+defaultdict(<class 'float'>, {'PF00107': 0.47477099236641096})
+defaultdict(<class 'float'>, {'PF00107': 0.2434732824427481})
+Processing: PF13602
+defaultdict(<class 'float'>, {'PF13602': 0.712462686567164})
+defaultdict(<class 'float'>, {'PF13602': 0.4782089552238804})
+defaultdict(<class 'float'>, {'PF13602': 0.2447388059701492})
+Processing: PF02274
+defaultdict(<class 'float'>, {'PF02274': 0.7263888888888889})
+defaultdict(<class 'float'>, {'PF02274': 0.4816666666666663})
+defaultdict(<class 'float'>, {'PF02274': 0.23887566137566124})
+Processing: PF11559
+defaultdict(<class 'float'>, {'PF11559': 0.7214705882352939})
+defaultdict(<class 'float'>, {'PF11559': 0.48241830065359453})
+defaultdict(<class 'float'>, {'PF11559': 0.2378431372549017})
+Processing: PF00406
+defaultdict(<class 'float'>, {'PF00406': 0.7190460526315801})
+defaultdict(<class 'float'>, {'PF00406': 0.47835526315789517})
+defaultdict(<class 'float'>, {'PF00406': 0.2397368421052636})
+Processing: PF05191
+defaultdict(<class 'float'>, {'PF05191': 0.7112162162162161})
+defaultdict(<class 'float'>, {'PF05191': 0.48283783783783724})
+defaultdict(<class 'float'>, {'PF05191': 0.22797297297297286})
+Processing: PF19627
+defaultdict(<class 'float'>, {'PF19627': 0.7371381142098277})
+defaultdict(<class 'float'>, {'PF19627': 0.4903187250996021})
+defaultdict(<class 'float'>, {'PF19627': 0.2421580345285526})
+Processing: PF05221
+defaultdict(<class 'float'>, {'PF05221': 0.7264500000000005})
+defaultdict(<class 'float'>, {'PF05221': 0.4829166666666667})
+defaultdict(<class 'float'>, {'PF05221': 0.23860000000000003})
+Processing: PF00670
+defaultdict(<class 'float'>, {'PF00670': 0.7200613496932519})
+defaultdict(<class 'float'>, {'PF00670': 0.476564417177914})
+defaultdict(<class 'float'>, {'PF00670': 0.2392024539877305})
+Processing: PF07757
+defaultdict(<class 'float'>, {'PF07757': 0.7299561403508793})
+defaultdict(<class 'float'>, {'PF07757': 0.4817543859649119})
+defaultdict(<class 'float'>, {'PF07757': 0.2353947368421049})
+Processing: PF03496
+defaultdict(<class 'float'>, {'PF03496': 0.7233585858585883})
+defaultdict(<class 'float'>, {'PF03496': 0.4827272727272723})
+defaultdict(<class 'float'>, {'PF03496': 0.242171717171717})
+Processing: PF04587
+defaultdict(<class 'float'>, {'PF04587': 0.7250350467289723})
+defaultdict(<class 'float'>, {'PF04587': 0.4812850467289722})
+defaultdict(<class 'float'>, {'PF04587': 0.23765186915887834})
+Processing: PF03747
+defaultdict(<class 'float'>, {'PF03747': 0.7215187713310581})
+defaultdict(<class 'float'>, {'PF03747': 0.4823720136518766})
+defaultdict(<class 'float'>, {'PF03747': 0.2408873720136516})
+Processing: PF10397
+defaultdict(<class 'float'>, {'PF10397': 0.7075641025641021})
+defaultdict(<class 'float'>, {'PF10397': 0.47583333333333344})
+defaultdict(<class 'float'>, {'PF10397': 0.24326923076923088})
+Processing: PF01117
+defaultdict(<class 'float'>, {'PF01117': 0.7279781420765028})
+defaultdict(<class 'float'>, {'PF01117': 0.4844262295081967})
+defaultdict(<class 'float'>, {'PF01117': 0.2413934426229509})
+Processing: PF05110
+defaultdict(<class 'float'>, {'PF05110': 0.729223300970874})
+defaultdict(<class 'float'>, {'PF05110': 0.48370873786407637})
+defaultdict(<class 'float'>, {'PF05110': 0.24048543689320362})
+Processing: PF05775
+defaultdict(<class 'float'>, {'PF05775': 0.7340094339622635})
+defaultdict(<class 'float'>, {'PF05775': 0.48452830188679136})
+defaultdict(<class 'float'>, {'PF05775': 0.23627358490565992})
+Processing: PF03969
+defaultdict(<class 'float'>, {'PF03969': 0.7267127071823203})
+defaultdict(<class 'float'>, {'PF03969': 0.4812983425414364})
+defaultdict(<class 'float'>, {'PF03969': 0.2381077348066299})
+Processing: PF07792
+defaultdict(<class 'float'>, {'PF07792': 0.7220149253731346})
+defaultdict(<class 'float'>, {'PF07792': 0.480820895522388})
+defaultdict(<class 'float'>, {'PF07792': 0.2443656716417909})
+Processing: PF03756
+defaultdict(<class 'float'>, {'PF03756': 0.7159701492537317})
+defaultdict(<class 'float'>, {'PF03756': 0.47958955223880545})
+defaultdict(<class 'float'>, {'PF03756': 0.2431343283582088})
+Processing: PF08731
+defaultdict(<class 'float'>, {'PF08731': 0.7270535714285713})
+defaultdict(<class 'float'>, {'PF08731': 0.4838839285714291})
+defaultdict(<class 'float'>, {'PF08731': 0.24133928571428548})
+Processing: PF12249
+defaultdict(<class 'float'>, {'PF12249': 0.7239265536723163})
+defaultdict(<class 'float'>, {'PF12249': 0.48302259887005694})
+defaultdict(<class 'float'>, {'PF12249': 0.23742937853107307})
+Processing: PF12250
+defaultdict(<class 'float'>, {'PF12250': 0.7253387850467291})
+defaultdict(<class 'float'>, {'PF12250': 0.4830257009345795})
+defaultdict(<class 'float'>, {'PF12250': 0.2395911214953268})
+Processing: PF17992
+defaultdict(<class 'float'>, {'PF17992': 0.7232513661202187})
+defaultdict(<class 'float'>, {'PF17992': 0.4785245901639349})
+defaultdict(<class 'float'>, {'PF17992': 0.24024590163934392})
+Processing: PF05641
+defaultdict(<class 'float'>, {'PF05641': 0.6980645161290303})
+defaultdict(<class 'float'>, {'PF05641': 0.4711290322580652})
+defaultdict(<class 'float'>, {'PF05641': 0.24258064516129044})
+Processing: PF18021
+defaultdict(<class 'float'>, {'PF18021': 0.7084511233447398})
+defaultdict(<class 'float'>, {'PF18021': 0.47284630263353683})
+defaultdict(<class 'float'>, {'PF18021': 0.24326737092694542})
+Processing: PF17998
+defaultdict(<class 'float'>, {'PF17998': 0.7242857142857154})
+defaultdict(<class 'float'>, {'PF17998': 0.4809523809523817})
+defaultdict(<class 'float'>, {'PF17998': 0.2372619047619048})
+Processing: PF19712
+defaultdict(<class 'float'>, {'PF19712': 0.7256018518518528})
+defaultdict(<class 'float'>, {'PF19712': 0.48203703703703765})
+defaultdict(<class 'float'>, {'PF19712': 0.24069444444444482})
+Processing: PF16338
+defaultdict(<class 'float'>, {'PF16338': 0.715105263157895})
+defaultdict(<class 'float'>, {'PF16338': 0.47589473684210576})
+defaultdict(<class 'float'>, {'PF16338': 0.2439999999999999})
+Processing: PF18351
+defaultdict(<class 'float'>, {'PF18351': 0.7013888888888891})
+defaultdict(<class 'float'>, {'PF18351': 0.4611111111111111})
+defaultdict(<class 'float'>, {'PF18351': 0.23124999999999998})
+Processing: PF18723
+defaultdict(<class 'float'>, {'PF18723': 0.7263120567375881})
+defaultdict(<class 'float'>, {'PF18723': 0.4814184397163109})
+defaultdict(<class 'float'>, {'PF18723': 0.2366312056737579})
+Processing: PF18724
+defaultdict(<class 'float'>, {'PF18724': 0.7294181034482752})
+defaultdict(<class 'float'>, {'PF18724': 0.48810344827586133})
+defaultdict(<class 'float'>, {'PF18724': 0.2407112068965518})
+Processing: PF18746
+defaultdict(<class 'float'>, {'PF18746': 0.724660714285714})
+defaultdict(<class 'float'>, {'PF18746': 0.4810714285714283})
+defaultdict(<class 'float'>, {'PF18746': 0.23966071428571412})
+Processing: PF18743
+defaultdict(<class 'float'>, {'PF18743': 0.7174193548387087})
+defaultdict(<class 'float'>, {'PF18743': 0.47854838709677366})
+defaultdict(<class 'float'>, {'PF18743': 0.23903225806451633})
+Processing: PF00578
+defaultdict(<class 'float'>, {'PF00578': 0.7166399999999988})
+defaultdict(<class 'float'>, {'PF00578': 0.4817199999999996})
+defaultdict(<class 'float'>, {'PF00578': 0.23851999999999976})
+Processing: PF13911
+defaultdict(<class 'float'>, {'PF13911': 0.7197807017543885})
+defaultdict(<class 'float'>, {'PF13911': 0.4772368421052626})
+defaultdict(<class 'float'>, {'PF13911': 0.23596491228070143})
+Processing: PF08327
+defaultdict(<class 'float'>, {'PF08327': 0.7132283464566933})
+defaultdict(<class 'float'>, {'PF08327': 0.47535433070866195})
+defaultdict(<class 'float'>, {'PF08327': 0.243188976377953})
+Processing: PF01808
+defaultdict(<class 'float'>, {'PF01808': 0.721028938906752})
+defaultdict(<class 'float'>, {'PF01808': 0.47855305466237874})
+defaultdict(<class 'float'>, {'PF01808': 0.2396302250803857})
+Processing: PF18767
+defaultdict(<class 'float'>, {'PF18767': 0.7171775592828226})
+defaultdict(<class 'float'>, {'PF18767': 0.4777327935222673})
+defaultdict(<class 'float'>, {'PF18767': 0.23770965876229033})
+Processing: PF14962
+defaultdict(<class 'float'>, {'PF14962': 0.727694300518136})
+defaultdict(<class 'float'>, {'PF14962': 0.4859067357512956})
+defaultdict(<class 'float'>, {'PF14962': 0.2396632124352334})
+Processing: PF14721
+defaultdict(<class 'float'>, {'PF14721': 0.7259541984732839})
+defaultdict(<class 'float'>, {'PF14721': 0.4802671755725177})
+defaultdict(<class 'float'>, {'PF14721': 0.24305343511450384})
+Processing: PF04548
+defaultdict(<class 'float'>, {'PF04548': 0.7196948356807509})
+defaultdict(<class 'float'>, {'PF04548': 0.4814788732394382})
+defaultdict(<class 'float'>, {'PF04548': 0.23894366197183156})
+Processing: PF13772
+defaultdict(<class 'float'>, {'PF13772': 0.7142857142857142})
+defaultdict(<class 'float'>, {'PF13772': 0.47529761904761925})
+defaultdict(<class 'float'>, {'PF13772': 0.23785714285714285})
+Processing: PF06316
+defaultdict(<class 'float'>, {'PF06316': 0.7320250000000005})
+defaultdict(<class 'float'>, {'PF06316': 0.4869250000000001})
+defaultdict(<class 'float'>, {'PF06316': 0.2430499999999997})
+Processing: PF11489
+defaultdict(<class 'float'>, {'PF11489': 0.729841597796143})
+defaultdict(<class 'float'>, {'PF11489': 0.48603994490358104})
+defaultdict(<class 'float'>, {'PF11489': 0.24310606060606074})
+Processing: PF03915
+defaultdict(<class 'float'>, {'PF03915': 0.7280562347188263})
+defaultdict(<class 'float'>, {'PF03915': 0.48448655256723716})
+defaultdict(<class 'float'>, {'PF03915': 0.23975550122249398})
+Processing: PF15304
+defaultdict(<class 'float'>, {'PF15304': 0.7276754385964936})
+defaultdict(<class 'float'>, {'PF15304': 0.4853216374269003})
+defaultdict(<class 'float'>, {'PF15304': 0.24133040935672498})
+Processing: PF10469
+defaultdict(<class 'float'>, {'PF10469': 0.7217788461538458})
+defaultdict(<class 'float'>, {'PF10469': 0.48180288461538373})
+defaultdict(<class 'float'>, {'PF10469': 0.24084134615384575})
+Processing: PF01262
+defaultdict(<class 'float'>, {'PF01262': 0.7204186046511627})
+defaultdict(<class 'float'>, {'PF01262': 0.4784651162790701})
+defaultdict(<class 'float'>, {'PF01262': 0.24018604651162806})
+Processing: PF11839
+defaultdict(<class 'float'>, {'PF11839': 0.7126428571428568})
+defaultdict(<class 'float'>, {'PF11839': 0.48007142857142765})
+defaultdict(<class 'float'>, {'PF11839': 0.247})
+Processing: PF01918
+defaultdict(<class 'float'>, {'PF01918': 0.7142647058823521})
+defaultdict(<class 'float'>, {'PF01918': 0.47397058823529314})
+defaultdict(<class 'float'>, {'PF01918': 0.2369852941176466})
+Processing: PF00171
+defaultdict(<class 'float'>, {'PF00171': 0.7195248380129585})
+defaultdict(<class 'float'>, {'PF00171': 0.4786933045356374})
+defaultdict(<class 'float'>, {'PF00171': 0.24016198704103675})
+Processing: PF01263
+defaultdict(<class 'float'>, {'PF01263': 0.7189569536423819})
+defaultdict(<class 'float'>, {'PF01263': 0.48043046357615943})
+defaultdict(<class 'float'>, {'PF01263': 0.2412748344370863})
+Processing: PF00248
+defaultdict(<class 'float'>, {'PF00248': 0.71820819112628})
+defaultdict(<class 'float'>, {'PF00248': 0.48162116040955594})
+defaultdict(<class 'float'>, {'PF00248': 0.24046075085324198})
+Processing: PF11266
+defaultdict(<class 'float'>, {'PF11266': 0.7285616438356156})
+defaultdict(<class 'float'>, {'PF11266': 0.4832420091324203})
+defaultdict(<class 'float'>, {'PF11266': 0.24162100456621016})
+Processing: PF08660
+defaultdict(<class 'float'>, {'PF08660': 0.7239772727272734})
+defaultdict(<class 'float'>, {'PF08660': 0.4822727272727279})
+defaultdict(<class 'float'>, {'PF08660': 0.2400284090909093})
+Processing: PF05208
+defaultdict(<class 'float'>, {'PF05208': 0.7274094707520892})
+defaultdict(<class 'float'>, {'PF05208': 0.4828272980501398})
+defaultdict(<class 'float'>, {'PF05208': 0.24218662952646303})
+Processing: PF11182
+defaultdict(<class 'float'>, {'PF11182': 0.7200837988826817})
+defaultdict(<class 'float'>, {'PF11182': 0.4781564245810057})
+defaultdict(<class 'float'>, {'PF11182': 0.2408659217877092})
+Processing: PF13372
+defaultdict(<class 'float'>, {'PF13372': 0.7216666666666682})
+defaultdict(<class 'float'>, {'PF13372': 0.48242424242424337})
+defaultdict(<class 'float'>, {'PF13372': 0.24143939393939373})
+Processing: PF05426
+defaultdict(<class 'float'>, {'PF05426': 0.7208058608058606})
+defaultdict(<class 'float'>, {'PF05426': 0.48100732600732615})
+defaultdict(<class 'float'>, {'PF05426': 0.2383150183150181})
+Processing: PF16822
+defaultdict(<class 'float'>, {'PF16822': 0.7227323420074349})
+defaultdict(<class 'float'>, {'PF16822': 0.48347583643122716})
+defaultdict(<class 'float'>, {'PF16822': 0.24111524163568768})
+Processing: PF13949
+defaultdict(<class 'float'>, {'PF13949': 0.7192060810810811})
+defaultdict(<class 'float'>, {'PF13949': 0.47972972972972977})
+defaultdict(<class 'float'>, {'PF13949': 0.24025337837837782})
+Processing: PF14864
+defaultdict(<class 'float'>, {'PF14864': 0.7148425196850399})
+defaultdict(<class 'float'>, {'PF14864': 0.4742519685039375})
+defaultdict(<class 'float'>, {'PF14864': 0.24043307086614202})
+Processing: PF14863
+defaultdict(<class 'float'>, {'PF14863': 0.7170357142857133})
+defaultdict(<class 'float'>, {'PF14863': 0.4756428571428566})
+defaultdict(<class 'float'>, {'PF14863': 0.23846428571428518})
+Processing: PF06351
+defaultdict(<class 'float'>, {'PF06351': 0.731363636363637})
+defaultdict(<class 'float'>, {'PF06351': 0.48480113636363675})
+defaultdict(<class 'float'>, {'PF06351': 0.24130681818181832})
+Processing: PF04864
+defaultdict(<class 'float'>, {'PF04864': 0.7268269230769225})
+defaultdict(<class 'float'>, {'PF04864': 0.4830769230769231})
+defaultdict(<class 'float'>, {'PF04864': 0.2397664835164832})
+Processing: PF11744
+defaultdict(<class 'float'>, {'PF11744': 0.7252322738386303})
+defaultdict(<class 'float'>, {'PF11744': 0.4827017114914424})
+defaultdict(<class 'float'>, {'PF11744': 0.23888753056234704})
+Processing: PF04030
+defaultdict(<class 'float'>, {'PF04030': 0.7193962264150946})
+defaultdict(<class 'float'>, {'PF04030': 0.48141509433962276})
+defaultdict(<class 'float'>, {'PF04030': 0.24037735849056582})
+Processing: PF06401
+defaultdict(<class 'float'>, {'PF06401': 0.7265962441314555})
+defaultdict(<class 'float'>, {'PF06401': 0.48441314553990744})
+defaultdict(<class 'float'>, {'PF06401': 0.23753521126760618})
+Processing: PF06400
+defaultdict(<class 'float'>, {'PF06400': 0.7226612903225793})
+defaultdict(<class 'float'>, {'PF06400': 0.4813709677419349})
+defaultdict(<class 'float'>, {'PF06400': 0.2398790322580647})
+Processing: PF00128
+defaultdict(<class 'float'>, {'PF00128': 0.7224480712166182})
+defaultdict(<class 'float'>, {'PF00128': 0.48324925816023845})
+defaultdict(<class 'float'>, {'PF00128': 0.24106824925816073})
+Processing: PF02806
+defaultdict(<class 'float'>, {'PF02806': 0.7173711340206173})
+defaultdict(<class 'float'>, {'PF02806': 0.48278350515463864})
+defaultdict(<class 'float'>, {'PF02806': 0.23664948453608242})
+Processing: PF09071
+defaultdict(<class 'float'>, {'PF09071': 0.7267156862745097})
+defaultdict(<class 'float'>, {'PF09071': 0.48570261437908485})
+defaultdict(<class 'float'>, {'PF09071': 0.2406045751633987})
+Processing: PF09154
+defaultdict(<class 'float'>, {'PF09154': 0.7181896551724126})
+defaultdict(<class 'float'>, {'PF09154': 0.47370689655172427})
+defaultdict(<class 'float'>, {'PF09154': 0.22750000000000029})
+Processing: PF04168
+defaultdict(<class 'float'>, {'PF04168': 0.7210409556313997})
+defaultdict(<class 'float'>, {'PF04168': 0.48073378839590414})
+defaultdict(<class 'float'>, {'PF04168': 0.2393686006825935})
+Processing: PF06964
+defaultdict(<class 'float'>, {'PF06964': 0.7173076923076933})
+defaultdict(<class 'float'>, {'PF06964': 0.48047337278106655})
+defaultdict(<class 'float'>, {'PF06964': 0.23807692307692388})
+Processing: PF02883
+defaultdict(<class 'float'>, {'PF02883': 0.7176785714285714})
+defaultdict(<class 'float'>, {'PF02883': 0.47727678571428617})
+defaultdict(<class 'float'>, {'PF02883': 0.23870535714285693})
+Processing: PF02296
+defaultdict(<class 'float'>, {'PF02296': 0.7264035087719323})
+defaultdict(<class 'float'>, {'PF02296': 0.48114035087719254})
+defaultdict(<class 'float'>, {'PF02296': 0.23526315789473654})
+Processing: PF03229
+defaultdict(<class 'float'>, {'PF03229': 0.7259019093201583})
+defaultdict(<class 'float'>, {'PF03229': 0.480623745561217})
+defaultdict(<class 'float'>, {'PF03229': 0.24368277494724938})
+Processing: PF02816
+defaultdict(<class 'float'>, {'PF02816': 0.7229032258064507})
+defaultdict(<class 'float'>, {'PF02816': 0.4794354838709682})
+defaultdict(<class 'float'>, {'PF02816': 0.23959677419354863})
+Processing: PF01120
+defaultdict(<class 'float'>, {'PF01120': 0.7185185185185188})
+defaultdict(<class 'float'>, {'PF01120': 0.4771082621082621})
+defaultdict(<class 'float'>, {'PF01120': 0.24065527065527084})
+Processing: PF17989
+defaultdict(<class 'float'>, {'PF17989': 0.7185472972972964})
+defaultdict(<class 'float'>, {'PF17989': 0.47925675675675583})
+defaultdict(<class 'float'>, {'PF17989': 0.24222972972972945})
+Processing: PF15299
+defaultdict(<class 'float'>, {'PF15299': 0.7292735042735045})
+defaultdict(<class 'float'>, {'PF15299': 0.4838888888888887})
+defaultdict(<class 'float'>, {'PF15299': 0.23846153846153859})
+Processing: PF17645
+defaultdict(<class 'float'>, {'PF17645': 0.7226376146788988})
+defaultdict(<class 'float'>, {'PF17645': 0.48041284403669765})
+defaultdict(<class 'float'>, {'PF17645': 0.23699541284403675})
+Processing: PF02948
+defaultdict(<class 'float'>, {'PF02948': 0.7332386363636375})
+defaultdict(<class 'float'>, {'PF02948': 0.4868465909090915})
+defaultdict(<class 'float'>, {'PF02948': 0.24127840909090917})
+Processing: PF04709
+defaultdict(<class 'float'>, {'PF04709': 0.7275318066157759})
+defaultdict(<class 'float'>, {'PF04709': 0.4828880407124676})
+defaultdict(<class 'float'>, {'PF04709': 0.23638676844783701})
+Processing: PF01425
+defaultdict(<class 'float'>, {'PF01425': 0.7214429530201341})
+defaultdict(<class 'float'>, {'PF01425': 0.4807941834451904})
+defaultdict(<class 'float'>, {'PF01425': 0.24063758389261747})
+Processing: PF05382
+defaultdict(<class 'float'>, {'PF05382': 0.7220629370629383})
+defaultdict(<class 'float'>, {'PF05382': 0.47944055944055897})
+defaultdict(<class 'float'>, {'PF05382': 0.24132867132867195})
+Processing: PF12671
+defaultdict(<class 'float'>, {'PF12671': 0.724181818181818})
+defaultdict(<class 'float'>, {'PF12671': 0.4834848484848486})
+defaultdict(<class 'float'>, {'PF12671': 0.24006060606060614})
+Processing: PF01979
+defaultdict(<class 'float'>, {'PF01979': 0.7190974212034382})
+defaultdict(<class 'float'>, {'PF01979': 0.48085959885386764})
+defaultdict(<class 'float'>, {'PF01979': 0.23935530085959894})
+Processing: PF07969
+defaultdict(<class 'float'>, {'PF07969': 0.7204535864978905})
+defaultdict(<class 'float'>, {'PF07969': 0.48024261603375534})
+defaultdict(<class 'float'>, {'PF07969': 0.23830168776371324})
+Processing: PF12224
+defaultdict(<class 'float'>, {'PF12224': 0.7209163346613543})
+defaultdict(<class 'float'>, {'PF12224': 0.4797609561752991})
+defaultdict(<class 'float'>, {'PF12224': 0.24143426294820725})
+Processing: PF10706
+defaultdict(<class 'float'>, {'PF10706': 0.7291142857142852})
+defaultdict(<class 'float'>, {'PF10706': 0.4821999999999996})
+defaultdict(<class 'float'>, {'PF10706': 0.24342857142857105})
+Processing: PF10023
+defaultdict(<class 'float'>, {'PF10023': 0.7209597523219818})
+defaultdict(<class 'float'>, {'PF10023': 0.47863777089783377})
+defaultdict(<class 'float'>, {'PF10023': 0.2407275541795667})
+Processing: PF00155
+defaultdict(<class 'float'>, {'PF00155': 0.7188736263736263})
+defaultdict(<class 'float'>, {'PF00155': 0.4793406593406592})
+defaultdict(<class 'float'>, {'PF00155': 0.2392307692307689})
+Processing: PF00266
+defaultdict(<class 'float'>, {'PF00266': 0.7177419354838709})
+defaultdict(<class 'float'>, {'PF00266': 0.479032258064516})
+defaultdict(<class 'float'>, {'PF00266': 0.2390322580645161})
+Processing: PF01593
+defaultdict(<class 'float'>, {'PF01593': 0.7243377483443695})
+defaultdict(<class 'float'>, {'PF01593': 0.48515452538631393})
+defaultdict(<class 'float'>, {'PF01593': 0.2429470198675498})
+Processing: PF02293
+defaultdict(<class 'float'>, {'PF02293': 0.7216167664670666})
+defaultdict(<class 'float'>, {'PF02293': 0.4782335329341316})
+defaultdict(<class 'float'>, {'PF02293': 0.2404491017964072})
+Processing: PF00501
+defaultdict(<class 'float'>, {'PF00501': 0.7193764705882347})
+defaultdict(<class 'float'>, {'PF00501': 0.4806352941176468})
+defaultdict(<class 'float'>, {'PF00501': 0.23981176470588209})
+Processing: PF17113
+defaultdict(<class 'float'>, {'PF17113': 0.723035087719298})
+defaultdict(<class 'float'>, {'PF17113': 0.48252631578947325})
+defaultdict(<class 'float'>, {'PF17113': 0.24031578947368434})
+Processing: PF16561
+defaultdict(<class 'float'>, {'PF16561': 0.7094767441860472})
+defaultdict(<class 'float'>, {'PF16561': 0.4750000000000006})
+defaultdict(<class 'float'>, {'PF16561': 0.242906976744186})
+Processing: PF19326
+defaultdict(<class 'float'>, {'PF19326': 0.733249211356467})
+defaultdict(<class 'float'>, {'PF19326': 0.48573343848580436})
+defaultdict(<class 'float'>, {'PF19326': 0.23941640378548898})
+Processing: PF03256
+defaultdict(<class 'float'>, {'PF03256': 0.7291129032258061})
+defaultdict(<class 'float'>, {'PF03256': 0.4825268817204302})
+defaultdict(<class 'float'>, {'PF03256': 0.2371236559139787})
+Processing: PF12895
+defaultdict(<class 'float'>, {'PF12895': 0.7157831325301197})
+defaultdict(<class 'float'>, {'PF12895': 0.4738554216867474})
+defaultdict(<class 'float'>, {'PF12895': 0.24385542168674756})
+Processing: PF12894
+defaultdict(<class 'float'>, {'PF12894': 0.7202688172043})
+defaultdict(<class 'float'>, {'PF12894': 0.48532258064516154})
+defaultdict(<class 'float'>, {'PF12894': 0.23752688172043032})
+Processing: PF12862
+defaultdict(<class 'float'>, {'PF12862': 0.7222580645161283})
+defaultdict(<class 'float'>, {'PF12862': 0.4836021505376348})
+defaultdict(<class 'float'>, {'PF12862': 0.23634408602150564})
+Processing: PF02166
+defaultdict(<class 'float'>, {'PF02166': 0.7397709163346606})
+defaultdict(<class 'float'>, {'PF02166': 0.49244023904382517})
+defaultdict(<class 'float'>, {'PF02166': 0.24522908366533863})
+Processing: PF06369
+defaultdict(<class 'float'>, {'PF06369': 0.7225706214689264})
+defaultdict(<class 'float'>, {'PF06369': 0.4832485875706219})
+defaultdict(<class 'float'>, {'PF06369': 0.2380790960451974})
+Processing: PF01094
+defaultdict(<class 'float'>, {'PF01094': 0.7211971830985908})
+defaultdict(<class 'float'>, {'PF01094': 0.4809014084507053})
+defaultdict(<class 'float'>, {'PF01094': 0.2429154929577469})
+Processing: PF00023
+defaultdict(<class 'float'>, {'PF00023': 0.7194117647058829})
+defaultdict(<class 'float'>, {'PF00023': 0.4674999999999988})
+defaultdict(<class 'float'>, {'PF00023': 0.2198529411764701})
+Processing: PF07260
+defaultdict(<class 'float'>, {'PF07260': 0.7335362318840569})
+defaultdict(<class 'float'>, {'PF07260': 0.4876956521739136})
+defaultdict(<class 'float'>, {'PF07260': 0.23998550724637724})
+Processing: PF12796
+defaultdict(<class 'float'>, {'PF12796': 0.715357142857143})
+defaultdict(<class 'float'>, {'PF12796': 0.4786309523809527})
+defaultdict(<class 'float'>, {'PF12796': 0.23869047619047631})
+Processing: PF13606
+defaultdict(<class 'float'>, {'PF13606': 0.70359375})
+defaultdict(<class 'float'>, {'PF13606': 0.46921875})
+defaultdict(<class 'float'>, {'PF13606': 0.23234375})
+Processing: PF13637
+defaultdict(<class 'float'>, {'PF13637': 0.7092857142857143})
+defaultdict(<class 'float'>, {'PF13637': 0.4746428571428569})
+defaultdict(<class 'float'>, {'PF13637': 0.23705357142857114})
+Processing: PF13857
+defaultdict(<class 'float'>, {'PF13857': 0.7148245614035098})
+defaultdict(<class 'float'>, {'PF13857': 0.4821052631578943})
+defaultdict(<class 'float'>, {'PF13857': 0.2316666666666663})
+Processing: PF04547
+defaultdict(<class 'float'>, {'PF04547': 0.7229738562091507})
+defaultdict(<class 'float'>, {'PF04547': 0.47943355119825737})
+defaultdict(<class 'float'>, {'PF04547': 0.24005446623093676})
+Processing: PF03452
+defaultdict(<class 'float'>, {'PF03452': 0.7242264150943403})
+defaultdict(<class 'float'>, {'PF03452': 0.4827547169811315})
+defaultdict(<class 'float'>, {'PF03452': 0.23799999999999993})
+Processing: PF08346
+defaultdict(<class 'float'>, {'PF08346': 0.718260869565217})
+defaultdict(<class 'float'>, {'PF08346': 0.4813043478260874})
+defaultdict(<class 'float'>, {'PF08346': 0.2348550724637684})
+Processing: PF07651
+defaultdict(<class 'float'>, {'PF07651': 0.7161870503597119})
+defaultdict(<class 'float'>, {'PF07651': 0.47857913669064783})
+defaultdict(<class 'float'>, {'PF07651': 0.24053956834532386})
+Processing: PF09156
+defaultdict(<class 'float'>, {'PF09156': 0.7373737373737375})
+defaultdict(<class 'float'>, {'PF09156': 0.4896885521885523})
+defaultdict(<class 'float'>, {'PF09156': 0.24337121212121207})
+Processing: PF15777
+defaultdict(<class 'float'>, {'PF15777': 0.7239451476793258})
+defaultdict(<class 'float'>, {'PF15777': 0.480274261603376})
+defaultdict(<class 'float'>, {'PF15777': 0.24018987341772163})
+Processing: PF08264
+defaultdict(<class 'float'>, {'PF08264': 0.7192810457516337})
+defaultdict(<class 'float'>, {'PF08264': 0.4819934640522873})
+defaultdict(<class 'float'>, {'PF08264': 0.2380718954248366})
+Processing: PF19303
+defaultdict(<class 'float'>, {'PF19303': 0.7209803921568617})
+defaultdict(<class 'float'>, {'PF19303': 0.48173202614379035})
+defaultdict(<class 'float'>, {'PF19303': 0.2387581699346403})
+Processing: PF16364
+defaultdict(<class 'float'>, {'PF16364': 0.7260465116279079})
+defaultdict(<class 'float'>, {'PF16364': 0.48238372093023296})
+defaultdict(<class 'float'>, {'PF16364': 0.23863372093023286})
+Processing: PF09255
+defaultdict(<class 'float'>, {'PF09255': 0.7396593673965935})
+defaultdict(<class 'float'>, {'PF09255': 0.4933765882670993})
+defaultdict(<class 'float'>, {'PF09255': 0.24195728575290623})
+Processing: PF20605
+defaultdict(<class 'float'>, {'PF20605': 0.7053921568627447})
+defaultdict(<class 'float'>, {'PF20605': 0.4667647058823523})
+defaultdict(<class 'float'>, {'PF20605': 0.24176470588235296})
+Processing: PF18678
+defaultdict(<class 'float'>, {'PF18678': 0.7223125564588978})
+defaultdict(<class 'float'>, {'PF18678': 0.47764227642276397})
+defaultdict(<class 'float'>, {'PF18678': 0.24006323396567245})
+Processing: PF01786
+defaultdict(<class 'float'>, {'PF01786': 0.7263594470046065})
+defaultdict(<class 'float'>, {'PF01786': 0.4836405529953921})
+defaultdict(<class 'float'>, {'PF01786': 0.23767281105990812})
+Processing: PF06375
+defaultdict(<class 'float'>, {'PF06375': 0.7291401273885353})
+defaultdict(<class 'float'>, {'PF06375': 0.4868152866242032})
+defaultdict(<class 'float'>, {'PF06375': 0.23904458598726078})
+Processing: PF19327
+defaultdict(<class 'float'>, {'PF19327': 0.7216388888888886})
+defaultdict(<class 'float'>, {'PF19327': 0.4805277777777777})
+defaultdict(<class 'float'>, {'PF19327': 0.24052777777777773})
+Processing: PF02424
+defaultdict(<class 'float'>, {'PF02424': 0.7206589147286833})
+defaultdict(<class 'float'>, {'PF02424': 0.48081395348837297})
+defaultdict(<class 'float'>, {'PF02424': 0.23823643410852746})
+Processing: PF05956
+defaultdict(<class 'float'>, {'PF05956': 0.7332463768115932})
+defaultdict(<class 'float'>, {'PF05956': 0.48791304347826137})
+defaultdict(<class 'float'>, {'PF05956': 0.24043478260869602})
+Processing: PF18862
+defaultdict(<class 'float'>, {'PF18862': 0.7243256997455473})
+defaultdict(<class 'float'>, {'PF18862': 0.4855216284987273})
+defaultdict(<class 'float'>, {'PF18862': 0.24363867684478355})
+Processing: PF04110
+defaultdict(<class 'float'>, {'PF04110': 0.7182386363636374})
+defaultdict(<class 'float'>, {'PF04110': 0.47897727272727336})
+defaultdict(<class 'float'>, {'PF04110': 0.2386931818181822})
+Processing: PF04111
+defaultdict(<class 'float'>, {'PF04111': 0.7198333333333324})
+defaultdict(<class 'float'>, {'PF04111': 0.47872222222222205})
+defaultdict(<class 'float'>, {'PF04111': 0.24024999999999985})
+Processing: PF17675
+defaultdict(<class 'float'>, {'PF17675': 0.7194360902255642})
+defaultdict(<class 'float'>, {'PF17675': 0.4807894736842106})
+defaultdict(<class 'float'>, {'PF17675': 0.23642857142857124})
+Processing: PF01636
+defaultdict(<class 'float'>, {'PF01636': 0.719625})
+defaultdict(<class 'float'>, {'PF01636': 0.4803749999999996})
+defaultdict(<class 'float'>, {'PF01636': 0.24249999999999972})
+Processing: PF06105
+defaultdict(<class 'float'>, {'PF06105': 0.7251724137931024})
+defaultdict(<class 'float'>, {'PF06105': 0.48209051724137836})
+defaultdict(<class 'float'>, {'PF06105': 0.2388146551724136})
+Processing: PF14557
+defaultdict(<class 'float'>, {'PF14557': 0.7228977272727274})
+defaultdict(<class 'float'>, {'PF14557': 0.47943181818181846})
+defaultdict(<class 'float'>, {'PF14557': 0.23920454545454578})
+Processing: PF04655
+defaultdict(<class 'float'>, {'PF04655': 0.7192490118577074})
+defaultdict(<class 'float'>, {'PF04655': 0.48023715415019763})
+defaultdict(<class 'float'>, {'PF04655': 0.2371739130434782})
+Processing: PF05918
+defaultdict(<class 'float'>, {'PF05918': 0.7262616822429908})
+defaultdict(<class 'float'>, {'PF05918': 0.48181308411214935})
+defaultdict(<class 'float'>, {'PF05918': 0.23749532710280366})
+Processing: PF05778
+defaultdict(<class 'float'>, {'PF05778': 0.7132142857142854})
+defaultdict(<class 'float'>, {'PF05778': 0.4769285714285704})
+defaultdict(<class 'float'>, {'PF05778': 0.24250000000000005})
+Processing: PF18769
+defaultdict(<class 'float'>, {'PF18769': 0.7162745098039214})
+defaultdict(<class 'float'>, {'PF18769': 0.4776470588235292})
+defaultdict(<class 'float'>, {'PF18769': 0.2394117647058821})
+Processing: PF18772
+defaultdict(<class 'float'>, {'PF18772': 0.7219714285714279})
+defaultdict(<class 'float'>, {'PF18772': 0.47628571428571453})
+defaultdict(<class 'float'>, {'PF18772': 0.239228571428571})
+Processing: PF18771
+defaultdict(<class 'float'>, {'PF18771': 0.7372266214177993})
+defaultdict(<class 'float'>, {'PF18771': 0.48944193061840113})
+defaultdict(<class 'float'>, {'PF18771': 0.24340120663650047})
+Processing: PF18775
+defaultdict(<class 'float'>, {'PF18775': 0.6997979797979798})
+defaultdict(<class 'float'>, {'PF18775': 0.46363636363636346})
+defaultdict(<class 'float'>, {'PF18775': 0.23838383838383845})
+Processing: PF18774
+defaultdict(<class 'float'>, {'PF18774': 0.7224436090225567})
+defaultdict(<class 'float'>, {'PF18774': 0.482368421052631})
+defaultdict(<class 'float'>, {'PF18774': 0.23375939849624072})
+Processing: PF05240
+defaultdict(<class 'float'>, {'PF05240': 0.7027899767501934})
+defaultdict(<class 'float'>, {'PF05240': 0.46254197881684317})
+defaultdict(<class 'float'>, {'PF05240': 0.23779385171790232})
+Processing: PF08210
+defaultdict(<class 'float'>, {'PF08210': 0.7290056818181827})
+defaultdict(<class 'float'>, {'PF08210': 0.4853125000000007})
+defaultdict(<class 'float'>, {'PF08210': 0.24105113636363662})
+Processing: PF04691
+defaultdict(<class 'float'>, {'PF04691': 0.7092741935483851})
+defaultdict(<class 'float'>, {'PF04691': 0.4754032258064521})
+defaultdict(<class 'float'>, {'PF04691': 0.2431451612903227})
+Processing: PF05461
+defaultdict(<class 'float'>, {'PF05461': 0.7200167224080274})
+defaultdict(<class 'float'>, {'PF05461': 0.4783444816053512})
+defaultdict(<class 'float'>, {'PF05461': 0.23941471571906345})
+Processing: PF01442
+defaultdict(<class 'float'>, {'PF01442': 0.7198429319371733})
+defaultdict(<class 'float'>, {'PF01442': 0.4808115183246068})
+defaultdict(<class 'float'>, {'PF01442': 0.24541884816753912})
+Processing: PF07464
+defaultdict(<class 'float'>, {'PF07464': 0.7198979591836744})
+defaultdict(<class 'float'>, {'PF07464': 0.47744897959183724})
+defaultdict(<class 'float'>, {'PF07464': 0.24136054421768727})
+Processing: PF11032
+defaultdict(<class 'float'>, {'PF11032': 0.7260052910052913})
+defaultdict(<class 'float'>, {'PF11032': 0.4824867724867722})
+defaultdict(<class 'float'>, {'PF11032': 0.2364814814814814})
+Processing: PF12925
+defaultdict(<class 'float'>, {'PF12925': 0.7270942408376965})
+defaultdict(<class 'float'>, {'PF12925': 0.48159685863874285})
+defaultdict(<class 'float'>, {'PF12925': 0.24026178010471186})
+Processing: PF01583
+defaultdict(<class 'float'>, {'PF01583': 0.7167295597484276})
+defaultdict(<class 'float'>, {'PF01583': 0.47506289308176014})
+defaultdict(<class 'float'>, {'PF01583': 0.24018867924528225})
+Processing: PF01261
+defaultdict(<class 'float'>, {'PF01261': 0.7159760956175296})
+defaultdict(<class 'float'>, {'PF01261': 0.4770717131474105})
+defaultdict(<class 'float'>, {'PF01261': 0.24382470119521918})
+Processing: PF16399
+defaultdict(<class 'float'>, {'PF16399': 0.7255006257822277})
+defaultdict(<class 'float'>, {'PF16399': 0.48164580725907313})
+defaultdict(<class 'float'>, {'PF16399': 0.23925531914893627})
+Processing: PF02610
+defaultdict(<class 'float'>, {'PF02610': 0.7258123249299712})
+defaultdict(<class 'float'>, {'PF02610': 0.48345938375350117})
+defaultdict(<class 'float'>, {'PF02610': 0.23841736694677856})
+Processing: PF11762
+defaultdict(<class 'float'>, {'PF11762': 0.7183043478260868})
+defaultdict(<class 'float'>, {'PF11762': 0.47573913043478355})
+defaultdict(<class 'float'>, {'PF11762': 0.24056521739130463})
+Processing: PF02311
+defaultdict(<class 'float'>, {'PF02311': 0.724781021897809})
+defaultdict(<class 'float'>, {'PF02311': 0.4858029197080297})
+defaultdict(<class 'float'>, {'PF02311': 0.24072992700729945})
+Processing: PF14525
+defaultdict(<class 'float'>, {'PF14525': 0.7171839080459772})
+defaultdict(<class 'float'>, {'PF14525': 0.4816954022988505})
+defaultdict(<class 'float'>, {'PF14525': 0.24445402298850558})
+Processing: PF06719
+defaultdict(<class 'float'>, {'PF06719': 0.7194630872483222})
+defaultdict(<class 'float'>, {'PF06719': 0.4828859060402692})
+defaultdict(<class 'float'>, {'PF06719': 0.2386577181208056})
+Processing: PF06081
+defaultdict(<class 'float'>, {'PF06081': 0.7221126760563381})
+defaultdict(<class 'float'>, {'PF06081': 0.48257042253521126})
+defaultdict(<class 'float'>, {'PF06081': 0.24598591549295798})
+Processing: PF10334
+defaultdict(<class 'float'>, {'PF10334': 0.7193260869565214})
+defaultdict(<class 'float'>, {'PF10334': 0.4793043478260878})
+defaultdict(<class 'float'>, {'PF10334': 0.24126086956521772})
+Processing: PF09757
+defaultdict(<class 'float'>, {'PF09757': 0.7228846153846145})
+defaultdict(<class 'float'>, {'PF09757': 0.4806730769230761})
+defaultdict(<class 'float'>, {'PF09757': 0.23853846153846106})
+Processing: PF03869
+defaultdict(<class 'float'>, {'PF03869': 0.7101960784313716})
+defaultdict(<class 'float'>, {'PF03869': 0.46764705882352886})
+defaultdict(<class 'float'>, {'PF03869': 0.24186274509803926})
+Processing: PF01917
+defaultdict(<class 'float'>, {'PF01917': 0.7214242424242421})
+defaultdict(<class 'float'>, {'PF01917': 0.4838787878787876})
+defaultdict(<class 'float'>, {'PF01917': 0.24009090909090916})
+Processing: PF06819
+defaultdict(<class 'float'>, {'PF06819': 0.7219469026548664})
+defaultdict(<class 'float'>, {'PF06819': 0.4818584070796453})
+defaultdict(<class 'float'>, {'PF06819': 0.23592920353982286})
+Processing: PF06847
+defaultdict(<class 'float'>, {'PF06847': 0.7123936170212758})
+defaultdict(<class 'float'>, {'PF06847': 0.4768085106382972})
+defaultdict(<class 'float'>, {'PF06847': 0.24313829787234018})
+Processing: PF03079
+defaultdict(<class 'float'>, {'PF03079': 0.7161075949367087})
+defaultdict(<class 'float'>, {'PF03079': 0.4782911392405066})
+defaultdict(<class 'float'>, {'PF03079': 0.2402848101265824})
+Processing: PF06317

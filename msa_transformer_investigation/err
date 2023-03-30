@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 73, in <module>
+    parse_pfam_alignments(sys.argv[2], drift_families)
+  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 51, in parse_pfam_alignments
+    with open(f"{align_name}.fa") as fhOut:
+FileNotFoundError: [Errno 2] No such file or directory: 'PF00569.fa'

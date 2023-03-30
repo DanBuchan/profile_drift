@@ -1,6 +1,7 @@
 import sys
 import csv
 from collections import defaultdict
+from os.path import exists
 
 """
 python find_closest_family_rep.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
@@ -53,7 +54,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 fhOut.write(f">{msa_line[0]}\n")
                 fhOut.write(f"{msa_line[1]}\n")
 
-    with open("famiies_list.txt") as fhOut:
+    with open("families_list.txt") as fhOut:
         for entry in nr_list:
             fhOut.write(f'{entry}\n')
         
@@ -67,7 +68,33 @@ def read_drifts(file):
             drift_families[row[1]].add(row[3])
     return drift_families
 
+def read_generated_seqs(file):
+    seqs = defaultdict(list)
+    family_id = ''
+    with open(file, "r") as fhIn:
+        for line in fhIn:
+            if line.startswith(">"):
+                family_id = line[1:]
+                family_id = family_id.split("_")[0]
+            else:
+                seqs[family_id].append(line.rstrip().replace("-", ''))
+    return seqs
+
+# loop over every 
+def find_closest_fasta(generated_seqs, pfam_family, families_hit): 
+    pass
+
+
 drift_families = read_drifts(sys.argv[1])
 
-# if thing doesn't exist
-parse_pfam_alignments(sys.argv[2], drift_families)
+if not exists("families_list.txt"):
+    parse_pfam_alignments(sys.argv[2], drift_families)
+
+for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
+    seqs = read_generated_seqs(file)
+    for pf_family in drift_families:
+        print(pf_family, drift_families[pf_family])
+        find_closest_fasta(seqs, pf_famliy, drift_families[pf_family]))
+
+for pf_family in drift_families:
+    print(pf_family, drift_families[pf_family])
