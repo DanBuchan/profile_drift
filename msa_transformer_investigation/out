@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 # /home/dbuchan/Applications/fasta36/bin/fasta36 -q -p -O out test.fa ./alignments/PF14537
+=======
+# /home/dbuchan/Applications/fasta36/bin/fasta36 -q -p -O out test1.fa test2.fa
+>>>>>>> 0cd260eab4f5b63128c472c666de8c33373f2f24
 FASTA searches a protein or DNA sequence data bank
  version 36.3.8i Nov, 2022
 Please cite:
  W.R. Pearson & D.J. Lipman PNAS (1988) 85:2444-2448
 
+<<<<<<< HEAD
 Query: test.fa
   1>>>1 - 58 aa
 Library: ./alignments/PF14537
@@ -22,5 +27,42 @@ Parameters: BL50 matrix (15:-5), open/ext: -10/-2
  Tcomplib [36.3.8i Nov, 2022] (24 proc)
  start: Mon Apr  3 17:56:35 2023 done: Mon Apr  3 17:56:35 2023
  Total Scan time:  0.000 Total Display time:  0.000
+=======
+Query: test1.fa
+  1>>>1 - 52 aa
+Library: test2.fa
+       69 residues in     1 sequences
+
+Statistics: (shuffled [492]) MLE statistics: Lambda= 0.1675;  K=0.01945
+ statistics sampled from 1 (1) to 492 sequences
+Algorithm: FASTA (3.8 Nov 2011) [optimized]
+Parameters: BL50 matrix (15:-5), open/ext: -10/-2
+ ktup: 2, E-join: 1 (1), E-opt: 0.2 (1), width:  16
+ Scan time:  0.010
+
+The best scores are:                                      opt bits E(1)
+2                                                  (  69)   46 17.4   0.021
+
+>>2                                                       (69 aa)
+ initn:  65 init1:  46 opt:  46  Z-score: 75.5  bits: 17.4 E(1): 0.021
+Smith-Waterman score: 57; 29.0% identity (58.1% similar) in 31 aa overlap (25-51:16-46)
+
+               10        20        30        40            50      
+1      ARLGDKCQDCHSERWKRTSETRLREKHKDCDSCHTGALMHDK--LPKN--CASCHR    
+                               :.. .:  :::..    .  .:.   : .::     
+2               QPTQPIAFSHKLHAGEHQINCAYCHTSVYKSKSANIPSANICMNCHSQIKT
+                        10        20        30        40        50 
+
+2      ESPEIKKIYRAIQKNQPI
+              60         
+
+
+
+52 residues in 1 query   sequences
+69 residues in 1 library sequences
+ Tcomplib [36.3.8i Nov, 2022] (12 proc in memory [0G])
+ start: Mon Apr  3 17:38:24 2023 done: Mon Apr  3 17:38:24 2023
+ Total Scan time:  0.010 Total Display time:  0.000
+>>>>>>> 0cd260eab4f5b63128c472c666de8c33373f2f24
 
 Function used was FASTA [36.3.8i Nov, 2022]
