@@ -119,9 +119,10 @@ def run_fasta(seq, target_family):
     results = results.decode('utf-8')
     parse_results = False
     lines = results.split("\n")
+    best_score = 100000000
     for line in lines:
         if parse_results:
-            print(line)
+            print(line[:-7])
         if line.startswith("The best scores are:"):
             parse_results = True
         if "residues in 1 query   sequences" in line:
