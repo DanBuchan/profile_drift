@@ -125,8 +125,8 @@ def run_fasta(seq, target_family):
             score = line[68:].replace(" ", "")
             if len(score) > 0:
                 score = float(score)
-            if score < best_score:
-                best_score = score
+                if score < best_score:
+                    best_score = score
         if line.startswith("The best scores are:"):
             parse_results = True
         if "residues in 1 query   sequences" in line:
