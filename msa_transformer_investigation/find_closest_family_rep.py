@@ -97,14 +97,16 @@ def read_fasta_seqs(family_id, file):
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
     closest_count = defaultdict(dict)
     target_seqs = {}
+    proceed_analysis = True
     for target in families_hit:
-        # We should check all the families are in our generated_seqs set as
-        # we skipped any families longer than 1024 residues as that was the 
-        # esm default size.
-        target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
+        if target in generated_seqs:
+            target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
+        else:
+            proceed_analysis = False
     print(pfam_family)
-    for seq in generated_seqs[pfam_family]:
-        print(seq)
+    if proceed_analysis:
+        for seq in generated_seqs[pfam_family]:
+            print(seq)
     
     return closest_count
 
