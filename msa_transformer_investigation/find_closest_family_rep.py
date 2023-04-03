@@ -2,7 +2,7 @@ import sys
 import csv
 from collections import defaultdict
 from os.path import exists
-import Bio
+from subprocess import Popen, PIPE
 
 """
 python find_closest_family_rep.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
@@ -92,6 +92,31 @@ def read_fasta_seqs(family_id, file):
             else:
                 seqs.append(line.rstrip().replace("-", ''))
     return seqs
+     
+def run_fasta(seq, target_family):
+    with open("query.fa", "w") as fhOut: 
+        fhOut.write(">Query\n")
+        fhOut.write(f"{seq}\n")
+    # for pair in pairs:
+    args = ['/home/dbuchan/Applications/fasta36/bin/fasta36',
+            '-q',
+            '-p',
+            '-O',
+            'out',
+            'query.fa', 
+            f'./alignments/{target_family}.fa'
+            ]
+    print("Calculating", " ".join(args))
+    try:
+        p = Popen(args, stdout=PIPE, stderr=PIPE)
+        results = p.stdout
+    except Exception as e:
+        print(str(e))
+        sys.exit(1)
+    if code != 0:
+        print("Non Zero Exit status: "+str(code))
+        raise OSError("Non Zero Exit status: "+str(code))
+    print(results)
 
 # loop over every 
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
@@ -109,6 +134,8 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
         for seq in generated_seqs[pfam_family]:
             for target_family in families_hit:
                 print("Comparing", seq, "to", target_family)
+                fun_fasta(seq, target_family)
+                exit()
         exit()
     return closest_count
 
