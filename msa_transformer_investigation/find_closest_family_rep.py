@@ -125,5 +125,5 @@ for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
-
+        exit()
 f
