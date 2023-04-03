@@ -117,8 +117,7 @@ def run_fasta(seq, target_family):
         print("Non Zero Exit status: "+str(p.returncode))
         raise OSError("Non Zero Exit status: "+str(p.returncode))
     results = results.decode('utf-8')
-    for line in results:
-        print(line)
+    print(results)
 
 # loop over every 
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
