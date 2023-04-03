@@ -105,7 +105,10 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             proceed_analysis = False
     if proceed_analysis:
         print(pfam_family)
-        for seq in generated_seqs[pfam_family]:
+        for seq in generated_seqs[pfamfamily]:
+            for target_family in target_seqs:
+                for target_seq in target_seqs[target_family]:
+                     print("Comparing", seq, target_seq, "from", target_family)
             print(seq)
     
     return closest_count
@@ -120,3 +123,5 @@ for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
+
+f
