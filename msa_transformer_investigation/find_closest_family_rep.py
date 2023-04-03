@@ -125,12 +125,13 @@ def run_fasta(seq, target_family):
             score = line[68:].replace(" ", "")
             if len(score) > 0:
                 score = float(score)
-            print(score)
+            if score < best_score:
+                best_score = score
         if line.startswith("The best scores are:"):
             parse_results = True
         if "residues in 1 query   sequences" in line:
             parse_results = False
-
+    return best_score
 
 # loop over every 
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
@@ -145,10 +146,16 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             proceed_analysis = False
     
     if proceed_analysis:
+        best_scoring_family = ''
+        best_score = 100000
         for seq in generated_seqs[pfam_family]:
             for target_family in families_hit:
                 print("Comparing", seq, "to", target_family)
-                run_fasta(seq, target_family)
+                score = run_fasta(seq, target_family)
+                if score < best_score:
+                    best_score = score
+                    best_scoring_family = target_family
+        print(best_score, best_scoring_family)
         exit()
     return closest_count
 
