@@ -105,7 +105,7 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             proceed_analysis = False
     if proceed_analysis:
         print(pfam_family)
-        for seq in generated_seqs[pfamfamily]:
+        for seq in generated_seqs[pfam_family]:
             for target_family in target_seqs:
                 for target_seq in target_seqs[target_family]:
                      print("Comparing", seq, target_seq, "from", target_family)
