@@ -118,7 +118,7 @@ def run_fasta(seq, target_family):
         raise OSError("Non Zero Exit status: "+str(p.returncode))
     results = results.decode('utf-8')
     parse_results = False
-    lines = results.split()
+    lines = results.split("\n")
     for line in lines:
         print(line)
         if line.startswith("The best scores are:"):
