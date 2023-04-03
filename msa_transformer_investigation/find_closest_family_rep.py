@@ -114,8 +114,8 @@ def run_fasta(seq, target_family):
         print(str(e))
         sys.exit(1)
     if p.returncode != 0:
-        print("Non Zero Exit status: "+str(code))
-        raise OSError("Non Zero Exit status: "+str(code))
+        print("Non Zero Exit status: "+str(p.returncode))
+        raise OSError("Non Zero Exit status: "+str(p.returncode))
     print(results)
 
 # loop over every 
