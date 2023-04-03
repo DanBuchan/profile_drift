@@ -103,13 +103,15 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
         else:
             proceed_analysis = False
+
+    print(target_seqs)        
     if proceed_analysis:
         print(pfam_family)
         for seq in generated_seqs[pfam_family]:
             for target_family in target_seqs:
                 for target_seq in target_seqs[target_family]:
-                     print("Comparing", seq, target_seq, "from", target_family)
-            print(seq)
+                    pass
+                    # print("Comparing", seq, target_seq, "from", target_family)
     
     return closest_count
 
