@@ -1,9 +1,8 @@
-from typing import List, Tuple, Optional, Dict, NamedTuple, Union, Callable
-import itertools
-import os
+from typing import List, Tuple, Optional, Dict,  Union, Callable
 import sys
 import string
 from pathlib import Path
+import csv
 
 import numpy as np
 import torch
@@ -276,6 +275,10 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
         inputs = greedy_select(inputs, num_seqs=200) # can change this to pass more/fewer sequence
         msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
         input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
+        if input_tokens.shape[1] > 1024:
+            # we don't generate seqs longer than 1024 residues
+            print(f"Skipping Familiy: {align_name}")
+            continue
         substitution_numbers = round(len(input_tokens[0])*mask_amount)
         mask = torch.rand(msa_transformer_batch_tokens.shape).argsort(2) < substitution_numbers
         msa_transformer_batch_tokens = torch.where(mask, 31, msa_transformer_batch_tokens)
@@ -362,19 +365,15 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
     fh50.close()
     fh75.close()
 
-
-# WE SHOULD REALLY PARSE iteration_summary.csv NOT parsed_pfam_iteration_data.csv
 def get_drift_set(file):
     drifts = set()
-    with open(file, "r") as fh:
-        for line in fh:
-            entries = line.split("|")
-            for entry in entries:
-                hit_data = entry.split(",") 
-                for element in hit_data:
-                    if element.startswith("PF"):
-                        drifts.add(element)
+    with open(file, "r") as fhIn:
+        next(fhIn)
+        iteration_reader = csv.reader(fhIn, delimiter=",")
+        for row in iteration_reader:
+            drifts.add(row[3])
     return list(drifts)    
+
 
 drift_families = get_drift_set(sys.argv[1])
 msa_transformer, msa_transformer_alphabet = esm.pretrained.esm_msa1b_t12_100M_UR50S()
@@ -392,5 +391,5 @@ msa_transformer = msa_transformer.eval().cuda()
 msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
 # READ LIST OF FAMILIES THAT HAVE DRIFT
 
-# python esm_seq_generator.py ../parsed_pfam_iteration_data.csv ~/Data/pfam/Pfam-A.full.uniprot
+# python esm_seq_generator.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
 read_pfam_alignments(sys.argv[2], drift_families, msa_transformer, msa_transformer_alphabet)

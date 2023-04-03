@@ -2,6 +2,7 @@ import sys
 import csv
 from collections import defaultdict
 from os.path import exists
+import Bio
 
 """
 python find_closest_family_rep.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
@@ -63,6 +64,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
 def read_drifts(file):
     drift_families = defaultdict(set)
     with open(file, "r") as fhIn:
+        next(fhIn)
         iteration_reader = csv.reader(fhIn, delimiter=",")
         for row in iteration_reader:
             drift_families[row[1]].add(row[3])
@@ -75,26 +77,44 @@ def read_generated_seqs(file):
         for line in fhIn:
             if line.startswith(">"):
                 family_id = line[1:]
+                family_id = family_id.rstrip()
                 family_id = family_id.split("_")[0]
             else:
                 seqs[family_id].append(line.rstrip().replace("-", ''))
     return seqs
 
+def read_fasta_seqs(family_id, file):
+    seqs = defaultdict(list)
+    with open(file, "r") as fhIn:
+        for line in fhIn:
+            if line.startswith(">"):
+                pass
+            else:
+                seqs[family_id].append(line.rstrip().replace("-", ''))
+    return seqs
+
 # loop over every 
-def find_closest_fasta(generated_seqs, pfam_family, families_hit): 
-    pass
+def find_closest_fasta(generated_seqs, pfam_family, families_hit):
+    closest_count = defaultdict(dict)
+    target_seqs = {}
+    for target in families_hit:
+        # We should check all the families are in our generated_seqs set as
+        # we skipped any families longer than 1024 residues as that was the 
+        # esm default size.
+        target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
+    print(pfam_family)
+    for seq in generated_seqs[pfam_family]:
+        print(seq)
+    
+    return closest_count
 
 
 drift_families = read_drifts(sys.argv[1])
-
 if not exists("families_list.txt"):
     parse_pfam_alignments(sys.argv[2], drift_families)
 
 for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
-    seqs = read_generated_seqs(file)
+    generated_seqs = read_generated_seqs(file)
     for pf_family in drift_families:
-        print(pf_family, drift_families[pf_family])
-        find_closest_fasta(seqs, pf_famliy, drift_families[pf_family]))
-
-for pf_family in drift_families:
-    print(pf_family, drift_families[pf_family])
+        # print(pf_family, drift_families[pf_family])
+        results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])

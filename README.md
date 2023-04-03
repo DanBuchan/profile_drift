@@ -246,3 +246,5 @@ the family and drift family members. Taken an n-nearest (1, 3, and 5) nearest ne
 # TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
+
+2. Check fam family size. see if it is correlated to elimination. i.e. bigger families are more likely to eliminate smaller ones as they can pull the cluster centroid to them
