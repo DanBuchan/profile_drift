@@ -84,13 +84,13 @@ def read_generated_seqs(file):
     return seqs
 
 def read_fasta_seqs(family_id, file):
-    seqs = defaultdict(list)
+    seqs = []
     with open(file, "r") as fhIn:
         for line in fhIn:
             if line.startswith(">"):
                 pass
             else:
-                seqs[family_id].append(line.rstrip().replace("-", ''))
+                seqs.append(line.rstrip().replace("-", ''))
     return seqs
 
 # loop over every 
