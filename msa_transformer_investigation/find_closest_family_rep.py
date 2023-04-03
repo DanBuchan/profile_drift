@@ -103,7 +103,8 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
         else:
             proceed_analysis = False
-     
+    
+    
     if proceed_analysis:
         print(pfam_family)
         for seq in generated_seqs[pfam_family]:
@@ -113,7 +114,7 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
                     pass
                     # print(target_seq)
                     # print("Comparing", seq, target_seq, "from", target_family)
-    
+    exit()
     return closest_count
 
 
@@ -126,5 +127,3 @@ for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
-        exit()
-f
