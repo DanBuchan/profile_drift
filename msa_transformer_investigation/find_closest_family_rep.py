@@ -122,7 +122,9 @@ def run_fasta(seq, target_family):
     best_score = 100000000
     for line in lines:
         if parse_results:
-            score = float(line[68:].replace(" ", ""))
+            score = line[68:].replace(" ", "")
+            if len(score) > 0:
+                score = float(score)
             print(score)
         if line.startswith("The best scores are:"):
             parse_results = True
