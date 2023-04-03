@@ -120,7 +120,7 @@ def run_fasta(seq, target_family):
     parse_results = False
     lines = results.split()
     for line in lines:
-        if line.startswith("The best scores are:")
+        if line.startswith("The best scores are:"):
             parse_results = True
         if "residues in 1 query   sequences" in line:
             parse_results = False
