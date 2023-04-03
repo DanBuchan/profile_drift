@@ -146,16 +146,16 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             proceed_analysis = False
     
     if proceed_analysis:
-        best_scoring_family = ''
-        best_score = 100000
         for seq in generated_seqs[pfam_family]:
+            best_scoring_family = ''
+            best_score = 100000
             for target_family in families_hit:
                 print("Comparing", seq, "to", target_family)
                 score = run_fasta(seq, target_family)
                 if score < best_score:
                     best_score = score
                     best_scoring_family = target_family
-        print(best_score, best_scoring_family)
+            print(best_score, best_scoring_family)
         exit()
     return closest_count
 
