@@ -114,7 +114,7 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
                     pass
                     # print(target_seq)
                     # print("Comparing", seq, target_seq, "from", target_family)
-    exit()
+        exit()
     return closest_count
 
 
