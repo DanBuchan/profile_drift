@@ -120,13 +120,13 @@ def run_fasta(seq, target_family):
     parse_results = False
     lines = results.split("\n")
     for line in lines:
-        print(line)
+        if parse_results:
+            print(line)
         if line.startswith("The best scores are:"):
             parse_results = True
         if "residues in 1 query   sequences" in line:
             parse_results = False
-        if parse_results:
-            print(line)
+
 
 # loop over every 
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
