@@ -109,6 +109,7 @@ def run_fasta(seq, target_family):
     print("Calculating", " ".join(args))
     try:
         p = Popen(args, stdout=PIPE, stderr=PIPE)
+        p.communicate()
         results = p.stdout
     except Exception as e:
         print(str(e))
