@@ -117,6 +117,15 @@ def run_fasta(seq, target_family):
         print("Non Zero Exit status: "+str(p.returncode))
         raise OSError("Non Zero Exit status: "+str(p.returncode))
     results = results.decode('utf-8')
+    parse_results = False:
+    lines = results.split()
+    for line in lines:
+        if line.startswith("The best scores are:")
+            parse_results = True
+        if "residues in 1 query   sequences" in line:
+            parse_results = False
+        if parse_results:
+            print(line)
     print(results)
 
 # loop over every 
