@@ -126,7 +126,6 @@ def run_fasta(seq, target_family):
             parse_results = False
         if parse_results:
             print(line)
-    print(results)
 
 # loop over every 
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
