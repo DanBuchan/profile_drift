@@ -226,7 +226,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         res_count = 0
         for result in transformer_predictions[name]['logits'].cpu().numpy():
             output_seq = ''
-            res_count + = 1
+            res_count += 1
             for i, new_seq in enumerate(result):
                 # print("comparing")
                 # print(input_tokens[i])
