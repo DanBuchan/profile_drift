@@ -93,7 +93,7 @@ def read_fasta_seqs(family_id, file):
                 seqs.append(line.rstrip().replace("-", ''))
     return seqs
      
-def run_fasta(seq, target_family):
+def run_fasta(seq):
     with open("query.fa", "w") as fhOut: 
         fhOut.write(">Query\n")
         fhOut.write(f"{seq}\n")
@@ -104,7 +104,7 @@ def run_fasta(seq, target_family):
             '-O',
             'out',
             'query.fa', 
-            f'./alignments/{target_family}.fa'
+            f'./search_targets.fa'
             ]
     print("Calculating", " ".join(args))
     try:
@@ -119,53 +119,68 @@ def run_fasta(seq, target_family):
     results = results.decode('utf-8')
     parse_results = False
     lines = results.split("\n")
-    best_score = 100000000
+    best_hit = ''
+    best_score = ''
     for line in lines:
         if parse_results:
-            score = line[68:].replace(" ", "")
-            if len(score) > 0:
-                score = float(score)
-                if score < best_score:
-                    best_score = score
+            entries = line.split()
+            best_hit = entries[0]
+            best_hit = best_hit.split("___")[1]
+            best_score = line[62:]
+            best_score = float(best_score.split()[0])
+            break
         if line.startswith("The best scores are:"):
             parse_results = True
         if "residues in 1 query   sequences" in line:
             parse_results = False
-    return best_score
+    
+    return [best_hit, best_score]
 
 # loop over every 
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
-    closest_count = defaultdict(dict)
     # target_seqs = {}
     proceed_analysis = True
+    fhOut = open("search_targets.fa", "w")
+    search_seqs = []
     for target in families_hit:
+        # here we generate a searchable file.
         if target in generated_seqs:
+            seq_id = ''
+            with open(f"alignments/{target}.fa") as fhIn:
+                for line in fhIn:
+                    if line.startswith(">"):
+                        seq_id = line.rstrip()
+                        seq_id = f"{seq_id}___{target}"
+                    else:
+                        search_seqs.append([seq_id,line.rstrip()])
             pass
             # target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
         else:
             proceed_analysis = False
-    
+    for seq in search_seqs:
+        fhOut.write(f"{seq[0]}\n")
+        fhOut.write(f"{seq[1]}\n")  
+    fhOut.close()
+
+    results = []
     if proceed_analysis:
         for seq in generated_seqs[pfam_family]:
-            best_scoring_family = ''
-            best_score = 100000
-            for target_family in families_hit:
-                print("Comparing", seq, "to", target_family)
-                score = run_fasta(seq, target_family)
-                if score < best_score:
-                    best_score = score
-                    best_scoring_family = target_family
-            print(best_score, best_scoring_family)
-        exit()
-    return closest_count
-
+            best_hit = run_fasta(seq)
+            results.append([pfam_family] + best_hit )
+    return results
 
 drift_families = read_drifts(sys.argv[1])
 if not exists("families_list.txt"):
     parse_pfam_alignments(sys.argv[2], drift_families)
 
+fhResults = open("summarised_msa_model_results.csv", "w")
+fhResults.write("file,generated_family,best_hit_family,best_hit_score\n")
 for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
     generated_seqs = read_generated_seqs(file)
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
+        for hit in results:
+            # print(hit)
+            fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]}\n")
+

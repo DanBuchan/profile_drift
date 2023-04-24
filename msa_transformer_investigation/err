@@ -1,8 +1,8 @@
 Traceback (most recent call last):
-  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/esm_seq_generator.py", line 395, in <module>
-    read_pfam_alignments(sys.argv[2], drift_families, msa_transformer, msa_transformer_alphabet)
-  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/esm_seq_generator.py", line 335, in read_pfam_alignments
-    for line in fh:
-  File "/usr/local/lib/python3.10/codecs.py", line 322, in decode
-    (result, consumed) = self._buffer_decode(data, self.errors, final)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xf4 in position 6221: invalid continuation byte
+  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 182, in <module>
+    results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
+  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 168, in find_closest_fasta
+    best_hit = run_fasta(seq)
+  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 118, in run_fasta
+    raise OSError("Non Zero Exit status: "+str(p.returncode))
+OSError: Non Zero Exit status: 1

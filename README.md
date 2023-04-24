@@ -228,6 +228,8 @@ differing amounts
 
 masked_25.fa, masked_50.fa, masked_75.fa
 
+25 = 25% of the seq is masked out before prompting the network
+
 ## find_closest_family_rep.py
 
 Open the list of drift families (parsed_pfam_iteration_data.csv). 
@@ -240,8 +242,11 @@ Output them to some files as we don't have to process the whole pfam file each t
 Then take our generated seqs (i.e. masked_25.fa) and all against all fasta them against 
 the family and drift family members. Taken an n-nearest (1, 3, and 5) nearest neighbour vote.
 
+Produces summarised_msa_model_results.csv. Note some seqs fail to find a good match even when compared to the "drift" families
 
+## esm_single_seq_generator.py
 
+same as  esm_seq_generator.py but using the single seq model
 
 # TODO
 
