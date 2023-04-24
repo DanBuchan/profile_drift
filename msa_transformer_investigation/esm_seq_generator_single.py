@@ -188,6 +188,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     for name, inputs in msa.items():
         seqs = choices(inputs, k=200)
     # print(seqs)
+    result_count = 0
     for seq in seqs:
         name = seq[0]
         inputs = (seq[0], seq[1])
@@ -223,10 +224,9 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         # print(msa_transformer_predictions[name]['logits'])
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
-        res_count = 0
+        res_count = res_count + 1
         for result in transformer_predictions[name]['logits'].cpu().numpy():
             output_seq = ''
-            res_count = res_count + 1
             for i, new_seq in enumerate(result):
                 # print("comparing")
                 # print(input_tokens[i])
