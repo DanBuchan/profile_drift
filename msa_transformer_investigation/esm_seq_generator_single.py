@@ -201,7 +201,8 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
             print(f"Skipping Seq: {align_name}")
             continue
         substitution_numbers = round(input_tokens.size*mask_amount)
-        mask = torch.rand(transformer_batch_tokens.shape).argsort(2) < substitution_numbers
+        mask = torch.rand(transformer_batch_tokens.shape).argsort(1) < substitution_numbers
+        print(mask)
         transformer_batch_tokens = torch.where(mask, 31, transformer_batch_tokens)
         # print(msa_transformer_batch_labels)
         # print(msa_transformer_batch_strs)
