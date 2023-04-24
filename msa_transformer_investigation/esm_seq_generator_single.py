@@ -274,7 +274,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     transformer_results = []
     results = defaultdict(float)
     for name, inputs in msa.items():
-        print(name, inputs)
+        print(name)
         exit()
         transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
