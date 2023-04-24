@@ -224,19 +224,16 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
         for result in transformer_predictions[name]['logits'].cpu().numpy():
-            print(result)
+            output_seq = ''
             for i, new_seq in enumerate(result):
                 # print("comparing")
                 # print(input_tokens[i])
-                print(new_seq)
-                pred_array = np.argmax(new_seq, axis=0)
+                pred = np.argmax(new_seq, axis=0)
                 # print(pred_array)
-                output_seq = ''
-                for token in pred_array:
-                    output_seq += transformer_alphabet.get_tok(token)
-                    output_seq = output_seq.replace(".", "")
-                    output_seq = output_seq.replace("-", "")
-                    output_seq = output_seq.replace("-", "")
+                output_seq += transformer_alphabet.get_tok(pred)
+                output_seq = output_seq.replace(".", "")
+                output_seq = output_seq.replace("-", "")
+                output_seq = output_seq.replace("-", "")
                 fhOut.write(f">{align_name}_{i}\n")
                 fhOut.write(f"{output_seq}\n")
                 # print(pred_array)
