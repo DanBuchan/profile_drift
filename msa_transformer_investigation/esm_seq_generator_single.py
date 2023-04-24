@@ -9,17 +9,8 @@ import csv
 import numpy as np
 import torch
 from scipy.spatial.distance import squareform, pdist, cdist
-import matplotlib.pyplot as plt
-import matplotlib as mpl
-from Bio import SeqIO
-import biotite.structure as bs
-from biotite.structure.io.pdbx import PDBxFile, get_structure
-from biotite.database import rcsb
-from tqdm import tqdm
-import pandas as pd
 from collections import defaultdict
-
-import esm
+from random import choices
 
 torch.set_grad_enabled(False)
 
@@ -273,8 +264,11 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     transformer_predictions = {}
     transformer_results = []
     results = defaultdict(float)
+    seqs = []
     for name, inputs in msa.items():
-        print(name)
+        seqs = choices(inputs, k=200)
+    for name, inputs in seqs.items():
+        print(name, inputs)
         exit()
         transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
