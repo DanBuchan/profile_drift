@@ -188,7 +188,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     for name, inputs in msa.items():
         seqs = choices(inputs, k=200)
     # print(seqs)
-    result_count = 0
+    res_count = 0
     for seq in seqs:
         name = seq[0]
         inputs = (seq[0], seq[1])
