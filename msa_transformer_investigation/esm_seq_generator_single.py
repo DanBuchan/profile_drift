@@ -249,7 +249,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
             # print(f'{name} {i} tpr: {tpr}: {pred_size}')
             results[name] += tpr
         
-        results[name] = results[name]/(final_count+1)
+        results[name] = results[name]/(res_count+1)
     # print(results)
    
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
