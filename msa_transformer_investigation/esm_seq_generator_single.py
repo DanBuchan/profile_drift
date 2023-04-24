@@ -187,7 +187,9 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     seqs = []
     for name, inputs in msa.items():
         seqs = choices(inputs, k=200)
-    for name, inputs in seqs.items():
+    for seq in seqs:
+        name = seq[0]
+        inputs = seq[1]
         print(name, inputs)
         exit()
         transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
