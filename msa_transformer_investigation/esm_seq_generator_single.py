@@ -187,6 +187,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     seqs = []
     for name, inputs in msa.items():
         seqs = choices(inputs, k=200)
+    print(seqs)
     for seq in seqs:
         name = seq[0]
         inputs = seq[1]
@@ -308,7 +309,7 @@ for name, param in esm2_transformer.named_parameters():
     param.requires_grad = False
 esm2_transformer = esm2_transformer.eval().cuda()
 
-esm2_transformer_batch_converter = esm2_transformer_alphabet.get_batch_converter()
+# esm2_transformer_batch_converter = esm2_transformer_alphabet.get_batch_converter()
 # READ LIST OF FAMILIES THAT HAVE DRIFT
 
 # python esm_seq_generator.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
