@@ -195,8 +195,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         # exit()
         transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
-        print(input_tokens.size)
-        exit()
+        
         if len(seq[1]) > 1024:
             # we don't generate seqs longer than 1024 residues
             print(f"Skipping Seq: {align_name}")
