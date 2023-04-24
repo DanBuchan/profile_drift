@@ -224,10 +224,11 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
         for result in transformer_predictions[name]['logits'].cpu().numpy():
-            for i, seq in enumerate(result):
+            for i, new_seq in enumerate(result):
                 # print("comparing")
                 # print(input_tokens[i])
-                pred_array = np.argmax(seq, axis=1)
+                print(new_seq)
+                pred_array = np.argmax(new_seq, axis=1)
                 # print(pred_array)
                 output_seq = ''
                 for token in pred_array:
