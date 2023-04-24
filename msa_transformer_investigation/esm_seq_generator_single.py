@@ -191,7 +191,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     for seq in seqs:
         name = seq[0]
         inputs = (seq[0], seq[1])
-        print(name, inputs)
+        # print(name, inputs)
         # exit()
         transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
@@ -202,9 +202,9 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
             continue
         substitution_numbers = round(input_tokens.size*mask_amount)
         mask = torch.rand(transformer_batch_tokens.shape).argsort(1) < substitution_numbers
-        print(mask)
+        # print(mask)
         transformer_batch_tokens = torch.where(mask, 31, transformer_batch_tokens)
-        print(transformer_batch_tokens)
+        # print(transformer_batch_tokens)
         # print(msa_transformer_batch_labels)
         # print(msa_transformer_batch_strs)
         # print(input_tokens)
@@ -234,6 +234,9 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
                 output_seq = output_seq.replace(".", "")
                 output_seq = output_seq.replace("-", "")
                 output_seq = output_seq.replace("-", "")
+                output_seq = output_seq.replace("<cls>", "")
+                output_seq = output_seq.replace("<eos>", "")
+                
                 fhOut.write(f">{align_name}_{i}\n")
                 fhOut.write(f"{output_seq}\n")
                 # print(pred_array)
