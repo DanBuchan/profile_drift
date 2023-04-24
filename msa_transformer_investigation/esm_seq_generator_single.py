@@ -267,23 +267,24 @@ def plot_contacts_and_predictions(
 # read in Pfam stockholm data ~/data/pfam/Pfam-A.full.uniprot
 
 
-def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, mask_amount, fhOut):
+def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amount, fhOut):
 
-    msa_transformer_batch_converter = msa_transformer_alphabet.get_batch_converter()
-    msa_transformer_predictions = {}
-    msa_transformer_results = []
+    transformer_batch_converter = transformer_alphabet.get_batch_converter()
+    transformer_predictions = {}
+    transformer_results = []
     results = defaultdict(float)
     for name, inputs in msa.items():
-        inputs = greedy_select(inputs, num_seqs=200) # can change this to pass more/fewer sequence
-        msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
-        input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
+        print(name, inputs)
+        exit()
+        transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
+        input_tokens = transformer_batch_tokens.cpu().numpy()[0]
         if input_tokens.shape[1] > 1024:
             # we don't generate seqs longer than 1024 residues
             print(f"Skipping Familiy: {align_name}")
             continue
         substitution_numbers = round(len(input_tokens[0])*mask_amount)
-        mask = torch.rand(msa_transformer_batch_tokens.shape).argsort(2) < substitution_numbers
-        msa_transformer_batch_tokens = torch.where(mask, 31, msa_transformer_batch_tokens)
+        mask = torch.rand(transformer_batch_tokens.shape).argsort(2) < substitution_numbers
+        transformer_batch_tokens = torch.where(mask, 31, transformer_batch_tokens)
         # print(msa_transformer_batch_labels)
         # print(msa_transformer_batch_strs)
         # print(input_tokens)
@@ -297,12 +298,12 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
         #    residues in constants.py 4-30, '.' is 29, '-' is 30
         #    <mask>   31
         # Mask IDX is 31
-        msa_transformer_batch_tokens = msa_transformer_batch_tokens.to(next(msa_transformer.parameters()).device)
-        msa_transformer_predictions[name] = msa_transformer(msa_transformer_batch_tokens)
+        transformer_batch_tokens = transformer_batch_tokens.to(next(transformer.parameters()).device)
+        transformer_predictions[name] = msa_transformer(transformer_batch_tokens)
         # print(msa_transformer_predictions[name]['logits'])
         # print(msa_transformer_predictions[name]['logits'].size())
-        input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
-        for result in msa_transformer_predictions[name]['logits'].cpu().numpy():
+        input_tokens = transformer_batch_tokens.cpu().numpy()[0]
+        for result in transformer_predictions[name]['logits'].cpu().numpy():
             for i, seq in enumerate(result):
                 # print("comparing")
                 # print(input_tokens[i])
