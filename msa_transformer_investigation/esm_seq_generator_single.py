@@ -190,10 +190,10 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     # print(seqs)
     for seq in seqs:
         name = seq[0]
-        inputs = seq[1]
+        inputs = (seq[0], seq[1])
         print(name, inputs)
         # exit()
-        transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([[(inputs)]])
+        transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
         if input_tokens.shape[1] > 1024:
             # we don't generate seqs longer than 1024 residues
