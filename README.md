@@ -246,7 +246,7 @@ Produces summarised_msa_model_results.csv. Note some seqs fail to find a good ma
 
 ## esm_single_seq_generator.py
 
-same as  esm_seq_generator.py but using the single seq model
+same as esm_seq_generator.py but using the single seq model
 
 # TODO
 
