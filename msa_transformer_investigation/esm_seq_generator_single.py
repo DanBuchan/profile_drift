@@ -219,7 +219,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         #    <mask>   31
         # Mask IDX is 31
         transformer_batch_tokens = transformer_batch_tokens.to(next(transformer.parameters()).device)
-        transformer_predictions[name] = msa_transformer(transformer_batch_tokens)
+        transformer_predictions[name] = transformer(transformer_batch_tokens)
         # print(msa_transformer_predictions[name]['logits'])
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
@@ -231,7 +231,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
                 # print(pred_array)
                 output_seq = ''
                 for token in pred_array:
-                    output_seq += msa_transformer_alphabet.get_tok(token)
+                    output_seq += transformer_alphabet.get_tok(token)
                     output_seq = output_seq.replace(".", "")
                     output_seq = output_seq.replace("-", "")
                     output_seq = output_seq.replace("-", "")
