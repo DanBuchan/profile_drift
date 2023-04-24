@@ -223,30 +223,31 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         # print(msa_transformer_predictions[name]['logits'])
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
-        final_count = 0
+        res_count = 0
         for result in transformer_predictions[name]['logits'].cpu().numpy():
             output_seq = ''
+            res_count + = 1
             for i, new_seq in enumerate(result):
                 # print("comparing")
                 # print(input_tokens[i])
                 pred = np.argmax(new_seq, axis=0)
                 # print(pred_array)
                 output_seq += transformer_alphabet.get_tok(pred)
+                tp_count = np.sum(input_tokens[i] == pred)
             output_seq = output_seq.replace(".", "")
             output_seq = output_seq.replace("-", "")
             output_seq = output_seq.replace("-", "")
             output_seq = output_seq.replace("<cls>", "")
             output_seq = output_seq.replace("<eos>", "")
             
-            fhOut.write(f">{align_name}_{i}\n")
+            fhOut.write(f">{align_name}_{res_count}\n")
             fhOut.write(f"{output_seq}\n")
             # print(pred_array)
-            tp_count = np.sum(input_tokens[i] == pred)
+
             pred_size = input_tokens[i].size
             tpr = tp_count/pred_size
             # print(f'{name} {i} tpr: {tpr}: {pred_size}')
             results[name] += tpr
-            final_count = i
         
         results[name] = results[name]/(final_count+1)
     # print(results)
