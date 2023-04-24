@@ -12,6 +12,8 @@ from scipy.spatial.distance import squareform, pdist, cdist
 from collections import defaultdict
 from random import choices
 
+import esm
+
 torch.set_grad_enabled(False)
 
 # This is an efficient way to delete lowercase characters and insertion characters from a string
