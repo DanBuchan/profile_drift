@@ -228,6 +228,14 @@ differing amounts
 
 masked_25.fa, masked_50.fa, masked_75.fa
 
+
+## esm_seq_generator.py
+
+Here we use single seq transformer to generate new sequences for pfam alignments masked with differing amounts
+
+masked_25_single.fa, masked_50_single.fa, masked_75_single.fa
+
+
 ## find_closest_family_rep.py
 
 Open the list of drift families (parsed_pfam_iteration_data.csv). 
