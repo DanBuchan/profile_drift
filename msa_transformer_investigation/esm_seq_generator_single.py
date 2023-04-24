@@ -228,7 +228,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
                 # print("comparing")
                 # print(input_tokens[i])
                 print(new_seq)
-                pred_array = np.argmax(new_seq, axis=1)
+                pred_array = np.argmax(new_seq, axis=0)
                 # print(pred_array)
                 output_seq = ''
                 for token in pred_array:
