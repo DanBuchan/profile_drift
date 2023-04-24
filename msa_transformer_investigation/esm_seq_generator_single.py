@@ -48,28 +48,6 @@ def extend(a, b, c, L, A, D):
     d = [L * np.cos(A), L * np.sin(A) * np.cos(D), -L * np.sin(A) * np.sin(D)]
     return c + sum([m * d for m, d in zip(m, d)])
 
-
-def contacts_from_pdb(
-    structure: bs.AtomArray,
-    distance_threshold: float = 8.0,
-    chain: Optional[str] = None,
-) -> np.ndarray:
-    mask = ~structure.hetero
-    if chain is not None:
-        mask &= structure.chain_id == chain
-
-    N = structure.coord[mask & (structure.atom_name == "N")]
-    CA = structure.coord[mask & (structure.atom_name == "CA")]
-    C = structure.coord[mask & (structure.atom_name == "C")]
-
-    Cbeta = extend(C, N, CA, 1.522, 1.927, -2.143)
-    dist = squareform(pdist(Cbeta))
-    
-    contacts = dist < distance_threshold
-    contacts = contacts.astype(np.int64)
-    contacts[np.isnan(dist)] = -1
-    return contacts
-
 # Select sequences from the MSA to maximize the hamming distance
 # Alternatively, can use hhfilter 
 def greedy_select(msa: List[Tuple[str, str]], num_seqs: int, mode: str = "max") -> List[Tuple[str, str]]:
