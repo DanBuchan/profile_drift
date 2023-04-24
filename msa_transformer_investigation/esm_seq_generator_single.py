@@ -237,7 +237,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
                 fhOut.write(f">{align_name}_{i}\n")
                 fhOut.write(f"{output_seq}\n")
                 # print(pred_array)
-                tp_count = np.sum(input_tokens[i] == pred_array)
+                tp_count = np.sum(input_tokens[i] == pred)
                 pred_size = len(input_tokens[i])
                 tpr = tp_count/pred_size
                 # print(f'{name} {i} tpr: {tpr}: {pred_size}')
