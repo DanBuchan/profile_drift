@@ -207,7 +207,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         transformer_batch_tokens = torch.where(mask, 31, transformer_batch_tokens)
         print(transformer_batch_tokens)
         print(transformer_batch_tokens[0][0])
-        transformer_bacth_tokens[0][0] = 0
+        transformer_batch_tokens[0][0] = 0
         print(transformer_batch_tokens[0][0])
         
         # print(msa_transformer_batch_labels)
