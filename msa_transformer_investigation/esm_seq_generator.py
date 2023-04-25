@@ -273,8 +273,6 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
     results = defaultdict(float)
     for name, inputs in msa.items():
         inputs = greedy_select(inputs, num_seqs=200) # can change this to pass more/fewer sequence
-        print(inputs)
-        exit()
         msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
         input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
         if input_tokens.shape[1] > 1024:
@@ -284,9 +282,8 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
         substitution_numbers = round(len(input_tokens[0])*mask_amount)
         mask = torch.rand(msa_transformer_batch_tokens.shape).argsort(2) < substitution_numbers
         msa_transformer_batch_tokens = torch.where(mask, 31, msa_transformer_batch_tokens)
-        print(input_tokens.shape)
-        print(msa_transformer_batch_tokens.shape)
-        print(msa_transformer_batch_tokens)
+        for test_seq in msa_transformer_batch_tokens[0]:
+            print(test_seq)
         # print(msa_transformer_batch_labels)
         # print(msa_transformer_batch_strs)
         # print(input_tokens)
