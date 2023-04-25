@@ -284,6 +284,7 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
         substitution_numbers = round(len(input_tokens[0])*mask_amount)
         mask = torch.rand(msa_transformer_batch_tokens.shape).argsort(2) < substitution_numbers
         msa_transformer_batch_tokens = torch.where(mask, 31, msa_transformer_batch_tokens)
+        print(msa_transformer_batch_tokens)
         # print(msa_transformer_batch_labels)
         # print(msa_transformer_batch_strs)
         # print(input_tokens)
