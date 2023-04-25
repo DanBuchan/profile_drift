@@ -273,8 +273,8 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
     results = defaultdict(float)
     for name, inputs in msa.items():
         inputs = greedy_select(inputs, num_seqs=200) # can change this to pass more/fewer sequence
-        # print(inputs)
-        # exit()
+        print(inputs)
+        exit()
         msa_transformer_batch_labels, msa_transformer_batch_strs, msa_transformer_batch_tokens = msa_transformer_batch_converter([inputs])
         input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
         if input_tokens.shape[1] > 1024:
