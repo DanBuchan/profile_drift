@@ -55,7 +55,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 fhOut.write(f">{msa_line[0]}\n")
                 fhOut.write(f"{msa_line[1]}\n")
 
-    with open("families_list.txt") as fhOut:
+    with open("families_list.txt", "w") as fhOut:
         for entry in nr_list:
             fhOut.write(f'{entry}\n')
         
