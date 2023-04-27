@@ -244,7 +244,7 @@ the family and drift family members. Taken an n-nearest (1, 3, and 5) nearest ne
 
 Produces summarised_msa_model_results.csv. Note some seqs fail to find a good match even when compared to the "drift" families
 
-## esm_single_seq_generator.py
+## esm_seq_generator_single.py
 
 same as esm_seq_generator.py but using the single seq model
 

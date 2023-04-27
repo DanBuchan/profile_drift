@@ -23,7 +23,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
             try:
                 line = line_binary.decode("utf-8")
             except Exception as e:
-                print(e)
+                print(align_name, e)
                 print(line_binary)
                 continue
             if line.startswith("//"):
@@ -50,7 +50,7 @@ def parse_pfam_alignments(pfam_aligns, drift_families):
                 seq_data = (entries[0], seq)
                 msa[align_name].append(seq_data)
         print(f"Printing: {align_name}")
-        with open(f"{align_name}.fa") as fhOut:
+        with open(f"{align_name}.fa", "w") as fhOut:
             for msa_line in msa[align_name]:
                 fhOut.write(f">{msa_line[0]}\n")
                 fhOut.write(f"{msa_line[1]}\n")
@@ -173,6 +173,7 @@ drift_families = read_drifts(sys.argv[1])
 if not exists("families_list.txt"):
     parse_pfam_alignments(sys.argv[2], drift_families)
 
+# exit()
 fhResults = open("summarised_msa_model_results.csv", "w")
 fhResults.write("file,generated_family,best_hit_family,best_hit_score\n")
 for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
@@ -184,3 +185,5 @@ for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
             # print(hit)
             fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]}\n")
 
+
+# missing: PF00569.fa
