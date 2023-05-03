@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 174, in <module>
-    parse_pfam_alignments(sys.argv[2], drift_families)
-  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 58, in parse_pfam_alignments
-    with open("families_list.txt") as fhOut:
-FileNotFoundError: [Errno 2] No such file or directory: 'families_list.txt'

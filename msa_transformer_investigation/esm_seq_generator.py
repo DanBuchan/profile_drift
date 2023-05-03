@@ -19,6 +19,10 @@ from collections import defaultdict
 
 import esm
 
+"""
+python esm_seq_generator.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot > out 2> err &
+"""
+
 torch.set_grad_enabled(False)
 
 # This is an efficient way to delete lowercase characters and insertion characters from a string

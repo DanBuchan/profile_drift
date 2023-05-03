@@ -94,6 +94,8 @@ def read_fasta_seqs(family_id, file):
     return seqs
      
 def run_fasta(seq):
+    if len(seq) <= 1:
+        return["NA", 0]
     with open("query.fa", "w") as fhOut: 
         fhOut.write(">Query\n")
         fhOut.write(f"{seq}\n")
