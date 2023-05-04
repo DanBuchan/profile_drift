@@ -188,7 +188,7 @@ if not exists("families_list.txt"):
 alignment_list = []
 for file in os.listdir("./alignments"):
     if file.endswith(".fa"):
-        alignment_list.append(file[:3])
+        alignment_list.append(file[:-3])
 
 print(alignment_list)
 exit()
