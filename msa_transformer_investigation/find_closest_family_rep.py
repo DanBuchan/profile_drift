@@ -8,7 +8,11 @@ from subprocess import Popen, PIPE
 python find_closest_family_rep.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
 """
 
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
 def parse_pfam_alignments(pfam_aligns, drift_families):
+    # read through the PFAM A alignments and put them all in a directory
     nr_list = set()
     for family in drift_families:
          nr_list.add(family)
@@ -77,7 +81,7 @@ def read_generated_seqs(file):
     with open(file, "r") as fhIn:
         for line in fhIn:
             if line.startswith(">"):
-                current_prot_id = line.strip()
+                current_prot_id = line[1:].strip()
                 family_id = line[1:]
                 family_id = family_id.rstrip()
                 family_id = family_id.split("_")[0]
@@ -95,11 +99,13 @@ def read_fasta_seqs(family_id, file):
                 seqs.append(line.rstrip().replace("-", ''))
     return seqs
      
-def run_fasta(seq):
+def run_fasta(seq_dyad):
+    seq_name = seq_dyad[0]
+    seq = seq_dyad[1]
     if len(seq) <= 1:
         return["NA", 0]
     with open("query.fa", "w") as fhOut: 
-        fhOut.write(">Query\n")
+        fhOut.write(">{seq_name}\n")
         fhOut.write(f"{seq}\n")
     # for pair in pairs:
     args = ['/home/dbuchan/Applications/fasta36/bin/fasta36',
@@ -138,7 +144,7 @@ def run_fasta(seq):
         if "residues in 1 query   sequences" in line:
             parse_results = False
     
-    return [best_hit, best_score]
+    return [seq_name, best_hit, best_score]
 
 # loop over every 
 def find_closest_fasta(generated_seqs, pfam_family, families_hit):
@@ -161,6 +167,7 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             # target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
         else:
             proceed_analysis = False
+            eprint("NOT ANALYSING {pfam_family} vs {target}")
     for seq in search_seqs:
         fhOut.write(f"{seq[0]}\n")
         fhOut.write(f"{seq[1]}\n")  
@@ -169,7 +176,7 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
     results = []
     if proceed_analysis:
         for seq in generated_seqs[pfam_family]:
-            best_hit = run_fasta(seq)
+            best_hit = run_fasta(seq_dyad)
             results.append([pfam_family] + best_hit )
     return results
 
@@ -179,15 +186,14 @@ if not exists("families_list.txt"):
 
 # exit()
 fhResults = open("summarised_msa_model_results.csv", "w")
-fhResults.write("file,generated_family,best_hit_family,best_hit_score\n")
+fhResults.write("file,generated_family,query_name,best_hit_family,best_hit_score\n")
 for file in ['masked_25.fa', 'masked_50.fa', 'masked_75.fa']:
     generated_seqs = read_generated_seqs(file)
-    print(generated_seqs)
-    exit()
+
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
         for hit in results:
             # print(hit)
-            fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]}\n")
+            fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]},{hit[3]}\n")
 
