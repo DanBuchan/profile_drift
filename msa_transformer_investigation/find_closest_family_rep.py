@@ -176,8 +176,9 @@ if not exists("families_list.txt"):
 # exit()
 fhResults = open("summarised_msa_model_results.csv", "w")
 fhResults.write("file,generated_family,best_hit_family,best_hit_score\n")
-for file in ['masked_25.fa', 'masked_25.fa', 'masked_25.fa']:
+for file in ['masked_25.fa', 'masked_50.fa', 'masked_75.fa']:
     generated_seqs = read_generated_seqs(file)
+    print(generated_seqs)
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
