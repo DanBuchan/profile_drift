@@ -73,14 +73,16 @@ def read_drifts(file):
 def read_generated_seqs(file):
     seqs = defaultdict(list)
     family_id = ''
+    current_prot_id = ''
     with open(file, "r") as fhIn:
         for line in fhIn:
             if line.startswith(">"):
+                current_prot_id = line.strip()
                 family_id = line[1:]
                 family_id = family_id.rstrip()
                 family_id = family_id.split("_")[0]
             else:
-                seqs[family_id].append(line.rstrip().replace("-", ''))
+                seqs[family_id].append([current_prot_id, line.rstrip().replace("-", '')])
     return seqs
 
 def read_fasta_seqs(family_id, file):
@@ -181,6 +183,7 @@ fhResults.write("file,generated_family,best_hit_family,best_hit_score\n")
 for file in ['masked_25.fa', 'masked_50.fa', 'masked_75.fa']:
     generated_seqs = read_generated_seqs(file)
     print(generated_seqs)
+    exit()
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, pf_family, drift_families[pf_family])
@@ -188,5 +191,3 @@ for file in ['masked_25.fa', 'masked_50.fa', 'masked_75.fa']:
             # print(hit)
             fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]}\n")
 
-
-# missing: PF00569.fa
