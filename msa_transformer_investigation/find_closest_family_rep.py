@@ -190,10 +190,6 @@ for file in os.listdir("./alignments"):
     if file.endswith(".fa"):
         alignment_list.append(file[:-3])
 
-print(alignment_list)
-exit()
-
-
 fhResults = open("summarised_msa_model_results.csv", "w")
 fhResults.write("file,generated_family,query_name,best_hit_family,best_hit_score\n")
 for file in ['masked_25.fa', 'masked_50.fa', 'masked_75.fa']:
