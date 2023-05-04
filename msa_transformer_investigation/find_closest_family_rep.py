@@ -167,7 +167,7 @@ def find_closest_fasta(generated_seqs, pfam_family, families_hit):
             # target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
         else:
             proceed_analysis = False
-            eprint("NOT ANALYSING {pfam_family} vs {target}")
+            eprint(f"NOT ANALYSING {pfam_family} vs {target}")
     for seq in search_seqs:
         fhOut.write(f"{seq[0]}\n")
         fhOut.write(f"{seq[1]}\n")  
