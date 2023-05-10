@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/dbuchan/Projects/profile_drift/msa_transformer_investigation/find_closest_family_rep.py", line 203, in <module>
-    fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]},{hit[3]}\n")
-IndexError: list index out of range

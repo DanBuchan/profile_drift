@@ -50,7 +50,8 @@ def make_hmms_file(drift_set, hmm_file):
 def runhmmemit():
     pass
     #NOT IMPLEMENTED, ran hmmemit on commandline as:
-    # 
+    # ~/Applications/hmmer-3.3.2/src/hmmemit -N 200 hmm_subset.hmm > hmm_generated_seqs.fa
+
 
 drift_families = read_drifts(sys.argv[1])
 nr_drift_set = make_drift_set_non_redundant(drift_families)
