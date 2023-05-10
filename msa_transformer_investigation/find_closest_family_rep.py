@@ -104,7 +104,7 @@ def run_fasta(seq_dyad):
     seq_name = seq_dyad[0]
     seq = seq_dyad[1]
     if len(seq) <= 1:
-        return["NA", 0]
+        return[seq_name, "NA", 0]
     with open("query.fa", "w") as fhOut: 
         fhOut.write(">{seq_name}\n")
         fhOut.write(f"{seq}\n")
