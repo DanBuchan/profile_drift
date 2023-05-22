@@ -190,15 +190,15 @@ for file in os.listdir("./alignments"):
     if file.endswith(".fa"):
         alignment_list.append(file[:-3])
 
+
 fhResults = open("summarised_msa_model_results.csv", "w")
 fhResults.write("file,generated_family,query_name,best_hit_family,best_hit_score\n")
-for file in ['masked_25.fa', 'masked_50.fa', 'masked_75.fa']:
+for file in ['hmm_generated_seqs_flattened.fa']:
     generated_seqs = read_generated_seqs(file)
-
+    # print(generated_seqs)
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, alignment_list, pf_family, drift_families[pf_family])
         for hit in results:
-            # print(hit)
+            print(hit)
             fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]},{hit[3]}\n")
-
