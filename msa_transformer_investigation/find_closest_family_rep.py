@@ -90,6 +90,22 @@ def read_generated_seqs(file):
                 seqs[family_id].append([current_prot_id, line.rstrip().replace("-", '')])
     return seqs
 
+def read_generated_seqs_hmmer(file):
+    seqs = defaultdict(list)
+    family_id = ''
+    current_prot_id = ''
+    with open(file, "r") as fhIn:
+        for line in fhIn:
+            if line.startswith(">"):
+                current_prot_id = line[1:].strip()
+                family_id = line[1:]
+                family_id = family_id.rstrip()
+                family_id = family_id.split("|")[1]
+                family_id = family_id.split("-")[0]
+            else:
+                seqs[family_id].append([current_prot_id, line.rstrip().replace("-", '')])
+    return seqs
+
 def read_fasta_seqs(family_id, file):
     seqs = []
     with open(file, "r") as fhIn:
@@ -195,8 +211,9 @@ for file in os.listdir("./alignments"):
 fhResults = open("summarised_msa_model_results.csv", "w")
 fhResults.write("file,generated_family,query_name,best_hit_family,best_hit_score\n")
 for file in ['hmm_generated_seqs_flattened.fa']:
-    generated_seqs = read_generated_seqs(file)
-    # print(generated_seqs)
+    # generated_seqs = read_generated_seqs(file)
+    generated_seqs = read_generated_seqs_hmmer(file)
+    print(generated_seqs)
     for pf_family in drift_families:
         print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, alignment_list, pf_family, drift_families[pf_family])
