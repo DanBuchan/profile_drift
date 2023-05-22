@@ -177,6 +177,7 @@ def find_closest_fasta(generated_seqs, alignment_list, pfam_family, families_hit
     results = []
     if proceed_analysis:
         for seq in generated_seqs[pfam_family]:
+            print("running fasta")
             best_hit = run_fasta(seq)
             results.append([pfam_family] + best_hit )
     return results
@@ -199,6 +200,8 @@ for file in ['hmm_generated_seqs_flattened.fa']:
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, alignment_list, pf_family, drift_families[pf_family])
+        print(results)
         for hit in results:
             print(hit)
             fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]},{hit[3]}\n")
+            fhResults.flush()
