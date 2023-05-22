@@ -213,7 +213,7 @@ fhResults.write("file,generated_family,query_name,best_hit_family,best_hit_score
 for file in ['hmm_generated_seqs_flattened.fa']:
     # generated_seqs = read_generated_seqs(file)
     generated_seqs = read_generated_seqs_hmmer(file)
-    print(generated_seqs)
+    # print(generated_seqs)
     for pf_family in drift_families:
         print(pf_family, drift_families[pf_family])
         results = find_closest_fasta(generated_seqs, alignment_list, pf_family, drift_families[pf_family])
