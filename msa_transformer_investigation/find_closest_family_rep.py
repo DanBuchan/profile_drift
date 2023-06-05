@@ -222,4 +222,4 @@ for file in ['hmm_generated_seqs_flattened.fa']:
             print(hit)
             fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]},{hit[3]}\n")
             fhResults.flush()
-        exit()
+        #exit()
