@@ -248,6 +248,12 @@ Produces summarised_msa_model_results.csv. Note some seqs fail to find a good ma
 
 same as esm_seq_generator.py but using the single seq model
 
+## count_profile_memberships.py
+
+Counts up how often we see "drift" in ESM and HMM generated sequences.
+
+
+
 # TODO
 
 1. Add check so that `--distance` is not greater than the length of the sequence (hamming) or bigger than can be achieved given a distance matrix (length*max_residue_distance)
