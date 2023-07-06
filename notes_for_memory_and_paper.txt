@@ -1,0 +1,28 @@
+1. First work was building things to create "uniform" artificial datasets
+2. CATH distances a couple of scripts to discover the average RAxML distances within and between CATH families. 
+   *** SHOULD DO THIS FOR PFAM
+
+3. Distance experiment, How and at what rate are sequences recruited to profiles given a db density? We run this with both hhblits and psiblast to compare to common profile based search methods
+   distance_experiment.sh A) create datasets where each step is different RAxML distances appart b) run RAxML to get distance matrix C) take seed seq and run blast for 20 iterations D) plot with plot_average_blast_growth.R
+    in artificially uniform regions of "sequence space"
+    !! family_growth_at_ave_distances.png - as a family grows the average distance between members increases but appears to level off
+    !! members_growth_at_iteration.png - membership smoothly increases with each iteration
+    END OF R script plots membership with embedded dense regions - might skip that
+
+4. Drift experiment, drift_experiment.sh. Take a "background db select a seq and another n distance apart", generate new dense regions, then run the blasts,  plot with plot_average_blast_growth.R
+    END OF R script plots membership with embedded dense regions - might skip that as we see nothing
+
+5. CATH rep blasts and PFAM rep blasts - what does growth look like on a "real" protein dataset
+   Didn't do the CATH reps blast as it wasn't dense enough, moved to PFAM
+   plot_pfam_growth.R - plot all the blasts, script just does the first 7 atm
+    FOR paper show typical growth, show some drifts
+    calculate_drift_types.py - use this to build table of data of different types of drift and how often we see them
+
+6. EDM Transformer MSA and Single - how often to they generate in family sequences, we've done drift families
+
+    WHAT ABOUT NON-DRIFT families
+
+6. HMMs - how often to they generate in family sequences, we've done drift families
+    WHAT ABOUT NON-DRIFT families
+
+7. 

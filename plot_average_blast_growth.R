@@ -14,13 +14,13 @@ ggplot(average_distances, aes(x=iteration, y=accumulated)) + geom_line()
 
 ###
 
-distances2 <- read.csv("/home/dbuchan/Projects/profile_drift/old_RAxML_distances/distance_experiment/average_distances2.csv", header=T)
-distances5 <- read.csv("/home/dbuchan/Projects/profile_drift/old_RAxML_distances/distance_experiment/average_distances5.csv", header=T)
-distances10 <- read.csv("/home/dbuchan/Projects/profile_drift/old_RAxML_distances/distance_experiment/average_distances10.csv", header=T)
-distances20 <- read.csv("/home/dbuchan/Projects/profile_drift/old_RAxML_distances/distance_experiment/average_distances20.csv", header=T)
-distances30 <- read.csv("/home/dbuchan/Projects/profile_drift/old_RAxML_distances/distance_experiment/average_distances30.csv", header=T)
-distances40 <- read.csv("/home/dbuchan/Projects/profile_drift/old_RAxML_distances/distance_experiment/average_distances40.csv", header=T)
-distances50 <- read.csv("/home/dbuchan/Projects/profile_drift/old_RAxML_distances/distance_experiment/average_distances50.csv", header=T)
+distances2 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/average_distances2.csv", header=T)
+distances5 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/average_distances5.csv", header=T)
+distances10 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/average_distances10.csv", header=T)
+distances20 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/average_distances20.csv", header=T)
+distances30 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/average_distances30.csv", header=T)
+distances40 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/average_distances40.csv", header=T)
+distances50 <- read.csv("/home/dbuchan/Projects/profile_drift/RAxML_distances/distance_experiment/average_distances50.csv", header=T)
 
 all_distances <- data.frame(iteration=distances2$iteration, dist2=distances2$ave_distance, dist5=distances5$ave_distance, dist10=distances10$ave_distance, dist20=distances20$ave_distance, dist30=distances30$ave_distance, dist40=distances40$ave_distance, dist50=distances50$ave_distance)
 plot_df <- melt(all_distances, id.vars="iteration")
