@@ -256,9 +256,9 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
 
-    fh25 = open("masked_25.fa", "w")
-    fh50 = open("masked_50.fa", "w")
-    fh75 = open("masked_75.fa", "w")
+    fh25 = open("masked_25_single_transformer.fa", "w")
+    fh50 = open("masked_50_single_transformer.fa", "w")
+    fh75 = open("masked_75_single_transformer.fa", "w")
     with open(file, "r") as fh:
         align_name = ''
         msa = defaultdict(list)

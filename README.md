@@ -223,6 +223,8 @@ Average number of contaminating families
 
 ## esm_seq_generator.py
 
+generate 200 Seqs per family/input seq
+
 Here we use MSAtransformer to generate new sequences for pfam alignments masked with
 differing amounts
 
