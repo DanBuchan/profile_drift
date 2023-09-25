@@ -310,8 +310,6 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
         preds = msa_transformer_predictions[name]['logits'].cpu().numpy()
-        print(preds.shape)
-        exit()
         for result in msa_transformer_predictions[name]['logits'].cpu().numpy():
             for i, seq in enumerate(result):
                 # print("comparing")
@@ -333,7 +331,9 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
                 # print(f'{name} {i} tpr: {tpr}: {pred_size}')
                 results[name] += tpr
             results[name] = results[name]/(i+1)
+            print(i)
     print(results)
+    exit()
    
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
