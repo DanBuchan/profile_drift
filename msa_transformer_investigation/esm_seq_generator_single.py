@@ -188,11 +188,10 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
     for name, inputs in msa.items():
         seqs = choices(inputs, k=200)
     res_count = 0
-    for seq in seqs:
+    seq_count = None
+    for seq_count, seq in enumerate(seqs):
         name = seq[0]
         inputs = (seq[0], seq[1])
-        # print(name, inputs)
-        # exit()
         transformer_batch_labels, transformer_batch_strs, transformer_batch_tokens = transformer_batch_converter([inputs])
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
         
@@ -253,7 +252,8 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
             results[name] += tpr
         
         results[name] = results[name]/(res_count+1)
-    # print(results)
+    print(seq_count)
+    exit()
    
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
