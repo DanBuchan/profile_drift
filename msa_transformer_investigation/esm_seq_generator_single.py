@@ -262,7 +262,7 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
     fh25 = open("masked_25_single_transformer.fa", "w")
     fh50 = open("masked_50_single_transformer.fa", "w")
     fh75 = open("masked_75_single_transformer.fa", "w")
-    with open(file, "r") as fh:
+    with open(file, "rb") as fh:
         align_name = ''
         msa = defaultdict(list)
         for line_binary in fh:
