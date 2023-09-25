@@ -338,10 +338,16 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
     fh25 = open("masked_25_msa_transformer.fa", "w")
     fh50 = open("masked_50_msa_transformer.fa", "w")
     fh75 = open("masked_75_msa_transformer.fa", "w")
-    with open(file, "r") as fh:
+    with open(file, "rb") as fh:
         align_name = ''
         msa = defaultdict(list)
-        for line in fh:
+        for line_binary in fh:
+            try:
+                line = line_binary.decode("utf-8")
+            except Exception as e:
+                print(align_name, e)
+                print(line_binary)
+                continue
             if line.startswith("//"):
                 continue
             if line.startswith("# STOCKHOLM"):
