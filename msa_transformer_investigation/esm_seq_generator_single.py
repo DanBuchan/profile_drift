@@ -224,9 +224,6 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = transformer_batch_tokens.cpu().numpy()[0]
         res_count = res_count + 1
-        results_set = transformer_predictions[name]['logits'].cpu().numpy()
-        print(results_set.shape)
-        exit()
         for result in transformer_predictions[name]['logits'].cpu().numpy():
             output_seq = ''
             for i, new_seq in enumerate(result):
