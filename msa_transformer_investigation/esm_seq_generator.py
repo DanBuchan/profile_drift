@@ -331,9 +331,9 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
                 # print(f'{name} {i} tpr: {tpr}: {pred_size}')
                 results[name] += tpr
             results[name] = results[name]/(i+1)
-            print(i)
+            if not i == 199:
+                print(f"Less than 200 seqs generated for: {align_name}, n = {i}")
     print(results)
-    exit()
    
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
