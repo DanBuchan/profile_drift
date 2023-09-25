@@ -309,6 +309,9 @@ def generate_seqs(msa, msa_transformer, msa_transformer_alphabet, align_name, ma
         # print(msa_transformer_predictions[name]['logits'])
         # print(msa_transformer_predictions[name]['logits'].size())
         input_tokens = msa_transformer_batch_tokens.cpu().numpy()[0]
+        preds = msa_transformer_predictions[name]['logits'].cpu().numpy()
+        print(preds.shape)
+        exit()
         for result in msa_transformer_predictions[name]['logits'].cpu().numpy():
             for i, seq in enumerate(result):
                 # print("comparing")
