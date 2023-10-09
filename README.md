@@ -250,6 +250,10 @@ Produces summarised_msa_model_results.csv. Note some seqs fail to find a good ma
 
 same as esm_seq_generator.py but using the single seq model
 
+## hmmer_seq_generator.py 
+
+generate seqs useing hmmer.
+
 ## count_profile_memberships.py
 
 Counts up how often we see "drift" in ESM and HMM generated sequences.

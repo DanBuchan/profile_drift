@@ -22,18 +22,22 @@ deletekeys["."] = None
 deletekeys["*"] = None
 translation = str.maketrans(deletekeys)
 
+
 def read_sequence(filename: str) -> Tuple[str, str]:
     """ Reads the first (reference) sequences from a fasta or MSA file."""
     record = next(SeqIO.parse(filename, "fasta"))
     return record.description, str(record.seq)
 
+
 def remove_insertions(sequence: str) -> str:
     """ Removes any insertions into the sequence. Needed to load aligned sequences in an MSA. """
     return sequence.translate(translation)
 
+
 def read_msa(filename: str) -> List[Tuple[str, str]]:
     """ Reads the sequences from an MSA file, automatically removes insertions."""
     return [(record.description, remove_insertions(str(record.seq))) for record in SeqIO.parse(filename, "fasta")]
+
 
 def extend(a, b, c, L, A, D):
     """
@@ -72,6 +76,7 @@ def greedy_select(msa: List[Tuple[str, str]], num_seqs: int, mode: str = "max") 
         indices.append(index)
     indices = sorted(indices)
     return [msa[idx] for idx in indices]
+
 
 def compute_precisions(
     predictions: torch.Tensor,
@@ -178,6 +183,7 @@ def evaluate_prediction(
             metrics[f"{name}_{key}"] = val.item()
     return metrics
 
+
 def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amount, fhOut):
 
     transformer_batch_converter = transformer_alphabet.get_batch_converter()
@@ -250,6 +256,7 @@ def generate_seqs(msa, transformer, transformer_alphabet, align_name, mask_amoun
         
         results[name] = results[name]/(res_count+1)
    
+   
 def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_alphabet):
     align_count = 0
 
@@ -298,6 +305,7 @@ def read_pfam_alignments(file, drift_families, msa_transformer, msa_transformer_
     fh50.close()
     fh75.close()
 
+
 def get_drift_set(file):
     drifts = set()
     with open(file, "r") as fhIn:
@@ -325,5 +333,6 @@ esm2_transformer = esm2_transformer.eval().cuda()
 # esm2_transformer_batch_converter = esm2_transformer_alphabet.get_batch_converter()
 # READ LIST OF FAMILIES THAT HAVE DRIFT
 
-# python esm_seq_generator.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
-read_pfam_alignments(sys.argv[2], drift_families, esm2_transformer, esm2_transformer_alphabet)
+# python esm_seq_generator_single.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
+read_pfam_alignments(sys.argv[2], drift_families, esm2_transformer,
+                     esm2_transformer_alphabet)

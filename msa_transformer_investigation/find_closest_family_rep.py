@@ -6,7 +6,7 @@ import os
 from subprocess import Popen, PIPE
 
 """
-python find_closest_family_rep.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot
+python find_closest_family_rep.py ../iteration_summary.csv ~/Data/pfam/Pfam-A.full.uniprot single/msa
 """
 
 def eprint(*args, **kwargs):
@@ -121,7 +121,7 @@ def run_fasta(seq_dyad):
     seq = seq_dyad[1]
     if len(seq) <= 1:
         return[seq_name, "NA", 0]
-    with open("query.fa", "w") as fhOut: 
+    with open(f"{sys.argv[3]}_query.fa", "w") as fhOut: 
         fhOut.write(">{seq_name}\n")
         fhOut.write(f"{seq}\n")
     # for pair in pairs:
@@ -130,8 +130,8 @@ def run_fasta(seq_dyad):
             '-p',
             '-O',
             'out',
-            'query.fa', 
-            f'./search_targets.fa'
+            f"{sys.argv[3]}_query.fa", 
+            f'./{sys.argv[3]}_search_targets.fa'
             ]
     print("Calculating", " ".join(args))
     try:
@@ -152,9 +152,13 @@ def run_fasta(seq_dyad):
         if parse_results:
             entries = line.split()
             best_hit = entries[0]
-            best_hit = best_hit.split("___")[1]
-            best_score = line[62:]
-            best_score = float(best_score.split()[0])
+            try:
+                best_hit = best_hit.split("___")[1]
+                best_score = line[62:]
+                best_score = float(best_score.split()[0])
+            except:
+                best_hit = 'NA'
+                best_score = 'NA'
             break
         if line.startswith("The best scores are:"):
             parse_results = True
@@ -167,7 +171,7 @@ def run_fasta(seq_dyad):
 def find_closest_fasta(generated_seqs, alignment_list, pfam_family, families_hit):
     # target_seqs = {}
     proceed_analysis = True
-    fhOut = open("search_targets.fa", "w")
+    fhOut = open(f"{sys.argv[3]}_search_targets.fa", "w")
     search_seqs = []
     for target in families_hit:
         # here we generate a searchable file.
@@ -179,7 +183,7 @@ def find_closest_fasta(generated_seqs, alignment_list, pfam_family, families_hit
                         seq_id = line.rstrip()
                         seq_id = f"{seq_id}___{target}"
                     else:
-                        search_seqs.append([seq_id,line.rstrip()])
+                        search_seqs.append([seq_id, line.rstrip()])
             pass
             # target_seqs[target] = read_fasta_seqs(target, f"alignments/{target}.fa")
         else:
@@ -195,8 +199,9 @@ def find_closest_fasta(generated_seqs, alignment_list, pfam_family, families_hit
         for seq in generated_seqs[pfam_family]:
             print("running fasta")
             best_hit = run_fasta(seq)
-            results.append([pfam_family] + best_hit )
+            results.append([pfam_family] + best_hit)
     return results
+
 
 drift_families = read_drifts(sys.argv[1])
 if not exists("families_list.txt"):
@@ -208,18 +213,23 @@ for file in os.listdir("./alignments"):
         alignment_list.append(file[:-3])
 
 
-fhResults = open("summarised_msa_model_results.csv", "w")
+input25 = f'masked_25_{sys.argv[3]}_transformer.fa'
+input50 = f'masked_50_{sys.argv[3]}_transformer.fa'
+input75 = f'masked_75_{sys.argv[3]}_transformer.fa'
+fhResults = open(f"summarised_closest_family_rep_{sys.argv[3]}_model_results.csv", "w")
 fhResults.write("file,generated_family,query_name,best_hit_family,best_hit_score\n")
-for file in ['hmm_generated_seqs_flattened.fa']:
-    # generated_seqs = read_generated_seqs(file)
-    generated_seqs = read_generated_seqs_hmmer(file)
+#for file in ['hmm_generated_seqs_flattened.fa']:
+for file in [input25, input50, input75]:
+    generated_seqs = read_generated_seqs(file)
+    # generated_seqs = read_generated_seqs_hmmer(file)
     # print(generated_seqs)
     for pf_family in drift_families:
         # print(pf_family, drift_families[pf_family])
-        results = find_closest_fasta(generated_seqs, alignment_list, pf_family, drift_families[pf_family])
+        results = find_closest_fasta(generated_seqs, alignment_list, pf_family,
+                                     drift_families[pf_family])
         # print(results)
         for hit in results:
-            # print(hit)
+            #print(hit)
             fhResults.write(f"{file},{hit[0]},{hit[1]},{hit[2]},{hit[3]}\n")
             fhResults.flush()
         # exit()
